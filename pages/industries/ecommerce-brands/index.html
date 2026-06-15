@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce Brands | TShirtSwiss.ch</title>
+  <style>
+:root {
+  color-scheme: light;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #111;
+  background: #f4f4f4;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f4f4; color: #111; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; height: auto; display: block; }
+.page-shell { display: flex; flex-direction: column; min-height: 100vh; }
+.topbar { background: #111; color: #f4f4f4; font-size: .9rem; }
+.topbar .wrapper { max-width: 1280px; margin: 0 auto; padding: 12px 24px; display: flex; justify-content: space-between; gap: 16px; align-items: center; flex-wrap: wrap; }
+.topbar-group { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; }
+.topbar-item { display: inline-flex; align-items: center; gap: 8px; opacity: .85; }
+.topbar-item strong { color: #fff; font-weight: 700; }
+.topbar-links { display: flex; gap: 14px; }
+.topbar-links a { color: #f4f4f4; opacity: .8; padding: 6px 10px; border-radius: 999px; }
+.topbar-links a:hover { opacity: 1; }
+.site-header { background: #fff; position: sticky; top: 0; z-index: 30; box-shadow: 0 20px 60px rgba(0, 0, 0, .08); }
+.site-header .wrapper { max-width: 1280px; margin: 0 auto; padding: 22px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.brand { font-size: 1.05rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: #111; }
+.nav { display: flex; gap: 24px; flex-wrap: wrap; font-size: .95rem; }
+.nav a { color: #111; opacity: .85; transition: opacity .2s, color .2s; }
+.nav a:hover { opacity: 1; color: #D52B1E; }
+.cta-button { padding: 14px 26px; background: #D52B1E; color: #fff; border-radius: 999px; font-weight: 700; box-shadow: 0 18px 40px rgba(213, 43, 30, .18); }
+main { flex: 1; max-width: 1280px; margin: 0 auto; padding: 28px 24px 60px; }
+.breadcrumb { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; font-size: .9rem; color: #555; margin: 20px 0 16px; }
+.breadcrumb a { opacity: .8; }
+.breadcrumb span { opacity: .55; }
+.hero { display: grid; grid-template-columns: 1.05fr .95fr; gap: 36px; align-items: center; min-height: calc(100vh - 180px); padding: 40px 0 32px; }
+.hero-copy { max-width: 620px; }
+.hero-eyebrow { font-size: .8rem; letter-spacing: .26em; text-transform: uppercase; color: #D52B1E; font-weight: 700; margin-bottom: 18px; }
+.hero-title { font-size: clamp(3rem, 4.4vw, 4.8rem); line-height: 1; margin: 0; color: #111; }
+.hero-subtitle { margin: 24px 0 0; font-size: 1.24rem; line-height: 1.75; color: #222; max-width: 44rem; }
+.hero-text { margin: 24px 0 0; font-size: 1rem; line-height: 1.8; color: #4d4d4d; max-width: 42rem; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 32px; }
+.hero-actions a { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 28px; border-radius: 999px; font-weight: 700; transition: transform .2s, box-shadow .2s; }
+.hero-actions a.primary { background: #D52B1E; color: #fff; }
+.hero-actions a.secondary { border: 1px solid rgba(17, 17, 17, .12); background: #fff; color: #111; }
+.hero-tags { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 32px; }
+.hero-tag { padding: 18px 20px; background: #fff; border-radius: 22px; border: 1px solid rgba(17, 17, 17, .08); box-shadow: 0 18px 45px rgba(17, 17, 17, .05); }
+.hero-tag span { font-size: .95rem; color: #111; font-weight: 700; }
+.hero-visual { border-radius: 30px; overflow: hidden; box-shadow: 0 35px 90px rgba(17, 17, 17, .12); }
+.hero-visual img { width: 100%; height: auto; display: block; }
+.section { padding: 72px 0; }
+.section--white { background: #fff; }
+.section__inner { display: grid; gap: 34px; max-width: 1280px; margin: 0 auto; }
+.section--split .section__inner { grid-template-columns: 1fr 1fr; align-items: center; }
+.section-title h2 { margin: 0 0 14px; font-size: clamp(2.4rem, 3vw, 3.2rem); line-height: 1.05; font-weight: 800; color: #111; }
+.section-title p { margin: 0; color: #555; line-height: 1.75; font-size: 1rem; max-width: 46rem; }
+.trust-logos { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 24px; align-items: center; margin-top: 28px; }
+.trust-logos span { color: #555; font-size: .95rem; opacity: .8; text-align: center; }
+.solution-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 28px; }
+.solution-card { background: #fff; border-radius: 24px; padding: 28px; border: 1px solid rgba(17, 17, 17, .08); box-shadow: 0 18px 45px rgba(17, 17, 17, .05); }
+.solution-card strong { display: block; margin-bottom: 14px; font-size: 1rem; color: #111; }
+.solution-card p { margin: 0; color: #555; line-height: 1.75; font-size: .95rem; }
+.split-grid { display: grid; gap: 32px; grid-template-columns: 1.4fr .6fr; align-items: start; }
+.feature-copy h3 { margin: 0 0 18px; font-size: clamp(2rem, 2.3vw, 2.5rem); line-height: 1.05; color: #111; }
+.feature-copy p { margin: 0 0 24px; color: #555; line-height: 1.75; font-size: 1rem; max-width: 46rem; }
+.bullet-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.bullet-list li { display: flex; gap: 16px; align-items: flex-start; color: #444; line-height: 1.7; }
+.bullet-list li::before { content: '•'; color: #D52B1E; font-weight: 800; margin-top: 4px; }
+.quote-card { background: #111; color: #fff; border-radius: 30px; padding: 32px; display: grid; gap: 22px; box-shadow: 0 30px 80px rgba(17, 17, 17, .16); }
+.quote-card h3 { margin: 0; font-size: 1.5rem; line-height: 1.2; }
+.quote-card p { margin: 0; color: rgba(255,255,255,.82); line-height: 1.8; }
+.quote-card ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.quote-card li { display: flex; gap: 12px; align-items: flex-start; color: rgba(255,255,255,.9); }
+.quote-card li::before { content: '✓'; color: #D52B1E; margin-top: 2px; }
+.quote-card a { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 24px; background: #D52B1E; color: #fff; border-radius: 999px; font-weight: 700; margin-top: 14px; width: fit-content; }
+.feature-row { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-top: 26px; }
+.feature-tile { background: #fff; border-radius: 24px; padding: 24px; border: 1px solid rgba(17, 17, 17, .08); box-shadow: 0 18px 45px rgba(17, 17, 17, .05); }
+.feature-tile strong { display: block; margin-bottom: 12px; font-size: 1rem; color: #111; }
+.feature-tile p { margin: 0; color: #555; line-height: 1.75; font-size: .95rem; }
+.work-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 28px; }
+.case-card { background: #fff; border-radius: 24px; padding: 24px; border: 1px solid rgba(17, 17, 17, .08); box-shadow: 0 18px 45px rgba(17, 17, 17, .05); display: flex; flex-direction: column; justify-content: space-between; min-height: 170px; gap: 18px; }
+.case-copy strong { display: block; font-size: 1rem; color: #111; }
+.case-copy span { color: #555; line-height: 1.7; font-size: .95rem; }
+.faq-grid { display: grid; gap: 16px; margin-top: 24px; }
+.faq-item { background: #fff; border-radius: 24px; border: 1px solid rgba(17, 17, 17, .09); overflow: hidden; box-shadow: 0 18px 45px rgba(17, 17, 17, .05); }
+.faq-item button { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 24px; font-size: 1rem; border: 0; background: transparent; cursor: pointer; color: #111; }
+.faq-answer { padding: 0 24px 24px; color: #555; font-size: .95rem; line-height: 1.75; display: none; }
+.faq-item.open .faq-answer { display: block; }
+.footer { background: #111; color: #e2e2e2; padding: 48px 24px 56px; }
+.footer .wrapper { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.footer h3 { margin: 0 0 18px; font-size: 1rem; color: #fff; }
+.footer p, .footer a { margin: 0; color: #c8c8c8; line-height: 1.8; font-size: .95rem; }
+.footer a:hover { opacity: 1; }
+@media (max-width: 1060px) { .hero { grid-template-columns: 1fr; } .split-grid { grid-template-columns: 1fr; } .section--split .section__inner { grid-template-columns: 1fr; } }
+@media (max-width: 780px) { main { padding: 24px 18px 40px; } .site-header .wrapper, .topbar .wrapper { padding: 18px; } .nav { gap: 14px; } .hero-title { font-size: 2.8rem; } .hero-tags { grid-template-columns: 1fr; } .trust-logos { grid-template-columns: repeat(2, minmax(0, 1fr)); } .feature-row { grid-template-columns: 1fr; } .work-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<div class="page-shell">
+  <div class="topbar">
+    <div class="wrapper">
+      <div class="topbar-group">
+        <div class="topbar-item"><strong>Swiss Managed</strong></div>
+        <div class="topbar-item"><strong>Factory in Thailand</strong></div>
+        <div class="topbar-item"><strong>Premium Quality</strong></div>
+        <div class="topbar-item"><strong>Worldwide Shipping</strong></div>
+      </div>
+      <div class="topbar-links">
+        <a href="#">DE</a>
+        <a href="#">EN</a>
+      </div>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="brand">TShirtSwiss.ch</div>
+      <nav class="nav">
+        <a href="/pages/products/">Products</a>
+        <a href="/pages/industries/">Industries</a>
+        <a href="/pages/services/">Services</a>
+        <a href="/pages/about-us/">About</a>
+        <a href="/pages/production/">Production</a>
+        <a href="/pages/contact/">Contact</a>
+      </nav>
+      <a class="cta-button" href="/pages/request-a-quote/">Request a Quote</a>
+    </div>
+  </header>
+  <main>
+    <nav class="breadcrumb">
+      <a href="/pages/home/">Home</a>
+      <span>›</span>
+      <a href="/pages/industries/">Industries</a>
+      <span>›</span>
+      <span>Ecommerce Brands</span>
+    </nav>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="hero-eyebrow">ECOMMERCE BRANDS</div>
+        <h1 class="hero-title">Branded Apparel for E-commerce and Retail Success.</h1>
+        <p class="hero-subtitle">Ready-to-sell apparel and merchandise for online brands, subscription boxes and retail launches.</p>
+        <div class="hero-actions">
+          <a class="primary" href="/pages/request-a-quote/">Request a Quote</a>
+          <a class="secondary" href="/pages/products/">View Products</a>
+        </div>
+        <div class="hero-tags"><div class="hero-tag"><span>Retail-Ready Finish</span></div>
+<div class="hero-tag"><span>Brand Consistency</span></div>
+<div class="hero-tag"><span>High-Quality Production</span></div>
+<div class="hero-tag"><span>Scalable Manufacturing</span></div></div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://via.placeholder.com/1200x900?text=Ecommerce+Brands+Hero" alt="Ecommerce Brands hero image">
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="section__inner">
+        <div class="section-title">
+          <h2>Trusted by Swiss businesses across industries</h2>
+          <p>Our clients rely on Swiss-managed apparel production for consistent quality, clear communication and timely delivery.</p>
+        </div>
+        <div class="trust-logos">
+          <span>Implenia</span><span>HRS Real Estate AG</span><span>WALO</span><span>Frutiger</span><span>BÜRGI</span><span>STRABAG</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__inner">
+        <div class="section-title">
+          <h2>Solutions for every team and role</h2>
+          <p>Custom apparel categories tailored to the way your industry works, from design to delivery.</p>
+        </div>
+        <div class="solution-grid"><article class="solution-card"><strong>Brand Launches</strong><p>Branded apparel for online store introductions.</p></article>
+<article class="solution-card"><strong>Subscription Boxes</strong><p>Premium apparel packaged for direct-to-consumer delivery.</p></article>
+<article class="solution-card"><strong>Retail Collections</strong><p>Ready-to-sell garments for e-commerce brands.</p></article>
+<article class="solution-card"><strong>Influencer Merchandise</strong><p>Strong quality for promotional product lines.</p></article>
+<article class="solution-card"><strong>Customer Giveaways</strong><p>Attractive branded apparel for loyalty activations.</p></article>
+<article class="solution-card"><strong>Packaging Integration</strong><p>Apparel production paired with premium packaging.</p></article></div>
+      </div>
+    </section>
+
+    <section class="section section--white section--split">
+      <div class="section__inner">
+        <div class="feature-copy">
+          <p class="eyebrow">Built for performance</p>
+          <h3>Workwear That Delivers Safety, Comfort and Durability.</h3>
+          <p>We combine Swiss quality standards with expert manufacturing in Thailand to deliver apparel that meets the demands of your daily operations.</p>
+          <ul class="bullet-list">
+            <li>Strong, durable fabrics for heavy use</li>
+            <li>Reinforced stitching and stress points</li>
+            <li>High visibility options for safety-critical roles</li>
+            <li>Custom branding with embroidery or printing</li>
+            <li>Functional designs with practical pockets</li>
+            <li>Comfortable fit for all-day performance</li>
+          </ul>
+        </div>
+        <div class="quote-card">
+          <h3>Request a Quote</h3>
+          <p>Get your custom workwear quote in 24 hours.</p>
+          <ul>
+            <li>Tell us your needs</li>
+            <li>Receive expert advice</li>
+            <li>Get your personalized quote</li>
+            <li>On-time production & delivery</li>
+          </ul>
+          <a href="/pages/request-a-quote/">Request a Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__inner">
+        <div class="section-title">
+          <h2>Designed for your industry standards</h2>
+          <p>Premium apparel solutions that align with your safety, durability and brand requirements.</p>
+        </div>
+        <div class="feature-row">
+          <div class="feature-tile"><strong>Safety First</strong><p>High-visibility options and protective features for demanding environments.</p></div>
+          <div class="feature-tile"><strong>All Weather</strong><p>Workwear designed to perform in every season and condition.</p></div>
+          <div class="feature-tile"><strong>Easy Care</strong><p>Apparel built to stay reliable and low-maintenance through repeated use.</p></div>
+          <div class="feature-tile"><strong>Team Identity</strong><p>Custom branding for a polished, professional look.</p></div>
+          <div class="feature-tile"><strong>Sustainable Options</strong><p>Eco-friendly fabrics and finishes are available for responsible brands.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="section__inner">
+        <div class="section-title">
+          <h2>Real projects. Real results.</h2>
+          <p>See how Swiss-managed apparel manufacturing supports strong, consistent outcomes for your industry.</p>
+        </div>
+        <div class="work-grid"><article class="case-card"><div class="case-copy"><strong>Ecommerce Launch Kit</strong><span>Zurich, Switzerland</span></div></article>
+<article class="case-card"><div class="case-copy"><strong>Subscription Box Apparel</strong><span>Basel, Switzerland</span></div></article>
+<article class="case-card"><div class="case-copy"><strong>Retail Brand Collection</strong><span>Bern, Switzerland</span></div></article>
+<article class="case-card"><div class="case-copy"><strong>Influencer Merch Range</strong><span>Lausanne, Switzerland</span></div></article></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__inner">
+        <div class="section-title">
+          <h2>Common questions</h2>
+          <p>Answers to the most frequent questions about production, timelines and custom apparel.</p>
+        </div>
+        <div class="faq-grid"><div class="faq-item"><button type="button"><span>What is the minimum order quantity (MOQ)?</span><span>+</span></button><div class="faq-answer"><p>MOQ depends on product type and materials. We support both small sample runs and larger production orders.</p></div></div>
+<div class="faq-item"><button type="button"><span>Can you add our company logo?</span><span>+</span></button><div class="faq-answer"><p>Yes, we apply logos through printing, embroidery or labels based on the product and application.</p></div></div>
+<div class="faq-item"><button type="button"><span>Do you offer high-visibility workwear?</span><span>+</span></button><div class="faq-answer"><p>Yes, we produce hi-vis apparel with reflective details for safety and compliance.</p></div></div>
+<div class="faq-item"><button type="button"><span>How long is the production time?</span><span>+</span></button><div class="faq-answer"><p>Production timelines depend on order size and complexity, but we prioritize fast, reliable delivery.</p></div></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div>
+        <h3>About</h3>
+        <p>Swiss-managed premium apparel manufacturing in Thailand.</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>swiss@tshirtswiss.ch<br>+41 79 000 00 00</p>
+      </div>
+      <div>
+        <h3>Office</h3>
+        <p>Swiss HQ + Thailand Factory</p>
+      </div>
+    </div>
+  </footer>
+</div>
+<script>
+document.querySelectorAll('.faq-item button').forEach(function(button) {
+  button.addEventListener('click', function() {
+    var item = button.closest('.faq-item');
+    if (item) {
+      item.classList.toggle('open');
+    }
+  });
+});
+</script>
+</body>
+</html>

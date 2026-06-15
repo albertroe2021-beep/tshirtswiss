@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promotional Merchandise | TShirtSwiss.ch</title>
+  <style>
+:root {
+  color-scheme: light;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #111;
+  background: #f7f7f7;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: #f7f7f7; color: #111; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+.page-shell { display: flex; flex-direction: column; min-height: 100vh; }
+.topbar { background: #111; color: #f5f5f5; font-size: .82rem; letter-spacing: .12em; text-transform: uppercase; }
+.topbar .wrapper { max-width: 1280px; margin: 0 auto; padding: 12px 24px; display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; align-items: center; }
+.topbar .status { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+.topbar .status span { opacity: .78; }
+.site-header { background: #fff; position: sticky; top: 0; z-index: 30; border-bottom: 1px solid rgba(17,17,17,.08); }
+.site-header .wrapper { max-width: 1280px; margin: 0 auto; padding: 24px; display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+.brand { font-size: 1.05rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: #111; }
+.nav { display: flex; gap: 28px; flex-wrap: wrap; font-size: .95rem; align-items: center; }
+.nav a { color: #111; opacity: .88; transition: opacity .2s, color .2s; }
+.nav a:hover { opacity: 1; color: #D52B1E; }
+.nav-dropdown { position: relative; }
+.nav-dropdown > a::after { content: '▾'; margin-left: 8px; font-size: .75rem; opacity: .75; }
+.dropdown-menu { position: absolute; top: 100%; left: 0; min-width: 220px; background: #fff; border: 1px solid rgba(17,17,17,.12); border-radius: 20px; box-shadow: 0 24px 60px rgba(17,17,17,.12); opacity: 0; visibility: hidden; transform: translateY(12px); transition: opacity .2s ease, visibility .2s ease, transform .2s ease; z-index: 100; padding: 10px 0; }
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+.dropdown-menu a { display: block; padding: 12px 22px; color: #111; opacity: .9; white-space: nowrap; transition: background .2s, opacity .2s; }
+.dropdown-menu a:hover { background: rgba(213,43,30,.06); opacity: 1; }
+.cta-button { padding: 16px 30px; background: #D52B1E; color: #fff; border-radius: 999px; font-weight: 700; box-shadow: 0 20px 45px rgba(213,43,30,.18); }
+main { flex: 1; max-width: 1280px; margin: 0 auto; padding: 36px 24px 60px; }
+.breadcrumb { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; font-size: .92rem; color: #555; margin: 24px 0 14px; }
+.breadcrumb a { color: #111; opacity: .8; }
+.breadcrumb span { opacity: .65; }
+.hero { display: grid; grid-template-columns: 1.05fr .95fr; gap: 36px; align-items: center; min-height: 78vh; padding: 40px 0 48px; }
+.hero-copy { max-width: 670px; }
+.hero-eyebrow { font-size: .82rem; text-transform: uppercase; letter-spacing: .26em; color: #D52B1E; font-weight: 700; margin-bottom: 20px; }
+.hero-title { font-size: clamp(3rem, 4vw, 4.8rem); line-height: .96; margin: 0; color: #111; }
+.hero-subtitle { margin: 24px 0 0; font-size: 1.15rem; line-height: 1.8; color: #4a4a4a; max-width: 45rem; }
+.hero-text { margin: 32px 0 0; font-size: 1rem; line-height: 1.8; color: #555; max-width: 40rem; }
+.feature-list { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; margin-top: 34px; }
+.feature-card { background: #fff; border: 1px solid rgba(17,17,17,.08); border-radius: 16px; padding: 18px 16px; display: flex; flex-direction: column; gap: 10px; min-height: 120px; box-shadow: 0 18px 40px rgba(17,17,17,.05); }
+.feature-card strong { font-size: .95rem; display: block; color: #111; }
+.feature-card span { color: #555; font-size: .92rem; line-height: 1.6; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 30px; }
+.hero-actions a { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border-radius: 999px; padding: 16px 28px; font-weight: 700; transition: transform .2s, box-shadow .2s; }
+.hero-actions a.primary { background: #D52B1E; color: #fff; }
+.hero-actions a.secondary { border: 1px solid rgba(17,17,17,.12); color: #111; background: #fff; }
+.hero-visual { border-radius: 32px; overflow: hidden; background: linear-gradient(180deg, #f5f5f5 0%, #e7e7e7 100%); box-shadow: 0 35px 100px rgba(17,17,17,.12); }
+.hero-visual img { width: 100%; height: auto; }
+.section { padding: 72px 0; }
+.section--white { background: #fff; }
+.section__inner { display: grid; gap: 36px; max-width: 1280px; margin: 0 auto; }
+.section--split .section__inner { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center; }
+.section-title { display: flex; flex-direction: column; gap: 18px; }
+.section-title h2 { margin: 0; font-size: clamp(2.4rem, 3vw, 3.2rem); line-height: 1.04; font-weight: 800; color: #111; }
+.section-title p { margin: 0; max-width: 44rem; color: #545454; line-height: 1.85; font-size: 1rem; }
+.section .section-image { border-radius: 28px; overflow: hidden; }
+.section .section-image img { width: 100%; height: auto; display: block; }
+.process-grid { display: grid; gap: 18px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 28px; }
+.process-step { background: #fff; border: 1px solid rgba(17,17,17,.08); border-radius: 24px; padding: 24px; display: flex; gap: 18px; align-items: flex-start; box-shadow: 0 18px 45px rgba(17,17,17,.05); }
+.process-step .icon { min-width: 52px; min-height: 52px; border-radius: 16px; background: #F9F0EF; color: #D52B1E; display: grid; place-items: center; font-weight: 800; }
+.process-step h3 { margin: 0 0 10px; font-size: 1rem; font-weight: 700; color: #111; }
+.process-step p { margin: 0; color: #575757; line-height: 1.75; font-size: .95rem; }
+.split-grid { display: grid; gap: 32px; grid-template-columns: 1.2fr .8fr; align-items: center; }
+.benefits-block { display: grid; gap: 24px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.benefit-card { background: #fff; border-radius: 28px; padding: 28px; box-shadow: 0 24px 70px rgba(17,17,17,.06); }
+.benefit-card h3 { margin: 0 0 14px; font-size: 1.1rem; font-weight: 700; color: #111; }
+.benefit-card p { margin: 0; color: #575757; line-height: 1.8; font-size: .96rem; }
+.applications { display: grid; gap: 18px; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 28px; }
+.application { background: #fff; border-radius: 24px; padding: 22px; border: 1px solid rgba(17,17,17,.08); box-shadow: 0 20px 50px rgba(17,17,17,.05); display: flex; flex-direction: column; gap: 12px; }
+.application h3 { margin: 0; font-size: 1rem; color: #111; }
+.application p { margin: 0; color: #5a5a5a; font-size: .95rem; line-height: 1.75; }
+.ideal-card { background: #fff; border-radius: 28px; padding: 28px; border: 1px solid rgba(17,17,17,.08); box-shadow: 0 20px 50px rgba(17,17,17,.05); }
+.ideal-card h3 { margin: 0 0 18px; font-size: 1.2rem; color: #111; }
+.ideal-card ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; }
+.ideal-card li { display: flex; gap: 12px; align-items: flex-start; color: #4e4e4e; line-height: 1.7; }
+.ideal-card li::before { content: '•'; color: #D52B1E; font-weight: 800; margin-top: 2px; }
+.trust-row { display: grid; gap: 24px; grid-template-columns: 1.4fr .6fr; align-items: center; }
+.trust-copy { display: grid; gap: 18px; }
+.trust-copy h2 { margin: 0; font-size: clamp(2.3rem, 3vw, 2.9rem); line-height: 1.05; color: #111; }
+.trust-copy p { margin: 0; color: #4c4c4c; line-height: 1.8; font-size: 1rem; }
+.metrics { display: grid; gap: 18px; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 28px; }
+.metric { background: #fff; border-radius: 24px; padding: 28px; border: 1px solid rgba(17,17,17,.08); display: grid; gap: 12px; box-shadow: 0 18px 45px rgba(17,17,17,.05); }
+.metric .label { color: #555; font-size: .95rem; line-height: 1.6; }
+.cta-panel { background: #111; color: #fff; border-radius: 36px; padding: 50px 42px; display: grid; grid-template-columns: 1.45fr .55fr; gap: 36px; align-items: center; }
+.cta-panel h2 { margin: 0; font-size: clamp(2.4rem, 3vw, 3.1rem); line-height: 1.05; }
+.cta-panel p { margin: 20px 0 0; color: #d7d7d7; line-height: 1.8; max-width: 38rem; }
+.cta-panel .cta-group { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 30px; }
+.cta-panel a { display: inline-flex; align-items: center; justify-content: center; padding: 16px 28px; border-radius: 999px; font-weight: 700; }
+.cta-panel a.primary { background: #D52B1E; color: #fff; }
+.accordion { margin-top: 32px; }
+.accordion-item { border-top: 1px solid rgba(17,17,17,.12); }
+.accordion-item button { width: 100%; padding: 20px 0; text-align: left; border: none; background: transparent; font-size: 1rem; font-weight: 700; color: #111; display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
+.accordion-item p { margin: 0; padding: 0 0 22px; color: #575757; line-height: 1.8; }
+.accordion-item button::after { content: '+'; color: #D52B1E; font-size: 1.3rem; }
+.accordion-item button[aria-expanded='true']::after { content: '-'; }
+.footer { background: #111; color: #d8d8d8; padding: 60px 24px; }
+.footer .wrapper { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.footer h3 { margin: 0 0 18px; color: #fff; font-size: 1rem; }
+.footer p, .footer a { margin: 0 0 14px; color: #d8d8d8; line-height: 1.8; font-size: .95rem; }
+.footer a:hover { opacity: 1; }
+@media (max-width: 1080px) {
+  .hero { grid-template-columns: 1fr; }
+  .split-grid, .trust-row, .cta-panel { grid-template-columns: 1fr; }
+  .applications { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 720px) {
+  main { padding: 24px 18px 48px; }
+  .topbar .wrapper, .site-header .wrapper { padding-left: 18px; padding-right: 18px; }
+  .nav { gap: 14px; }
+  .hero-title { font-size: 2.8rem; }
+  .feature-list { grid-template-columns: 1fr; }
+  .applications { grid-template-columns: 1fr; }
+}
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <div class="topbar">
+      <div class="wrapper">
+        <div class="status">
+          <span>Swiss Managed</span>
+          <span>Factory in Thailand</span>
+          <span>Premium Quality</span>
+          <span>Worldwide Shipping</span>
+        </div>
+        <div class="status">
+          <span>+41 76 123 45 67</span>
+          <span>DE | EN</span>
+        </div>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="wrapper">
+        <a class="brand" href="/pages/home/index.html">TShirtSwiss.ch</a>
+        <nav class="nav">
+          <div class="nav-dropdown">
+            <a href="/pages/products/">Products</a>
+            <div class="dropdown-menu">
+              <a href="/pages/products/custom-t-shirts/">Custom T-Shirts</a>
+              <a href="/pages/products/custom-polos/">Custom Polos</a>
+              <a href="/pages/products/hoodies-sweatshirts/">Hoodies & Sweatshirts</a>
+              <a href="/pages/products/jackets-softshells/">Jackets & Softshells</a>
+              <a href="/pages/products/workwear/">Workwear</a>
+              <a href="/pages/products/healthcare-uniforms/">Healthcare Uniforms</a>
+              <a href="/pages/products/medical-scrubs/">Medical Scrubs</a>
+              <a href="/pages/products/corporate-apparel/">Corporate Apparel</a>
+              <a href="/pages/products/sportswear/">Sportswear</a>
+              <a href="/pages/products/rashguards/">Rashguards</a>
+              <a href="/pages/products/mma-shorts/">MMA Shorts</a>
+              <a href="/pages/products/muay-thai-shorts/">Muay Thai Shorts</a>
+              <a href="/pages/products/private-label-clothing/">Private Label Clothing</a>
+              <a href="/pages/products/promotional-merchandise/">Promotional Merchandise</a>
+              <a href="/pages/products/tote-bags/">Tote Bags</a>
+              <a href="/pages/products/caps-headwear/">Caps & Headwear</a>
+
+            </div>
+          </div>
+          <a href="/pages/industries/">Industries</a>
+          <a href="/pages/services/">Services</a>
+          <a href="/pages/about-us/">About Us</a>
+          <a href="/pages/resources/">Resources</a>
+        </nav>
+        <a class="cta-button" href="/pages/request-a-quote/">Request a Quote</a>
+      </div>
+    </header>
+    <main>
+      <div class="breadcrumb">
+        <a href="/pages/home/index.html">Home</a>
+        <span>/</span>
+        <a href="/pages/products/">Products</a>
+        <span>/</span>
+        <span>Promotional Merchandise</span>
+      </div>
+
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="hero-eyebrow">Promotional Merchandise</div>
+          <h1 class="hero-title">Promotional Merchandise</h1>
+          <div class="hero-subtitle">Branded merchandise for events, campaigns and retail.</div>
+          <p class="hero-text">Swiss-managed promotional merchandise production for high-quality branded items and apparel that support campaigns and brand visibility.</p>
+          <div class="feature-list">
+            <div class="feature-card"><strong>Vibrant colors</strong><span>Bright, consistent prints for every design.</span></div>
+            <div class="feature-card"><strong>Durable & long lasting</strong><span>Premium inks and fabrics that keep their quality.</span></div>
+            <div class="feature-card"><strong>Cost effective</strong><span>Smart production methods that preserve value.</span></div>
+            <div class="feature-card"><strong>Bulk order specialists</strong><span>Reliable supply for larger apparel runs.</span></div>
+            <div class="feature-card"><strong>Consistent quality</strong><span>Swiss-managed checks at every step.</span></div>
+
+          </div>
+          <div class="hero-actions">
+            <a class="primary" href="/pages/request-a-quote/">Request a Quote</a>
+            <a class="secondary" href="/pages/contact/">Contact Us</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="https://via.placeholder.com/1080x760.png?text=Promotional+Merchandise" alt="Promotional Merchandise image">
+        </div>
+      </section>
+
+      <section class="section section--white section--split">
+        <div class="section__inner">
+          <div>
+            <div class="section-title"><h2>Merchandise designed for strong brand recall</h2><p>We produce promotional garments and goods that maintain premium quality while driving brand awareness at events, activations and retail.</p></div>
+          </div>
+          <div class="section-image"><img src="https://via.placeholder.com/1200x700.png?text=Merchandise" alt="Merchandise"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__inner">
+          <div class="section-title"><h2>Our Promotional Merchandise Process</h2><p>We manage every stage of production with transparent communication, premium materials and Swiss-managed quality control.</p></div>
+          <div class="process-grid">
+            <article class="process-step"><div class="icon">1</div><div><h3>Campaign briefing</h3><p>Define your event, audience and merchandise goals.</p></div></article>
+            <article class="process-step"><div class="icon">2</div><div><h3>Product selection</h3><p>Choose the right apparel and items for your brand.</p></div></article>
+            <article class="process-step"><div class="icon">3</div><div><h3>Brand application</h3><p>Apply logos and artwork with clear, vibrant results.</p></div></article>
+            <article class="process-step"><div class="icon">4</div><div><h3>Production oversight</h3><p>Manufacture merchandise with consistent quality standards.</p></div></article>
+            <article class="process-step"><div class="icon">5</div><div><h3>Quality checking</h3><p>Verify durability and brand presentation before shipping.</p></div></article>
+            <article class="process-step"><div class="icon">6</div><div><h3>Distribution</h3><p>Deliver promotional goods ready for event use or retail.</p></div></article>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--white">
+        <div class="section__inner split-grid">
+          <div class="benefits-block">
+            <article class="benefit-card"><h3>Premium inks & materials</h3><p>We use premium inks, fabrics and finishes that support long-term durability and sharp branding for every product.</p></article>
+            <article class="benefit-card"><h3>Scalable production</h3><p>From sample runs to larger volumes, our Swiss-managed factory process supports consistent quality and reliable delivery.</p></article>
+          </div>
+          <div class="section-image"><img src="https://via.placeholder.com/1200x760.png?text=Premium+Materials" alt="Premium materials image"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__inner split-grid">
+          <div>
+            <div class="section-title"><h2>One Method. Many Applications.</h2><p>Our production expertise applies to a wide range of brand applications and apparel categories.</p></div>
+            <div class="applications">
+              <article class="application"><h3>Workwear & Uniforms</h3><p>Professional uniforms and branded workwear.</p></article>
+              <article class="application"><h3>Corporate Apparel</h3><p>Executive uniforms and office wear.</p></article>
+              <article class="application"><h3>Sportswear & Activewear</h3><p>Performance apparel for teams and brands.</p></article>
+              <article class="application"><h3>Promotional T-Shirts</h3><p>Event apparel and campaign garments.</p></article>
+              <article class="application"><h3>Event & Merchandise</h3><p>Branded merchandise for activations.</p></article>
+              <article class="application"><h3>School & University Wear</h3><p>Team and campus apparel.</p></article>
+
+            </div>
+          </div>
+          <div class="ideal-card">
+            <h3>Ideal for</h3>
+            <ul>
+              <li>Large quantity orders</li>
+              <li>Simple to complex designs</li>
+              <li>Multi-color logos and artwork</li>
+              <li>Bold, vibrant and durable prints</li>
+              <li>Long term brand visibility</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--white">
+        <div class="section__inner trust-row">
+          <div class="trust-copy">
+            <div class="section-title"><h2>Strict Quality Control At Every Step</h2><p>We follow strict quality control procedures across the entire manufacturing process. Every detail is reviewed so your product ships with the quality your brand deserves.</p></div>
+            <div class="metrics">
+              <div class="metric"><div class="label">Pre-production sample approval</div></div>
+              <div class="metric"><div class="label">In-process quality inspections</div></div>
+              <div class="metric"><div class="label">Color accuracy and consistency checks</div></div>
+              <div class="metric"><div class="label">Final inspection before packing</div></div>
+            </div>
+          </div>
+          <div class="section-image"><img src="https://via.placeholder.com/1200x760.png?text=Quality+Inspection" alt="Quality inspection"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__inner">
+          <div class="section-title"><h2>Sustainable Printing. Responsible Production.</h2><p>We care about people and the planet, which is why we use eco-conscious inks, reduce waste and manage production ethically.</p></div>
+          <div class="applications">
+              <article class="application"><h3>Eco-Friendly inks available</h3><p>Low-impact inks for responsible production.</p></article>
+              <article class="application"><h3>Reduced water consumption</h3><p>Efficient dyeing and finishing practices.</p></article>
+              <article class="application"><h3>Responsible waste management</h3><p>Minimized waste from fabric to packaging.</p></article>
+              <article class="application"><h3>Ethical labor practices</h3><p>Swiss-managed teams monitoring fair production.</p></article>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--white">
+        <div class="section__inner">
+          <div class="section-title"><h2>Frequently Asked Questions</h2><p>Answers to the most common product and production questions.</p></div>
+          <div class="accordion">
+            <div class="accordion-item"><button aria-expanded="false">What is the minimum order quantity (MOQ)?</button><p>Minimum quantities vary by product. We can support both smaller sample runs and larger production batches.</p></div>
+            <div class="accordion-item"><button aria-expanded="false">How many colors can I use?</button><p>Most products support multiple colors, including complex logos and multi-color artwork.</p></div>
+            <div class="accordion-item"><button aria-expanded="false">How long does production take?</button><p>Typical lead times depend on product type and order size, but we target fast, reliable delivery.</p></div>
+            <div class="accordion-item"><button aria-expanded="false">What fabrics are available?</button><p>We offer a range of premium fabrics from cotton blends to technical performance textiles.</p></div>
+            <div class="accordion-item"><button aria-expanded="false">Is this durable?</button><p>Yes — all products are manufactured with durable materials, premium inks and Swiss-managed quality control.</p></div>
+            <div class="accordion-item"><button aria-expanded="false">Can you match Pantone colors?</button><p>We can match Pantone colors for many print and branding processes when required.</p></div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__inner cta-panel">
+          <div>
+            <h2>Ready to make your product vision real?</h2>
+            <p>Get a free quote within 24 hours and start your Swiss-managed apparel production with confidence.</p>
+            <div class="cta-group">
+              <a class="primary" href="/pages/request-a-quote/">Request a Quote</a>
+            </div>
+          </div>
+          <div>
+            <div class="section-image"><img src="https://via.placeholder.com/900x560.png?text=Quote+Ready" alt="Ready to quote"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div>
+          <h3>About TShirtSwiss.ch</h3>
+          <p>Swiss-managed premium apparel manufacturing in Thailand for B2B clients seeking quality, control, and global delivery.</p>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <a href="/pages/production/">Production</a>
+          <a href="/pages/services/">Services</a>
+          <a href="/pages/request-a-quote/">Quote</a>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p>hello@tshirtswiss.ch</p>
+          <p>+41 76 123 45 67</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
