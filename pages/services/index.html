@@ -3,129 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services</title>
+  <title>Apparel Manufacturing Services | OEM, Private Label, Printing & Quality Control</title>
+  <meta name="description" content="TShirt Swiss provides Swiss-managed apparel manufacturing services in Thailand including OEM clothing production, private label manufacturing, product development, sampling, printing, embroidery, quality control, packaging and worldwide shipping.">
   <style>
-:root{color-scheme:light dark;}
-body{margin:0;padding:0;background:#f4f4f4;color:#111;font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;}
-*{box-sizing:border-box;}
-img{max-width:100%;height:auto;display:block;}
-a{color:inherit;text-decoration:none;}
-.page-shell{display:flex;flex-direction:column;min-height:100vh;background:#f4f4f4;}
-.topbar{background:#111;color:#f5f5f5;font-size:.9rem;}
-.topbar .wrapper{max-width:1200px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
-.topbar-group{display:flex;flex-wrap:wrap;gap:18px;align-items:center;}
-.topbar-item{display:inline-flex;align-items:center;gap:8px;color:#e0e0e0;opacity:.9;}
-.topbar-item strong{color:#fff;font-weight:700;}
-.topbar-links{display:flex;gap:16px;align-items:center;}
-.topbar-links a{color:#f5f5f5;opacity:.75;padding:6px 10px;border-radius:999px;transition:opacity .2s,background .2s;}
-.topbar-links a:hover{opacity:1;background:rgba(255,255,255,.08);}
-.site-header{background:#fff;position:sticky;top:0;z-index:20;box-shadow:0 18px 50px rgba(0,0,0,.08);}
-.site-header .wrapper{max-width:1200px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
-.brand{font-weight:800;font-size:1.1rem;letter-spacing:.16em;text-transform:uppercase;color:#111;}
-.nav{display:flex;gap:24px;flex-wrap:wrap;font-size:.95rem;}
-.nav a{color:#111;opacity:.85;transition:opacity .2s,color .2s;}
-.nav a:hover{opacity:1;color:#D52B1E;}
-.nav-dropdown{position:relative;}
-.nav-dropdown > a::after{content:'▾';margin-left:6px;font-size:.7rem;opacity:.7;transition:opacity .2s;}
-.nav-dropdown:hover > a::after{opacity:1;}
-.dropdown-menu{position:absolute;top:100%;left:0;min-width:220px;background:#fff;border:1px solid rgba(17,17,17,.12);border-radius:20px;box-shadow:0 24px 60px rgba(17,17,17,.12);opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .2s ease,visibility .2s ease,transform .2s ease;z-index:100;padding:10px 0;}
-.nav-dropdown:hover .dropdown-menu,.nav-dropdown:focus-within .dropdown-menu{opacity:1;visibility:visible;transform:translateY(0);}
-.dropdown-menu a{display:block;padding:12px 22px;color:#111;opacity:.9;white-space:nowrap;font-size:.92rem;transition:background .2s,opacity .2s;}
-.dropdown-menu a:hover{background:rgba(213,43,30,.06);opacity:1;}
-.nav a[href$='about-us/'], .nav a[href$='contact/'] { margin-right: 0; }
-.nav a[href$='about-us/']::after,
-.nav a[href$='contact/']::after { content: ''; }
-.cta-button{padding:14px 26px;background:#D52B1E;color:#fff;border-radius:999px;font-weight:700;font-size:.95rem;white-space:nowrap;box-shadow:0 16px 30px rgba(213,43,30,.18);}
-main{flex:1;max-width:1320px;margin:0 auto;padding:32px 24px;}
-.hero{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;min-height:calc(100vh - 220px);padding:60px 0 40px;}
-.hero-content{max-width:680px;}
-.hero-eyebrow{font-size:.82rem;text-transform:uppercase;letter-spacing:.24em;color:#D52B1E;margin-bottom:18px;font-weight:700;}
-.hero h1{font-size:4rem;line-height:1.02;margin:0;color:#111;letter-spacing:-.03em;}
-.hero p{margin:24px 0 0;font-size:1.1rem;line-height:1.9;color:#444;max-width:42rem;}
-.section-footer{margin-top:32px;}
-.section-footer .button{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 30px;border-radius:999px;font-weight:700;transition:transform .2s,box-shadow .2s;}
-.section-footer .button.primary{background:#D52B1E;color:#fff;}
-.section-footer .button.secondary{background:transparent;color:#111;border:1px solid rgba(17,17,17,.12);}
-.hero-visual{border-radius:28px;overflow:hidden;box-shadow:0 30px 90px rgba(26,26,26,.14);}
-.hero-visual img{width:100%;height:auto;display:block;}
-.section{padding:72px 0;border-bottom:1px solid rgba(26,26,26,.08);background:#f4f4f4;}
-.section--white{background:#fff;}
-.section__inner{display:grid;gap:36px;max-width:1200px;margin:0 auto;}
-.section--split .section__inner{grid-template-columns:1fr 1fr;align-items:center;}
-.section h2{margin:0 0 22px;font-size:2.6rem;line-height:1.05;font-weight:700;color:#111;}
-.section p{margin:0;color:#4d4d4d;font-size:1rem;line-height:1.8;max-width:44rem;}
-.section .section-image{border-radius:26px;overflow:hidden;box-shadow:0 20px 50px rgba(26,26,26,.1);}
-.section .section-image img{width:100%;display:block;}
-.grid-cards{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
-.card{background:#fff;border-radius:24px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;min-height:240px;box-shadow:0 18px 45px rgba(26,26,26,.08);}
-.card h3{margin:0 0 12px;font-size:1.1rem;font-weight:700;color:#111;}
-.card p{margin:0;color:#5d5d5d;line-height:1.75;font-size:.96rem;}
-.footer{background:#111;color:#e2e2e2;padding:60px 24px;}
-.footer .wrapper{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;}
-.footer h3{margin:0 0 18px;font-size:1rem;color:#fff;}
-.footer p, .footer a{margin:0;color:#c8c8c8;line-height:1.8;font-size:.95rem;}
-.footer a{opacity:.9;}
-.footer a:hover{opacity:1;}
-@media(max-width:1024px){.hero{grid-template-columns:1fr;min-height:auto;padding-top:50px;} .section--split .section__inner{grid-template-columns:1fr;} .footer .wrapper{grid-template-columns:1fr;}.topbar .wrapper{justify-content:center;}}
-@media(max-width:720px){main{padding:24px 18px;} .site-header .wrapper,.topbar .wrapper{flex-direction:column;align-items:flex-start;} .nav{gap:14px;} .hero{gap:24px;} .hero h1{font-size:2.7rem;} .section{padding:48px 0;}}
-</style>
+:root{color-scheme:light;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#111;background:#f4f4f4}*{box-sizing:border-box}body{margin:0;background:#f4f4f4}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.topbar{background:#111;color:#fff;font-size:.85rem}.topbar .wrapper,.site-header .wrapper,main,.footer .wrapper{max-width:1200px;margin:0 auto}.topbar .wrapper{padding:10px 24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.site-header{background:#fff;position:sticky;top:0;z-index:20;box-shadow:0 18px 50px rgba(0,0,0,.08)}.site-header .wrapper{padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.brand{font-weight:800;letter-spacing:.16em;text-transform:uppercase}.nav{display:flex;gap:22px;flex-wrap:wrap}.nav a:hover{color:#D52B1E}.cta,.button{display:inline-flex;padding:14px 26px;background:#D52B1E;color:#fff;border-radius:999px;font-weight:700}.button.secondary{background:#fff;color:#111;border:1px solid rgba(17,17,17,.14)}main{padding:32px 24px}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:64px 0}.eyebrow{font-size:.82rem;text-transform:uppercase;letter-spacing:.24em;color:#D52B1E;font-weight:700;margin-bottom:18px}h1{font-size:clamp(3rem,5vw,4.7rem);line-height:1;margin:0}h2{font-size:clamp(2rem,3vw,2.8rem);line-height:1.08;margin:0 0 22px}h3{margin:0 0 12px;font-size:1.15rem}p{color:#4d4d4d;line-height:1.85;font-size:1rem}.lead{font-size:1.12rem}.section{padding:72px 0;border-top:1px solid rgba(17,17,17,.08)}.image{border-radius:28px;overflow:hidden;box-shadow:0 30px 90px rgba(26,26,26,.14);background:#ddd}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:24px}.card{background:#fff;border-radius:24px;padding:28px;box-shadow:0 18px 45px rgba(26,26,26,.08)}.card a{color:#D52B1E;font-weight:700}.split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.footer{background:#111;color:#ddd;padding:60px 24px;margin-top:50px}.footer .wrapper{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.footer p,.footer a{color:#c8c8c8;line-height:1.8}@media(max-width:900px){.hero,.split,.footer .wrapper{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
-<div class="page-shell">
-<div class="topbar">
-  <div class="wrapper">
-    <div class="topbar-group">
-      <div class="topbar-item"><strong>Swiss Managed</strong></div>
-      <div class="topbar-item"><strong>Factory in Thailand</strong></div>
-      <div class="topbar-item"><strong>Premium Quality</strong></div>
-      <div class="topbar-item"><strong>Worldwide Shipping</strong></div>
-    </div>
-    <div class="topbar-links">
-      <a href="#">DE</a>
-      <a href="#">EN</a>
-    </div>
-  </div>
-</div>
-<header class="site-header"><div class="wrapper"><div class="brand">TShirtSwiss.ch</div><nav class="nav"><div class="nav-dropdown"><a href="/pages/products/">Products</a><div class="dropdown-menu"><a href="/pages/products/custom-t-shirts/">Custom T-Shirts</a><a href="/pages/products/custom-polos/">Custom Polos</a><a href="/pages/products/hoodies-sweatshirts/">Hoodies & Sweatshirts</a><a href="/pages/products/jackets-softshells/">Jackets & Softshells</a><a href="/pages/products/workwear/">Workwear</a><a href="/pages/products/healthcare-uniforms/">Healthcare Uniforms</a><a href="/pages/products/medical-scrubs/">Medical Scrubs</a><a href="/pages/products/corporate-apparel/">Corporate Apparel</a><a href="/pages/products/sportswear/">Sportswear</a><a href="/pages/products/rashguards/">Rashguards</a><a href="/pages/products/mma-shorts/">MMA Shorts</a><a href="/pages/products/muay-thai-shorts/">Muay Thai Shorts</a><a href="/pages/products/private-label-clothing/">Private Label Clothing</a><a href="/pages/products/promotional-merchandise/">Promotional Merchandise</a><a href="/pages/products/tote-bags/">Tote Bags</a><a href="/pages/products/caps-headwear/">Caps & Headwear</a></div></div><div class="nav-dropdown"><a href="/pages/industries/">Industries</a><div class="dropdown-menu"><a href="/pages/industries/corporate-apparel/">Corporate Apparel</a><a href="/pages/industries/healthcare/">Healthcare</a><a href="/pages/industries/hospitality/">Hospitality</a><a href="/pages/industries/sports-fitness/">Sports & Fitness</a><a href="/pages/industries/ecommerce-brands/">E-commerce Brands</a><a href="/pages/industries/events-merchandise/">Events & Merchandise</a><a href="/pages/industries/construction-trades/">Construction & Trades</a><a href="/pages/industries/combat-sports/">Combat Sports</a></div></div><div class="nav-dropdown"><a href="/pages/services/">Services</a><div class="dropdown-menu"><a href="/pages/services/screen-printing/">Screen Printing</a><a href="/pages/services/heat-transfer-printing/">Heat Transfer Printing</a><a href="/pages/services/sublimation-printing/">Sublimation Printing</a><a href="/pages/services/embroidery/">Embroidery</a><a href="/pages/services/custom-labels/">Custom Labels</a><a href="/pages/services/hang-tags/">Hang Tags</a><a href="/pages/services/packaging-solutions/">Packaging Solutions</a><a href="/pages/services/product-development/">Product Development</a><a href="/pages/services/sampling/">Sampling</a><a href="/pages/services/quality-control/">Quality Control</a><a href="/pages/services/oem-clothing-production/">OEM Clothing Production</a><a href="/pages/services/private-label-manufacturing/">Private Label Manufacturing</a><a href="/pages/services/worldwide-shipping/">Worldwide Shipping</a></div></div><a href="/pages/about-us/">About</a><a href="/pages/production/">Production</a><a href="/pages/contact/">Contact</a></nav><a class="cta-button" href="/pages/request-a-quote/">Request a Quote</a></div></header>
+<div class="topbar"><div class="wrapper"><strong>Swiss Managed</strong><strong>Factory in Thailand</strong><strong>Premium Quality</strong><strong>Worldwide Shipping</strong></div></div>
+<header class="site-header"><div class="wrapper"><div class="brand">TShirtSwiss.ch</div><nav class="nav"><a href="/pages/products/">Products</a><a href="/pages/industries/">Industries</a><a href="/pages/services/">Services</a><a href="/pages/about-us/">About</a><a href="/pages/production/">Production</a><a href="/pages/contact/">Contact</a></nav><a class="cta" href="/pages/request-a-quote/">Request a Quote</a></div></header>
 <main>
   <section class="hero">
-    <div>
-      <h1>Services</h1>
-      <p>Swiss-managed apparel production designed for reliable quality and delivery.</p>
-      <div class="section-footer"><a class="button" href="/pages/request-a-quote/">Request a Quote</a></div>
-    </div>
-    <div class="hero-visual"><div class="section-image"><img src="https://via.placeholder.com/1200x800?text=Hero+Image" alt="Hero image placeholder"></div></div>
+    <div><div class="eyebrow">Apparel Manufacturing Services</div><h1>Complete Garment Production Services in Thailand</h1><p class="lead">TShirt Swiss provides end-to-end apparel manufacturing services for brands, companies and organisations that need professional production support. Our services include OEM clothing production, private label manufacturing, product development, sampling, screen printing, embroidery, sublimation printing, heat transfer printing, custom labels, hang tags, packaging solutions, quality control and worldwide shipping.</p><p class="lead">This Services page explains how we manufacture and support your project. The Products page shows what we make, and the Industries page shows who we serve. As a Swiss-owned and Swiss-managed manufacturer based in Thailand, our service model is built for clients who want reliable communication, careful planning and premium execution.</p><div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:28px"><a class="button" href="/pages/request-a-quote/">Request a Service Quote</a><a class="button secondary" href="/pages/production/">View Production Process</a></div></div>
+    <div class="image"><img src="https://via.placeholder.com/1200x800?text=Manufacturing+Services" alt="Apparel manufacturing services in Thailand"></div>
   </section>
-  <section class="section">
-  <div class="section__inner">
-    <div>
-      <h2>Swiss-managed apparel services</h2>
-      <p>Our service portfolio supports every premium apparel production need from print to packaging.</p>
-    </div>
-    <div class="section-image"><img src="https://via.placeholder.com/1200x800?text=Portfolio+Image" alt="Portfolio image placeholder"></div>
-  </div>
-</section>
-<section class="section">
-  <div class="section__inner">
-    <div>
-      <h2>Precision and quality in execution</h2>
-      <p>Each service is delivered with Swiss project management and consistent manufacturing control.</p>
-    </div>
-    <div class="grid-cards"><div class="card"><h3>Screen Printing</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="./screen-printing/">View page</a></div><div class="card"><h3>Embroidery</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="./embroidery/">View page</a></div><div class="card"><h3>Sublimation Printing</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="./sublimation-printing/">View page</a></div><div class="card"><h3>Heat Transfer Printing</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="./heat-transfer-printing/">View page</a></div><div class="card"><h3>Private Label Manufacturing</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="./private-label-manufacturing/">View page</a></div><div class="card"><h3>OEM Clothing Production</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="./oem-clothing-production/">View page</a></div><div class="card"><h3>Custom Labels</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="./custom-labels/">View page</a></div><div class="card"><h3>Hang Tags</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="./hang-tags/">View page</a></div><div class="card"><h3>Packaging Solutions</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="./packaging-solutions/">View page</a></div><div class="card"><h3>Product Development</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="./product-development/">View page</a></div><div class="card"><h3>Sampling</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="./sampling/">View page</a></div><div class="card"><h3>Quality Control</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="./quality-control/">View page</a></div><div class="card"><h3>Worldwide Shipping</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="./worldwide-shipping/">View page</a></div></div>
-  </div>
-</section>
-<section class="section">
-  <div class="section__inner">
-    <div>
-      <h2>Comprehensive support for brands</h2>
-      <p>We handle samples, production planning, customization and logistics from one partner.</p>
-    </div>
-    <div class="section-image"><img src="https://via.placeholder.com/1200x800?text=Capability+Image" alt="Capability image placeholder"></div>
-  </div>
-</section>
 
+  <section class="section"><div class="eyebrow">Core Manufacturing Services</div><h2>OEM and Private Label Clothing Production</h2><p>Many clients come to TShirt Swiss because they need more than a finished garment. They need a production partner that can help them plan, develop, brand and repeat their apparel orders. Our OEM and private label services are designed for businesses that want custom clothing manufactured to their own requirements rather than buying generic stock products.</p><div class="grid"><div class="card"><h3>OEM Clothing Production</h3><p>OEM clothing production is suitable for clients with existing specifications, samples or technical designs. We manufacture garments according to agreed details including fabric, fit, measurements, stitching, decoration, trims, labels and packaging.</p><a href="/pages/services/oem-clothing-production/">View OEM Production</a></div><div class="card"><h3>Private Label Manufacturing</h3><p>Private label manufacturing supports brands that want garments produced under their own name. We can assist with custom neck labels, woven labels, hang tags, branded packaging and collection-ready presentation.</p><a href="/pages/services/private-label-manufacturing/">View Private Label Manufacturing</a></div><div class="card"><h3>Product Development</h3><p>We help transform sketches, references, ideas or early concepts into production-ready garment plans. This includes fabric direction, fit planning, construction details and practical manufacturing guidance.</p><a href="/pages/services/product-development/">View Product Development</a></div><div class="card"><h3>Sampling</h3><p>Sampling allows you to review fit, fabric, branding and construction before committing to bulk production. It is an important step for private label apparel, new product launches and more technical garments.</p><a href="/pages/services/sampling/">View Sampling</a></div></div></section>
+
+  <section class="section split"><div><div class="eyebrow">Decoration Services</div><h2>Printing and Embroidery for Custom Apparel</h2><p>Decoration has a major effect on how a garment looks, feels and performs. A logo that works well as embroidery may not be suitable for a large print. A full-colour sportswear design may need sublimation rather than screen printing. A corporate uniform may require subtle branding, while event merchandise may need bold visual impact.</p><p>Our team helps clients select the most suitable decoration method based on garment type, fabric, artwork, quantity, durability requirements and budget. The goal is to create branded apparel that looks professional and remains appropriate for its intended use.</p></div><div class="image"><img src="https://via.placeholder.com/1200x800?text=Printing+and+Embroidery" alt="Screen printing embroidery and apparel decoration"></div></section>
+
+  <section class="section"><div class="grid"><div class="card"><h3>Screen Printing</h3><p>Screen printing is a strong option for custom t-shirts, uniforms, promotional apparel and merchandise where clear artwork, good durability and efficient production are required.</p><a href="/pages/services/screen-printing/">View Screen Printing</a></div><div class="card"><h3>Embroidery</h3><p>Embroidery gives a premium, professional finish for polos, jackets, caps, uniforms, corporate apparel and hospitality clothing.</p><a href="/pages/services/embroidery/">View Embroidery</a></div><div class="card"><h3>Sublimation Printing</h3><p>Sublimation is ideal for performance apparel, rashguards, sportswear, fightwear and full-colour designs where the print becomes part of the fabric.</p><a href="/pages/services/sublimation-printing/">View Sublimation Printing</a></div><div class="card"><h3>Heat Transfer Printing</h3><p>Heat transfer printing is useful for names, numbers, smaller runs, technical fabrics and designs that require flexibility or special finishes.</p><a href="/pages/services/heat-transfer-printing/">View Heat Transfer Printing</a></div></div></section>
+
+  <section class="section"><div class="eyebrow">Branding and Presentation</div><h2>Labels, Hang Tags and Packaging Solutions</h2><p>Premium apparel is not only judged by the garment itself. The label, tag, packaging and presentation all influence how the product is perceived. For private label clothing and ecommerce brands, these details are essential. For corporate clients, they help reinforce professionalism and consistency.</p><div class="grid"><div class="card"><h3>Custom Labels</h3><p>Custom woven labels, printed neck labels and care labels help make the garment feel like a true branded product rather than a generic item.</p><a href="/pages/services/custom-labels/">View Custom Labels</a></div><div class="card"><h3>Hang Tags</h3><p>Hang tags can communicate brand story, product details, sizing, sustainability messaging, pricing or retail information.</p><a href="/pages/services/hang-tags/">View Hang Tags</a></div><div class="card"><h3>Packaging Solutions</h3><p>Packaging options include polybags, stickers, folded packing, cartons and brand-specific presentation for retail, wholesale or ecommerce delivery.</p><a href="/pages/services/packaging-solutions/">View Packaging Solutions</a></div></div></section>
+
+  <section class="section split"><div class="image"><img src="https://via.placeholder.com/1200x800?text=Quality+Control+Shipping" alt="Quality control and worldwide shipping"></div><div><div class="eyebrow">Quality and Delivery</div><h2>Swiss-Managed Quality Control and Worldwide Shipping</h2><p>Quality control is one of the most important services we provide. Overseas production can create risk when specifications are unclear or inspections are weak. TShirt Swiss reduces that risk through structured project management and careful checking throughout the production process.</p><p>We review garments for fabric suitability, measurements, stitching, decoration placement, colour accuracy, trims, labels, finishing and packing. We also help prepare finished goods for international shipping, giving clients a more complete production solution from Thailand to their final destination.</p><p>Our worldwide shipping support is valuable for clients in Switzerland, Europe, Australia, Asia, North America and other international markets. Whether you are shipping to one warehouse, several business locations or a fulfilment partner, we can help plan the order for practical delivery.</p></div></section>
+
+  <section class="section"><div class="grid"><div class="card"><h3>Quality Control</h3><p>Multi-stage checks help protect your brand and reduce costly production mistakes before goods are shipped.</p><a href="/pages/services/quality-control/">View Quality Control</a></div><div class="card"><h3>Worldwide Shipping</h3><p>Reliable export support for international apparel orders produced in Thailand and delivered to global clients.</p><a href="/pages/services/worldwide-shipping/">View Worldwide Shipping</a></div></div></section>
+
+  <section class="section"><div class="card"><h2>Need a Complete Apparel Manufacturing Partner?</h2><p>Tell us what you want to produce, whether you need product development or already have specifications, and what branding, packaging and shipping support you require. We will recommend the right production services for your project.</p><a class="button" href="/pages/request-a-quote/">Request a Quote</a></div></section>
 </main>
-<footer class="footer"><div class="wrapper"><div><h3>About</h3><p>Swiss-managed premium apparel manufacturing in Thailand.</p></div><div><h3>Contact</h3><p>swiss@tshirtswiss.ch<br>+41 79 000 00 00</p></div><div><h3>Office</h3><p>Swiss HQ + Thailand Factory</p></div></div></footer>
-</div>
+<footer class="footer"><div class="wrapper"><div><h3>TShirtSwiss.ch</h3><p>Swiss-managed premium apparel manufacturing services in Thailand.</p></div><div><h3>Services</h3><p>OEM, private label, sampling, printing, embroidery, labels, packaging, quality control and shipping.</p></div><div><h3>Contact</h3><p>info@tshirtswiss.ch<br><a href="/pages/request-a-quote/">Request a Quote</a></p></div></div></footer>
 </body>
 </html>
