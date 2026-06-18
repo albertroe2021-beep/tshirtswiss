@@ -3,129 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us</title>
+  <title>About TShirt Swiss | Swiss-Owned Apparel Manufacturer in Thailand</title>
+  <meta name="description" content="TShirt Swiss is a Swiss-owned and Swiss-managed apparel manufacturer in Thailand, producing premium custom clothing, uniforms, sportswear and private label garments for international clients.">
   <style>
-:root{color-scheme:light dark;}
-body{margin:0;padding:0;background:#f4f4f4;color:#111;font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;}
-*{box-sizing:border-box;}
-img{max-width:100%;height:auto;display:block;}
-a{color:inherit;text-decoration:none;}
-.page-shell{display:flex;flex-direction:column;min-height:100vh;background:#f4f4f4;}
-.topbar{background:#111;color:#f5f5f5;font-size:.9rem;}
-.topbar .wrapper{max-width:1200px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
-.topbar-group{display:flex;flex-wrap:wrap;gap:18px;align-items:center;}
-.topbar-item{display:inline-flex;align-items:center;gap:8px;color:#e0e0e0;opacity:.9;}
-.topbar-item strong{color:#fff;font-weight:700;}
-.topbar-links{display:flex;gap:16px;align-items:center;}
-.topbar-links a{color:#f5f5f5;opacity:.75;padding:6px 10px;border-radius:999px;transition:opacity .2s,background .2s;}
-.topbar-links a:hover{opacity:1;background:rgba(255,255,255,.08);}
-.site-header{background:#fff;position:sticky;top:0;z-index:20;box-shadow:0 18px 50px rgba(0,0,0,.08);}
-.site-header .wrapper{max-width:1200px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
-.brand{font-weight:800;font-size:1.1rem;letter-spacing:.16em;text-transform:uppercase;color:#111;}
-.nav{display:flex;gap:24px;flex-wrap:wrap;font-size:.95rem;}
-.nav a{color:#111;opacity:.85;transition:opacity .2s,color .2s;}
-.nav a:hover{opacity:1;color:#D52B1E;}
-.nav-dropdown{position:relative;}
-.nav-dropdown > a::after{content:'▾';margin-left:6px;font-size:.7rem;opacity:.7;transition:opacity .2s;}
-.nav-dropdown:hover > a::after{opacity:1;}
-.dropdown-menu{position:absolute;top:100%;left:0;min-width:220px;background:#fff;border:1px solid rgba(17,17,17,.12);border-radius:20px;box-shadow:0 24px 60px rgba(17,17,17,.12);opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .2s ease,visibility .2s ease,transform .2s ease;z-index:100;padding:10px 0;}
-.nav-dropdown:hover .dropdown-menu,.nav-dropdown:focus-within .dropdown-menu{opacity:1;visibility:visible;transform:translateY(0);}
-.dropdown-menu a{display:block;padding:12px 22px;color:#111;opacity:.9;white-space:nowrap;font-size:.92rem;transition:background .2s,opacity .2s;}
-.dropdown-menu a:hover{background:rgba(213,43,30,.06);opacity:1;}
-.nav a[href$='about-us/'], .nav a[href$='contact/'] { margin-right: 0; }
-.nav a[href$='about-us/']::after,
-.nav a[href$='contact/']::after { content: ''; }
-.cta-button{padding:14px 26px;background:#D52B1E;color:#fff;border-radius:999px;font-weight:700;font-size:.95rem;white-space:nowrap;box-shadow:0 16px 30px rgba(213,43,30,.18);}
-main{flex:1;max-width:1320px;margin:0 auto;padding:32px 24px;}
-.hero{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;min-height:calc(100vh - 220px);padding:60px 0 40px;}
-.hero-content{max-width:680px;}
-.hero-eyebrow{font-size:.82rem;text-transform:uppercase;letter-spacing:.24em;color:#D52B1E;margin-bottom:18px;font-weight:700;}
-.hero h1{font-size:4rem;line-height:1.02;margin:0;color:#111;letter-spacing:-.03em;}
-.hero p{margin:24px 0 0;font-size:1.1rem;line-height:1.9;color:#444;max-width:42rem;}
-.section-footer{margin-top:32px;}
-.section-footer .button{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 30px;border-radius:999px;font-weight:700;transition:transform .2s,box-shadow .2s;}
-.section-footer .button.primary{background:#D52B1E;color:#fff;}
-.section-footer .button.secondary{background:transparent;color:#111;border:1px solid rgba(17,17,17,.12);}
-.hero-visual{border-radius:28px;overflow:hidden;box-shadow:0 30px 90px rgba(26,26,26,.14);}
-.hero-visual img{width:100%;height:auto;display:block;}
-.section{padding:72px 0;border-bottom:1px solid rgba(26,26,26,.08);background:#f4f4f4;}
-.section--white{background:#fff;}
-.section__inner{display:grid;gap:36px;max-width:1200px;margin:0 auto;}
-.section--split .section__inner{grid-template-columns:1fr 1fr;align-items:center;}
-.section h2{margin:0 0 22px;font-size:2.6rem;line-height:1.05;font-weight:700;color:#111;}
-.section p{margin:0;color:#4d4d4d;font-size:1rem;line-height:1.8;max-width:44rem;}
-.section .section-image{border-radius:26px;overflow:hidden;box-shadow:0 20px 50px rgba(26,26,26,.1);}
-.section .section-image img{width:100%;display:block;}
-.grid-cards{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
-.card{background:#fff;border-radius:24px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;min-height:240px;box-shadow:0 18px 45px rgba(26,26,26,.08);}
-.card h3{margin:0 0 12px;font-size:1.1rem;font-weight:700;color:#111;}
-.card p{margin:0;color:#5d5d5d;line-height:1.75;font-size:.96rem;}
-.footer{background:#111;color:#e2e2e2;padding:60px 24px;}
-.footer .wrapper{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;}
-.footer h3{margin:0 0 18px;font-size:1rem;color:#fff;}
-.footer p, .footer a{margin:0;color:#c8c8c8;line-height:1.8;font-size:.95rem;}
-.footer a{opacity:.9;}
-.footer a:hover{opacity:1;}
-@media(max-width:1024px){.hero{grid-template-columns:1fr;min-height:auto;padding-top:50px;} .section--split .section__inner{grid-template-columns:1fr;} .footer .wrapper{grid-template-columns:1fr;}.topbar .wrapper{justify-content:center;}}
-@media(max-width:720px){main{padding:24px 18px;} .site-header .wrapper,.topbar .wrapper{flex-direction:column;align-items:flex-start;} .nav{gap:14px;} .hero{gap:24px;} .hero h1{font-size:2.7rem;} .section{padding:48px 0;}}
-</style>
+:root{color-scheme:light;} body{margin:0;background:#f4f4f4;color:#111;font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;} *{box-sizing:border-box;} img{max-width:100%;display:block;} a{color:inherit;text-decoration:none;} .page-shell{min-height:100vh;display:flex;flex-direction:column;} .topbar{background:#111;color:#f5f5f5;font-size:.9rem;} .topbar .wrapper{max-width:1200px;margin:0 auto;padding:10px 24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;} .topbar-group{display:flex;gap:18px;flex-wrap:wrap;} .topbar-links{display:flex;gap:14px;} .site-header{background:#fff;position:sticky;top:0;z-index:20;box-shadow:0 18px 50px rgba(0,0,0,.08);} .site-header .wrapper{max-width:1200px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;} .brand{font-weight:800;font-size:1.1rem;letter-spacing:.16em;text-transform:uppercase;} .nav{display:flex;gap:24px;flex-wrap:wrap;font-size:.95rem;} .nav a:hover{color:#D52B1E;} .nav-dropdown{position:relative;} .nav-dropdown>a::after{content:'▾';margin-left:6px;font-size:.7rem;} .dropdown-menu{position:absolute;top:100%;left:0;min-width:240px;background:#fff;border:1px solid rgba(17,17,17,.12);border-radius:20px;box-shadow:0 24px 60px rgba(17,17,17,.12);opacity:0;visibility:hidden;transform:translateY(12px);transition:.2s;z-index:100;padding:10px 0;} .nav-dropdown:hover .dropdown-menu{opacity:1;visibility:visible;transform:translateY(0);} .dropdown-menu a{display:block;padding:12px 22px;white-space:nowrap;} .dropdown-menu a:hover{background:rgba(213,43,30,.06);} .cta-button,.button{display:inline-flex;align-items:center;justify-content:center;padding:14px 26px;background:#D52B1E;color:#fff;border-radius:999px;font-weight:700;box-shadow:0 16px 30px rgba(213,43,30,.18);} main{flex:1;max-width:1320px;margin:0 auto;padding:32px 24px;} .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;min-height:calc(100vh - 220px);padding:60px 0 40px;} .hero-eyebrow,.eyebrow{font-size:.82rem;text-transform:uppercase;letter-spacing:.24em;color:#D52B1E;margin-bottom:18px;font-weight:700;} h1{font-size:clamp(3rem,5vw,4.8rem);line-height:1.02;margin:0;letter-spacing:-.03em;} .hero p,.lead{margin:24px 0 0;font-size:1.12rem;line-height:1.9;color:#444;max-width:48rem;} .hero-visual,.section-image{border-radius:28px;overflow:hidden;box-shadow:0 30px 90px rgba(26,26,26,.14);background:#ddd;} .section{padding:72px 0;border-bottom:1px solid rgba(26,26,26,.08);} .section--white{background:#fff;margin-left:-24px;margin-right:-24px;padding-left:24px;padding-right:24px;} .section__inner{display:grid;gap:36px;max-width:1200px;margin:0 auto;} .section--split .section__inner{grid-template-columns:1fr 1fr;align-items:center;} h2{margin:0 0 22px;font-size:clamp(2rem,3vw,2.8rem);line-height:1.08;} h3{margin:0 0 12px;font-size:1.15rem;} p{color:#4d4d4d;font-size:1rem;line-height:1.85;} .grid-cards{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));} .card{background:#fff;border-radius:24px;padding:28px;box-shadow:0 18px 45px rgba(26,26,26,.08);} .section--white .card{background:#f7f7f7;} .footer{background:#111;color:#e2e2e2;padding:60px 24px;} .footer .wrapper{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;} .footer p,.footer a{color:#c8c8c8;line-height:1.8;font-size:.95rem;} @media(max-width:1024px){.hero,.section--split .section__inner{grid-template-columns:1fr;min-height:auto}.footer .wrapper{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
 <div class="page-shell">
-<div class="topbar">
-  <div class="wrapper">
-    <div class="topbar-group">
-      <div class="topbar-item"><strong>Swiss Managed</strong></div>
-      <div class="topbar-item"><strong>Factory in Thailand</strong></div>
-      <div class="topbar-item"><strong>Premium Quality</strong></div>
-      <div class="topbar-item"><strong>Worldwide Shipping</strong></div>
-    </div>
-    <div class="topbar-links">
-      <a href="#">DE</a>
-      <a href="#">EN</a>
-    </div>
-  </div>
-</div>
-<header class="site-header"><div class="wrapper"><div class="brand">TShirtSwiss.ch</div><nav class="nav"><div class="nav-dropdown"><a href="/pages/products/">Products</a><div class="dropdown-menu"><a href="/pages/products/custom-t-shirts/">Custom T-Shirts</a><a href="/pages/products/custom-polos/">Custom Polos</a><a href="/pages/products/hoodies-sweatshirts/">Hoodies & Sweatshirts</a><a href="/pages/products/jackets-softshells/">Jackets & Softshells</a><a href="/pages/products/workwear/">Workwear</a><a href="/pages/products/healthcare-uniforms/">Healthcare Uniforms</a><a href="/pages/products/medical-scrubs/">Medical Scrubs</a><a href="/pages/products/corporate-apparel/">Corporate Apparel</a><a href="/pages/products/sportswear/">Sportswear</a><a href="/pages/products/rashguards/">Rashguards</a><a href="/pages/products/mma-shorts/">MMA Shorts</a><a href="/pages/products/muay-thai-shorts/">Muay Thai Shorts</a><a href="/pages/products/private-label-clothing/">Private Label Clothing</a><a href="/pages/products/promotional-merchandise/">Promotional Merchandise</a><a href="/pages/products/tote-bags/">Tote Bags</a><a href="/pages/products/caps-headwear/">Caps & Headwear</a></div></div><div class="nav-dropdown"><a href="/pages/industries/">Industries</a><div class="dropdown-menu"><a href="/pages/industries/corporate-apparel/">Corporate Apparel</a><a href="/pages/industries/healthcare/">Healthcare</a><a href="/pages/industries/hospitality/">Hospitality</a><a href="/pages/industries/sports-fitness/">Sports & Fitness</a><a href="/pages/industries/ecommerce-brands/">E-commerce Brands</a><a href="/pages/industries/events-merchandise/">Events & Merchandise</a><a href="/pages/industries/construction-trades/">Construction & Trades</a><a href="/pages/industries/combat-sports/">Combat Sports</a></div></div><div class="nav-dropdown"><a href="/pages/services/">Services</a><div class="dropdown-menu"><a href="/pages/services/screen-printing/">Screen Printing</a><a href="/pages/services/heat-transfer-printing/">Heat Transfer Printing</a><a href="/pages/services/sublimation-printing/">Sublimation Printing</a><a href="/pages/services/embroidery/">Embroidery</a><a href="/pages/services/custom-labels/">Custom Labels</a><a href="/pages/services/hang-tags/">Hang Tags</a><a href="/pages/services/packaging-solutions/">Packaging Solutions</a><a href="/pages/services/product-development/">Product Development</a><a href="/pages/services/sampling/">Sampling</a><a href="/pages/services/quality-control/">Quality Control</a><a href="/pages/services/oem-clothing-production/">OEM Clothing Production</a><a href="/pages/services/private-label-manufacturing/">Private Label Manufacturing</a><a href="/pages/services/worldwide-shipping/">Worldwide Shipping</a></div></div><a href="/pages/about-us/">About</a><a href="/pages/production/">Production</a><a href="/pages/contact/">Contact</a></nav><a class="cta-button" href="/pages/request-a-quote/">Request a Quote</a></div></header>
+<div class="topbar"><div class="wrapper"><div class="topbar-group"><strong>Swiss Managed</strong><strong>Factory in Thailand</strong><strong>Premium Quality</strong><strong>Worldwide Shipping</strong></div><div class="topbar-links"><a href="#">DE</a><a href="#">EN</a></div></div></div>
+<header class="site-header"><div class="wrapper"><div class="brand">TShirtSwiss.ch</div><nav class="nav"><div class="nav-dropdown"><a href="/pages/products/">Products</a><div class="dropdown-menu"><a href="/pages/products/custom-t-shirts/">Custom T-Shirts</a><a href="/pages/products/custom-polos/">Custom Polos</a><a href="/pages/products/corporate-apparel/">Corporate Apparel</a><a href="/pages/products/private-label-clothing/">Private Label Clothing</a><a href="/pages/products/sportswear/">Sportswear</a><a href="/pages/products/workwear/">Workwear</a></div></div><div class="nav-dropdown"><a href="/pages/services/">Services</a><div class="dropdown-menu"><a href="/pages/services/oem-clothing-production/">OEM Clothing Production</a><a href="/pages/services/private-label-manufacturing/">Private Label Manufacturing</a><a href="/pages/services/product-development/">Product Development</a><a href="/pages/services/quality-control/">Quality Control</a><a href="/pages/services/worldwide-shipping/">Worldwide Shipping</a></div></div><a href="/pages/industries/">Industries</a><a href="/pages/about-us/">About</a><a href="/pages/production/">Production</a><a href="/pages/contact/">Contact</a></nav><a class="cta-button" href="/pages/request-a-quote/">Request a Quote</a></div></header>
 <main>
   <section class="hero">
     <div>
-      <h1>About Us</h1>
-      <p>We combine Swiss project management and Thai production to deliver reliable premium apparel.</p>
-      <div class="section-footer"><a class="button" href="/pages/request-a-quote/">Request a Quote</a></div>
+      <div class="hero-eyebrow">About TShirt Swiss</div>
+      <h1>Swiss-Owned Apparel Manufacturing in Thailand</h1>
+      <p>TShirt Swiss is a premium apparel manufacturer based in Thailand and managed with Swiss standards of precision, reliability and accountability. We support companies, brands, agencies, sports clubs, hospitality groups and distributors that need custom garments produced with professional communication, consistent quality and a production process they can trust.</p>
+      <p>Our position is simple: European expectations, Thai manufacturing capability. Clients choose us when they want the cost and flexibility advantages of producing in Thailand without losing the structure, discipline and quality control expected from a Swiss-managed partner.</p>
+      <div style="margin-top:30px"><a class="button" href="/pages/request-a-quote/">Start Your Project</a></div>
     </div>
-    <div class="hero-visual"><div class="section-image"><img src="https://via.placeholder.com/1200x800?text=Hero+Image" alt="Hero image placeholder"></div></div>
+    <div class="hero-visual"><img src="https://via.placeholder.com/1200x800?text=Swiss+Managed+Manufacturing" alt="Swiss managed apparel manufacturing in Thailand"></div>
   </section>
-  <section class="section">
-  <div class="section__inner">
-    <div>
-      <h2>Our Swiss-managed story</h2>
-      <p>We combine Swiss leadership with Thai manufacturing experience to build premium apparel.</p>
-    </div>
-    <div class="section-image"><img src="https://via.placeholder.com/1200x800?text=Overview+Image" alt="Overview image placeholder"></div>
-  </div>
-</section>
-<section class="section">
-  <div class="section__inner">
-    <div>
-      <h2>A premium partner for brands</h2>
-      <p>Swiss oversight ensures consistent quality, brand-safe execution and reliable delivery.</p>
-    </div>
-    
-  </div>
-</section>
-<section class="section">
-  <div class="section__inner">
-    <div>
-      <h2>Global production with local focus</h2>
-      <p>Our process is designed for Swiss standards and international apparel demand.</p>
-    </div>
-    <div class="section-image"><img src="https://via.placeholder.com/1200x800?text=Operations+Image" alt="Operations image placeholder"></div>
-  </div>
-</section>
 
+  <section class="section section--white">
+    <div class="section__inner">
+      <div><span class="eyebrow">Our Story</span><h2>Built for Brands That Need More Than a Cheap Supplier</h2></div>
+      <p>TShirt Swiss was created for clients who want a serious manufacturing partner, not a basic print shop or anonymous factory. Many businesses begin their sourcing journey by searching for the lowest possible unit price. They quickly discover that cheap production often creates expensive problems: unclear communication, inconsistent sizing, weak fabrics, missed deadlines, poor finishing and orders that do not match the approved sample.</p>
+      <p>We take a different approach. Our company is Swiss owned and managed, with production based in Thailand. This gives our clients the advantage of direct access to experienced garment production while maintaining the project discipline, documentation and quality mindset associated with Swiss business culture. We focus on long-term manufacturing relationships, repeatable quality and brand-safe execution.</p>
+      <p>From the first enquiry, our team works to understand your commercial goals. Are you launching a private label clothing brand? Ordering premium corporate uniforms? Creating event merchandise? Developing technical sportswear? Each project requires different fabrics, patterns, decoration methods, packaging and delivery planning. We help you make those decisions clearly so your order is built correctly from the beginning.</p>
+    </div>
+  </section>
+
+  <section class="section section--split">
+    <div class="section__inner">
+      <div>
+        <span class="eyebrow">Swiss Standards</span>
+        <h2>Precision, Communication and Accountability</h2>
+        <p>Swiss management is not just a marketing phrase. It shapes the way we handle specifications, sampling, approvals, production updates and quality control. We believe clients should know what is happening with their order, what decisions need to be made, what costs are involved and what timeline is realistic.</p>
+        <p>Our production process is built around clear information. We confirm garment type, fabric composition, GSM, colour references, sizing, trims, labels, print or embroidery details, packaging, quantity, shipping destination and deadlines before production moves forward. This reduces misunderstanding and helps protect both the client and the final product.</p>
+        <p>Quality is checked at multiple stages, not only at the end. We look at fabric suitability, measurements, stitching, decoration placement, colour accuracy, finishing and packing. For businesses that rely on their apparel to represent their brand, these details matter. A uniform, t-shirt, hoodie or private label product is often the first physical touchpoint a customer has with your company.</p>
+      </div>
+      <div class="section-image"><img src="https://via.placeholder.com/1200x800?text=Quality+Control" alt="Apparel quality control and production checks"></div>
+    </div>
+  </section>
+
+  <section class="section section--white">
+    <div class="section__inner">
+      <div><span class="eyebrow">What We Produce</span><h2>Custom Clothing, Corporate Apparel and Private Label Production</h2></div>
+      <p>Our manufacturing capabilities cover a wide range of apparel categories, including custom t-shirts, polo shirts, hoodies, sweatshirts, jackets, workwear, healthcare uniforms, medical scrubs, sportswear, rashguards, MMA shorts, Muay Thai shorts, caps, tote bags and promotional merchandise. We also support OEM clothing production and private label manufacturing for brands that need custom designs, labels, packaging and collection development.</p>
+      <p>We work with clients at different stages of growth. Some come to us with complete tech packs and established sizing. Others have an idea, a logo, a sketch or an existing sample they want to improve. Our role is to guide the project into a manufacturable product that looks good, fits properly, performs well and reflects the positioning of the brand.</p>
+      <p>Because we serve international clients, we understand that apparel requirements vary by market. Swiss and European corporate buyers often prioritise consistency, clean finishing and reliable sizing. Ecommerce brands may need strong visual impact, custom branding and packaging. Sports and fitness clients need performance fabrics and durable construction. Hospitality and healthcare teams require comfort, washability and professional presentation. We adapt the solution to the end use.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section__inner">
+      <div><span class="eyebrow">Why Thailand</span><h2>Experienced Garment Production with Flexible Manufacturing Options</h2></div>
+      <p>Thailand is a strong location for premium apparel manufacturing because it combines skilled labour, textile knowledge, reliable logistics and flexible production capabilities. It is especially well suited to clients who want better quality than mass commodity production while still benefiting from competitive Asian manufacturing economics.</p>
+      <p>Our Thailand base allows us to coordinate fabric sourcing, sampling, decoration, production, packing and international shipping efficiently. At the same time, our Swiss management structure gives clients a familiar standard of communication and responsibility. This combination is valuable for companies that cannot afford production errors, brand inconsistency or vague supplier management.</p>
+      <div class="grid-cards">
+        <div class="card"><h3>Premium Quality Focus</h3><p>We prioritise garments that look professional, feel right and support your brand image over the long term.</p></div>
+        <div class="card"><h3>Clear Project Management</h3><p>Specifications, samples, approvals and timelines are handled with structured communication.</p></div>
+        <div class="card"><h3>International Client Experience</h3><p>We support clients in Switzerland, Europe, Australia, Asia and beyond with worldwide shipping options.</p></div>
+        <div class="card"><h3>Long-Term Partnership</h3><p>Our goal is repeatable production success, not one-off orders that leave clients searching again.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--white">
+    <div class="section__inner">
+      <div><span class="eyebrow">Our Promise</span><h2>A Better Way to Manufacture Apparel</h2></div>
+      <p>When you work with TShirt Swiss, you get a partner that understands both the commercial importance of apparel and the practical realities of garment manufacturing. We will not promise impossible deadlines or unrealistic pricing just to win an order. Instead, we provide honest guidance, professional production planning and a quality-focused process designed to protect your brand.</p>
+      <p>Whether you need custom t-shirts for a corporate campaign, uniforms for a growing hospitality group, sportswear for an active brand or private label clothing for ecommerce, we are ready to help you manufacture with confidence. TShirt Swiss brings together Swiss management, Thai production expertise and international service for clients who expect more from their apparel supplier.</p>
+      <div style="margin-top:26px"><a class="button" href="/pages/request-a-quote/">Request a Quote</a></div>
+    </div>
+  </section>
 </main>
-<footer class="footer"><div class="wrapper"><div><h3>About</h3><p>Swiss-managed premium apparel manufacturing in Thailand.</p></div><div><h3>Contact</h3><p>swiss@tshirtswiss.ch<br>+41 79 000 00 00</p></div><div><h3>Office</h3><p>Swiss HQ + Thailand Factory</p></div></div></footer>
+<footer class="footer"><div class="wrapper"><div><h3>TShirtSwiss.ch</h3><p>Swiss-owned and Swiss-managed premium apparel manufacturing in Thailand.</p></div><div><h3>Contact</h3><p>swiss@tshirtswiss.ch<br>+41 79 000 00 00</p></div><div><h3>Production</h3><p>Custom clothing, uniforms, sportswear, private label garments and worldwide shipping.</p></div></div></footer>
 </div>
 </body>
 </html>
