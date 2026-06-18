@@ -3,129 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Industries</title>
+  <title>Industries We Serve | Corporate, Hospitality, Healthcare, Sports & Ecommerce Apparel</title>
+  <meta name="description" content="TShirt Swiss manufactures premium apparel for corporate teams, ecommerce brands, hospitality, healthcare, sports, combat sports, construction, trades and event merchandise clients worldwide.">
   <style>
-:root{color-scheme:light dark;}
-body{margin:0;padding:0;background:#f4f4f4;color:#111;font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;}
-*{box-sizing:border-box;}
-img{max-width:100%;height:auto;display:block;}
-a{color:inherit;text-decoration:none;}
-.page-shell{display:flex;flex-direction:column;min-height:100vh;background:#f4f4f4;}
-.topbar{background:#111;color:#f5f5f5;font-size:.9rem;}
-.topbar .wrapper{max-width:1200px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
-.topbar-group{display:flex;flex-wrap:wrap;gap:18px;align-items:center;}
-.topbar-item{display:inline-flex;align-items:center;gap:8px;color:#e0e0e0;opacity:.9;}
-.topbar-item strong{color:#fff;font-weight:700;}
-.topbar-links{display:flex;gap:16px;align-items:center;}
-.topbar-links a{color:#f5f5f5;opacity:.75;padding:6px 10px;border-radius:999px;transition:opacity .2s,background .2s;}
-.topbar-links a:hover{opacity:1;background:rgba(255,255,255,.08);}
-.site-header{background:#fff;position:sticky;top:0;z-index:20;box-shadow:0 18px 50px rgba(0,0,0,.08);}
-.site-header .wrapper{max-width:1200px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
-.brand{font-weight:800;font-size:1.1rem;letter-spacing:.16em;text-transform:uppercase;color:#111;}
-.nav{display:flex;gap:24px;flex-wrap:wrap;font-size:.95rem;}
-.nav a{color:#111;opacity:.85;transition:opacity .2s,color .2s;}
-.nav a:hover{opacity:1;color:#D52B1E;}
-.nav-dropdown{position:relative;}
-.nav-dropdown > a::after{content:'▾';margin-left:6px;font-size:.7rem;opacity:.7;transition:opacity .2s;}
-.nav-dropdown:hover > a::after{opacity:1;}
-.dropdown-menu{position:absolute;top:100%;left:0;min-width:220px;background:#fff;border:1px solid rgba(17,17,17,.12);border-radius:20px;box-shadow:0 24px 60px rgba(17,17,17,.12);opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .2s ease,visibility .2s ease,transform .2s ease;z-index:100;padding:10px 0;}
-.nav-dropdown:hover .dropdown-menu,.nav-dropdown:focus-within .dropdown-menu{opacity:1;visibility:visible;transform:translateY(0);}
-.dropdown-menu a{display:block;padding:12px 22px;color:#111;opacity:.9;white-space:nowrap;font-size:.92rem;transition:background .2s,opacity .2s;}
-.dropdown-menu a:hover{background:rgba(213,43,30,.06);opacity:1;}
-.nav a[href$='about-us/'], .nav a[href$='contact/'] { margin-right: 0; }
-.nav a[href$='about-us/']::after,
-.nav a[href$='contact/']::after { content: ''; }
-.cta-button{padding:14px 26px;background:#D52B1E;color:#fff;border-radius:999px;font-weight:700;font-size:.95rem;white-space:nowrap;box-shadow:0 16px 30px rgba(213,43,30,.18);}
-main{flex:1;max-width:1320px;margin:0 auto;padding:32px 24px;}
-.hero{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;min-height:calc(100vh - 220px);padding:60px 0 40px;}
-.hero-content{max-width:680px;}
-.hero-eyebrow{font-size:.82rem;text-transform:uppercase;letter-spacing:.24em;color:#D52B1E;margin-bottom:18px;font-weight:700;}
-.hero h1{font-size:4rem;line-height:1.02;margin:0;color:#111;letter-spacing:-.03em;}
-.hero p{margin:24px 0 0;font-size:1.1rem;line-height:1.9;color:#444;max-width:42rem;}
-.section-footer{margin-top:32px;}
-.section-footer .button{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 30px;border-radius:999px;font-weight:700;transition:transform .2s,box-shadow .2s;}
-.section-footer .button.primary{background:#D52B1E;color:#fff;}
-.section-footer .button.secondary{background:transparent;color:#111;border:1px solid rgba(17,17,17,.12);}
-.hero-visual{border-radius:28px;overflow:hidden;box-shadow:0 30px 90px rgba(26,26,26,.14);}
-.hero-visual img{width:100%;height:auto;display:block;}
-.section{padding:72px 0;border-bottom:1px solid rgba(26,26,26,.08);background:#f4f4f4;}
-.section--white{background:#fff;}
-.section__inner{display:grid;gap:36px;max-width:1200px;margin:0 auto;}
-.section--split .section__inner{grid-template-columns:1fr 1fr;align-items:center;}
-.section h2{margin:0 0 22px;font-size:2.6rem;line-height:1.05;font-weight:700;color:#111;}
-.section p{margin:0;color:#4d4d4d;font-size:1rem;line-height:1.8;max-width:44rem;}
-.section .section-image{border-radius:26px;overflow:hidden;box-shadow:0 20px 50px rgba(26,26,26,.1);}
-.section .section-image img{width:100%;display:block;}
-.grid-cards{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
-.card{background:#fff;border-radius:24px;padding:28px;display:flex;flex-direction:column;justify-content:space-between;min-height:240px;box-shadow:0 18px 45px rgba(26,26,26,.08);}
-.card h3{margin:0 0 12px;font-size:1.1rem;font-weight:700;color:#111;}
-.card p{margin:0;color:#5d5d5d;line-height:1.75;font-size:.96rem;}
-.footer{background:#111;color:#e2e2e2;padding:60px 24px;}
-.footer .wrapper{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;}
-.footer h3{margin:0 0 18px;font-size:1rem;color:#fff;}
-.footer p, .footer a{margin:0;color:#c8c8c8;line-height:1.8;font-size:.95rem;}
-.footer a{opacity:.9;}
-.footer a:hover{opacity:1;}
-@media(max-width:1024px){.hero{grid-template-columns:1fr;min-height:auto;padding-top:50px;} .section--split .section__inner{grid-template-columns:1fr;} .footer .wrapper{grid-template-columns:1fr;}.topbar .wrapper{justify-content:center;}}
-@media(max-width:720px){main{padding:24px 18px;} .site-header .wrapper,.topbar .wrapper{flex-direction:column;align-items:flex-start;} .nav{gap:14px;} .hero{gap:24px;} .hero h1{font-size:2.7rem;} .section{padding:48px 0;}}
-</style>
+:root{color-scheme:light;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#111;background:#f4f4f4}*{box-sizing:border-box}body{margin:0;background:#f4f4f4}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.topbar{background:#111;color:#fff;font-size:.85rem}.topbar .wrapper,.site-header .wrapper,main,.footer .wrapper{max-width:1200px;margin:0 auto}.topbar .wrapper{padding:10px 24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.site-header{background:#fff;position:sticky;top:0;z-index:20;box-shadow:0 18px 50px rgba(0,0,0,.08)}.site-header .wrapper{padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.brand{font-weight:800;letter-spacing:.16em;text-transform:uppercase}.nav{display:flex;gap:22px;flex-wrap:wrap}.nav a:hover{color:#D52B1E}.cta,.button{display:inline-flex;padding:14px 26px;background:#D52B1E;color:#fff;border-radius:999px;font-weight:700}.button.secondary{background:#fff;color:#111;border:1px solid rgba(17,17,17,.14)}main{padding:32px 24px}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:64px 0}.eyebrow{font-size:.82rem;text-transform:uppercase;letter-spacing:.24em;color:#D52B1E;font-weight:700;margin-bottom:18px}h1{font-size:clamp(3rem,5vw,4.7rem);line-height:1;margin:0}h2{font-size:clamp(2rem,3vw,2.8rem);line-height:1.08;margin:0 0 22px}h3{margin:0 0 12px;font-size:1.15rem}p{color:#4d4d4d;line-height:1.85;font-size:1rem}.lead{font-size:1.12rem}.section{padding:72px 0;border-top:1px solid rgba(17,17,17,.08)}.image{border-radius:28px;overflow:hidden;box-shadow:0 30px 90px rgba(26,26,26,.14);background:#ddd}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:24px}.card{background:#fff;border-radius:24px;padding:28px;box-shadow:0 18px 45px rgba(26,26,26,.08)}.card a{color:#D52B1E;font-weight:700}.split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.footer{background:#111;color:#ddd;padding:60px 24px;margin-top:50px}.footer .wrapper{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.footer p,.footer a{color:#c8c8c8;line-height:1.8}@media(max-width:900px){.hero,.split,.footer .wrapper{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
-<div class="page-shell">
-<div class="topbar">
-  <div class="wrapper">
-    <div class="topbar-group">
-      <div class="topbar-item"><strong>Swiss Managed</strong></div>
-      <div class="topbar-item"><strong>Factory in Thailand</strong></div>
-      <div class="topbar-item"><strong>Premium Quality</strong></div>
-      <div class="topbar-item"><strong>Worldwide Shipping</strong></div>
-    </div>
-    <div class="topbar-links">
-      <a href="#">DE</a>
-      <a href="#">EN</a>
-    </div>
-  </div>
-</div>
-<header class="site-header"><div class="wrapper"><div class="brand">TShirtSwiss.ch</div><nav class="nav"><div class="nav-dropdown"><a href="/pages/products/">Products</a><div class="dropdown-menu"><a href="/pages/products/custom-t-shirts/">Custom T-Shirts</a><a href="/pages/products/custom-polos/">Custom Polos</a><a href="/pages/products/hoodies-sweatshirts/">Hoodies & Sweatshirts</a><a href="/pages/products/jackets-softshells/">Jackets & Softshells</a><a href="/pages/products/workwear/">Workwear</a><a href="/pages/products/healthcare-uniforms/">Healthcare Uniforms</a><a href="/pages/products/medical-scrubs/">Medical Scrubs</a><a href="/pages/products/corporate-apparel/">Corporate Apparel</a><a href="/pages/products/sportswear/">Sportswear</a><a href="/pages/products/rashguards/">Rashguards</a><a href="/pages/products/mma-shorts/">MMA Shorts</a><a href="/pages/products/muay-thai-shorts/">Muay Thai Shorts</a><a href="/pages/products/private-label-clothing/">Private Label Clothing</a><a href="/pages/products/promotional-merchandise/">Promotional Merchandise</a><a href="/pages/products/tote-bags/">Tote Bags</a><a href="/pages/products/caps-headwear/">Caps & Headwear</a></div></div><div class="nav-dropdown"><a href="/pages/industries/">Industries</a><div class="dropdown-menu"><a href="/pages/industries/corporate-apparel/">Corporate Apparel</a><a href="/pages/industries/healthcare/">Healthcare</a><a href="/pages/industries/hospitality/">Hospitality</a><a href="/pages/industries/sports-fitness/">Sports & Fitness</a><a href="/pages/industries/ecommerce-brands/">E-commerce Brands</a><a href="/pages/industries/events-merchandise/">Events & Merchandise</a><a href="/pages/industries/construction-trades/">Construction & Trades</a><a href="/pages/industries/combat-sports/">Combat Sports</a></div></div><div class="nav-dropdown"><a href="/pages/services/">Services</a><div class="dropdown-menu"><a href="/pages/services/screen-printing/">Screen Printing</a><a href="/pages/services/heat-transfer-printing/">Heat Transfer Printing</a><a href="/pages/services/sublimation-printing/">Sublimation Printing</a><a href="/pages/services/embroidery/">Embroidery</a><a href="/pages/services/custom-labels/">Custom Labels</a><a href="/pages/services/hang-tags/">Hang Tags</a><a href="/pages/services/packaging-solutions/">Packaging Solutions</a><a href="/pages/services/product-development/">Product Development</a><a href="/pages/services/sampling/">Sampling</a><a href="/pages/services/quality-control/">Quality Control</a><a href="/pages/services/oem-clothing-production/">OEM Clothing Production</a><a href="/pages/services/private-label-manufacturing/">Private Label Manufacturing</a><a href="/pages/services/worldwide-shipping/">Worldwide Shipping</a></div></div><a href="/pages/about-us/">About</a><a href="/pages/production/">Production</a><a href="/pages/contact/">Contact</a></nav><a class="cta-button" href="/pages/request-a-quote/">Request a Quote</a></div></header>
+<div class="topbar"><div class="wrapper"><strong>Swiss Managed</strong><strong>Factory in Thailand</strong><strong>Premium Quality</strong><strong>Worldwide Shipping</strong></div></div>
+<header class="site-header"><div class="wrapper"><div class="brand">TShirtSwiss.ch</div><nav class="nav"><a href="/pages/products/">Products</a><a href="/pages/industries/">Industries</a><a href="/pages/services/">Services</a><a href="/pages/about-us/">About</a><a href="/pages/production/">Production</a><a href="/pages/contact/">Contact</a></nav><a class="cta" href="/pages/request-a-quote/">Request a Quote</a></div></header>
 <main>
   <section class="hero">
-    <div>
-      <h1>Industries</h1>
-      <p>Swiss-managed apparel production designed for reliable quality and delivery.</p>
-      <div class="section-footer"><a class="button" href="/pages/request-a-quote/">Request a Quote</a></div>
-    </div>
-    <div class="hero-visual"><div class="section-image"><img src="https://via.placeholder.com/1200x800?text=Hero+Image" alt="Hero image placeholder"></div></div>
+    <div><div class="eyebrow">Industries We Serve</div><h1>Premium Apparel Manufacturing for Your Industry</h1><p class="lead">TShirt Swiss manufactures custom apparel for companies and organisations that need clothing built around real-world use. We serve corporate teams, ecommerce brands, hospitality businesses, healthcare providers, sports and fitness companies, combat sports gyms, construction and trade businesses, event organisers and promotional merchandise agencies.</p><p class="lead">This Industries page is focused on who we manufacture for. If you want to browse garment categories, visit our Products page. If you want to understand the manufacturing capabilities behind each order, visit our Services page. As a Swiss-owned and Swiss-managed apparel manufacturer in Thailand, we adapt every project to the commercial needs, brand standards and practical demands of each industry.</p><div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:28px"><a class="button" href="/pages/request-a-quote/">Request an Industry Quote</a><a class="button secondary" href="/pages/products/">View Products</a></div></div>
+    <div class="image"><img src="https://via.placeholder.com/1200x800?text=Industries+We+Serve" alt="Industries served by TShirt Swiss"></div>
   </section>
-  <section class="section">
-  <div class="section__inner">
-    <div>
-      <h2>Industries that trust premium apparel</h2>
-      <p>Swiss companies across healthcare, hospitality, sports and corporate sectors choose our production network.</p>
-    </div>
-    <div class="section-image"><img src="https://via.placeholder.com/1200x800?text=Portfolio+Image" alt="Portfolio image placeholder"></div>
-  </div>
-</section>
-<section class="section">
-  <div class="section__inner">
-    <div>
-      <h2>Industry-specific product solutions</h2>
-      <p>We match the right apparel categories to each sector with tailored material and finishing options.</p>
-    </div>
-    <div class="grid-cards"><div class="card"><h3>Construction & Trades</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="./construction-trades/">View page</a></div><div class="card"><h3>Healthcare</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="./healthcare/">View page</a></div><div class="card"><h3>Hospitality</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="./hospitality/">View page</a></div><div class="card"><h3>Sports & Fitness</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="./sports-fitness/">View page</a></div><div class="card"><h3>Combat Sports</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="./combat-sports/">View page</a></div><div class="card"><h3>Corporate Apparel</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="./corporate-apparel/">View page</a></div><div class="card"><h3>Events & Merchandise</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="./events-merchandise/">View page</a></div><div class="card"><h3>Ecommerce Brands</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="./ecommerce-brands/">View page</a></div></div>
-  </div>
-</section>
-<section class="section">
-  <div class="section__inner">
-    <div>
-      <h2>Swiss-managed quality control</h2>
-      <p>Each industry order is inspected to ensure reliability, compliance and professional presentation.</p>
-    </div>
-    <div class="section-image"><img src="https://via.placeholder.com/1200x800?text=Capability+Image" alt="Capability image placeholder"></div>
-  </div>
-</section>
 
+  <section class="section"><div class="eyebrow">Business Apparel</div><h2>Corporate, Hospitality and Healthcare Apparel</h2><p>Business apparel must do more than carry a logo. It must make teams look professional, support daily work, remain comfortable and reinforce the organisation's brand image. Our Swiss-managed production process is particularly valuable for industries where consistency, presentation and reliability matter.</p><div class="grid"><div class="card"><h3>Corporate Apparel</h3><p>We manufacture premium corporate apparel for office teams, sales staff, customer-facing employees, conferences, trade shows and branded internal programmes. Products include polo shirts, t-shirts, jackets, shirts, hoodies, uniforms and promotional clothing.</p><a href="/pages/industries/corporate-apparel/">View Corporate Apparel</a></div><div class="card"><h3>Hospitality</h3><p>Hotels, restaurants, cafes, resorts and service teams need uniforms that look refined and withstand regular use. We produce hospitality apparel that balances comfort, brand identity and professional presentation.</p><a href="/pages/industries/hospitality/">View Hospitality</a></div><div class="card"><h3>Healthcare</h3><p>Clinics, wellness centres, dental practices, medical groups and healthcare teams require garments that look clean, feel comfortable and support movement throughout the workday. We manufacture scrubs, tunics, polos and branded healthcare uniforms.</p><a href="/pages/industries/healthcare/">View Healthcare</a></div></div></section>
+
+  <section class="section"><div class="eyebrow">Brand and Retail Apparel</div><h2>Ecommerce Brands, Events and Promotional Merchandise</h2><p>For ecommerce and promotional clients, apparel is often a revenue product or a high-visibility brand asset. The garment must look good online, feel right in the customer's hands and create a professional impression from the moment it is unpacked. We support brands and agencies with custom garments, private label details, packaging and reliable repeat production.</p><div class="grid"><div class="card"><h3>Ecommerce Brands</h3><p>We support online clothing brands, merchandise stores, creators and private label businesses with custom product development, labels, packaging, sampling and repeat manufacturing.</p><a href="/pages/industries/ecommerce-brands/">View Ecommerce Brands</a></div><div class="card"><h3>Events and Merchandise</h3><p>Events, conferences, product launches, festivals and marketing campaigns need apparel that is delivered on time and creates strong brand visibility. We manufacture t-shirts, caps, tote bags, hoodies and promotional merchandise.</p><a href="/pages/industries/events-merchandise/">View Events and Merchandise</a></div><div class="card"><h3>Agencies and Distributors</h3><p>We work with promotional agencies, uniform suppliers and distributors that need a dependable production partner behind the scenes. Swiss-managed communication helps protect your relationship with your own clients.</p><a href="/pages/contact/">Discuss Partnership</a></div></div></section>
+
+  <section class="section split"><div><div class="eyebrow">Performance Sectors</div><h2>Sports, Fitness and Combat Sports Apparel</h2><p>Sports and fitness apparel has to perform under movement, sweat, washing and repeated use. We manufacture garments for gyms, fitness studios, personal training brands, sports clubs, martial arts academies and combat sports companies. Products may include performance t-shirts, training shorts, rashguards, leggings, fight shorts, Muay Thai shorts, hoodies and team apparel.</p><p>Combat sports is a specialist category where Thailand has a strong reputation, particularly for Muay Thai. TShirt Swiss combines this local manufacturing heritage with Swiss-managed production control for fightwear brands, gyms and event organisers that need strong design, durable construction and professional finishing.</p><p>Whether your audience is a local gym community or an international fightwear customer base, we help develop apparel that supports performance and strengthens brand identity.</p></div><div class="image"><img src="https://via.placeholder.com/1200x800?text=Sports+Fitness+Combat+Sports" alt="Sports fitness and combat sports apparel manufacturing"></div></section>
+
+  <section class="section"><div class="eyebrow">Trade and Field Teams</div><h2>Construction, Trades and Workwear</h2><p>Construction and trade businesses need apparel that is practical, durable and professional. Workwear is worn in demanding environments, so fabric selection, fit, stitching and branding must all be considered carefully. We manufacture workwear, t-shirts, polos, hoodies, jackets, caps and uniforms for construction companies, contractors, logistics teams, field technicians and service businesses.</p><p>For trade clients, branded apparel helps improve team presentation, customer trust and site visibility. A well-produced uniform can make a small company look more established and help a larger organisation maintain consistency across multiple teams. Our production support helps clients choose garments that are suitable for everyday use rather than just attractive in a catalogue.</p><div class="grid"><div class="card"><h3>Construction and Trades</h3><p>Durable branded clothing for construction companies, contractors, technicians, logistics teams and field service staff.</p><a href="/pages/industries/construction-trades/">View Construction and Trades</a></div><div class="card"><h3>Field and Service Teams</h3><p>Professional uniforms for teams that work directly with customers and need clothing that is comfortable, branded and practical.</p><a href="/pages/products/workwear/">View Workwear Products</a></div></div></section>
+
+  <section class="section split"><div class="image"><img src="https://via.placeholder.com/1200x800?text=Industry+Specific+Production" alt="Industry specific apparel production"></div><div><div class="eyebrow">Industry-Specific Planning</div><h2>Apparel Built Around the Way It Will Be Used</h2><p>A good apparel manufacturer does not recommend the same garment for every client. A hotel uniform, an ecommerce hoodie, a medical scrub, a construction polo and an MMA short each have different performance requirements. Our role is to ask the right questions before production begins.</p><p>Who will wear the garment? How often will it be washed? Does it need stretch, breathability, durability, premium appearance or retail packaging? Will it be worn by staff, sold online, given away at an event or used in training? These details influence fabric choice, fit, decoration method, finishing and packing.</p><p>By combining industry understanding with Swiss-managed production in Thailand, TShirt Swiss helps clients produce apparel that is not only branded but also fit for purpose.</p></div></section>
+
+  <section class="section"><div class="card"><h2>Tell Us Your Industry and Apparel Requirements</h2><p>Share your sector, garment type, quantity, branding requirements and delivery destination. We will recommend suitable products, production methods and quality considerations based on how your apparel will be used.</p><a class="button" href="/pages/request-a-quote/">Request a Quote</a></div></section>
 </main>
-<footer class="footer"><div class="wrapper"><div><h3>About</h3><p>Swiss-managed premium apparel manufacturing in Thailand.</p></div><div><h3>Contact</h3><p>swiss@tshirtswiss.ch<br>+41 79 000 00 00</p></div><div><h3>Office</h3><p>Swiss HQ + Thailand Factory</p></div></div></footer>
-</div>
+<footer class="footer"><div class="wrapper"><div><h3>TShirtSwiss.ch</h3><p>Swiss-managed premium apparel manufacturing in Thailand.</p></div><div><h3>Industries</h3><p>Corporate, healthcare, hospitality, ecommerce, sports, combat sports, construction, trades and events.</p></div><div><h3>Contact</h3><p>info@tshirtswiss.ch<br><a href="/pages/request-a-quote/">Request a Quote</a></p></div></div></footer>
 </body>
 </html>
