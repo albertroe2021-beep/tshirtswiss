@@ -3,282 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Events & Merchandise | TShirtSwiss.ch</title>
+  <title>Event Merchandise & Band Merch Manufacturer | TShirt Swiss</title>
+  <meta name="description" content="Swiss-managed event merchandise and band merch manufacturing in Thailand. Custom t-shirts, hats, hoodies, tote bags, tour merchandise, festival apparel, promotional clothing and retail-ready merch.">
   <style>
-:root {
-  color-scheme: light;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  color: #111;
-  background: #f4f4f4;
-}
-* { box-sizing: border-box; }
-body { margin: 0; background: #f4f4f4; color: #111; }
-a { color: inherit; text-decoration: none; }
-img { max-width: 100%; height: auto; display: block; }
-.page-shell { display: flex; flex-direction: column; min-height: 100vh; }
-.topbar { background: #111; color: #f4f4f4; font-size: .9rem; }
-.topbar .wrapper { max-width: 1280px; margin: 0 auto; padding: 12px 24px; display: flex; justify-content: space-between; gap: 16px; align-items: center; flex-wrap: wrap; }
-.topbar-group { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; }
-.topbar-item { display: inline-flex; align-items: center; gap: 8px; opacity: .85; }
-.topbar-item strong { color: #fff; font-weight: 700; }
-.topbar-links { display: flex; gap: 14px; }
-.topbar-links a { color: #f4f4f4; opacity: .8; padding: 6px 10px; border-radius: 999px; }
-.topbar-links a:hover { opacity: 1; }
-.site-header { background: #fff; position: sticky; top: 0; z-index: 30; box-shadow: 0 20px 60px rgba(0, 0, 0, .08); }
-.site-header .wrapper { max-width: 1280px; margin: 0 auto; padding: 22px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-.brand { font-size: 1.05rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: #111; }
-.nav { display: flex; gap: 24px; flex-wrap: wrap; font-size: .95rem; }
-.nav a { color: #111; opacity: .85; transition: opacity .2s, color .2s; }
-.nav a:hover { opacity: 1; color: #D52B1E; }
-.cta-button { padding: 14px 26px; background: #D52B1E; color: #fff; border-radius: 999px; font-weight: 700; box-shadow: 0 18px 40px rgba(213, 43, 30, .18); }
-main { flex: 1; max-width: 1280px; margin: 0 auto; padding: 28px 24px 60px; }
-.breadcrumb { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; font-size: .9rem; color: #555; margin: 20px 0 16px; }
-.breadcrumb a { opacity: .8; }
-.breadcrumb span { opacity: .55; }
-.hero { display: grid; grid-template-columns: 1.05fr .95fr; gap: 36px; align-items: center; min-height: calc(100vh - 180px); padding: 40px 0 32px; }
-.hero-copy { max-width: 620px; }
-.hero-eyebrow { font-size: .8rem; letter-spacing: .26em; text-transform: uppercase; color: #D52B1E; font-weight: 700; margin-bottom: 18px; }
-.hero-title { font-size: clamp(3rem, 4.4vw, 4.8rem); line-height: 1; margin: 0; color: #111; }
-.hero-subtitle { margin: 24px 0 0; font-size: 1.24rem; line-height: 1.75; color: #222; max-width: 44rem; }
-.hero-text { margin: 24px 0 0; font-size: 1rem; line-height: 1.8; color: #4d4d4d; max-width: 42rem; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 32px; }
-.hero-actions a { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 28px; border-radius: 999px; font-weight: 700; transition: transform .2s, box-shadow .2s; }
-.hero-actions a.primary { background: #D52B1E; color: #fff; }
-.hero-actions a.secondary { border: 1px solid rgba(17, 17, 17, .12); background: #fff; color: #111; }
-.hero-tags { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 32px; }
-.hero-tag { padding: 18px 20px; background: #fff; border-radius: 22px; border: 1px solid rgba(17, 17, 17, .08); box-shadow: 0 18px 45px rgba(17, 17, 17, .05); }
-.hero-tag span { font-size: .95rem; color: #111; font-weight: 700; }
-.hero-visual { border-radius: 30px; overflow: hidden; box-shadow: 0 35px 90px rgba(17, 17, 17, .12); }
-.hero-visual img { width: 100%; height: auto; display: block; }
-.section { padding: 72px 0; }
-.section--white { background: #fff; }
-.section__inner { display: grid; gap: 34px; max-width: 1280px; margin: 0 auto; }
-.section--split .section__inner { grid-template-columns: 1fr 1fr; align-items: center; }
-.section-title h2 { margin: 0 0 14px; font-size: clamp(2.4rem, 3vw, 3.2rem); line-height: 1.05; font-weight: 800; color: #111; }
-.section-title p { margin: 0; color: #555; line-height: 1.75; font-size: 1rem; max-width: 46rem; }
-.trust-logos { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 24px; align-items: center; margin-top: 28px; }
-.trust-logos span { color: #555; font-size: .95rem; opacity: .8; text-align: center; }
-.solution-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 28px; }
-.solution-card { background: #fff; border-radius: 24px; padding: 28px; border: 1px solid rgba(17, 17, 17, .08); box-shadow: 0 18px 45px rgba(17, 17, 17, .05); }
-.solution-card strong { display: block; margin-bottom: 14px; font-size: 1rem; color: #111; }
-.solution-card p { margin: 0; color: #555; line-height: 1.75; font-size: .95rem; }
-.split-grid { display: grid; gap: 32px; grid-template-columns: 1.4fr .6fr; align-items: start; }
-.feature-copy h3 { margin: 0 0 18px; font-size: clamp(2rem, 2.3vw, 2.5rem); line-height: 1.05; color: #111; }
-.feature-copy p { margin: 0 0 24px; color: #555; line-height: 1.75; font-size: 1rem; max-width: 46rem; }
-.bullet-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
-.bullet-list li { display: flex; gap: 16px; align-items: flex-start; color: #444; line-height: 1.7; }
-.bullet-list li::before { content: '•'; color: #D52B1E; font-weight: 800; margin-top: 4px; }
-.quote-card { background: #111; color: #fff; border-radius: 30px; padding: 32px; display: grid; gap: 22px; box-shadow: 0 30px 80px rgba(17, 17, 17, .16); }
-.quote-card h3 { margin: 0; font-size: 1.5rem; line-height: 1.2; }
-.quote-card p { margin: 0; color: rgba(255,255,255,.82); line-height: 1.8; }
-.quote-card ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
-.quote-card li { display: flex; gap: 12px; align-items: flex-start; color: rgba(255,255,255,.9); }
-.quote-card li::before { content: '✓'; color: #D52B1E; margin-top: 2px; }
-.quote-card a { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 24px; background: #D52B1E; color: #fff; border-radius: 999px; font-weight: 700; margin-top: 14px; width: fit-content; }
-.feature-row { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-top: 26px; }
-.feature-tile { background: #fff; border-radius: 24px; padding: 24px; border: 1px solid rgba(17, 17, 17, .08); box-shadow: 0 18px 45px rgba(17, 17, 17, .05); }
-.feature-tile strong { display: block; margin-bottom: 12px; font-size: 1rem; color: #111; }
-.feature-tile p { margin: 0; color: #555; line-height: 1.75; font-size: .95rem; }
-.work-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 28px; }
-.case-card { background: #fff; border-radius: 24px; padding: 24px; border: 1px solid rgba(17, 17, 17, .08); box-shadow: 0 18px 45px rgba(17, 17, 17, .05); display: flex; flex-direction: column; justify-content: space-between; min-height: 170px; gap: 18px; }
-.case-copy strong { display: block; font-size: 1rem; color: #111; }
-.case-copy span { color: #555; line-height: 1.7; font-size: .95rem; }
-.faq-grid { display: grid; gap: 16px; margin-top: 24px; }
-.faq-item { background: #fff; border-radius: 24px; border: 1px solid rgba(17, 17, 17, .09); overflow: hidden; box-shadow: 0 18px 45px rgba(17, 17, 17, .05); }
-.faq-item button { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 24px; font-size: 1rem; border: 0; background: transparent; cursor: pointer; color: #111; }
-.faq-answer { padding: 0 24px 24px; color: #555; font-size: .95rem; line-height: 1.75; display: none; }
-.faq-item.open .faq-answer { display: block; }
-.footer { background: #111; color: #e2e2e2; padding: 48px 24px 56px; }
-.footer .wrapper { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
-.footer h3 { margin: 0 0 18px; font-size: 1rem; color: #fff; }
-.footer p, .footer a { margin: 0; color: #c8c8c8; line-height: 1.8; font-size: .95rem; }
-.footer a:hover { opacity: 1; }
-@media (max-width: 1060px) { .hero { grid-template-columns: 1fr; } .split-grid { grid-template-columns: 1fr; } .section--split .section__inner { grid-template-columns: 1fr; } }
-@media (max-width: 780px) { main { padding: 24px 18px 40px; } .site-header .wrapper, .topbar .wrapper { padding: 18px; } .nav { gap: 14px; } .hero-title { font-size: 2.8rem; } .hero-tags { grid-template-columns: 1fr; } .trust-logos { grid-template-columns: repeat(2, minmax(0, 1fr)); } .feature-row { grid-template-columns: 1fr; } .work-grid { grid-template-columns: 1fr; } }
+:root{color-scheme:light;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#111;background:#f4f4f4}*{box-sizing:border-box}body{margin:0;background:#f4f4f4;color:#111}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.topbar{background:#111;color:#fff}.topbar .wrapper,.site-header .wrapper,main,.footer .wrapper{max-width:1280px;margin:0 auto}.topbar .wrapper{padding:12px 24px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.site-header{background:#fff;position:sticky;top:0;z-index:30;box-shadow:0 20px 60px rgba(0,0,0,.08)}.site-header .wrapper{padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.brand{font-weight:800;letter-spacing:.18em;text-transform:uppercase}.nav{display:flex;gap:24px;flex-wrap:wrap}.nav a:hover{color:#D52B1E}.cta-button,.primary{display:inline-flex;padding:14px 26px;background:#D52B1E;color:#fff;border-radius:999px;font-weight:700}.secondary{display:inline-flex;padding:14px 26px;background:#fff;color:#111;border:1px solid rgba(17,17,17,.12);border-radius:999px;font-weight:700}main{padding:28px 24px 60px}.breadcrumb{display:flex;gap:10px;color:#555;margin:20px 0 16px}.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding:48px 0 72px}.eyebrow,.hero-eyebrow{font-size:.8rem;letter-spacing:.26em;text-transform:uppercase;color:#D52B1E;font-weight:700;margin-bottom:18px}.hero-title{font-size:clamp(3rem,5vw,4.9rem);line-height:.98;margin:0}.hero-subtitle{font-size:1.15rem;line-height:1.8;color:#4d4d4d;margin:24px 0}.hero-actions{display:flex;gap:14px;flex-wrap:wrap}.hero-tags,.grid,.faq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:28px}.tag,.card,.faq-item,.quote-card{background:#fff;border-radius:24px;padding:24px;box-shadow:0 18px 50px rgba(17,17,17,.07)}.hero-visual{border-radius:30px;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.14);background:#ddd}.section{padding:72px 0;border-top:1px solid rgba(17,17,17,.08)}.section--white{background:#fff;margin-left:-24px;margin-right:-24px;padding-left:24px;padding-right:24px}.section__inner{max-width:1200px;margin:0 auto}.section-title h2{font-size:clamp(2rem,3vw,2.9rem);line-height:1.08;margin:0 0 18px}.section-title p,p,li{color:#4d4d4d;line-height:1.85}.split{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.bullet-list{padding-left:20px}.bullet-list li{margin-bottom:10px}.quote-card{background:#111;color:#fff}.quote-card p,.quote-card li{color:#ddd}.quote-card a{display:inline-flex;margin-top:16px;background:#D52B1E;color:#fff;padding:13px 24px;border-radius:999px;font-weight:700}.card strong{display:block;margin-bottom:8px}.faq-item button{width:100%;border:0;background:transparent;font-weight:800;text-align:left;font-size:1rem;display:flex;justify-content:space-between}.footer{background:#111;color:#ddd;padding:60px 24px}.footer .wrapper{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.footer p,.footer a{color:#c8c8c8;line-height:1.8}@media(max-width:900px){.hero,.split,.footer .wrapper{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-<div class="page-shell">
-  <div class="topbar">
-    <div class="wrapper">
-      <div class="topbar-group">
-        <div class="topbar-item"><strong>Swiss Managed</strong></div>
-        <div class="topbar-item"><strong>Factory in Thailand</strong></div>
-        <div class="topbar-item"><strong>Premium Quality</strong></div>
-        <div class="topbar-item"><strong>Worldwide Shipping</strong></div>
-      </div>
-      <div class="topbar-links">
-        <a href="#">DE</a>
-        <a href="#">EN</a>
-      </div>
-    </div>
-  </div>
-  <header class="site-header">
-    <div class="wrapper">
-      <div class="brand">TShirtSwiss.ch</div>
-      <nav class="nav">
-        <a href="/pages/products/">Products</a>
-        <a href="/pages/industries/">Industries</a>
-        <a href="/pages/services/">Services</a>
-        <a href="/pages/about-us/">About</a>
-        <a href="/pages/production/">Production</a>
-        <a href="/pages/contact/">Contact</a>
-      </nav>
-      <a class="cta-button" href="/pages/request-a-quote/">Request a Quote</a>
-    </div>
-  </header>
-  <main>
-    <nav class="breadcrumb">
-      <a href="/pages/home/">Home</a>
-      <span>›</span>
-      <a href="/pages/industries/">Industries</a>
-      <span>›</span>
-      <span>Events & Merchandise</span>
-    </nav>
-    <section class="hero">
-      <div class="hero-copy">
-        <div class="hero-eyebrow">EVENTS & MERCHANDISE</div>
-        <h1 class="hero-title">Merchandise Made for Events, Brands and Campaigns.</h1>
-        <p class="hero-subtitle">Premium event apparel and branded merchandise for conferences, festivals and activations.</p>
-        <div class="hero-actions">
-          <a class="primary" href="/pages/request-a-quote/">Request a Quote</a>
-          <a class="secondary" href="/pages/products/">View Products</a>
-        </div>
-        <div class="hero-tags"><div class="hero-tag"><span>Event-Ready Quality</span></div>
-<div class="hero-tag"><span>Strong Brand Impact</span></div>
-<div class="hero-tag"><span>Fast Production</span></div>
-<div class="hero-tag"><span>Reliable Delivery</span></div></div>
-      </div>
-      <div class="hero-visual">
-        <img src="https://via.placeholder.com/1200x900?text=Events+&+Merchandise+Hero" alt="Events & Merchandise hero image">
-      </div>
-    </section>
+<div class="topbar"><div class="wrapper"><strong>Swiss Managed</strong><strong>Factory in Thailand</strong><strong>Premium Quality</strong><strong>Worldwide Shipping</strong></div></div>
+<header class="site-header"><div class="wrapper"><div class="brand">TShirtSwiss.ch</div><nav class="nav"><a href="/pages/products/">Products</a><a href="/pages/industries/">Industries</a><a href="/pages/services/">Services</a><a href="/pages/about-us/">About</a><a href="/pages/production/">Production</a><a href="/pages/contact/">Contact</a></nav><a class="cta-button" href="/pages/request-a-quote/">Request a Quote</a></div></header>
+<main>
+  <nav class="breadcrumb"><a href="/pages/home/">Home</a><span>›</span><a href="/pages/industries/">Industries</a><span>›</span><span>Events & Merchandise</span></nav>
+  <section class="hero"><div><div class="hero-eyebrow">Events & Merchandise</div><h1 class="hero-title">Custom Event Merchandise and Band Merch Made in Thailand</h1><p class="hero-subtitle">TShirt Swiss manufactures event merchandise, promotional apparel and band merch for tours, festivals, corporate events, product launches, fan communities and online stores. We help teams create t-shirts, hats, hoodies, tote bags and retail-ready merchandise with Swiss-managed quality control.</p><div class="hero-actions"><a class="primary" href="/pages/request-a-quote/">Request a Merch Quote</a><a class="secondary" href="/pages/products/promotional-merchandise/">View Promotional Merchandise</a></div><div class="hero-tags"><div class="tag">Band shirts and tour merch</div><div class="tag">Hats, hoodies and totes</div><div class="tag">Event staff apparel</div><div class="tag">Retail-ready packaging</div></div></div><div class="hero-visual"><img src="https://via.placeholder.com/1200x900?text=Event+Merchandise" alt="Event merchandise and band merch manufacturing"></div></section>
 
-    <section class="section section--white">
-      <div class="section__inner">
-        <div class="section-title">
-          <h2>Trusted by Swiss businesses across industries</h2>
-          <p>Our clients rely on Swiss-managed apparel production for consistent quality, clear communication and timely delivery.</p>
-        </div>
-        <div class="trust-logos">
-          <span>Implenia</span><span>HRS Real Estate AG</span><span>WALO</span><span>Frutiger</span><span>BÜRGI</span><span>STRABAG</span>
-        </div>
-      </div>
-    </section>
+  <section class="section section--white"><div class="section__inner"><div class="section-title"><h2>Event Merchandise That Works Before, During and After the Event</h2><p>Event merchandise must do more than carry a logo. It needs to look good in photos, feel comfortable for attendees or staff, support fast distribution, and remain useful after the event is over. The strongest merchandise becomes a long-term reminder of the brand, tour, festival or campaign.</p></div><div class="grid"><article class="card"><strong>Corporate Events</strong><p>Branded t-shirts, polos, caps, tote bags and hoodies for conferences, launches, activations and team events.</p></article><article class="card"><strong>Festivals and Concerts</strong><p>Merchandise for fans, crew, performers, sponsors and venue teams.</p></article><article class="card"><strong>Product Launches</strong><p>Retail-quality promotional apparel that supports brand storytelling and social media visibility.</p></article><article class="card"><strong>Community and Club Events</strong><p>Affordable but well-presented garments for clubs, schools, charities and local organisations.</p></article></div></div></section>
 
-    <section class="section">
-      <div class="section__inner">
-        <div class="section-title">
-          <h2>Solutions for every team and role</h2>
-          <p>Custom apparel categories tailored to the way your industry works, from design to delivery.</p>
-        </div>
-        <div class="solution-grid"><article class="solution-card"><strong>Trade Shows</strong><p>Branded apparel for exhibitions and conferences.</p></article>
-<article class="solution-card"><strong>Festivals</strong><p>Durable merchandise for large crowd events.</p></article>
-<article class="solution-card"><strong>Corporate Events</strong><p>Professional apparel for staff and attendees.</p></article>
-<article class="solution-card"><strong>Sports Events</strong><p>Team and volunteer apparel for competitions.</p></article>
-<article class="solution-card"><strong>Promotional Campaigns</strong><p>High-quality merchandise for activations.</p></article>
-<article class="solution-card"><strong>VIP Gifts</strong><p>Premium branded apparel for guest gifting.</p></article></div>
-      </div>
-    </section>
+  <section class="section"><div class="section__inner"><div class="section-title"><h2>Band Merchandise: Shirts, Hats, Hoodies and Fan Apparel</h2><p>Band merch is one of the strongest categories for apparel because it carries identity, memory and community. Fans often buy merch to remember a show, support an artist, represent a scene or wear artwork they connect with. That means quality, print feel, fit and artwork execution matter.</p></div><div class="grid"><article class="card"><strong>Band T-Shirts</strong><p>Classic tour shirts, album artwork tees, oversized shirts, vintage-inspired garments and limited edition drops.</p></article><article class="card"><strong>Hoodies and Sweatshirts</strong><p>Premium fan merchandise for colder venues, winter tours, online stores and higher-value merch tables.</p></article><article class="card"><strong>Caps and Headwear</strong><p>Embroidered caps, beanies and headwear for subtle band branding, crew apparel and everyday fan wear.</p></article><article class="card"><strong>Tote Bags</strong><p>Lightweight merch for record stores, festivals, album launches and eco-conscious fan products.</p></article><article class="card"><strong>Crew and Tour Apparel</strong><p>Staff shirts, backstage apparel, production crew uniforms and VIP merchandise for tours and festivals.</p></article><article class="card"><strong>Retail-Ready Drops</strong><p>Labels, hang tags, size stickers and packaging for online stores, limited releases and fan-club products.</p></article></div></div></section>
 
-    <section class="section section--white section--split">
-      <div class="section__inner">
-        <div class="feature-copy">
-          <p class="eyebrow">Built for performance</p>
-          <h3>Workwear That Delivers Safety, Comfort and Durability.</h3>
-          <p>We combine Swiss quality standards with expert manufacturing in Thailand to deliver apparel that meets the demands of your daily operations.</p>
-          <ul class="bullet-list">
-            <li>Strong, durable fabrics for heavy use</li>
-            <li>Reinforced stitching and stress points</li>
-            <li>High visibility options for safety-critical roles</li>
-            <li>Custom branding with embroidery or printing</li>
-            <li>Functional designs with practical pockets</li>
-            <li>Comfortable fit for all-day performance</li>
-          </ul>
-        </div>
-        <div class="quote-card">
-          <h3>Request a Quote</h3>
-          <p>Get your custom workwear quote in 24 hours.</p>
-          <ul>
-            <li>Tell us your needs</li>
-            <li>Receive expert advice</li>
-            <li>Get your personalized quote</li>
-            <li>On-time production & delivery</li>
-          </ul>
-          <a href="/pages/request-a-quote/">Request a Quote</a>
-        </div>
-      </div>
-    </section>
+  <section class="section section--white"><div class="section__inner split"><div><p class="eyebrow">Merch Strategy</p><h2>What Makes Band Merch Sell Better?</h2><p>Good band merchandise should feel like part of the artist's world. The blank garment, print method, colour, fit and finishing all influence whether fans see the item as a cheap giveaway or a product worth buying and wearing often.</p><ul class="bullet-list"><li>Use better blanks for premium tour or online-store merchandise.</li><li>Choose print methods based on artwork detail, colour count and garment fabric.</li><li>Offer more than one product type, such as t-shirts, hoodies, caps and totes.</li><li>Plan size ratios carefully for merch tables and online sales.</li><li>Use limited edition colours or artwork for tours, festivals and album launches.</li><li>Add hang tags, stickers or packaging for retail-ready fan products.</li></ul></div><div class="quote-card"><h3>Planning Band Merch?</h3><p>Send your artwork, product list, quantity, deadline and delivery location. We can advise garments, print methods and packaging for tour or online-store merch.</p><ul><li>Tour shirts</li><li>Album launch merch</li><li>Caps and hoodies</li><li>Fan-club drops</li></ul><a href="/pages/request-a-quote/">Request a Quote</a></div></div></section>
 
-    <section class="section">
-      <div class="section__inner">
-        <div class="section-title">
-          <h2>Designed for your industry standards</h2>
-          <p>Premium apparel solutions that align with your safety, durability and brand requirements.</p>
-        </div>
-        <div class="feature-row">
-          <div class="feature-tile"><strong>Safety First</strong><p>High-visibility options and protective features for demanding environments.</p></div>
-          <div class="feature-tile"><strong>All Weather</strong><p>Workwear designed to perform in every season and condition.</p></div>
-          <div class="feature-tile"><strong>Easy Care</strong><p>Apparel built to stay reliable and low-maintenance through repeated use.</p></div>
-          <div class="feature-tile"><strong>Team Identity</strong><p>Custom branding for a polished, professional look.</p></div>
-          <div class="feature-tile"><strong>Sustainable Options</strong><p>Eco-friendly fabrics and finishes are available for responsible brands.</p></div>
-        </div>
-      </div>
-    </section>
+  <section class="section"><div class="section__inner"><div class="section-title"><h2>Fabric and Product Choices for Events and Merchandise</h2><p>Merchandise fabric choice depends on budget, print method, event climate, perceived value and how long the product should last. For paid merchandise, comfort and durability matter more than for short-term giveaways.</p></div><div class="grid"><article class="card"><strong>Cotton T-Shirt Jersey</strong><p>Soft, familiar and ideal for band shirts, fan apparel, retail merchandise and premium event t-shirts.</p></article><article class="card"><strong>Heavyweight Cotton</strong><p>Creates a premium streetwear feel for limited edition merch, oversized tees and higher-value drops.</p></article><article class="card"><strong>Poly-Cotton Blends</strong><p>Durable and stable for staff shirts, promotional apparel and budget-conscious event merchandise.</p></article><article class="card"><strong>Fleece</strong><p>Best for hoodies and sweatshirts where fans expect comfort, warmth and higher perceived value.</p></article><article class="card"><strong>Twill and Cotton Caps</strong><p>Good for embroidered band logos, corporate campaigns, festival staff and subtle everyday merchandise.</p></article><article class="card"><strong>Canvas and Cotton Totes</strong><p>Useful for festivals, album launches, conferences and merch bundles.</p></article></div></div></section>
 
-    <section class="section section--white">
-      <div class="section__inner">
-        <div class="section-title">
-          <h2>Real projects. Real results.</h2>
-          <p>See how Swiss-managed apparel manufacturing supports strong, consistent outcomes for your industry.</p>
-        </div>
-        <div class="work-grid"><article class="case-card"><div class="case-copy"><strong>Trade Show Apparel</strong><span>Zurich, Switzerland</span></div></article>
-<article class="case-card"><div class="case-copy"><strong>Festival Team Gear</strong><span>Basel, Switzerland</span></div></article>
-<article class="case-card"><div class="case-copy"><strong>Corporate Event Apparel</strong><span>Bern, Switzerland</span></div></article>
-<article class="case-card"><div class="case-copy"><strong>Sports Activation Kit</strong><span>Geneva, Switzerland</span></div></article></div>
-      </div>
-    </section>
+  <section class="section section--white"><div class="section__inner split"><div><p class="eyebrow">Workplace and Event Suitability</p><h2>Merchandise Should Match the Environment</h2><p>Event apparel should be selected around how it will be used. Staff shirts need clear identification and comfort. Fan merchandise needs strong artwork and good fit. Outdoor events need breathable or weather-aware garments. Paid merchandise needs higher perceived value than a basic giveaway.</p><ul class="bullet-list"><li>Lightweight shirts are practical for hot festivals and outdoor activations.</li><li>Hoodies and sweatshirts suit winter tours, indoor venues and premium merch bundles.</li><li>Caps support outdoor visibility, staff identification and fan merchandise variety.</li><li>Tote bags are useful for conferences, record fairs, festivals and sponsor packs.</li><li>Bright colours can help staff stand out in crowds where appropriate.</li><li>Retail packing can support online sales and fan-club distribution.</li></ul></div><div class="quote-card"><h3>Need Event Merch Fast?</h3><p>Tell us the event date, garment list, artwork and shipping destination. We can help plan a realistic production route.</p><ul><li>Festivals</li><li>Concerts</li><li>Corporate events</li><li>Merch stores</li></ul><a href="/pages/request-a-quote/">Start Planning</a></div></div></section>
 
-    <section class="section">
-      <div class="section__inner">
-        <div class="section-title">
-          <h2>Common questions</h2>
-          <p>Answers to the most frequent questions about production, timelines and custom apparel.</p>
-        </div>
-        <div class="faq-grid"><div class="faq-item"><button type="button"><span>What is the minimum order quantity (MOQ)?</span><span>+</span></button><div class="faq-answer"><p>MOQ depends on product type and materials. We support both small sample runs and larger production orders.</p></div></div>
-<div class="faq-item"><button type="button"><span>Can you add our company logo?</span><span>+</span></button><div class="faq-answer"><p>Yes, we apply logos through printing, embroidery or labels based on the product and application.</p></div></div>
-<div class="faq-item"><button type="button"><span>Do you offer high-visibility workwear?</span><span>+</span></button><div class="faq-answer"><p>Yes, we produce hi-vis apparel with reflective details for safety and compliance.</p></div></div>
-<div class="faq-item"><button type="button"><span>How long is the production time?</span><span>+</span></button><div class="faq-answer"><p>Production timelines depend on order size and complexity, but we prioritize fast, reliable delivery.</p></div></div></div>
-      </div>
-    </section>
-  </main>
+  <section class="section"><div class="section__inner"><div class="section-title"><h2>Decoration and Branding Options</h2><p>The best decoration method depends on the artwork, garment and desired finish. A bold one-colour band logo may suit screen printing, while a premium cap usually needs embroidery. Detailed full-colour artwork may require a different approach than simple text or line art.</p></div><div class="grid"><article class="card"><strong>Screen Printing</strong><p>Excellent for band shirts, event t-shirts and bold artwork on cotton or cotton-rich garments.</p></article><article class="card"><strong>Embroidery</strong><p>Premium option for caps, polos, jackets and subtle band or corporate branding.</p></article><article class="card"><strong>Heat Transfer</strong><p>Useful for names, numbers, smaller runs, sponsor logos and selected event garments.</p></article><article class="card"><strong>Private Label Details</strong><p>Woven labels, printed neck labels, hang tags and packaging can turn merch into a retail product.</p></article></div></div></section>
 
-  <footer class="footer">
-    <div class="wrapper">
-      <div>
-        <h3>About</h3>
-        <p>Swiss-managed premium apparel manufacturing in Thailand.</p>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <p>swiss@tshirtswiss.ch<br>+41 79 000 00 00</p>
-      </div>
-      <div>
-        <h3>Office</h3>
-        <p>Swiss HQ + Thailand Factory</p>
-      </div>
-    </div>
-  </footer>
-</div>
-<script>
-document.querySelectorAll('.faq-item button').forEach(function(button) {
-  button.addEventListener('click', function() {
-    var item = button.closest('.faq-item');
-    if (item) {
-      item.classList.toggle('open');
-    }
-  });
-});
-</script>
+  <section class="section section--white"><div class="section__inner"><div class="section-title"><h2>Common Event and Band Merch Questions</h2><p>Useful questions to answer before ordering event apparel or music merchandise.</p></div><div class="faq-grid"><div class="faq-item"><button type="button"><span>What products work best for band merch?</span><span>+</span></button><p>T-shirts are the core product, but hoodies, caps, beanies, tote bags and limited edition drops can increase average order value and give fans more choice.</p></div><div class="faq-item"><button type="button"><span>Which fabric is best for band t-shirts?</span><span>+</span></button><p>Cotton jersey is popular for comfort and print feel. Heavyweight cotton can create a premium streetwear-style product for limited drops or higher-price merch.</p></div><div class="faq-item"><button type="button"><span>Can you prepare merch for online stores?</span><span>+</span></button><p>Yes. We can support labels, hang tags, size stickers, packaging and carton preparation for ecommerce or fan-club fulfilment.</p></div><div class="faq-item"><button type="button"><span>Can you produce staff apparel and fan merch together?</span><span>+</span></button><p>Yes. We can produce event staff shirts, crew apparel, band merchandise and promotional products within one planned order.</p></div></div></div></section>
+</main>
+<footer class="footer"><div class="wrapper"><div><h3>TShirtSwiss.ch</h3><p>Swiss-managed apparel manufacturing in Thailand.</p></div><div><h3>Related Pages</h3><p><a href="/pages/products/custom-t-shirts/">Custom T-Shirts</a><br><a href="/pages/products/hoodies-sweatshirts/">Hoodies & Sweatshirts</a><br><a href="/pages/products/caps-headwear/">Caps & Headwear</a></p></div><div><h3>Contact</h3><p>info@tshirtswiss.ch<br><a href="/pages/request-a-quote/">Request a Quote</a></p></div></div></footer>
 </body>
 </html>
