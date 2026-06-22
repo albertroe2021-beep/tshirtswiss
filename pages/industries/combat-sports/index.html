@@ -3,282 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Combat Sports | TShirtSwiss.ch</title>
+  <title>Combat Sports & Muay Thai Apparel Manufacturer | TShirt Swiss</title>
+  <meta name="description" content="Swiss-managed combat sports and Muay Thai apparel manufacturing in Thailand for gyms, fighters and fightwear brands. Custom rashguards, Muay Thai shorts, MMA shorts, team shirts, hoodies, sports bras, wraps and branded gym merchandise.">
   <style>
-:root {
-  color-scheme: light;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  color: #111;
-  background: #f4f4f4;
-}
-* { box-sizing: border-box; }
-body { margin: 0; background: #f4f4f4; color: #111; }
-a { color: inherit; text-decoration: none; }
-img { max-width: 100%; height: auto; display: block; }
-.page-shell { display: flex; flex-direction: column; min-height: 100vh; }
-.topbar { background: #111; color: #f4f4f4; font-size: .9rem; }
-.topbar .wrapper { max-width: 1280px; margin: 0 auto; padding: 12px 24px; display: flex; justify-content: space-between; gap: 16px; align-items: center; flex-wrap: wrap; }
-.topbar-group { display: flex; flex-wrap: wrap; gap: 18px; align-items: center; }
-.topbar-item { display: inline-flex; align-items: center; gap: 8px; opacity: .85; }
-.topbar-item strong { color: #fff; font-weight: 700; }
-.topbar-links { display: flex; gap: 14px; }
-.topbar-links a { color: #f4f4f4; opacity: .8; padding: 6px 10px; border-radius: 999px; }
-.topbar-links a:hover { opacity: 1; }
-.site-header { background: #fff; position: sticky; top: 0; z-index: 30; box-shadow: 0 20px 60px rgba(0, 0, 0, .08); }
-.site-header .wrapper { max-width: 1280px; margin: 0 auto; padding: 22px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
-.brand { font-size: 1.05rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: #111; }
-.nav { display: flex; gap: 24px; flex-wrap: wrap; font-size: .95rem; }
-.nav a { color: #111; opacity: .85; transition: opacity .2s, color .2s; }
-.nav a:hover { opacity: 1; color: #D52B1E; }
-.cta-button { padding: 14px 26px; background: #D52B1E; color: #fff; border-radius: 999px; font-weight: 700; box-shadow: 0 18px 40px rgba(213, 43, 30, .18); }
-main { flex: 1; max-width: 1280px; margin: 0 auto; padding: 28px 24px 60px; }
-.breadcrumb { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; font-size: .9rem; color: #555; margin: 20px 0 16px; }
-.breadcrumb a { opacity: .8; }
-.breadcrumb span { opacity: .55; }
-.hero { display: grid; grid-template-columns: 1.05fr .95fr; gap: 36px; align-items: center; min-height: calc(100vh - 180px); padding: 40px 0 32px; }
-.hero-copy { max-width: 620px; }
-.hero-eyebrow { font-size: .8rem; letter-spacing: .26em; text-transform: uppercase; color: #D52B1E; font-weight: 700; margin-bottom: 18px; }
-.hero-title { font-size: clamp(3rem, 4.4vw, 4.8rem); line-height: 1; margin: 0; color: #111; }
-.hero-subtitle { margin: 24px 0 0; font-size: 1.24rem; line-height: 1.75; color: #222; max-width: 44rem; }
-.hero-text { margin: 24px 0 0; font-size: 1rem; line-height: 1.8; color: #4d4d4d; max-width: 42rem; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 32px; }
-.hero-actions a { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 28px; border-radius: 999px; font-weight: 700; transition: transform .2s, box-shadow .2s; }
-.hero-actions a.primary { background: #D52B1E; color: #fff; }
-.hero-actions a.secondary { border: 1px solid rgba(17, 17, 17, .12); background: #fff; color: #111; }
-.hero-tags { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 32px; }
-.hero-tag { padding: 18px 20px; background: #fff; border-radius: 22px; border: 1px solid rgba(17, 17, 17, .08); box-shadow: 0 18px 45px rgba(17, 17, 17, .05); }
-.hero-tag span { font-size: .95rem; color: #111; font-weight: 700; }
-.hero-visual { border-radius: 30px; overflow: hidden; box-shadow: 0 35px 90px rgba(17, 17, 17, .12); }
-.hero-visual img { width: 100%; height: auto; display: block; }
-.section { padding: 72px 0; }
-.section--white { background: #fff; }
-.section__inner { display: grid; gap: 34px; max-width: 1280px; margin: 0 auto; }
-.section--split .section__inner { grid-template-columns: 1fr 1fr; align-items: center; }
-.section-title h2 { margin: 0 0 14px; font-size: clamp(2.4rem, 3vw, 3.2rem); line-height: 1.05; font-weight: 800; color: #111; }
-.section-title p { margin: 0; color: #555; line-height: 1.75; font-size: 1rem; max-width: 46rem; }
-.trust-logos { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 24px; align-items: center; margin-top: 28px; }
-.trust-logos span { color: #555; font-size: .95rem; opacity: .8; text-align: center; }
-.solution-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 28px; }
-.solution-card { background: #fff; border-radius: 24px; padding: 28px; border: 1px solid rgba(17, 17, 17, .08); box-shadow: 0 18px 45px rgba(17, 17, 17, .05); }
-.solution-card strong { display: block; margin-bottom: 14px; font-size: 1rem; color: #111; }
-.solution-card p { margin: 0; color: #555; line-height: 1.75; font-size: .95rem; }
-.split-grid { display: grid; gap: 32px; grid-template-columns: 1.4fr .6fr; align-items: start; }
-.feature-copy h3 { margin: 0 0 18px; font-size: clamp(2rem, 2.3vw, 2.5rem); line-height: 1.05; color: #111; }
-.feature-copy p { margin: 0 0 24px; color: #555; line-height: 1.75; font-size: 1rem; max-width: 46rem; }
-.bullet-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
-.bullet-list li { display: flex; gap: 16px; align-items: flex-start; color: #444; line-height: 1.7; }
-.bullet-list li::before { content: '•'; color: #D52B1E; font-weight: 800; margin-top: 4px; }
-.quote-card { background: #111; color: #fff; border-radius: 30px; padding: 32px; display: grid; gap: 22px; box-shadow: 0 30px 80px rgba(17, 17, 17, .16); }
-.quote-card h3 { margin: 0; font-size: 1.5rem; line-height: 1.2; }
-.quote-card p { margin: 0; color: rgba(255,255,255,.82); line-height: 1.8; }
-.quote-card ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
-.quote-card li { display: flex; gap: 12px; align-items: flex-start; color: rgba(255,255,255,.9); }
-.quote-card li::before { content: '✓'; color: #D52B1E; margin-top: 2px; }
-.quote-card a { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 24px; background: #D52B1E; color: #fff; border-radius: 999px; font-weight: 700; margin-top: 14px; width: fit-content; }
-.feature-row { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-top: 26px; }
-.feature-tile { background: #fff; border-radius: 24px; padding: 24px; border: 1px solid rgba(17, 17, 17, .08); box-shadow: 0 18px 45px rgba(17, 17, 17, .05); }
-.feature-tile strong { display: block; margin-bottom: 12px; font-size: 1rem; color: #111; }
-.feature-tile p { margin: 0; color: #555; line-height: 1.75; font-size: .95rem; }
-.work-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 28px; }
-.case-card { background: #fff; border-radius: 24px; padding: 24px; border: 1px solid rgba(17, 17, 17, .08); box-shadow: 0 18px 45px rgba(17, 17, 17, .05); display: flex; flex-direction: column; justify-content: space-between; min-height: 170px; gap: 18px; }
-.case-copy strong { display: block; font-size: 1rem; color: #111; }
-.case-copy span { color: #555; line-height: 1.7; font-size: .95rem; }
-.faq-grid { display: grid; gap: 16px; margin-top: 24px; }
-.faq-item { background: #fff; border-radius: 24px; border: 1px solid rgba(17, 17, 17, .09); overflow: hidden; box-shadow: 0 18px 45px rgba(17, 17, 17, .05); }
-.faq-item button { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 24px; font-size: 1rem; border: 0; background: transparent; cursor: pointer; color: #111; }
-.faq-answer { padding: 0 24px 24px; color: #555; font-size: .95rem; line-height: 1.75; display: none; }
-.faq-item.open .faq-answer { display: block; }
-.footer { background: #111; color: #e2e2e2; padding: 48px 24px 56px; }
-.footer .wrapper { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
-.footer h3 { margin: 0 0 18px; font-size: 1rem; color: #fff; }
-.footer p, .footer a { margin: 0; color: #c8c8c8; line-height: 1.8; font-size: .95rem; }
-.footer a:hover { opacity: 1; }
-@media (max-width: 1060px) { .hero { grid-template-columns: 1fr; } .split-grid { grid-template-columns: 1fr; } .section--split .section__inner { grid-template-columns: 1fr; } }
-@media (max-width: 780px) { main { padding: 24px 18px 40px; } .site-header .wrapper, .topbar .wrapper { padding: 18px; } .nav { gap: 14px; } .hero-title { font-size: 2.8rem; } .hero-tags { grid-template-columns: 1fr; } .trust-logos { grid-template-columns: repeat(2, minmax(0, 1fr)); } .feature-row { grid-template-columns: 1fr; } .work-grid { grid-template-columns: 1fr; } }
+:root{color-scheme:light;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#111;background:#f4f4f4}*{box-sizing:border-box}body{margin:0;background:#f4f4f4;color:#111}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.topbar{background:#111;color:#fff}.topbar .wrapper,.site-header .wrapper,main,.footer .wrapper{max-width:1280px;margin:0 auto}.topbar .wrapper{padding:12px 24px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.site-header{background:#fff;position:sticky;top:0;z-index:30;box-shadow:0 20px 60px rgba(0,0,0,.08)}.site-header .wrapper{padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.brand{font-weight:800;letter-spacing:.18em;text-transform:uppercase}.nav{display:flex;gap:24px;flex-wrap:wrap}.nav a:hover{color:#D52B1E}.cta-button,.primary{display:inline-flex;padding:14px 26px;background:#D52B1E;color:#fff;border-radius:999px;font-weight:700}.secondary{display:inline-flex;padding:14px 26px;background:#fff;color:#111;border:1px solid rgba(17,17,17,.12);border-radius:999px;font-weight:700}main{padding:28px 24px 60px}.breadcrumb{display:flex;gap:10px;color:#555;margin:20px 0 16px}.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding:48px 0 72px}.eyebrow,.hero-eyebrow{font-size:.8rem;letter-spacing:.26em;text-transform:uppercase;color:#D52B1E;font-weight:700;margin-bottom:18px}.hero-title{font-size:clamp(3rem,5vw,4.9rem);line-height:.98;margin:0}.hero-subtitle{font-size:1.15rem;line-height:1.8;color:#4d4d4d;margin:24px 0}.hero-actions{display:flex;gap:14px;flex-wrap:wrap}.hero-tags,.grid,.faq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:28px}.tag,.card,.faq-item,.quote-card{background:#fff;border-radius:24px;padding:24px;box-shadow:0 18px 50px rgba(17,17,17,.07)}.hero-visual{border-radius:30px;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.14);background:#ddd}.section{padding:72px 0;border-top:1px solid rgba(17,17,17,.08)}.section--white{background:#fff;margin-left:-24px;margin-right:-24px;padding-left:24px;padding-right:24px}.section__inner{max-width:1200px;margin:0 auto}.section-title h2{font-size:clamp(2rem,3vw,2.9rem);line-height:1.08;margin:0 0 18px}.section-title p,p,li{color:#4d4d4d;line-height:1.85}.split{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.bullet-list{padding-left:20px}.bullet-list li{margin-bottom:10px}.quote-card{background:#111;color:#fff}.quote-card p,.quote-card li{color:#ddd}.quote-card a{display:inline-flex;margin-top:16px;background:#D52B1E;color:#fff;padding:13px 24px;border-radius:999px;font-weight:700}.card strong{display:block;margin-bottom:8px}.faq-item button{width:100%;border:0;background:transparent;font-weight:800;text-align:left;font-size:1rem;display:flex;justify-content:space-between}.footer{background:#111;color:#ddd;padding:60px 24px}.footer .wrapper{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.footer p,.footer a{color:#c8c8c8;line-height:1.8}@media(max-width:900px){.hero,.split,.footer .wrapper{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-<div class="page-shell">
-  <div class="topbar">
-    <div class="wrapper">
-      <div class="topbar-group">
-        <div class="topbar-item"><strong>Swiss Managed</strong></div>
-        <div class="topbar-item"><strong>Factory in Thailand</strong></div>
-        <div class="topbar-item"><strong>Premium Quality</strong></div>
-        <div class="topbar-item"><strong>Worldwide Shipping</strong></div>
-      </div>
-      <div class="topbar-links">
-        <a href="#">DE</a>
-        <a href="#">EN</a>
-      </div>
-    </div>
-  </div>
-  <header class="site-header">
-    <div class="wrapper">
-      <div class="brand">TShirtSwiss.ch</div>
-      <nav class="nav">
-        <a href="/pages/products/">Products</a>
-        <a href="/pages/industries/">Industries</a>
-        <a href="/pages/services/">Services</a>
-        <a href="/pages/about-us/">About</a>
-        <a href="/pages/production/">Production</a>
-        <a href="/pages/contact/">Contact</a>
-      </nav>
-      <a class="cta-button" href="/pages/request-a-quote/">Request a Quote</a>
-    </div>
-  </header>
-  <main>
-    <nav class="breadcrumb">
-      <a href="/pages/home/">Home</a>
-      <span>›</span>
-      <a href="/pages/industries/">Industries</a>
-      <span>›</span>
-      <span>Combat Sports</span>
-    </nav>
-    <section class="hero">
-      <div class="hero-copy">
-        <div class="hero-eyebrow">COMBAT SPORTS</div>
-        <h1 class="hero-title">Fight-Ready Apparel for Combat Teams and Clubs.</h1>
-        <p class="hero-subtitle">Technical training apparel and branded fight gear crafted for MMA, boxing and combat sports teams.</p>
-        <div class="hero-actions">
-          <a class="primary" href="/pages/request-a-quote/">Request a Quote</a>
-          <a class="secondary" href="/pages/products/">View Products</a>
-        </div>
-        <div class="hero-tags"><div class="hero-tag"><span>Durable Fabrics</span></div>
-<div class="hero-tag"><span>Bold Branding</span></div>
-<div class="hero-tag"><span>High Mobility</span></div>
-<div class="hero-tag"><span>Swiss Production Standards</span></div></div>
-      </div>
-      <div class="hero-visual">
-        <img src="https://via.placeholder.com/1200x900?text=Combat+Sports+Hero" alt="Combat Sports hero image">
-      </div>
-    </section>
+<div class="topbar"><div class="wrapper"><strong>Swiss Managed</strong><strong>Factory in Thailand</strong><strong>Premium Quality</strong><strong>Worldwide Shipping</strong></div></div>
+<header class="site-header"><div class="wrapper"><div class="brand">TShirtSwiss.ch</div><nav class="nav"><a href="/pages/products/">Products</a><a href="/pages/industries/">Industries</a><a href="/pages/services/">Services</a><a href="/pages/about-us/">About</a><a href="/pages/production/">Production</a><a href="/pages/contact/">Contact</a></nav><a class="cta-button" href="/pages/request-a-quote/">Request a Quote</a></div></header>
+<main>
+  <nav class="breadcrumb"><a href="/pages/home/">Home</a><span>›</span><a href="/pages/industries/">Industries</a><span>›</span><span>Combat Sports</span></nav>
+  <section class="hero"><div><div class="hero-eyebrow">Combat Sports Manufacturing</div><h1 class="hero-title">Custom Muay Thai, MMA and Fightwear Apparel Made in Thailand</h1><p class="hero-subtitle">TShirt Swiss supports gyms, fighters, teams and fightwear brands with Swiss-managed combat sports apparel production in Thailand, including rashguards, Muay Thai shorts, MMA shorts, team shirts, hoodies, sports bras, wraps, caps and retail-ready gym merchandise.</p><div class="hero-actions"><a class="primary" href="/pages/request-a-quote/">Request a Fightwear Quote</a><a class="secondary" href="/pages/products/rashguards/">View Rashguards</a></div><div class="hero-tags"><div class="tag">Muay Thai shorts</div><div class="tag">Rashguards and MMA shorts</div><div class="tag">Team shirts and hoodies</div><div class="tag">Gym merchandise</div></div></div><div class="hero-visual"><img src="https://via.placeholder.com/1200x900?text=Combat+Sports+Apparel" alt="Combat sports and Muay Thai apparel manufacturing"></div></section>
 
-    <section class="section section--white">
-      <div class="section__inner">
-        <div class="section-title">
-          <h2>Trusted by Swiss businesses across industries</h2>
-          <p>Our clients rely on Swiss-managed apparel production for consistent quality, clear communication and timely delivery.</p>
-        </div>
-        <div class="trust-logos">
-          <span>Implenia</span><span>HRS Real Estate AG</span><span>WALO</span><span>Frutiger</span><span>BÜRGI</span><span>STRABAG</span>
-        </div>
-      </div>
-    </section>
+  <section class="section section--white"><div class="section__inner"><div class="section-title"><h2>Combat Sports Products We Can Support</h2><p>The T-Shirt Bangkok Muay Thai gear article shows how wide the custom fightwear category can be, covering apparel, teamwear and branded accessories such as Muay Thai shorts, team pants, team shirts, hoodies, sports bras, hand wraps and ankle supports, as well as coordinated branded training items. We can use that broader range as a reference when planning a complete combat sports collection.</p></div><div class="grid"><article class="card"><strong>Fightwear Apparel</strong><p>Muay Thai shorts, MMA shorts, rashguards, compression tops, sports bras and training shirts.</p></article><article class="card"><strong>Gym and Team Apparel</strong><p>Team shirts, hoodies, polos, caps, warm-up pants and travel apparel for fighters and coaches.</p></article><article class="card"><strong>Small Branded Accessories</strong><p>Hand wraps, ankle supports, bags, caps and supporting merchandise for gym identity.</p></article><article class="card"><strong>Retail-Ready Fightwear</strong><p>Custom labels, hang tags, packaging and repeatable specifications for online fightwear brands.</p></article></div></div></section>
 
-    <section class="section">
-      <div class="section__inner">
-        <div class="section-title">
-          <h2>Solutions for every team and role</h2>
-          <p>Custom apparel categories tailored to the way your industry works, from design to delivery.</p>
-        </div>
-        <div class="solution-grid"><article class="solution-card"><strong>MMA Clubs</strong><p>Technical shorts and tops for mixed martial arts teams.</p></article>
-<article class="solution-card"><strong>Boxing Gyms</strong><p>Durable apparel for coaches and fighters.</p></article>
-<article class="solution-card"><strong>Wrestling Teams</strong><p>Strong, flexible gear for intense training.</p></article>
-<article class="solution-card"><strong>Fight Events</strong><p>Merch and uniforms for competition staff and athletes.</p></article>
-<article class="solution-card"><strong>Training Camps</strong><p>Reliable apparel for camp schedules and routines.</p></article>
-<article class="solution-card"><strong>Fightwear Branding</strong><p>Bold garments built for combat sport identities.</p></article></div>
-      </div>
-    </section>
+  <section class="section"><div class="section__inner"><div class="section-title"><h2>Muay Thai Apparel With Authentic Thailand Manufacturing Context</h2><p>Thailand has a strong global association with Muay Thai culture, training and fightwear. That creates a natural advantage for brands that want apparel connected to the sport's origin while still maintaining professional export quality, clear communication and brand-ready finishing.</p></div><div class="grid"><article class="card"><strong>Custom Muay Thai Shorts</strong><p>Iconic fightwear with bold colours, embroidery, sublimation or sponsor artwork for fighters, gyms and fight brands.</p></article><article class="card"><strong>Team Shirts</strong><p>Cotton or dry-fit shirts for fighters, coaches, students, events and sponsor visibility.</p></article><article class="card"><strong>Muay Thai Hoodies</strong><p>Premium apparel for travel, warm-ups, fan merchandise and online store products.</p></article><article class="card"><strong>Sports Bras and Training Tops</strong><p>Performance garments for athletes, gyms and active fightwear collections.</p></article><article class="card"><strong>Hand Wraps and Ankle Supports</strong><p>Smaller branded items that can complete a gym kit or retail product range.</p></article><article class="card"><strong>Gym Merchandise</strong><p>Caps, tote bags, t-shirts and hoodies that help gyms build community and extra revenue.</p></article></div></div></section>
 
-    <section class="section section--white section--split">
-      <div class="section__inner">
-        <div class="feature-copy">
-          <p class="eyebrow">Built for performance</p>
-          <h3>Workwear That Delivers Safety, Comfort and Durability.</h3>
-          <p>We combine Swiss quality standards with expert manufacturing in Thailand to deliver apparel that meets the demands of your daily operations.</p>
-          <ul class="bullet-list">
-            <li>Strong, durable fabrics for heavy use</li>
-            <li>Reinforced stitching and stress points</li>
-            <li>High visibility options for safety-critical roles</li>
-            <li>Custom branding with embroidery or printing</li>
-            <li>Functional designs with practical pockets</li>
-            <li>Comfortable fit for all-day performance</li>
-          </ul>
-        </div>
-        <div class="quote-card">
-          <h3>Request a Quote</h3>
-          <p>Get your custom workwear quote in 24 hours.</p>
-          <ul>
-            <li>Tell us your needs</li>
-            <li>Receive expert advice</li>
-            <li>Get your personalized quote</li>
-            <li>On-time production & delivery</li>
-          </ul>
-          <a href="/pages/request-a-quote/">Request a Quote</a>
-        </div>
-      </div>
-    </section>
+  <section class="section section--white"><div class="section__inner split"><div><p class="eyebrow">Case Study Direction</p><h2>Yaisu Fight Gear as a Model for Branded Fightwear Collections</h2><p>The T-Shirt Bangkok article presents Yaisu Fight Gear as an example of how a combat sports brand can build a complete product ecosystem around Muay Thai identity. The article describes Yaisu collections involving custom Muay Thai shorts, team pants, team shirts, hoodies, sports bras, hand wraps, ankle supports and branded training items, including fighter-specific lines.</p><p>For TShirt Swiss, Yaisu is a useful case-study model because it shows how a fightwear brand can move beyond one product and create a coordinated collection for fighters, gyms and fans.</p><ul class="bullet-list"><li>Develop hero products such as shorts or rashguards.</li><li>Add team apparel for coaches, students and supporters.</li><li>Create fighter-specific or limited-edition drops.</li><li>Use accessories such as wraps, ankle supports and caps to complete the range.</li><li>Package products for ecommerce, gym sales and international customers.</li></ul></div><div class="quote-card"><h3>Build a Fightwear Brand Like a Collection</h3><p>Send your gym name, brand concept, product list, artwork, colour direction and target quantity. We can help plan a fightwear range rather than a single garment.</p><ul><li>Fighter collections</li><li>Gym apparel</li><li>Branded accessories</li><li>Retail-ready drops</li></ul><a href="/pages/request-a-quote/">Plan a Collection</a></div></div></section>
 
-    <section class="section">
-      <div class="section__inner">
-        <div class="section-title">
-          <h2>Designed for your industry standards</h2>
-          <p>Premium apparel solutions that align with your safety, durability and brand requirements.</p>
-        </div>
-        <div class="feature-row">
-          <div class="feature-tile"><strong>Safety First</strong><p>High-visibility options and protective features for demanding environments.</p></div>
-          <div class="feature-tile"><strong>All Weather</strong><p>Workwear designed to perform in every season and condition.</p></div>
-          <div class="feature-tile"><strong>Easy Care</strong><p>Apparel built to stay reliable and low-maintenance through repeated use.</p></div>
-          <div class="feature-tile"><strong>Team Identity</strong><p>Custom branding for a polished, professional look.</p></div>
-          <div class="feature-tile"><strong>Sustainable Options</strong><p>Eco-friendly fabrics and finishes are available for responsible brands.</p></div>
-        </div>
-      </div>
-    </section>
+  <section class="section"><div class="section__inner"><div class="section-title"><h2>Fabric Types and Benefits for Combat Sports Apparel</h2><p>Combat sports garments need to handle movement, sweat, stretching, friction and repeated washing. Fabric should be selected based on activity, fit, artwork requirements and whether the product is used for training, competition, teamwear or merchandise.</p></div><div class="grid"><article class="card"><strong>Sublimation Polyester</strong><p>Ideal for rashguards, fight shorts and full-colour designs that need durable artwork integrated into the fabric.</p></article><article class="card"><strong>Polyester-Spandex Blends</strong><p>Useful for compression garments, sports bras and rashguards requiring stretch and recovery.</p></article><article class="card"><strong>Satin or Gloss Polyester</strong><p>Common direction for Muay Thai shorts where shine, movement and bold colour presentation are desired.</p></article><article class="card"><strong>Dry-Fit Polyester</strong><p>Good for team shirts, training tops and gym apparel in hot climates or high-sweat environments.</p></article><article class="card"><strong>Cotton Jersey</strong><p>Suitable for casual gym shirts, fan merchandise and lifestyle products.</p></article><article class="card"><strong>Fleece and French Terry</strong><p>Best for hoodies, warm-up apparel and premium gym merchandise.</p></article></div></div></section>
 
-    <section class="section section--white">
-      <div class="section__inner">
-        <div class="section-title">
-          <h2>Real projects. Real results.</h2>
-          <p>See how Swiss-managed apparel manufacturing supports strong, consistent outcomes for your industry.</p>
-        </div>
-        <div class="work-grid"><article class="case-card"><div class="case-copy"><strong>MMA Team Apparel</strong><span>Zurich, Switzerland</span></div></article>
-<article class="case-card"><div class="case-copy"><strong>Boxing Club Kit</strong><span>Basel, Switzerland</span></div></article>
-<article class="case-card"><div class="case-copy"><strong>Wrestling Program</strong><span>Bern, Switzerland</span></div></article>
-<article class="case-card"><div class="case-copy"><strong>Event Team Gear</strong><span>Geneva, Switzerland</span></div></article></div>
-      </div>
-    </section>
+  <section class="section section--white"><div class="section__inner split"><div><p class="eyebrow">Training and Brand Suitability</p><h2>Fightwear Should Support Movement, Durability and Identity</h2><p>Combat sports apparel is highly visible and heavily used. It needs to support movement while representing the fighter, gym or brand. From a practical training perspective, garments should consider stretch, seam comfort, heat comfort, durability, artwork placement and wash performance.</p><ul class="bullet-list"><li>Stretch fabrics support grappling, striking, clinch work and gym movement.</li><li>Sublimation helps maintain full-colour artwork on performance garments.</li><li>Breathable dry-fit fabrics are useful for hot gyms and tropical climates.</li><li>Reinforced construction matters for fight shorts and high-movement garments.</li><li>Team colours and sponsor placement help gyms and fighters look professional.</li><li>Private label finishing helps fightwear brands sell online and internationally.</li></ul></div><div class="quote-card"><h3>Need Custom Combat Sports Apparel?</h3><p>Tell us your sport, product list, artwork, team colours, quantity and deadline. We can advise fabrics, decoration methods and collection planning.</p><ul><li>Muay Thai gyms</li><li>MMA teams</li><li>Fightwear brands</li><li>Promoters and events</li></ul><a href="/pages/request-a-quote/">Request a Quote</a></div></div></section>
 
-    <section class="section">
-      <div class="section__inner">
-        <div class="section-title">
-          <h2>Common questions</h2>
-          <p>Answers to the most frequent questions about production, timelines and custom apparel.</p>
-        </div>
-        <div class="faq-grid"><div class="faq-item"><button type="button"><span>What is the minimum order quantity (MOQ)?</span><span>+</span></button><div class="faq-answer"><p>MOQ depends on product type and materials. We support both small sample runs and larger production orders.</p></div></div>
-<div class="faq-item"><button type="button"><span>Can you add our company logo?</span><span>+</span></button><div class="faq-answer"><p>Yes, we apply logos through printing, embroidery or labels based on the product and application.</p></div></div>
-<div class="faq-item"><button type="button"><span>Do you offer high-visibility workwear?</span><span>+</span></button><div class="faq-answer"><p>Yes, we produce hi-vis apparel with reflective details for safety and compliance.</p></div></div>
-<div class="faq-item"><button type="button"><span>How long is the production time?</span><span>+</span></button><div class="faq-answer"><p>Production timelines depend on order size and complexity, but we prioritize fast, reliable delivery.</p></div></div></div>
-      </div>
-    </section>
-  </main>
+  <section class="section"><div class="section__inner"><div class="section-title"><h2>Choosing Gear for Different Combat Sports Environments</h2><p>A hot Bangkok Muay Thai gym, a European MMA academy, a tournament team and an ecommerce fightwear brand all have different product priorities. Fabric, fit and branding should match the environment and sales channel.</p></div><div class="grid"><article class="card"><strong>Hot Muay Thai Gyms</strong><p>Lightweight dry-fit shirts, breathable shorts and quick-dry fabrics support comfort during intense training.</p></article><article class="card"><strong>Grappling and MMA</strong><p>Stretch rashguards, compression shorts and sublimated designs support movement and durable branding.</p></article><article class="card"><strong>Fight Teams</strong><p>Matching shorts, shirts, hoodies, caps and warm-up apparel create a unified team identity.</p></article><article class="card"><strong>Events and Promotions</strong><p>Fighter walkout shirts, sponsor apparel, event staff shirts and merchandise can be produced together.</p></article><article class="card"><strong>Online Fightwear Brands</strong><p>Private labels, hang tags, packaging and repeatable specs help products look professional online.</p></article><article class="card"><strong>Gym Retail Corners</strong><p>Small product ranges such as shirts, hoodies, wraps and caps can create additional revenue for gyms.</p></article></div></div></section>
 
-  <footer class="footer">
-    <div class="wrapper">
-      <div>
-        <h3>About</h3>
-        <p>Swiss-managed premium apparel manufacturing in Thailand.</p>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <p>swiss@tshirtswiss.ch<br>+41 79 000 00 00</p>
-      </div>
-      <div>
-        <h3>Office</h3>
-        <p>Swiss HQ + Thailand Factory</p>
-      </div>
-    </div>
-  </footer>
-</div>
-<script>
-document.querySelectorAll('.faq-item button').forEach(function(button) {
-  button.addEventListener('click', function() {
-    var item = button.closest('.faq-item');
-    if (item) {
-      item.classList.toggle('open');
-    }
-  });
-});
-</script>
+  <section class="section section--white"><div class="section__inner"><div class="section-title"><h2>Common Combat Sports Manufacturing Questions</h2><p>Useful questions to answer before ordering Muay Thai, MMA or fightwear products.</p></div><div class="faq-grid"><div class="faq-item"><button type="button"><span>What combat sports products can you support?</span><span>+</span></button><p>We can support apparel such as Muay Thai shorts, MMA shorts, rashguards, team shirts, hoodies, sports bras, caps and merchandise, plus selected branded accessories through suitable production routes.</p></div><div class="faq-item"><button type="button"><span>Can you make a complete gym collection?</span><span>+</span></button><p>Yes. A collection can combine fightwear, team apparel, fan merchandise, wraps, caps, hoodies and ecommerce-ready products.</p></div><div class="faq-item"><button type="button"><span>Is sublimation suitable for fightwear?</span><span>+</span></button><p>Yes. Sublimation is especially useful for polyester rashguards, fight shorts and full-colour performance apparel.</p></div><div class="faq-item"><button type="button"><span>Can you support fighter-specific drops?</span><span>+</span></button><p>Yes. Fighter-specific artwork, colours and limited-edition products can be planned as part of a private label or gym merchandise programme.</p></div></div></div></section>
+</main>
+<footer class="footer"><div class="wrapper"><div><h3>TShirtSwiss.ch</h3><p>Swiss-managed apparel and fightwear manufacturing in Thailand.</p></div><div><h3>Related Pages</h3><p><a href="/pages/products/rashguards/">Rashguards</a><br><a href="/pages/products/mma-shorts/">MMA Shorts</a><br><a href="/pages/products/muay-thai-shorts/">Muay Thai Shorts</a></p></div><div><h3>Contact</h3><p>info@tshirtswiss.ch<br><a href="/pages/request-a-quote/">Request a Quote</a></p></div></div></footer>
 </body>
 </html>
