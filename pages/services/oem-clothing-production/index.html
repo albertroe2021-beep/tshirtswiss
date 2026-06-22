@@ -3,338 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OEM Clothing Production | TShirtSwiss.ch</title>
+  <title>OEM Clothing Production in Thailand | TShirt Swiss</title>
+  <meta name="description" content="Swiss-managed OEM clothing production in Thailand for brands, companies and distributors. Apparel manufacturing from specifications, samples and tech packs with quality control and worldwide shipping.">
   <style>
-:root {
-  color-scheme: light;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  color: #111;
-  background: #f7f7f7;
-}
-* { box-sizing: border-box; }
-body { margin: 0; background: #f7f7f7; color: #111; }
-a { color: inherit; text-decoration: none; }
-img { max-width: 100%; display: block; }
-.page-shell { display: flex; flex-direction: column; min-height: 100vh; }
-.topbar { background: #111; color: #f5f5f5; font-size: .82rem; letter-spacing: .12em; text-transform: uppercase; }
-.topbar .wrapper { max-width: 1280px; margin: 0 auto; padding: 12px 24px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: center; }
-.topbar .status { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
-.topbar .status span { opacity: .78; }
-.site-header { background: #fff; position: sticky; top: 0; z-index: 30; border-bottom: 1px solid rgba(17,17,17,.08); }
-.site-header .wrapper { max-width: 1280px; margin: 0 auto; padding: 22px 24px; display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
-.brand { font-size: 1.05rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; color: #111; }
-.nav { display: flex; gap: 24px; flex-wrap: wrap; font-size: .95rem; }
-.nav a { color: #111; opacity: .88; transition: opacity .2s, color .2s; }
-.nav a:hover { opacity: 1; color: #D52B1E; }
-.cta-button { padding: 14px 26px; background: #D52B1E; color: #fff; border-radius: 999px; font-weight: 700; box-shadow: 0 18px 50px rgba(213,43,30,.16); }
-main { flex: 1; max-width: 1280px; margin: 0 auto; padding: 36px 24px 60px; }
-.breadcrumb { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; font-size: .92rem; color: #555; margin: 20px 0 6px; }
-.breadcrumb a { color: #111; opacity: .82; }
-.breadcrumb span { opacity: .65; }
-.hero { display: grid; grid-template-columns: 1.05fr .95fr; gap: 36px; align-items: center; min-height: 76vh; padding: 32px 0 40px; }
-.hero-copy { max-width: 620px; }
-.hero-eyebrow { font-size: .82rem; text-transform: uppercase; letter-spacing: .26em; color: #D52B1E; font-weight: 700; margin-bottom: 16px; }
-.hero-title { font-size: clamp(3.2rem, 4vw, 4.8rem); line-height: .98; margin: 0; color: #111; }
-.hero-subtitle { margin: 24px 0 0; font-size: 1.25rem; line-height: 1.65; color: #111; font-weight: 700; }
-.hero-text { margin: 28px 0 0; font-size: 1rem; line-height: 1.85; color: #4b4b4b; max-width: 40rem; }
-.icon-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; margin-top: 28px; }
-.icon-card { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 18px 14px; background: #fff; border: 1px solid rgba(17,17,17,.08); border-radius: 20px; }
-.icon-card .icon { width: 44px; height: 44px; display: grid; place-items: center; background: #F6E8E7; color: #D52B1E; border-radius: 16px; font-weight: 800; }
-.icon-card strong { display: block; font-size: .95rem; color: #111; }
-.icon-card span { display: block; color: #555; font-size: .92rem; line-height: 1.5; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 32px; }
-.hero-actions a { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 15px 28px; border-radius: 999px; font-weight: 700; transition: transform .2s, box-shadow .2s; }
-.hero-actions a.primary { background: #D52B1E; color: #fff; }
-.hero-actions a.secondary { border: 1px solid rgba(17,17,17,.12); color: #111; background: #fff; }
-.hero-visual { border-radius: 32px; overflow: hidden; box-shadow: 0 35px 100px rgba(17,17,17,.12); }
-.hero-visual img { width: 100%; height: auto; }
-.section { padding: 72px 0; }
-.section--white { background: #fff; }
-.section__inner { display: grid; gap: 36px; max-width: 1280px; margin: 0 auto; }
-.section--split .section__inner { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: center; }
-.section-title { display: flex; flex-direction: column; gap: 18px; }
-.section-title h2 { margin: 0; font-size: clamp(2.4rem, 3vw, 3.2rem); line-height: 1.05; font-weight: 800; color: #111; }
-.section-title p { margin: 0; max-width: 44rem; color: #545454; line-height: 1.75; font-size: 1rem; }
-.section .section-image { border-radius: 28px; overflow: hidden; }
-.section .section-image img { width: 100%; height: auto; display: block; }
-.process-grid { display: grid; gap: 18px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 28px; }
-.process-step { background: #fff; border: 1px solid rgba(17,17,17,.08); border-radius: 24px; padding: 24px; display: flex; gap: 18px; align-items: flex-start; box-shadow: 0 18px 45px rgba(17,17,17,.05); }
-.process-step .icon { min-width: 52px; min-height: 52px; border-radius: 16px; background: #F9F0EF; color: #D52B1E; display: grid; place-items: center; font-weight: 800; }
-.process-step h3 { margin: 0 0 10px; font-size: 1rem; font-weight: 700; color: #111; }
-.process-step p { margin: 0; color: #575757; line-height: 1.75; font-size: .96rem; }
-.split-grid { display: grid; gap: 32px; grid-template-columns: 1.4fr .6fr; align-items: center; }
-.text-block { display: grid; gap: 20px; }
-.text-block h3 { margin: 0; font-size: 1.4rem; color: #111; }
-.text-block p { margin: 0; color: #555; line-height: 1.85; }
-.feature-columns { display: grid; gap: 18px; grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 24px; }
-.feature-card-alt { background: #fff; border-radius: 24px; padding: 24px; border: 1px solid rgba(17,17,17,.08); box-shadow: 0 18px 45px rgba(17,17,17,.05); }
-.feature-card-alt h3 { margin: 0 0 10px; font-size: 1rem; font-weight: 700; color: #111; }
-.feature-card-alt p { margin: 0; color: #575757; font-size: .95rem; line-height: 1.75; }
-.applications { display: grid; gap: 18px; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 28px; }
-.application { background: #fff; border-radius: 24px; padding: 22px; border: 1px solid rgba(17,17,17,.08); box-shadow: 0 20px 50px rgba(17,17,17,.05); display: flex; flex-direction: column; gap: 12px; }
-.application h3 { margin: 0; font-size: 1rem; color: #111; }
-.application p { margin: 0; color: #5a5a5a; font-size: .95rem; line-height: 1.75; }
-.ideal-card { background: #fff; border-radius: 28px; padding: 28px; border: 1px solid rgba(17,17,17,.08); box-shadow: 0 20px 50px rgba(17,17,17,.05); }
-.ideal-card h3 { margin: 0 0 18px; font-size: 1.2rem; color: #111; }
-.ideal-card ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 12px; }
-.ideal-card li { display: flex; gap: 12px; align-items: flex-start; color: #4e4e4e; line-height: 1.7; }
-.ideal-card li::before { content: '•'; color: #D52B1E; font-weight: 800; margin-top: 3px; }
-.trust-row { display: grid; gap: 24px; grid-template-columns: 1.4fr .6fr; align-items: center; }
-.trust-copy { display: grid; gap: 18px; }
-.trust-copy h2 { margin: 0; font-size: clamp(2.3rem, 3vw, 2.9rem); line-height: 1.05; color: #111; }
-.trust-copy p { margin: 0; color: #4c4c4c; line-height: 1.8; font-size: 1rem; }
-.metrics { display: grid; gap: 18px; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 28px; }
-.metric { background: #111; color: #fff; border-radius: 24px; padding: 28px; display: grid; gap: 12px; box-shadow: 0 18px 45px rgba(17,17,17,.05); }
-.metric .label { color: #d7d7d7; font-size: .95rem; line-height: 1.6; }
-.sustainability { display: grid; gap: 18px; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 28px; }
-.sustainability-card { background: #fff; border-radius: 24px; padding: 24px; border: 1px solid rgba(17,17,17,.08); box-shadow: 0 20px 50px rgba(17,17,17,.05); text-align: center; }
-.sustainability-card strong { display: block; margin-bottom: 8px; font-size: 1rem; color: #111; }
-.sustainability-card p { margin: 0; color: #575757; line-height: 1.7; font-size: .95rem; }
-.accordion { margin-top: 32px; }
-.accordion-item { border-top: 1px solid rgba(17,17,17,.12); }
-.accordion-item button { width: 100%; padding: 22px 0; text-align: left; border: none; background: transparent; font-size: 1rem; font-weight: 700; color: #111; display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
-.accordion-item p { margin: 0; padding: 0 0 22px; color: #575757; line-height: 1.8; }
-.accordion-item button::after { content: '+'; color: #D52B1E; font-size: 1.3rem; }
-.accordion-item button[aria-expanded='true']::after { content: '-'; }
-.cta-panel { background: #111; color: #fff; border-radius: 36px; padding: 46px 42px; display: grid; grid-template-columns: 1.4fr .6fr; gap: 34px; align-items: center; }
-.cta-panel h2 { margin: 0; font-size: clamp(2.3rem, 3vw, 3.1rem); line-height: 1.05; }
-.cta-panel p { margin: 18px 0 0; color: #d7d7d7; line-height: 1.8; max-width: 38rem; }
-.cta-group { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 28px; }
-.cta-group a { display: inline-flex; align-items: center; justify-content: center; padding: 15px 28px; border-radius: 999px; font-weight: 700; }
-.cta-group a.primary { background: #D52B1E; color: #fff; }
-.footer { background: #111; color: #d8d8d8; padding: 60px 24px; }
-.footer .wrapper { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
-.footer h3 { margin: 0 0 18px; color: #fff; font-size: 1rem; }
-.footer p, .footer a { margin: 0 0 14px; color: #d8d8d8; line-height: 1.8; font-size: .95rem; }
-.footer a:hover { opacity: 1; }
-@media (max-width: 1080px) {
-  .hero { grid-template-columns: 1fr; }
-  .section--split .section__inner,
-  .split-grid,
-  .trust-row,
-  .cta-panel { grid-template-columns: 1fr; }
-  .applications { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .feature-columns { grid-template-columns: 1fr; }
-}
-@media (max-width: 720px) {
-  main { padding: 24px 18px 48px; }
-  .topbar .wrapper, .site-header .wrapper { padding-left: 18px; padding-right: 18px; }
-  .nav { gap: 16px; }
-  .hero-title { font-size: 2.8rem; }
-  .icon-grid { grid-template-columns: 1fr; }
-  .applications { grid-template-columns: 1fr; }
-  .feature-columns { grid-template-columns: 1fr; }
-}
+:root{color-scheme:light;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#111;background:#f7f7f7}*{box-sizing:border-box}body{margin:0;background:#f7f7f7;color:#111}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.page-shell{display:flex;flex-direction:column;min-height:100vh}.topbar{background:#111;color:#f5f5f5;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase}.topbar .wrapper{max-width:1280px;margin:0 auto;padding:12px 24px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}.status{display:flex;gap:16px;flex-wrap:wrap}.site-header{background:#fff;position:sticky;top:0;z-index:30;border-bottom:1px solid rgba(17,17,17,.08)}.site-header .wrapper{max-width:1280px;margin:0 auto;padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}.brand{font-size:1.05rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}.nav{display:flex;gap:24px;flex-wrap:wrap;font-size:.95rem}.nav a:hover{color:#D52B1E}.cta-button,.primary{display:inline-flex;align-items:center;justify-content:center;padding:14px 26px;background:#D52B1E;color:#fff;border-radius:999px;font-weight:700}.secondary{display:inline-flex;align-items:center;justify-content:center;padding:14px 26px;background:#fff;color:#111;border:1px solid rgba(17,17,17,.14);border-radius:999px;font-weight:700}main{flex:1;max-width:1280px;margin:0 auto;padding:36px 24px 60px}.breadcrumb{display:flex;gap:8px;color:#666;font-size:.9rem;margin:12px 0 24px}.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center;padding:42px 0 72px}.hero-eyebrow,.eyebrow{font-size:.82rem;text-transform:uppercase;letter-spacing:.24em;color:#D52B1E;font-weight:700;margin-bottom:18px}.hero-title{font-size:clamp(3rem,5vw,4.8rem);line-height:1;margin:0}.hero-subtitle{margin-top:18px;font-size:1.35rem;font-weight:700;color:#222}.hero-text,p,li{color:#4d4d4d;line-height:1.85;font-size:1rem}.hero-text{font-size:1.12rem}.hero-visual,.section-image{border-radius:28px;overflow:hidden;box-shadow:0 30px 90px rgba(26,26,26,.14);background:#ddd}.hero-actions,.cta-group{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.icon-grid,.applications,.process-grid,.feature-columns,.metrics,.sustainability{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:28px}.icon-card,.application,.process-step,.feature-card-alt,.metric,.sustainability-card,.ideal-card{background:#fff;border-radius:22px;padding:24px;box-shadow:0 16px 40px rgba(26,26,26,.07)}.icon{width:42px;height:42px;background:rgba(213,43,30,.08);color:#D52B1E;border-radius:14px;display:grid;place-items:center;font-weight:800;flex-shrink:0}.section{padding:72px 0;border-top:1px solid rgba(17,17,17,.08)}.section--white{background:#fff;margin-left:-24px;margin-right:-24px;padding-left:24px;padding-right:24px}.section__inner{max-width:1200px;margin:0 auto}.section--split .section__inner,.split-grid,.trust-row,.cta-panel{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.section-title h2,h2{font-size:clamp(2rem,3vw,2.8rem);line-height:1.08;margin:0 0 18px}.process-step{display:flex;gap:16px}.metric{background:#111;color:#fff}.metric .label{color:#d7d7d7}.ideal-card ul{padding-left:0;list-style:none}.ideal-card li{margin-bottom:10px}.accordion{margin-top:32px}.accordion-item{border-top:1px solid rgba(17,17,17,.12)}.accordion-item button{width:100%;padding:22px 0;text-align:left;border:0;background:transparent;font-size:1rem;font-weight:700;display:flex;justify-content:space-between}.accordion-item p{margin:0;padding:0 0 22px}.cta-panel{background:#111;color:#fff;border-radius:36px;padding:46px 42px}.cta-panel p{color:#d7d7d7}.footer{background:#111;color:#d8d8d8;padding:60px 24px}.footer .wrapper{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.footer h3{color:#fff}.footer p,.footer a{display:block;color:#d8d8d8;line-height:1.8;font-size:.95rem}@media(max-width:1080px){.hero,.section--split .section__inner,.split-grid,.trust-row,.cta-panel{grid-template-columns:1fr}.footer .wrapper{grid-template-columns:1fr}}@media(max-width:720px){main{padding:24px 18px 48px}.hero-title{font-size:2.8rem}}
   </style>
 </head>
 <body>
-  <div class="page-shell">
-    <div class="topbar">
-      <div class="wrapper">
-        <div class="status">
-          <span>Swiss Managed</span>
-          <span>Factory in Thailand</span>
-          <span>Premium Quality</span>
-          <span>Worldwide Shipping</span>
-        </div>
-        <div class="status">
-          <span>+41 76 123 45 67</span>
-          <span>DE | EN</span>
-        </div>
-      </div>
-    </div>
-    <header class="site-header">
-      <div class="wrapper">
-        <a class="brand" href="/pages/home/index.html">TShirtSwiss.ch</a>
-        <nav class="nav">
-          <a href="/pages/products/">Products</a>
-          <a href="/pages/industries/">Industries</a>
-          <a href="/pages/services/">Services</a>
-          <a href="/pages/about-us/">About Us</a>
-          <a href="/pages/resources/">Resources</a>
-        </nav>
-        <a class="cta-button" href="/pages/request-a-quote/">Request a Quote</a>
-      </div>
-    </header>
-    <main>
-      <div class="breadcrumb">
-        <a href="/pages/home/index.html">Home</a>
-        <span>/</span>
-        <a href="/pages/services/">Services</a>
-        <span>/</span>
-        <span>OEM Clothing Production</span>
-      </div>
-      <section class="hero">
-        <div class="hero-copy">
-          <div class="hero-eyebrow">Our Services</div>
-          <h1 class="hero-title">OEM Clothing Production</h1>
-          <div class="hero-subtitle">Factory-ready manufacturing for apparel brands and private label.</div>
-          <p class="hero-text">Our OEM service supports apparel brands with factory-managed production, materials sourcing and consistent quality control for reliable shipments.</p>
-          <div class="icon-grid">
-            <div class="icon-card"><div class="icon">1</div><strong>Vibrant colors</strong><span>Brilliant prints and rich brand color fidelity.</span></div>
-            <div class="icon-card"><div class="icon">2</div><strong>Durable & long lasting</strong><span>Built to retain quality through wear and wash.</span></div>
-            <div class="icon-card"><div class="icon">3</div><strong>Cost effective</strong><span>Reliable pricing for volume orders and quality output.</span></div>
-            <div class="icon-card"><div class="icon">4</div><strong>Bulk order specialists</strong><span>Scalable production for larger apparel runs.</span></div>
-            <div class="icon-card"><div class="icon">5</div><strong>Consistent quality</strong><span>Swiss-managed checks at every step.</span></div>
+<div class="page-shell">
+  <div class="topbar"><div class="wrapper"><div class="status"><span>Swiss Managed</span><span>Factory in Thailand</span><span>Premium Quality</span><span>Worldwide Shipping</span></div><div class="status"><span>DE | EN</span></div></div></div>
+  <header class="site-header"><div class="wrapper"><a class="brand" href="/pages/home/index.html">TShirtSwiss.ch</a><nav class="nav"><a href="/pages/products/">Products</a><a href="/pages/industries/">Industries</a><a href="/pages/services/">Services</a><a href="/pages/about-us/">About Us</a><a href="/pages/resources/">Resources</a></nav><a class="cta-button" href="/pages/request-a-quote/">Request a Quote</a></div></header>
+  <main>
+    <div class="breadcrumb"><a href="/pages/home/index.html">Home</a><span>/</span><a href="/pages/services/">Services</a><span>/</span><span>OEM Clothing Production</span></div>
+    <section class="hero"><div class="hero-copy"><div class="hero-eyebrow">OEM Clothing Production</div><h1 class="hero-title">OEM Apparel Manufacturing in Thailand</h1><div class="hero-subtitle">Swiss-managed production for brands with defined products, specifications or samples.</div><p class="hero-text">TShirt Swiss provides OEM clothing production in Thailand for apparel brands, companies, distributors and organisations that need garments manufactured to an agreed specification. We work from tech packs, reference samples, artwork, size charts and production briefs to manufacture custom apparel with clear communication and quality control.</p><p class="hero-text">OEM production is ideal when you already know what you want to make and need a reliable manufacturing partner to produce it consistently. Our role is to manage the production route, coordinate materials, confirm samples, control quality and prepare finished goods for international delivery.</p><div class="icon-grid"><div class="icon-card"><div class="icon">1</div><strong>Specification-Led Production</strong><span>Manufacturing based on tech packs, samples, measurements and approved details.</span></div><div class="icon-card"><div class="icon">2</div><strong>Swiss-Managed Oversight</strong><span>Structured communication and project control from brief to shipment.</span></div><div class="icon-card"><div class="icon">3</div><strong>Quality Control</strong><span>Checks for fabric, stitching, measurements, branding and finishing.</span></div><div class="icon-card"><div class="icon">4</div><strong>Repeatable Orders</strong><span>Documentation supports future production runs and consistent reorders.</span></div></div><div class="hero-actions"><a class="primary" href="/pages/request-a-quote/">Request an OEM Quote</a><a class="secondary" href="/pages/services/product-development/">Need Product Development?</a></div></div><div class="hero-visual"><img src="https://via.placeholder.com/1080x760.png?text=OEM+Clothing+Production" alt="OEM clothing production in Thailand"></div></section>
 
-          </div>
-          <div class="hero-actions">
-            <a class="primary" href="/pages/request-a-quote/">Request a Quote</a>
-            <a class="secondary" href="#faq">Download Service Guide</a>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <img src="https://via.placeholder.com/1080x760.png?text=OEM+Clothing+Production" alt="OEM Clothing Production">
-        </div>
-      </section>
+    <section class="section section--white section--split"><div class="section__inner"><div><div class="section-title"><div class="eyebrow">OEM Production With Swiss Oversight</div><h2>Manufacturing Your Apparel to Approved Specifications</h2><p>OEM clothing production is different from generic apparel sourcing. The objective is not simply to find a blank garment. It is to manufacture your product according to agreed details: fabric, fit, construction, colours, decoration, labels, packaging and delivery requirements.</p><p>We help clients turn approved designs or reference samples into structured production orders. This includes checking whether specifications are clear, advising on production feasibility, confirming sample requirements and managing the transition from approval to bulk manufacturing.</p></div></div><div class="section-image"><img src="https://via.placeholder.com/1200x760.png?text=OEM+Specification+Production" alt="OEM specification production"></div></div></section>
 
-      <section class="section section--white section--split">
-        <div class="section__inner">
-          <div>
-            <div class="section-title"><h2>OEM Production With Swiss Oversight</h2><p>We manage the full manufacturing flow for OEM orders, ensuring your apparel is produced with consistent quality, accurate branding and transparent timelines.</p></div>
-          </div>
-          <div class="section-image"><img src="https://via.placeholder.com/1200x760.png?text=OEM+production" alt="OEM production"></div>
-        </div>
-      </section>
+    <section class="section"><div class="section__inner"><div class="section-title"><div class="eyebrow">Process</div><h2>Our OEM Clothing Production Process</h2><p>We follow a structured OEM workflow so each production stage is clear, documented and aligned with the approved garment specification.</p></div><div class="process-grid"><article class="process-step"><div class="icon">1</div><div><h3>Specification Review</h3><p>We review your tech pack, sample, artwork, size chart, garment requirements and target quantity.</p></div></article><article class="process-step"><div class="icon">2</div><div><h3>Feasibility and Quotation</h3><p>We confirm production options, material requirements, decoration methods, timeline and pricing.</p></div></article><article class="process-step"><div class="icon">3</div><div><h3>Sampling or Confirmation</h3><p>Samples or reference approvals confirm fabric, fit, construction and branding before bulk production.</p></div></article><article class="process-step"><div class="icon">4</div><div><h3>Material and Trim Coordination</h3><p>We coordinate fabrics, labels, hang tags, packaging, trims and production inputs.</p></div></article><article class="process-step"><div class="icon">5</div><div><h3>Bulk Manufacturing</h3><p>Garments are produced according to the approved specification with in-process checks.</p></div></article><article class="process-step"><div class="icon">6</div><div><h3>Inspection and Shipping</h3><p>Finished goods are inspected, packed and prepared for delivery to your destination.</p></div></article></div></div></section>
 
-      <section class="section">
-        <div class="section__inner">
-          <div class="section-title"><h2>Our OEM Clothing Production Process</h2><p>We follow a clear, consistent workflow to ensure your service is delivered with premium quality and reliable timing.</p></div>
-          <div class="process-grid">
-            <article class="process-step"><div class="icon">1</div><div><h3>Consultation & Artwork</h3><p>You send us your logo or design, and we review the details to recommend the best service solution.</p></div></article>
-            <article class="process-step"><div class="icon">2</div><div><h3>Preparation</h3><p>We prepare the artwork, materials or production setup with premium attention to quality.</p></div></article>
-            <article class="process-step"><div class="icon">3</div><div><h3>Production</h3><p>Your service is executed with Swiss-managed manufacturing and quality oversight.</p></div></article>
-            <article class="process-step"><div class="icon">4</div><div><h3>Finishing</h3><p>The finished product is prepared, inspected and packaged with care.</p></div></article>
-            <article class="process-step"><div class="icon">5</div><div><h3>Quality Check</h3><p>Every item is inspected for consistency, fit, color and finish.</p></div></article>
-            <article class="process-step"><div class="icon">6</div><div><h3>Packing & Shipping</h3><p>Your order is packed securely and shipped to Switzerland or anywhere in Europe.</p></div></article>
+    <section class="section section--white"><div class="section__inner split-grid"><div><div class="section-title"><div class="eyebrow">What We Manage</div><h2>Reliable Production, Brand-Ready Results</h2><p>OEM clients often need more than sewing capacity. They need a partner who understands specifications, production risk, communication and consistency. We support the manufacturing details that affect whether your order arrives as expected.</p></div><div class="feature-columns"><article class="feature-card-alt"><h3>Factory Coordination</h3><p>Swiss-managed production tracking and communication throughout the order.</p></article><article class="feature-card-alt"><h3>Material Sourcing</h3><p>Fabric and trim coordination based on the agreed garment specification.</p></article></div><div class="feature-columns"><article class="feature-card-alt"><h3>Custom Branding</h3><p>Printing, embroidery, woven labels, printed neck labels, hang tags and packaging.</p></article><article class="feature-card-alt"><h3>Order Documentation</h3><p>Specification details can be retained to support future repeat production.</p></article></div></div><div class="section-image"><img src="https://via.placeholder.com/1200x760.png?text=OEM+Manufacturing+Management" alt="OEM clothing production management"></div></div></section>
 
-          </div>
-        </div>
-      </section>
+    <section class="section"><div class="section__inner split-grid"><div><div class="section-title"><div class="eyebrow">Applications</div><h2>OEM Manufacturing Across Apparel Categories</h2><p>Our OEM production service can be applied to a wide range of products when the garment details are defined or can be confirmed through sampling. This makes it suitable for established apparel ranges, corporate uniform programmes, distributor orders and private label collections.</p></div><div class="applications"><article class="application"><h3>T-Shirts and Polos</h3><p>Custom everyday garments for brands, uniforms, merchandise and repeat programmes.</p></article><article class="application"><h3>Hoodies and Sweatshirts</h3><p>Branded fleece and knit garments for retail, corporate and merchandise use.</p></article><article class="application"><h3>Workwear and Uniforms</h3><p>Durable apparel for teams, trades, hospitality and operational staff.</p></article><article class="application"><h3>Sportswear and Fightwear</h3><p>Performance apparel, rashguards, shorts and activewear for brands and teams.</p></article></div></div><div class="ideal-card"><h3>Ideal For</h3><ul><li>Brands with existing designs</li><li>Companies with approved samples</li><li>Distributors needing repeat production</li><li>Corporate uniform programmes</li><li>Private label apparel lines</li><li>Buyers who need specification control</li></ul></div></div></section>
 
-      <section class="section section--white">
-        <div class="section__inner split-grid">
-          <div>
-            <div class="section-title"><h2>Reliable Production, Brand-Ready Results</h2><p>From fabric sourcing to final packing, we deliver OEM clothing production that meets premium brand standards and regulatory expectations.</p></div>
-            <div class="feature-columns">
-              <article class="feature-card-alt"><h3>Factory coordination</h3><p>Swiss-managed production tracking and oversight.</p></article>
-              <article class="feature-card-alt"><h3>Fabric sourcing</h3><p>Premium materials matched to your product specs.</p></article>
-            </div>
-            <div class="feature-columns">
-              <article class="feature-card-alt"><h3>Transparent communication</h3><p>Clear updates at every production stage.</p></article>
-              <article class="feature-card-alt"><h3>Custom finishes</h3><p>Labels, hang tags and packaging aligned with your brand.</p></article>
-            </div>
-          </div>
-          <div class="section-image"><img src="https://via.placeholder.com/1200x760.png?text=OEM+Clothing+Production+Materials" alt="OEM Clothing Production materials"></div>
-        </div>
-      </section>
+    <section class="section section--white"><div class="section__inner trust-row"><div class="trust-copy"><div class="section-title"><div class="eyebrow">Quality Control</div><h2>Strict Quality Control for OEM Orders</h2><p>OEM production depends on consistency. We check the details that matter most to repeatable manufacturing: fabric, measurements, stitching, construction, decoration placement, label accuracy, packaging and final presentation. Quality control begins with clear specifications and continues through production and packing.</p></div><div class="metrics"><div class="metric"><div class="label">Specification and sample approval</div></div><div class="metric"><div class="label">In-process production checks</div></div><div class="metric"><div class="label">Branding and label verification</div></div><div class="metric"><div class="label">Final inspection before packing</div></div></div></div><div class="section-image"><img src="https://via.placeholder.com/1200x760.png?text=OEM+Quality+Control" alt="OEM clothing production quality control"></div></div></section>
 
-      <section class="section">
-        <div class="section__inner split-grid">
-          <div>
-            <div class="section-title"><h2>One Method. Many Applications.</h2><p>These service capabilities work across a wide variety of brand use cases and apparel categories.</p></div>
-            <div class="applications">
-              <article class="application"><h3>Workwear & Uniforms</h3><p>Durable apparel for teams, trade and hospitality.</p></article>
-              <article class="application"><h3>Corporate Apparel</h3><p>Premium branded uniforms and office wear.</p></article>
-              <article class="application"><h3>Sportswear & Activewear</h3><p>Performance clothing for teams and training.</p></article>
-              <article class="application"><h3>Promotional T-Shirts</h3><p>Campaign and event apparel with strong branding.</p></article>
-              <article class="application"><h3>Event & Merchandise</h3><p>Branded goods for activations and retail.</p></article>
-              <article class="application"><h3>School & University Wear</h3><p>Team and campus apparel for institutions.</p></article>
-              <article class="application"><h3>Fashion Brands</h3><p>Premium apparel with standout design and finish.</p></article>
+    <section class="section"><div class="section__inner"><div class="section-title"><div class="eyebrow">Production Planning</div><h2>Better OEM Results Start With Better Information</h2><p>The most successful OEM projects begin with a clear brief. Helpful information includes garment type, fabric composition, GSM, fit, size chart, artwork, colour references, label requirements, packaging format, quantity, target delivery date and shipping destination. If a detail is unclear, we can help identify it before production begins.</p></div><div class="sustainability"><article class="sustainability-card"><strong>Tech Packs</strong><p>Best for detailed product specifications, measurements and construction requirements.</p></article><article class="sustainability-card"><strong>Reference Samples</strong><p>Useful when you want to match or improve an existing garment.</p></article><article class="sustainability-card"><strong>Artwork Files</strong><p>Needed for accurate printing, embroidery, labels and packaging preparation.</p></article><article class="sustainability-card"><strong>Delivery Details</strong><p>Destination and timeline help us plan realistic production and shipping options.</p></article></div></div></section>
 
-            </div>
-          </div>
-          <div class="ideal-card">
-            <h3>Ideal For</h3>
-            <ul>
-              <li>Large quantity orders</li>
-              <li>Simple to complex designs</li>
-              <li>Multi-color logos and artwork</li>
-              <li>Bold, vibrant and durable finishes</li>
-              <li>Long term brand visibility</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+    <section class="section section--white" id="faq"><div class="section__inner"><div class="section-title"><h2>OEM Clothing Production Questions</h2><p>Answers to common OEM apparel manufacturing questions.</p></div><div class="accordion"><div class="accordion-item"><button aria-expanded="false">What does OEM clothing production mean?</button><p>OEM clothing production means manufacturing garments according to the client's approved specifications, samples, artwork or tech packs.</p></div><div class="accordion-item"><button aria-expanded="false">Do I need a tech pack?</button><p>A tech pack is helpful, but we can also work from reference samples, design briefs, artwork and size charts. If information is missing, we will advise what needs to be clarified.</p></div><div class="accordion-item"><button aria-expanded="false">Can you produce repeat orders?</button><p>Yes. OEM production is suitable for repeat orders because specifications can be documented and used for future production runs.</p></div><div class="accordion-item"><button aria-expanded="false">Can you add labels and packaging?</button><p>Yes. We support woven labels, printed neck labels, care labels, hang tags, size stickers, polybags and carton preparation.</p></div><div class="accordion-item"><button aria-expanded="false">Do you ship internationally?</button><p>Yes. We support worldwide shipping from Thailand to Switzerland, Europe, Australia, Asia, North America and other markets.</p></div></div></div></section>
 
-      <section class="section section--white">
-        <div class="section__inner trust-row">
-          <div class="trust-copy">
-            <div class="section-title"><h2>Strict Quality Control At Every Step</h2><p>We follow strict quality control procedures throughout the entire process. From sample review to final inspection, every detail matters.</p></div>
-            <div class="metrics">
-              <div class="metric"><div class="label">Pre-production sample approval</div></div>
-              <div class="metric"><div class="label">In-process quality inspections</div></div>
-              <div class="metric"><div class="label">Color accuracy and consistency checks</div></div>
-              <div class="metric"><div class="label">Final inspection before packing</div></div>
-
-            </div>
-          </div>
-          <div class="section-image"><img src="https://via.placeholder.com/1200x760.png?text=OEM+Clothing+Production+Quality" alt="OEM Clothing Production quality"></div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section__inner">
-          <div class="section-title"><h2>Our Commitment</h2><p>We care about people and the planet, which is why we use eco-friendly practices, reduce waste and follow ethical production standards.</p></div>
-          <div class="sustainability">
-              <article class="sustainability-card"><strong>Eco-Friendly Inks Available</strong><p>Low-impact materials and better environmental performance.</p></article>
-              <article class="sustainability-card"><strong>Reduced Water Consumption</strong><p>Efficient processes that lower water use.</p></article>
-              <article class="sustainability-card"><strong>Responsible Waste Management</strong><p>Waste streams are minimized and managed carefully.</p></article>
-              <article class="sustainability-card"><strong>Ethical Labor Practices</strong><p>Swiss-managed oversight protects fair production.</p></article>
-
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--white" id="faq">
-        <div class="section__inner">
-          <div class="section-title"><h2>OEM Clothing Production Questions</h2><p>Answers to the most common questions about our service and process.</p></div>
-          <div class="accordion">
-            <div class="accordion-item"><button aria-expanded="false">What is the minimum order quantity (MOQ)?</button><p>Minimum quantities vary by service, but we support both smaller sample runs and larger production orders.</p></div>
-            <div class="accordion-item"><button aria-expanded="false">How many colors can I use in my design?</button><p>Most services can support multiple colors, including detailed logos and artwork.</p></div>
-            <div class="accordion-item"><button aria-expanded="false">How long does production take?</button><p>Production timelines depend on service type and order size, but we target fast, reliable delivery.</p></div>
-            <div class="accordion-item"><button aria-expanded="false">What types of fabrics can be used?</button><p>We work with a wide range of fabrics from cotton to technical performance textiles.</p></div>
-            <div class="accordion-item"><button aria-expanded="false">Is this service durable?</button><p>Yes — we focus on highly durable finishes, quality control and reliable materials.</p></div>
-            <div class="accordion-item"><button aria-expanded="false">Can you match Pantone colors?</button><p>We can match Pantone colors for many print, embroidery and branding services.</p></div>
-
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section__inner cta-panel">
-          <div>
-            <h2>Ready to print your brand?</h2>
-            <p>Get a free quote within 24 hours and start your Swiss-managed service with confidence.</p>
-            <div class="cta-group">
-              <a class="primary" href="/pages/request-a-quote/">Request a Quote</a>
-            </div>
-          </div>
-          <div>
-            <div class="section-image"><img src="https://via.placeholder.com/900x560.png?text=Ready+to+Quote" alt="Ready to quote"></div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="wrapper">
-        <div>
-          <h3>About TShirtSwiss.ch</h3>
-          <p>Swiss-managed premium apparel manufacturing in Thailand for B2B clients seeking quality, control, and global delivery.</p>
-        </div>
-        <div>
-          <h3>Services</h3>
-          <a href="/pages/services/">Services</a>
-          <a href="/pages/request-a-quote/">Quote</a>
-        </div>
-        <div>
-          <h3>Contact</h3>
-          <p>hello@tshirtswiss.ch</p>
-          <p>+41 76 123 45 67</p>
-        </div>
-      </div>
-    </footer>
-  </div>
+    <section class="section"><div class="section__inner cta-panel"><div><h2>Ready to Start OEM Clothing Production?</h2><p>Send your tech pack, reference sample, artwork, quantity, target delivery date and shipping destination. We will review the details and advise the best production route for your apparel project.</p><div class="cta-group"><a class="primary" href="/pages/request-a-quote/">Request an OEM Quote</a></div></div><div><div class="section-image"><img src="https://via.placeholder.com/900x560.png?text=OEM+Quote" alt="OEM clothing production quote"></div></div></div></section>
+  </main>
+  <footer class="footer"><div class="wrapper"><div><h3>About TShirtSwiss.ch</h3><p>Swiss-managed OEM clothing production in Thailand for brands, distributors and companies seeking quality, control and global delivery.</p></div><div><h3>Related Services</h3><a href="/pages/services/product-development/">Product Development</a><a href="/pages/services/sampling/">Sampling</a><a href="/pages/services/quality-control/">Quality Control</a></div><div><h3>Contact</h3><p>info@tshirtswiss.ch</p><p><a href="/pages/request-a-quote/">Request a Quote</a></p></div></div></footer>
+</div>
 </body>
 </html>
