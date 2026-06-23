@@ -2,10 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=/pages/home/index.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Redirecting to TShirtSwiss.ch homepage preview</title>
+  <script>
+    (function () {
+      var target = 'pages/home/index.html';
+      function go() { window.location.replace(target); }
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('site-header-sw.js', { scope: './' })
+          .then(function (registration) {
+            if (registration.active && navigator.serviceWorker.controller) { go(); return; }
+            navigator.serviceWorker.ready.then(go).catch(go);
+            setTimeout(go, 1200);
+          })
+          .catch(go);
+      } else {
+        go();
+      }
+    }());
+  </script>
 </head>
 <body>
-  <p>Redirecting to <a href="/pages/home/index.html">TShirtSwiss.ch homepage preview</a>...</p>
+  <p>Redirecting to <a href="pages/home/index.html">TShirtSwiss.ch homepage preview</a>...</p>
 </body>
 </html>
