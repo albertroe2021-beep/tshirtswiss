@@ -1,16 +1,17 @@
-const CACHE_BUST='ts-global-header-v30-standard-52px-icons';
+const CACHE_BUST='ts-global-header-v31-clean-box-icon';
 const P=self.registration.scope,u=x=>new URL(x,P).href;
+const cleanBox='<svg viewBox="14 14 36 36"><path d="M21 27l11-6 11 6-11 6-11-6z"/><path d="M21 27v13l11 7 11-7V27"/><path d="M32 33v14"/><path d="M26.5 24l11 6"/></svg>';
 const svg={
  swiss:'<svg viewBox="14 14 36 36"><path d="M32 18l12 5v9c0 8-5 13-12 16-7-3-12-8-12-16v-9l12-5z"/><path d="M32 25v16M24 33h16"/></svg>',
  factory:'<svg viewBox="14 14 36 36"><path d="M20 43h27"/><path d="M22 43V30l8 5v-5l8 5v-5l8 5v8"/><path d="M42 34V20h5v23"/><path d="M25 39h4M34 39h4"/><path d="M45 17v3"/></svg>',
  award:'<svg viewBox="14 14 36 36"><circle cx="32" cy="27" r="8"/><path d="M28 27l3 3 6-7"/><path d="M27 34l-2 12 7-4 7 4-2-12"/></svg>',
  quality:'<svg viewBox="14 14 36 36"><rect x="22" y="21" width="20" height="25" rx="2"/><path d="M28 20h8l2 4H26l2-4z"/><path d="M27 34l4 4 8-9"/></svg>',
- shipping:'<svg viewBox="14 14 36 36"><path d="M22 28l10-5 10 5-10 5-10-5z"/><path d="M22 28v12l10 6 10-6V28"/><path d="M32 33v13"/><path d="M39 20l8 3-8 3 2-3-2-3z"/><path d="M34 23h7"/></svg>',
+ shipping:cleanBox,
  handshake:'<svg viewBox="14 14 36 36"><path d="M18 37l7-10c1.6-2 4.6-2.3 6.5-.5l3 2.7"/><path d="M46 37l-7-10c-1.6-2-4.7-2.3-6.6-.4l-5.6 5.4c-1.3 1.2-.4 3.5 1.4 3.5h5.1"/><path d="M25 37l8.7 8.6c1.1 1 2.8 1 3.8-.1 1-1 .9-2.7-.1-3.7"/><path d="M30 37l6.7 6.6c1.1 1 2.8 1 3.8-.1 1-1 .9-2.7-.1-3.7"/><path d="M34 36.5l4.5 4.4c1.1 1 2.8 1 3.8-.1.9-1 .8-2.5-.2-3.5L36.8 32"/><path d="M18 37l-3-3 6-8 4 3"/><path d="M46 37l3-3-6-8-4 3"/><path d="M28 34.5l-3 2.8M32 38l-3.2 3M36 41l-3 2.6"/></svg>',
  chat:'<svg viewBox="14 14 36 36"><path d="M20 26c0-5 5-9 12-9s12 4 12 9-5 9-12 9h-3l-6 5 1-7c-3-2-4-4-4-7z"/><path d="M28 41h10l5 4-1-5c3-1 5-4 5-7"/></svg>',
  sample:'<svg viewBox="14 14 36 36"><path d="M25 24l7-4 7 4 6 2-3 8-4-2v15H26V32l-4 2-3-8 6-2z"/></svg>',
  fabric:'<svg viewBox="14 14 36 36"><path d="M20 26h18a7 7 0 010 14H20z"/><circle cx="38" cy="33" r="3.5"/><path d="M20 26v14"/><path d="M23 44l20-20M35 45l9-9"/><circle cx="23" cy="45" r="3"/><circle cx="34" cy="45" r="3"/><path d="M26 43l17-15M32 43L22 29"/></svg>',
- box:'<svg viewBox="14 14 36 36"><path d="M22 28l10-6 10 6-10 6-10-6z"/><path d="M22 28v13l10 7 10-7V28"/><path d="M32 34v14"/><path d="M26 25l10 6"/></svg>',
+ box:cleanBox,
  tshirt:'<svg viewBox="14 14 36 36"><path d="M25 24l7-4 7 4 6 2-3 8-4-2v15H26V32l-4 2-3-8 6-2z"/></svg>',
  tag:'<svg viewBox="14 14 36 36"><path d="M22 24h20v18H22z"/><path d="M27 30h10M27 36h6"/><path d="M42 27l5 5-5 5"/></svg>',
  book:'<svg viewBox="14 14 36 36"><path d="M20 22h10c2 0 2 2 2 2v24s0-2-3-2h-9z"/><path d="M44 22H34c-2 0-2 2-2 2v24s0-2 3-2h9z"/><path d="M25 29h4M35 29h4M25 36h4M35 36h4"/></svg>',
