@@ -7,15 +7,21 @@
   <script>
     (function () {
       var target = 'pages/home/index.html';
+      var workerUrl = 'site-header-sw.js?v=ts-v46-phrase-icon-map';
       function go() { window.location.replace(target); }
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('site-header-sw.js', { scope: './' })
-          .then(function (registration) {
-            if (registration.active && navigator.serviceWorker.controller) { go(); return; }
-            navigator.serviceWorker.ready.then(go).catch(go);
-            setTimeout(go, 1200);
-          })
-          .catch(go);
+        navigator.serviceWorker.getRegistration('./').then(function (existing) {
+          var ready = existing ? existing.unregister() : Promise.resolve();
+          return ready.then(function () {
+            return navigator.serviceWorker.register(workerUrl, { scope: './' });
+          });
+        }).then(function (registration) {
+          if (registration.waiting) { registration.waiting.postMessage({ type: 'SKIP_WAITING' }); }
+          return navigator.serviceWorker.ready;
+        }).then(function () {
+          go();
+        }).catch(go);
+        setTimeout(go, 1800);
       } else {
         go();
       }
@@ -23,6 +29,6 @@
   </script>
 </head>
 <body>
-  <p>Redirecting to <a href="pages/home/index.html">TShirtSwiss.ch homepage preview</a>...</p>
+  <p>Refreshing TShirtSwiss icon mapping and redirecting to <a href="pages/home/index.html">homepage preview</a>...</p>
 </body>
 </html>
