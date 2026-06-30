@@ -3,32 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirecting to TShirtSwiss.ch homepage preview</title>
+  <title>Loading TShirtSwiss SVG icon mapping</title>
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0b0b0b;color:#fff;display:grid;place-items:center;min-height:100vh;text-align:center;padding:24px}.box{max-width:760px}.logo{font-size:34px;font-weight:900;margin-bottom:18px}.logo span{color:#e1111a}.icon-row{display:flex;gap:22px;justify-content:center;align-items:center;margin:26px 0;flex-wrap:wrap}.icon-row img{width:54px;height:54px;object-fit:contain}.btn{display:inline-block;background:#e1111a;color:#fff;text-decoration:none;font-weight:900;text-transform:uppercase;padding:16px 24px;border-radius:4px;margin-top:18px}p{color:#ddd;line-height:1.6}
+  </style>
   <script>
     (function () {
-      var target = 'pages/home/index.html';
-      var workerUrl = 'site-header-sw.js?v=ts-v49-committed-svg-files';
-      function go() { window.location.replace(target); }
+      var target = 'pages/home/index.html?svg=v49-committed-files-' + Date.now();
+      var workerUrl = 'site-header-sw.js?v=ts-v49-committed-svg-files-' + Date.now();
+      function goSoon() { setTimeout(function(){ window.location.replace(target); }, 900); }
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.getRegistration('./').then(function (existing) {
-          var ready = existing ? existing.unregister() : Promise.resolve();
-          return ready.then(function () {
-            return navigator.serviceWorker.register(workerUrl, { scope: './' });
-          });
-        }).then(function (registration) {
-          if (registration.waiting) { registration.waiting.postMessage({ type: 'SKIP_WAITING' }); }
-          return navigator.serviceWorker.ready;
+        navigator.serviceWorker.getRegistrations().then(function (regs) {
+          return Promise.all(regs.map(function (r) { return r.unregister(); }));
         }).then(function () {
-          go();
-        }).catch(go);
-        setTimeout(go, 1800);
+          return navigator.serviceWorker.register(workerUrl, { scope: './' });
+        }).then(function (registration) {
+          if (registration.waiting) registration.waiting.postMessage({ type: 'SKIP_WAITING' });
+          return navigator.serviceWorker.ready;
+        }).then(goSoon).catch(goSoon);
       } else {
-        go();
+        goSoon();
       }
     }());
   </script>
 </head>
 <body>
-  <p>Refreshing TShirtSwiss icon mapping and redirecting to <a href="pages/home/index.html">homepage preview</a>...</p>
+  <main class="box">
+    <div class="logo">TShirt<span>Swiss</span>.ch</div>
+    <h1>Loading new SVG icon mapping</h1>
+    <p>This entry page refreshes the service worker and then opens the homepage with the committed SVG icon files.</p>
+    <div class="icon-row" aria-hidden="true">
+      <img src="shield-with-cross-svgrepo-com%20(1).svg" alt="">
+      <img src="factory-building-svgrepo-com.svg" alt="">
+      <img src="quality-5-svgrepo-com.svg" alt="">
+      <img src="plane-svgrepo-com%20(1).svg" alt="">
+    </div>
+    <a class="btn" href="pages/home/index.html?svg=v49-committed-files-manual">Open homepage</a>
+  </main>
 </body>
 </html>
