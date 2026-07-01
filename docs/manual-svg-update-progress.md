@@ -1,57 +1,55 @@
 # Manual SVG Update Progress
 
-This tracker records the manual SVG icon standardisation work based on:
+This tracker records the section-by-section SVG icon standardisation work based on:
 
-- `SVG number to phrase.xlsx`
+- `SVG number to phrase(2).xlsx`
 - `docs/svg-icon-mapping-draft.md`
-- `scripts/apply_svg_icon_mapping.py`
-- `site-header-sw.js`
+- the committed SVG files from `New_SVG_Files_30_06_2026`
 
-## Current Status
+## Current decision
 
-The repository currently has two layers of icon standardisation:
+The broad automatic replacement engine was tested and rejected because it matched nearby phrases too broadly and placed icons in the wrong areas.
 
-1. **Runtime layer** via `site-header-sw.js`
-   - Applies the Ref# icon registry and phrase-to-icon mapping at runtime.
-   - Standardises trust icons and process icons globally.
-   - Uses the red outline style and 2.6 stroke weight.
+From this point onward, updates must be made section-by-section with explicit placement only.
 
-2. **Static update layer** via `scripts/apply_svg_icon_mapping.py`
-   - Intended to permanently write mapped icons directly into HTML pages.
-   - Requires execution in Codespaces, local terminal, or another GitHub execution environment.
+## Verified homepage mappings
 
-## Manual Static Update Batches
+| Page | Section | Phrase | Ref# | SVG file | Status |
+|---|---|---|---:|---|---|
+| Home | Top bar | Swiss Managed | 1 | shield-with-cross-svgrepo-com (1).svg | Applied |
+| Home | Top bar | Factory in Thailand | 2 | factory-building-svgrepo-com.svg | Applied |
+| Home | Top bar | Premium Quality | 3 | quality-5-svgrepo-com.svg | Applied |
+| Home | Top bar | Worldwide Shipping | 6 | plane-svgrepo-com (1).svg | Applied |
+| Home | Trust cards | Swiss Quality Standards | 1 | shield-with-cross-svgrepo-com (1).svg | Applied |
+| Home | Trust cards | Factory Direct Pricing | 2 | factory-building-svgrepo-com.svg | Applied |
+| Home | Trust cards | Strict Quality Control | 4 | quality-5-svgrepo-com.svg | Applied |
+| Home | Trust cards | Worldwide Shipping | 6 | plane-svgrepo-com (1).svg | Applied |
+| Home | Trust cards | Long Term Partner | 8 | handshake-svgrepo-com.svg | Applied |
+| Home | Process | Consultation | 10 | speech-bubbles-conversation-svgrepo-com (1).svg | Applied |
+| Home | Process | Sample & Approval | 16 | review-checkmark-svgrepo-com.svg | Applied |
+| Home | Process | Production | 2 | factory-building-svgrepo-com.svg | Applied |
+| Home | Process | Quality Check | 5 | quality-5-svgrepo-com.svg | Applied |
+| Home | Process | Packing & Shipping | 6 | plane-svgrepo-com (1).svg | Applied |
 
-Because the current GitHub connector can update files individually but cannot execute the Python script inside the repository, static HTML updates need to be handled in batches.
+## Next manual sections
 
-| Batch | Area | Status | Notes |
+| Order | Page / Section | Status | Notes |
 |---:|---|---|---|
-| 1 | Global runtime mapping | Completed | `site-header-sw.js` contains Ref# mapping and phrase matching. |
-| 2 | Home page | Pending static rewrite | Runtime mapping currently applies on page load. |
-| 3 | Product pages | Pending static rewrite | Product process section already standardised through runtime mapping. |
-| 4 | Industry pages | Pending static rewrite | Trust row standardised through runtime mapping. |
-| 5 | Service pages | Pending static rewrite | Trust row standardised through runtime mapping. |
-| 6 | Resources / Contact / Quote pages | Pending static rewrite | To be handled after product, industry, and service pages. |
+| 1 | Home top bar | Completed | Explicit mapping verified. |
+| 2 | Home trust cards | Completed | Explicit mapping verified. |
+| 3 | Home process cards | Completed | Explicit mapping verified. |
+| 4 | Home product cards | In progress | Needs final phrase-by-phrase check against spreadsheet. |
+| 5 | Home industry cards | Pending | Do not infer. Use only exact spreadsheet rows. |
+| 6 | Product pages | Pending | Convert one page at a time. |
+| 7 | Industry pages | Pending | Convert one page at a time. |
+| 8 | Service pages | Pending | Convert one page at a time. |
+| 9 | Resources / Contact / Quote | Pending | Convert after page groups above. |
 
-## Manual Update Rules
+## Manual update rules
 
-When editing a page manually:
-
-1. Identify cards, trust rows, process steps, feature cards, or CTA/icon rows containing a phrase from the placement sheet.
-2. Find the Ref# for that phrase in `docs/svg-icon-mapping-draft.md`.
-3. Replace the current icon with the matching SVG from the registry.
-4. Use the standard class:
-
-```html
-<svg class="ts-inline-icon" aria-hidden="true" focusable="false" ...>
-```
-
-5. Preserve surrounding page layout and text.
-6. Do not add rounded icon boxes unless already required by the section design.
-7. Keep icons red via `currentColor` and the existing CSS color rules.
-
-## Important Note
-
-The runtime service-worker mapping is currently the safest global implementation because it updates all navigated HTML pages without requiring each static HTML file to be rewritten one by one.
-
-Static page rewrites should be completed gradually and verified page by page.
+1. Do not run the broad regex replacement script against the whole site.
+2. Do not infer mappings from nearby text.
+3. Only place an SVG where the section has an explicit spreadsheet phrase and Ref#.
+4. Add `data-ref` to every placed icon so visual review is easier.
+5. Keep legacy inline SVGs removed from completed sections.
+6. Commit one page or one section at a time.
