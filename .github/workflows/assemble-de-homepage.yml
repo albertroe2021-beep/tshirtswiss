@@ -1,0 +1,51 @@
+name: Assemble German homepage
+
+on:
+  push:
+    paths:
+      - '.github/workflows/assemble-de-homepage.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Assemble de/index.html
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p de
+          cat .tmp/de-homepage.part00 \
+              .tmp/de-homepage.part01 \
+              .tmp/de-homepage.part02 \
+              .tmp/de-homepage.part03 \
+              .tmp/de-homepage.part04 \
+              .tmp/de-homepage.part05 \
+              .tmp/de-homepage.part06 \
+              .tmp/de-homepage.part07 \
+              .tmp/de-homepage.part08 | base64 --decode > de/index.html
+          test -s de/index.html
+          grep -q '<html lang="de-CH">' de/index.html
+          grep -q '</html>' de/index.html
+
+      - name: Commit completed homepage
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add de/index.html
+          if git diff --cached --quiet; then
+            echo "No homepage changes to commit."
+            exit 0
+          fi
+          git commit -m "feat(de): publish Swiss High German homepage"
+          git push origin HEAD:main
