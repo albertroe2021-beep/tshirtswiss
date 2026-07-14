@@ -18,4 +18,8 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Copy exact English homepage and translate
+      - name: Copy exact English homepage and translate visible text
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp pages/home/index
