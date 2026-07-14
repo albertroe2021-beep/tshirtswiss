@@ -1,4 +1,4 @@
-name: Redo German homepage faithfully
+name: Rebuild German homepage from exact English master
 
 on:
   push:
@@ -10,70 +10,18 @@ permissions:
   contents: write
 
 jobs:
-  translate:
+  rebuild:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
-      - name: Restore and run complete historical translation script
-        shell: bash
-        run: |
-          cp pages/home/index.html de/home/index.html
-          git show d34dd4318ba9c08a7a4028880051fba31a7288be^:.github/workflows/translate-de-homepage.yml > /tmp/old-workflow.yml
-          awk '/node <<'"'"'NODE'"'"'/{flag=1;next}/^[[:space:]]*NODE$/{flag=0}flag' /tmp/old-workflow.yml > /tmp/translate-home.js
-          sed -i "s|const path = 'de/index.html';|const path = 'de/home/index.html';|" /tmp/translate-home.js
-          sed -i "s|for (const \[from, to\] of replacements)|replacements.sort((a,b) => b[0].length - a[0].length); for (const [from, to] of replacements)|" /tmp/translate-home.js
-          sed -i "s/Offerte anfordern/Offerte anfragen/g; s/Individuelle Bekleidung/Massgeschneiderte Bekleidung/g; s/Individuelle T-Shirts/Massgeschneiderte T-Shirts/g; s/Individuelle Poloshirts/Massgeschneiderte Poloshirts/g" /tmp/translate-home.js
-          node /tmp/translate-home.js
-          python3 <<'PY'
-          from pathlib import Path
-          import re
-          p=Path('de/home/index.html')
-          s=p.read_text(encoding='utf-8')
-          fixes={
-            'For Unternehmen That Expect Quality':'Für Unternehmen mit höchsten Qualitätsansprüchen',
-            'Strict Qualitätskontrolle':'Strenge Qualitätskontrolle',
-            'Swiss-Managed Clothing Manufacturing for Unternehmen Across Switzerland':'Schweizerisch geführte Bekleidungsproduktion für Unternehmen in der ganzen Schweiz',
-            'Poloshirtshirts':'Poloshirts',
-            'Private Label Bekleidung':'Private-Label-Bekleidung',
-            'Offerte anfordern':'Offerte anfragen',
-            'Healthcare-Uniformen':'Bekleidung für das Gesundheitswesen',
-            'Medizinische Kitteltaschen':'Medizinische Arbeitsbekleidung',
-            'Ressourcen Hub':'Ressourcenübersicht',
-            'Für wen wir arbeiten':'Für wen wir produzieren',
-            'Muster':'Musterentwicklung',
-            'Workwear':'Arbeitsbekleidung',
-            'Sportswear':'Sportbekleidung',
-            'Ecommerce-Brands':'E-Commerce-Marken',
-            'Retail-Brands':'Detailhandelsmarken',
-            'Influencer & Creator-Brands':'Influencer- & Creator-Marken',
-            'Email':'E-Mail'
-          }
-          for a,b in fixes.items(): s=s.replace(a,b)
-          if 'ß' in s: raise SystemExit('Swiss German output contains ß')
-          banned=['For Unternehmen','Strict Qualitätskontrolle','Swiss-Managed Clothing Manufacturing','Poloshirtshirts']
-          for x in banned:
-            if x in s: raise SystemExit(f'Bad mixed-language phrase remains: {x}')
-          p.write_text(s,encoding='utf-8')
-          PY
-      - name: Validate structure and commit
+      - name: Copy English homepage and replace visible text only
         shell: bash
         run: |
           python3 <<'PY'
           from pathlib import Path
-          import re,sys
-          a=Path('pages/home/index.html').read_text(encoding='utf-8')
-          b=Path('de/home/index.html').read_text(encoding='utf-8')
-          def sig(s):
-            s=re.sub(r'(?is)>([^<]*)<','><',s)
-            s=re.sub(r'(?i)\s+(title|aria-label|placeholder|alt|lang)\s*=\s*(["\']).*?\2','',s)
-            return re.sub(r'\s+',' ',s).strip()
-          if sig(a)!=sig(b): sys.exit('Homepage structure differs from English master')
-          PY
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add de/home/index.html
-          git commit -m 'fix(de): rebuild homepage as faithful Swiss German mirror'
-          git push origin main
+          import subprocess,re
+
+          english
