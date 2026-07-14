@@ -1,0 +1,25 @@
+name: Redo German homepage faithfully
+
+on:
+  push:
+    paths:
+      - '.github/workflows/redo-de-homepage.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Rebuild homepage from English master
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const
