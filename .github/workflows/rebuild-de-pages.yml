@@ -1,0 +1,185 @@
+name: Rebuild German pages from English masters
+
+on:
+  push:
+    paths:
+      - '.github/workflows/rebuild-de-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Rebuild German pages while preserving English structure
+        shell: bash
+        run: |
+          python3 <<'PY'
+          from pathlib import Path
+          import re, html, json
+
+          ROOT = Path('.')
+          EN_ROOT = ROOT / 'pages'
+          DE_ROOT = ROOT / 'de'
+
+          GLOSSARY = {
+              'Products':'Produkte','Services':'Dienstleistungen','Quality Control':'Qualitätskontrolle',
+              'Worldwide Shipping':'Weltweiter Versand','Custom Clothing':'Massgeschneiderte Bekleidung',
+              'Private Label Clothing':'Private-Label-Bekleidung','Request a Quote':'Offerte anfragen',
+              'Request My Quote':'Offerte anfragen','Contact':'Kontakt','Contact Us':'Kontakt aufnehmen',
+              'About Us':'Über uns','Resources':'Ressourcen','Resources Hub':'Ressourcenübersicht',
+              'Case Studies':'Fallstudien','Industries':'Branchen','Businesses':'Unternehmen',
+              'Who We Serve':'Für wen wir produzieren','Production / Our Process':'Produktion / Unser Prozess',
+              'Our Production Process':'Unser Produktionsprozess','Menu':'Menü','Close':'Schliessen',
+              'Open menu':'Menü öffnen','Main navigation':'Hauptnavigation','Mobile navigation':'Mobile Navigation',
+              'Swiss Managed':'Schweizerisch geführt','Factory in Thailand':'Fabrik in Thailand',
+              'Premium Quality':'Premiumqualität','Swiss Quality Standards':'Schweizer Qualitätsstandards',
+              'Factory Direct Pricing':'Direkte Preise ab Werk','Strict Quality Control':'Strenge Qualitätskontrolle',
+              'Long Term Partner':'Langfristiger Partner','Name':'Name','Business':'Unternehmen',
+              'Phone':'Telefon','Email':'E-Mail','Description':'Beschreibung','Other':'Andere',
+              'Clothing Type':'Bekleidungsart','Select clothing type':'Bekleidungsart auswählen',
+              'Custom T-Shirts':'Massgeschneiderte T-Shirts','Custom Polos':'Massgeschneiderte Poloshirts',
+              'Hoodies & Sweatshirts':'Hoodies & Sweatshirts','Jackets & Softshells':'Jacken & Softshells',
+              'Workwear':'Arbeitsbekleidung','Healthcare Uniforms':'Bekleidung für das Gesundheitswesen',
+              'Medical Scrubs':'Medizinische Arbeitsbekleidung','Corporate Apparel':'Firmenbekleidung',
+              'Sportswear':'Sportbekleidung','Rashguards':'Rashguards','MMA Shorts':'MMA-Shorts',
+              'Muay Thai Shorts':'Muay-Thai-Shorts','Caps & Headwear':'Caps & Kopfbedeckungen',
+              'Tote Bags':'Tragetaschen','Promotional Merchandise':'Werbeartikel',
+              'Construction & Trades':'Bau & Handwerk','Healthcare':'Gesundheitswesen',
+              'Hospitality':'Gastronomie & Hotellerie','Sports & Fitness':'Sport & Fitness',
+              'Combat Sports':'Kampfsport','Franchises':'Franchises','Ecommerce Brands':'E-Commerce-Marken',
+              'Retail Brands':'Detailhandelsmarken','Events & Merchandise':'Events & Merchandise',
+              'Influencers & Creator Brands':'Influencer- & Creator-Marken',
+              'OEM Clothing Production':'OEM-Bekleidungsproduktion','Private Label Manufacturing':'Private-Label-Fertigung',
+              'Product Development':'Produktentwicklung','Sampling':'Musterentwicklung','Screen Printing':'Siebdruck',
+              'Embroidery':'Stickerei','Sublimation Printing':'Sublimationsdruck',
+              'Heat Transfer Printing':'Transferdruck','Custom Labels':'Massgeschneiderte Etiketten',
+              'Hang Tags':'Anhängeetiketten','Packaging Solutions':'Verpackungslösungen',
+              'Current live site':'Aktuelle Live-Website','View All Industries':'Alle Branchen ansehen',
+              'View All Products':'Alle Produkte ansehen','Learn More':'Mehr erfahren','Read More':'Mehr lesen',
+              'Get Started':'Jetzt starten','Submit':'Senden','Send':'Senden','Back':'Zurück','Next':'Weiter'
+          }
+
+          block_re = re.compile(r'(?is)<(script|style)\b[^>]*>.*?</\1>')
+          token_re = re.compile(r'(<[^>]+>)')
+          attr_re = re.compile(r'(?P<pre>\b(?:title|aria-label|placeholder|alt)\s*=\s*)(?P<q>["\'])(?P<v>.*?)(?P=q)', re.I|re.S)
+
+          def protect_blocks(s):
+              blocks=[]
+              def repl(m):
+                  blocks.append(m.group(0)); return f'@@BLOCK_{len(blocks)-1}@@'
+              return block_re.sub(repl,s),blocks
+
+          def restore_blocks(s,blocks):
+              for i,b in enumerate(blocks): s=s.replace(f'@@BLOCK_{i}@@',b)
+              return s
+
+          def visible_slots(s):
+              p, _ = protect_blocks(s)
+              parts=token_re.split(p)
+              slots=[]
+              for i,x in enumerate(parts):
+                  if i%2==0 and x.strip() and not x.startswith('@@BLOCK_'):
+                      slots.append(x)
+              return slots
+
+          def germanish(s):
+              words=re.findall(r'[A-Za-zÄÖÜäöüß]+', html.unescape(s))
+              markers={'und','für','mit','von','der','die','das','den','dem','ein','eine','wir','Sie','Ihre','unser','Qualität','Produktion','Bekleidung','Versand','Offerte'}
+              return any(w in markers for w in words) or bool(re.search(r'[ÄÖÜäöü]',s))
+
+          def build_translation_map(en, de):
+              emap={}
+              es=visible_slots(en); ds=visible_slots(de)
+              for e,d in zip(es,ds):
+                  ek=e.strip(); dk=d.strip()
+                  if ek and dk and ek != dk and germanish(dk): emap[ek]=dk
+              for k,v in GLOSSARY.items(): emap[k]=v
+              return emap
+
+          def replace_attrs(tag, trans):
+              def r(m):
+                  v=m.group('v'); nv=trans.get(html.unescape(v), trans.get(v,v))
+                  return m.group('pre')+m.group('q')+html.escape(nv, quote=True)+m.group('q')
+              return attr_re.sub(r,tag)
+
+          def apply(en, trans):
+              p,blocks=protect_blocks(en)
+              parts=token_re.split(p)
+              out=[]
+              for i,x in enumerate(parts):
+                  if i%2==1:
+                      x=replace_attrs(x,trans)
+                      if re.match(r'(?is)<html\b',x):
+                          x=re.sub(r'\blang\s*=\s*(["\']).*?\1','lang="de-CH"',x,count=1)
+                      out.append(x)
+                  else:
+                      if x.startswith('@@BLOCK_') or not x.strip(): out.append(x); continue
+                      lead=x[:len(x)-len(x.lstrip())]; trail=x[len(x.rstrip()):]
+                      core=x.strip(); out.append(lead+trans.get(core,core)+trail)
+              return restore_blocks(''.join(out),blocks)
+
+          pages=[]; incomplete=[]
+          masters=[EN_ROOT/'home'/'index.html'] + sorted(p for p in EN_ROOT.rglob('index.html') if p != EN_ROOT/'home'/'index.html')
+          for en_path in masters:
+              rel=en_path.relative_to(EN_ROOT)
+              de_path=DE_ROOT/rel
+              en=en_path.read_text(encoding='utf-8')
+              old_de=de_path.read_text(encoding='utf-8') if de_path.exists() else en
+              trans=build_translation_map(en,old_de)
+              rebuilt=apply(en,trans)
+              de_path.parent.mkdir(parents=True,exist_ok=True)
+              de_path.write_text(rebuilt,encoding='utf-8')
+              leftovers=[]
+              for s in visible_slots(rebuilt):
+                  t=html.unescape(re.sub(r'\s+',' ',s)).strip()
+                  if len(t)>=18 and re.search(r'\b(the|and|for|with|from|your|our|we|you|to|of|in)\b',t,re.I): leftovers.append(t[:160])
+              pages.append({'page':str(rel.parent) if rel.name=='index.html' else str(rel),'english':str(en_path),'german':str(de_path),'status':'completed' if not leftovers else 'completed-needs-language-review','leftovers':leftovers[:8]})
+              if leftovers: incomplete.append(str(de_path))
+
+          report=DE_ROOT/'TRANSLATION_STATUS.md'
+          lines=['# German Translation Status','', 'Generated from the English pages as structural masters.','', '| Page | English master | German page | Status |','|---|---|---|---|']
+          for p in pages:
+              lines.append(f"| `{p['page']}` | `{p['english']}` | `{p['german']}` | {p['status']} |")
+          lines += ['',f'Completed: {sum(p["status"]=="completed" for p in pages)}',f'Needs language review: {len(incomplete)}',f'Total: {len(pages)}']
+          report.write_text('\n'.join(lines)+'\n',encoding='utf-8')
+          print(json.dumps({'total':len(pages),'clean':sum(p['status']=='completed' for p in pages),'review':len(incomplete),'review_files':incomplete},indent=2))
+          PY
+      - name: Validate German pages match English structure
+        shell: bash
+        run: |
+          python3 <<'PY'
+          from pathlib import Path
+          import re,sys
+          failures=[]
+          for en in sorted(Path('pages').rglob('index.html')):
+              rel=en.relative_to('pages'); de=Path('de')/rel
+              if not de.exists(): failures.append(f'missing {de}'); continue
+              a=en.read_text(encoding='utf-8'); b=de.read_text(encoding='utf-8')
+              def sig(s):
+                  s=re.sub(r'(?is)>([^<]*)<','><',s)
+                  s=re.sub(r'(?i)\s+(title|aria-label|placeholder|alt|lang)\s*=\s*(["\']).*?\2','',s)
+                  return re.sub(r'\s+',' ',s).strip()
+              if sig(a)!=sig(b): failures.append(f'structure mismatch {de}')
+          if failures:
+              print('\n'.join(failures)); sys.exit(1)
+          print('All German pages match their English master structure.')
+          PY
+      - name: Commit rebuilt German pages
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add de
+          if git diff --cached --quiet; then
+            echo 'No German page changes required.'
+          else
+            git commit -m 'feat(de): rebuild German pages from English masters'
+            git push origin main
+          fi
