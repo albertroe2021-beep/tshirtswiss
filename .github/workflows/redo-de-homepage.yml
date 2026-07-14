@@ -17,11 +17,5 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
-      - name: Copy English homepage and replace visible text only
-        shell: bash
-        run: |
-          python3 <<'PY'
-          from pathlib import Path
-          import subprocess,re
 
-          english
+      - name: Copy exact English homepage and translate
