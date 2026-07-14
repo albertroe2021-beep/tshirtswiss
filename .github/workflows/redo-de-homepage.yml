@@ -18,8 +18,59 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Copy exact English homepage and translate visible text
+      - name: Copy English master and translate visible text
         shell: bash
         run: |
           set -euo pipefail
-          cp pages/home/index
+          cp pages/home/index.html de/home/index.html
+          git show d525e1e068fc7eb931d9fda6355235004f4bc558:.github/workflows/translate-de-homepage.yml > /tmp/source.yml
+          awk '/node <<'"'"'NODE'"'"'/{copy=1;next}/^[[:space:]]*NODE$/{copy=0}copy' /tmp/source.yml > /tmp/translate.js
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('/tmp/translate.js')
+          s=p.read_text()
+          s=s.replace("const path = 'de/index.html';", "const path = 'de/home/index.html';")
+          s=s.replace('for (const [from, to] of replacements) {', 'replacements.sort((a,b)=>b[0].length-a[0].length);\nfor (const [from, to] of replacements) {')
+          p.write_text(s)
+          PY
+          node /tmp/translate.js
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('de/home/index.html')
+          s=p.read_text()
+          fixes={
+          'Offerte anfordern':'Offerte anfragen','Angebot anfragen':'Offerte anfragen',
+          'Individuelle Bekleidung':'Massgeschneiderte Bekleidung','Private Label Bekleidung':'Private-Label-Bekleidung',
+          'For Unternehmen That Expect Quality':'Für Unternehmen mit höchsten Qualitätsansprüchen',
+          'Strict Qualitätskontrolle':'Strenge Qualitätskontrolle',
+          'Swiss-Managed Clothing Manufacturing for Unternehmen Across Switzerland':'Schweizerisch geführte Bekleidungsproduktion für Unternehmen in der ganzen Schweiz',
+          'Poloshirtshirts':'Poloshirts','Healthcare-Uniformen':'Bekleidung für das Gesundheitswesen',
+          'Medizinische Kitteltaschen':'Medizinische Arbeitsbekleidung','Email':'E-Mail'
+          }
+          for a,b in fixes.items(): s=s.replace(a,b)
+          s=s.replace('<html lang="en">','<html lang="de-CH">')
+          if 'ß' in s: raise SystemExit('Swiss High German must not contain ß')
+          for bad in ['For Unternehmen','Strict Qualitätskontrolle','Swiss-Managed Clothing Manufacturing','Poloshirtshirts']:
+              if bad in s: raise SystemExit('Mixed-language text remains: '+bad)
+          p.write_text(s)
+          PY
+
+      - name: Validate exact structure and commit
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          def sig(s):
+              s=re.sub(r'(?is)>([^<]*)<','><',s)
+              s=re.sub(r'(?i)\s+(title|aria-label|placeholder|alt|lang)\s*=\s*(["\']).*?\2','',s)
+              return re.sub(r'\s+',' ',s).strip()
+          en=Path('pages/home/index.html').read_text()
+          de=Path('de/home/index.html').read_text()
+          if sig(en)!=sig(de): raise SystemExit('German homepage structure differs from English master')
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add de/home/index.html
+          git diff --cached --quiet || git commit -m 'fix(de): rebuild homepage from English master in Swiss High German'
+          git push origin main
