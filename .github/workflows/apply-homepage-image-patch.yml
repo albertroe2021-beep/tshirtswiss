@@ -1,0 +1,42 @@
+name: Apply Homepage Image Patch
+
+on:
+  push:
+    branches:
+      - feature/image-replacement-phase-1
+    paths:
+      - scripts/apply_homepage_image_patch.py
+      - .github/workflows/apply-homepage-image-patch.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply-homepage-image-patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out feature branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/image-replacement-phase-1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Apply homepage image replacements
+        run: python scripts/apply_homepage_image_patch.py
+
+      - name: Commit homepage update
+        run: |
+          if git diff --quiet -- pages/home/index.html; then
+            echo "Homepage image patch already applied."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pages/home/index.html
+          git commit -m "feat: replace homepage hero quality and CTA images"
+          git push origin HEAD:feature/image-replacement-phase-1

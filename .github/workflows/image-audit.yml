@@ -1,0 +1,54 @@
+name: Image Asset Audit
+
+on:
+  pull_request:
+    paths:
+      - "**/*.html"
+      - "**/*.css"
+      - "**/*.avif"
+      - "**/*.gif"
+      - "**/*.jpeg"
+      - "**/*.jpg"
+      - "**/*.png"
+      - "**/*.svg"
+      - "**/*.webp"
+      - "scripts/audit_image_assets.py"
+      - ".github/workflows/image-audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit-images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run image audit
+        run: |
+          python scripts/audit_image_assets.py \
+            --root . \
+            --output image-audit-report.md \
+            --fail-on-missing
+
+      - name: Add audit summary
+        if: always()
+        run: |
+          if [ -f image-audit-report.md ]; then
+            cat image-audit-report.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: image-audit-report
+          path: image-audit-report.md
+          if-no-files-found: error
