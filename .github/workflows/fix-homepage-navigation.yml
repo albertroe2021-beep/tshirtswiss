@@ -1,0 +1,22 @@
+name: Repair homepage navigation
+
+on:
+  push:
+    branches:
+      - tshirtswiss-v2
+    paths:
+      - .github/workflows/fix-homepage-navigation.yml
+
+permissions:
+  contents: write
+
+jobs:
+  repair-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: tshirtswiss-v2
+
+      - name: Repair
