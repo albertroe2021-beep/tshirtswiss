@@ -1,0 +1,25 @@
+name: Update German homepage content
+
+on:
+  push:
+    branches:
+      - tshirtswiss-v2
+    paths:
+      - .github/workflows/update-de-home-content.yml
+
+permissions:
+  contents: write
+
+jobs:
+  update-content:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          ref: tshirtswiss-v2
+
+      - name: Update German homepage text only
+        run: |
+          python3 <<'PY'
+          from
