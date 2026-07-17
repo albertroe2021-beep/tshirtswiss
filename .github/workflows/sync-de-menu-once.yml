@@ -12,6 +12,7 @@ jobs:
   sync-navigation:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -23,15 +24,4 @@ jobs:
         run: |
           python3 - <<'PY'
           from pathlib import Path
-          import re
-
-          root = Path('.')
-          master_path = root / 'de' / 'home' / 'index.html'
-          master = master_path.read_text(encoding='utf-8')
-
-          pattern = re.compile(r'(<body\b[^>]*>)(.*?)(\s*<main\b)', re.IGNORECASE | re.DOTALL)
-          master_match = pattern.search(master)
-          if not master_match:
-              raise SystemExit('Could not locate the navigation region between <body> and <main> in de/home/index.html')
-
-          master_navigation = master_match.group(
+          from
