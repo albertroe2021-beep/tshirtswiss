@@ -8,13 +8,90 @@
   },
   "content": [
     {
-      "id": "svcpage01",
+      "id": "svcpage1",
       "elType": "container",
       "isInner": false,
       "settings": {
         "content_width": "full",
+        "flex_direction": "column",
         "css_classes": "tss-page tss-service-page"
       },
       "elements": [
         {
-          "id": "sv
+          "id": "svchero1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "min_height": {"unit": "px", "size": 560},
+            "flex_direction": "column",
+            "justify_content": "center",
+            "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+            "background_background": "classic",
+            "background_color": "#111111",
+            "background_image": {"url": "{{SERVICE_PAGE_HERO_IMAGE}}", "id": ""},
+            "background_position": "center center",
+            "background_size": "cover",
+            "background_overlay_background": "classic",
+            "background_overlay_color": "rgba(0,0,0,0.60)",
+            "css_classes": "tss-service-page__hero"
+          },
+          "elements": [
+            {"id": "svcbread", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{BREADCRUMBS}}</p>", "text_color": "#FFFFFF"}, "elements": []},
+            {"id": "svctitle", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{SERVICE_PAGE_TITLE}}", "header_size": "h1", "title_color": "#FFFFFF"}, "elements": []},
+            {"id": "svcintro", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{SERVICE_PAGE_INTRO}}</p>", "text_color": "#FFFFFF"}, "elements": []}
+          ]
+        },
+        {
+          "id": "svcgrid1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "column",
+            "gap": {"unit": "px", "size": 32},
+            "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+            "css_classes": "tss-service-page__services"
+          },
+          "elements": [
+            {"id": "svcgrttl", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{SERVICES_TITLE}}", "header_size": "h2", "align": "center"}, "elements": []},
+            {
+              "id": "svccards",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"flex_direction": "row", "flex_wrap": "wrap", "gap": {"unit": "px", "size": 24}},
+              "elements": [
+                {"id": "svccard1", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 31.5}, "flex_direction": "column", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true}, "background_background": "classic", "background_color": "#F7F7F7"}, "elements": [{"id": "svcc1ttl", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{SERVICE_1_TITLE}}", "header_size": "h3"}, "elements": []}, {"id": "svcc1txt", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{SERVICE_1_TEXT}}</p>"}, "elements": []}, {"id": "svcc1btn", "elType": "widget", "widgetType": "button", "settings": {"text": "{{SERVICE_1_CTA}}", "link": {"url": "{{SERVICE_1_URL}}"}}, "elements": []}]},
+                {"id": "svccard2", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 31.5}, "flex_direction": "column", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true}, "background_background": "classic", "background_color": "#F7F7F7"}, "elements": [{"id": "svcc2ttl", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{SERVICE_2_TITLE}}", "header_size": "h3"}, "elements": []}, {"id": "svcc2txt", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{SERVICE_2_TEXT}}</p>"}, "elements": []}, {"id": "svcc2btn", "elType": "widget", "widgetType": "button", "settings": {"text": "{{SERVICE_2_CTA}}", "link": {"url": "{{SERVICE_2_URL}}"}}, "elements": []}]},
+                {"id": "svccard3", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 31.5}, "flex_direction": "column", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true}, "background_background": "classic", "background_color": "#F7F7F7"}, "elements": [{"id": "svcc3ttl", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{SERVICE_3_TITLE}}", "header_size": "h3"}, "elements": []}, {"id": "svcc3txt", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{SERVICE_3_TEXT}}</p>"}, "elements": []}, {"id": "svcc3btn", "elType": "widget", "widgetType": "button", "settings": {"text": "{{SERVICE_3_CTA}}", "link": {"url": "{{SERVICE_3_URL}}"}}, "elements": []}]}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "svccta01",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "row",
+            "align_items": "center",
+            "justify_content": "space-between",
+            "gap": {"unit": "px", "size": 32},
+            "padding": {"unit": "px", "top": "64", "right": "32", "bottom": "64", "left": "32", "isLinked": false},
+            "background_background": "classic",
+            "background_color": "#E1111A",
+            "css_classes": "tss-service-page__cta"
+          },
+          "elements": [
+            {"id": "svcctatl", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{SERVICE_CTA_TITLE}}", "header_size": "h2", "title_color": "#FFFFFF"}, "elements": []},
+            {"id": "svcctabt", "elType": "widget", "widgetType": "button", "settings": {"text": "{{SERVICE_CTA_TEXT}}", "link": {"url": "{{SERVICE_CTA_URL}}"}, "background_color": "#FFFFFF", "button_text_color": "#111111"}, "elements": []}
+          ]
+        }
+      ]
+    }
+  ]
+}
