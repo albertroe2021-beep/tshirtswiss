@@ -8,7 +8,7 @@
   },
   "content": [
     {
-      "id": "landpage01",
+      "id": "landpg01",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -17,3 +17,83 @@
         "css_classes": "tss-page tss-landing-page"
       },
       "elements": [
+        {
+          "id": "landhero",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "min_height": {"unit": "px", "size": 640},
+            "flex_direction": "row",
+            "align_items": "center",
+            "gap": {"unit": "px", "size": 48},
+            "padding": {"unit": "px", "top": "96", "right": "32", "bottom": "96", "left": "32", "isLinked": false},
+            "background_background": "classic",
+            "background_color": "#070707",
+            "css_classes": "tss-landing-page__hero"
+          },
+          "elements": [
+            {
+              "id": "landcopy",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"width": {"unit": "%", "size": 56}, "flex_direction": "column", "gap": {"unit": "px", "size": 20}},
+              "elements": [
+                {"id": "landeye1", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{LANDING_EYEBROW}}", "header_size": "h6", "title_color": "#E1111A"}, "elements": []},
+                {"id": "landtitl", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{LANDING_TITLE}}", "header_size": "h1", "title_color": "#FFFFFF"}, "elements": []},
+                {"id": "landtext", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{LANDING_INTRO}}</p>", "text_color": "#FFFFFF"}, "elements": []},
+                {"id": "landbtn1", "elType": "widget", "widgetType": "button", "settings": {"text": "{{LANDING_CTA_TEXT}}", "link": {"url": "{{LANDING_CTA_URL}}"}, "size": "lg", "background_color": "#E1111A", "button_text_color": "#FFFFFF"}, "elements": []}
+              ]
+            },
+            {
+              "id": "landmedi",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"width": {"unit": "%", "size": 44}},
+              "elements": [
+                {"id": "landimg1", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "{{LANDING_HERO_IMAGE}}"}, "image_size": "full"}, "elements": []}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "landbene",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "column",
+            "gap": {"unit": "px", "size": 32},
+            "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+            "css_classes": "tss-landing-page__benefits"
+          },
+          "elements": [
+            {"id": "landbttl", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{LANDING_BENEFITS_TITLE}}", "header_size": "h2", "align": "center"}, "elements": []},
+            {"id": "landbtxt", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{LANDING_BENEFITS_CONTENT}}</p>", "align": "center"}, "elements": []}
+          ]
+        },
+        {
+          "id": "landform",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 960},
+            "flex_direction": "column",
+            "gap": {"unit": "px", "size": 24},
+            "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+            "background_background": "classic",
+            "background_color": "#F7F7F7",
+            "css_classes": "tss-landing-page__form"
+          },
+          "elements": [
+            {"id": "landfttl", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{LANDING_FORM_TITLE}}", "header_size": "h2", "align": "center"}, "elements": []},
+            {"id": "landwpfm", "elType": "widget", "widgetType": "wpforms", "settings": {"form_id": "{{WPFORMS_FORM_ID}}", "title": "false", "description": "false"}, "elements": []}
+          ]
+        }
+      ]
+    }
+  ]
+}
