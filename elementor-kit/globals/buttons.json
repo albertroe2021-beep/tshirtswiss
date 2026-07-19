@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "title": "TShirtSwiss Global Buttons",
+  "source": "v2/docs/DESIGN_BIBLE.md",
+  "base": {
+    "fontToken": "button",
+    "display": "inline-flex",
+    "alignItems": "center",
+    "justifyContent": "center",
+    "gap": 10,
+    "minHeight": 48,
+    "padding": {"vertical": 16, "horizontal": 24},
+    "borderWidth": 1,
+    "borderRadiusToken": "small",
+    "transition": "all 180ms ease"
+  },
+  "variants": {
+    "primary": {"background": "primary", "text": "white", "border": "primary", "hoverBackground": "primaryDark", "hoverBorder": "primaryDark", "shadow": "button"},
+    "secondary": {"background": "black", "text": "white", "border": "black", "hoverBackground": "ink", "hoverBorder": "ink", "shadow": "button"},
+    "outlineLight": {"background": "transparent", "text": "white", "border": "white", "hoverBackground": "white", "hoverText": "black"},
+    "outlineDark": {"background": "transparent", "text": "ink", "border": "ink", "hoverBackground": "ink", "hoverText": "white"},
+    "ghost": {"background": "transparent", "text": "primary", "border": "transparent", "hoverBackground": "soft"},
+    "icon": {"width": 48, "height": 48, "padding": 0, "borderRadiusToken": "pill"}
+  },
+  "responsive": {"mobileFullWidth": true, "mobileMinHeight": 50}
+}
