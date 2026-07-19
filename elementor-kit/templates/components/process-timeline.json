@@ -1,0 +1,49 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Process Timeline",
+  "type": "section",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "processtl01",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1280},
+        "flex_direction": "column",
+        "gap": {"unit": "px", "size": 40},
+        "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+        "background_background": "classic",
+        "background_color": "#F7F7F7",
+        "css_classes": "tss-process-timeline"
+      },
+      "elements": [
+        {
+          "id": "processhead1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {"flex_direction": "column", "align_items": "center", "gap": {"unit": "px", "size": 12}},
+          "elements": [
+            {"id": "processeye1", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{PROCESS_EYEBROW}}", "header_size": "h6", "align": "center", "title_color": "#E1111A"}, "elements": []},
+            {"id": "processtit1", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{PROCESS_TITLE}}", "header_size": "h2", "align": "center", "title_color": "#111111"}, "elements": []},
+            {"id": "processintro", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{PROCESS_INTRO}}</p>", "align": "center", "text_color": "#555555"}, "elements": []}
+          ]
+        },
+        {
+          "id": "processsteps",
+          "elType": "container",
+          "isInner": true,
+          "settings": {"flex_direction": "row", "flex_wrap": "wrap", "gap": {"unit": "px", "size": 24}},
+          "elements": [
+            {"id": "process01", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 18.5}, "flex_direction": "column", "align_items": "center", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "24", "right": "20", "bottom": "24", "left": "20", "isLinked": false}, "background_background": "classic", "background_color": "#FFFFFF", "css_classes": "tss-process-timeline__step"}, "elements": [{"id": "processn01", "elType": "widget", "widgetType": "heading", "settings": {"title": "01", "header_size": "h3", "align": "center", "title_color": "#E1111A"}, "elements": []}, {"id": "processt01", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{PROCESS_1_TITLE}}", "header_size": "h4", "align": "center"}, "elements": []}, {"id": "processd01", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{PROCESS_1_TEXT}}</p>", "align": "center"}, "elements": []}]},
+            {"id": "process02", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 18.5}, "flex_direction": "column", "align_items": "center", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "24", "right": "20", "bottom": "24", "left": "20", "isLinked": false}, "background_background": "classic", "background_color": "#FFFFFF", "css_classes": "tss-process-timeline__step"}, "elements": [{"id": "processn02", "elType": "widget", "widgetType": "heading", "settings": {"title": "02", "header_size": "h3", "align": "center", "title_color": "#E1111A"}, "elements": []}, {"id": "processt02", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{PROCESS_2_TITLE}}", "header_size": "h4", "align": "center"}, "elements": []}, {"id": "processd02", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{PROCESS_2_TEXT}}</p>", "align": "center"}, "elements": []}]},
+            {"id": "process03", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 18.5}, "flex_direction": "column", "align_items": "center", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "24", "right": "20", "bottom": "24", "left": "20", "isLinked": false}, "background_background": "classic", "background_color": "#FFFFFF", "css_classes": "tss-process-timeline__step"}, "elements": [{"id": "processn03", "elType": "widget", "widgetType": "heading", "settings": {"title": "03", "header_size": "h3", "align": "center", "title_color": "#E1111A"}, "elements": []}, {"id": "processt03", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{PROCESS_3_TITLE}}", "header_size": "h4", "align": "center"}, "elements": []}, {"id": "processd03", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{PROCESS_3_TEXT}}</p>", "align": "center"}, "elements": []}]},
+            {"id": "process04", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 18.5}, "flex_direction": "column", "align_items": "center", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "24", "right": "20", "bottom": "24", "left": "20", "isLinked": false}, "background_background": "classic", "background_color": "#FFFFFF", "css_classes": "tss-process-timeline__step"}, "elements": [{"id": "processn04", "elType": "widget", "widgetType": "heading", "settings": {"title": "04", "header_size": "h3", "align": "center", "title_color": "#E1111A"}, "elements": []}, {"id": "processt04", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{PROCESS_4_TITLE}}", "header_size": "h4", "align": "center"}, "elements": []}, {"id": "processd04", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{PROCESS_4_TEXT}}</p>", "align": "center"}, "elements": []}]},
+            {"id": "process05", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 18.5}, "flex_direction": "column", "align_items": "center", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "24", "right": "20", "bottom": "24", "left": "20", "isLinked": false}, "background_background": "classic", "background_color": "#FFFFFF", "css_classes": "tss-process-timeline__step"}, "elements": [{"id": "processn05", "elType": "widget", "widgetType": "heading", "settings": {"title": "05", "header_size": "h3", "align": "center", "title_color": "#E1111A"}, "elements": []}, {"id": "processt05", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{PROCESS_5_TITLE}}", "header_size": "h4", "align": "center"}, "elements": []}, {"id": "processd05", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{PROCESS_5_TEXT}}</p>", "align": "center"}, "elements": []}]}
+          ]
+        }
+      ]
+    }
+  ]
+}
