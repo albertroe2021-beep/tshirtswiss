@@ -1,0 +1,165 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Service Child Page Template",
+  "type": "page",
+  "page_settings": {
+    "hide_title": "yes",
+    "template": "elementor_canvas"
+  },
+  "content": [
+    {
+      "id": "svcchild01",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "tss-page tss-service-child-page"
+      },
+      "elements": [
+        {
+          "id": "svcchildhero",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "min_height": {"unit": "px", "size": 560},
+            "flex_direction": "column",
+            "justify_content": "center",
+            "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+            "background_background": "classic",
+            "background_color": "#111111",
+            "background_image": {"url": "{{SERVICE_HERO_IMAGE}}", "id": ""},
+            "background_position": "center center",
+            "background_size": "cover",
+            "background_overlay_background": "classic",
+            "background_overlay_color": "rgba(0,0,0,0.58)",
+            "css_classes": "tss-service-child__hero"
+          },
+          "elements": [
+            {
+              "id": "svcchildcrumbs",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>{{BREADCRUMBS}}</p>",
+                "text_color": "#FFFFFF"
+              },
+              "elements": []
+            },
+            {
+              "id": "svcchildtitle",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "{{SERVICE_TITLE}}",
+                "header_size": "h1",
+                "title_color": "#FFFFFF"
+              },
+              "elements": []
+            },
+            {
+              "id": "svcchildintro",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>{{SERVICE_INTRO}}</p>",
+                "text_color": "#FFFFFF"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "svcchildmain",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "row",
+            "gap": {"unit": "px", "size": 48},
+            "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+            "css_classes": "tss-service-child__main"
+          },
+          "elements": [
+            {
+              "id": "svcchildcopy",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"content_width": "full", "flex_direction": "column", "width": {"unit": "%", "size": 60}},
+              "elements": [
+                {"id": "svcchildh2", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{OVERVIEW_TITLE}}", "header_size": "h2"}, "elements": []},
+                {"id": "svcchildbody", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "{{OVERVIEW_CONTENT}}"}, "elements": []},
+                {"id": "svcchildbenefits", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "{{BENEFITS_LIST}}"}, "elements": []}
+              ]
+            },
+            {
+              "id": "svcchildmedia",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"content_width": "full", "width": {"unit": "%", "size": 40}},
+              "elements": [
+                {"id": "svcchildimage", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "{{SERVICE_CONTENT_IMAGE}}", "id": ""}, "image_size": "large"}, "elements": []}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "svcchildprocess",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "column",
+            "padding": {"unit": "px", "top": "80", "right": "32", "bottom": "80", "left": "32", "isLinked": false},
+            "background_background": "classic",
+            "background_color": "#F7F7F7",
+            "css_classes": "tss-service-child__process"
+          },
+          "elements": [
+            {"id": "svcchildprocesstitle", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{PROCESS_TITLE}}", "header_size": "h2", "align": "center"}, "elements": []},
+            {"id": "svcchildprocessbody", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "{{PROCESS_CONTENT}}", "align": "center"}, "elements": []}
+          ]
+        },
+        {
+          "id": "svcchildfaq",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 960},
+            "flex_direction": "column",
+            "padding": {"unit": "px", "top": "80", "right": "32", "bottom": "80", "left": "32", "isLinked": false},
+            "css_classes": "tss-service-child__faq"
+          },
+          "elements": [
+            {"id": "svcchildfaqtitle", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{FAQ_TITLE}}", "header_size": "h2", "align": "center"}, "elements": []},
+            {"id": "svcchildfaqbody", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "{{FAQ_CONTENT}}"}, "elements": []}
+          ]
+        },
+        {
+          "id": "svcchildcta",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "column",
+            "align_items": "center",
+            "padding": {"unit": "px", "top": "72", "right": "32", "bottom": "72", "left": "32", "isLinked": false},
+            "background_background": "classic",
+            "background_color": "#070707",
+            "css_classes": "tss-service-child__cta"
+          },
+          "elements": [
+            {"id": "svcchildctatitle", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{CTA_TITLE}}", "header_size": "h2", "align": "center", "title_color": "#FFFFFF"}, "elements": []},
+            {"id": "svcchildctabutton", "elType": "widget", "widgetType": "button", "settings": {"text": "{{CTA_LABEL}}", "link": {"url": "{{CTA_URL}}"}, "align": "center", "background_color": "#E1111A", "button_text_color": "#FFFFFF"}, "elements": []}
+          ]
+        }
+      ]
+    }
+  ]
+}
