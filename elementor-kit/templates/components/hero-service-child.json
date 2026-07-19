@@ -5,10 +5,44 @@
   "page_settings": [],
   "content": [
     {
-      "id": "svcHero01",
+      "id": "svchero1",
       "elType": "container",
       "isInner": false,
       "settings": {
         "content_width": "boxed",
         "boxed_width": {"unit": "px", "size": 1280},
-        "min_height": {"unit": "px
+        "min_height": {"unit": "px", "size": 560},
+        "flex_direction": "row",
+        "align_items": "center",
+        "gap": {"unit": "px", "size": 48},
+        "padding": {"unit": "px", "top": "96", "right": "32", "bottom": "96", "left": "32", "isLinked": false},
+        "background_background": "classic",
+        "background_color": "#070707",
+        "css_classes": "tss-hero-service-child"
+      },
+      "elements": [
+        {
+          "id": "svhcopy1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {"width": {"unit": "%", "size": 56}, "flex_direction": "column", "gap": {"unit": "px", "size": 20}},
+          "elements": [
+            {"id": "svheye01", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{SERVICE_EYEBROW}}", "header_size": "h6", "title_color": "#E1111A"}, "elements": []},
+            {"id": "svhtitle", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{SERVICE_TITLE}}", "header_size": "h1", "title_color": "#FFFFFF"}, "elements": []},
+            {"id": "svhintro", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{SERVICE_INTRO}}</p>", "text_color": "#FFFFFF"}, "elements": []},
+            {"id": "svhbtn01", "elType": "widget", "widgetType": "button", "settings": {"text": "{{SERVICE_CTA_TEXT}}", "link": {"url": "{{SERVICE_CTA_URL}}"}, "size": "lg", "background_color": "#E1111A", "button_text_color": "#FFFFFF"}, "elements": []}
+          ]
+        },
+        {
+          "id": "svhmedia",
+          "elType": "container",
+          "isInner": true,
+          "settings": {"width": {"unit": "%", "size": 44}, "flex_direction": "column"},
+          "elements": [
+            {"id": "svhimage", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "{{SERVICE_HERO_IMAGE}}"}, "image_size": "full"}, "elements": []}
+          ]
+        }
+      ]
+    }
+  ]
+}
