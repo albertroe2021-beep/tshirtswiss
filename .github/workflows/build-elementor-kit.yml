@@ -1,0 +1,42 @@
+name: Build Elementor Kit
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - agent/elementor-kit
+    paths:
+      - 'elementor-kit/**'
+      - '.github/workflows/build-elementor-kit.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build Elementor release archives
+        run: python elementor-kit/tools/build-elementor-kit.py --clean
+
+      - name: Show build report
+        run: cat elementor-kit/dist/build-report.json
+
+      - name: Upload Elementor release artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: tshirtswiss-elementor-kit
+          path: |
+            elementor-kit/dist/tshirtswiss-elementor-website-template.zip
+            elementor-kit/dist/tshirtswiss-elementor-saved-templates.zip
+            elementor-kit/dist/build-report.json
+          if-no-files-found: error
+          retention-days: 30
