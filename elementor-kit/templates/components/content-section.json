@@ -1,0 +1,45 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Content Section",
+  "type": "section",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "contentsec01",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1280},
+        "flex_direction": "row",
+        "align_items": "center",
+        "gap": {"unit": "px", "size": 48},
+        "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+        "css_classes": "tss-content-section"
+      },
+      "elements": [
+        {
+          "id": "contentimg1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {"width": {"unit": "%", "size": 50}},
+          "elements": [
+            {"id": "contentim1", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "{{CONTENT_IMAGE}}", "id": ""}, "image_size": "full"}, "elements": []}
+          ]
+        },
+        {
+          "id": "contenttxt1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {"width": {"unit": "%", "size": 50}, "flex_direction": "column", "gap": {"unit": "px", "size": 18}},
+          "elements": [
+            {"id": "contentey1", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{CONTENT_EYEBROW}}", "header_size": "h6", "title_color": "#E1111A"}, "elements": []},
+            {"id": "contenthd1", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{CONTENT_TITLE}}", "header_size": "h2"}, "elements": []},
+            {"id": "contentbd1", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{CONTENT_BODY}}</p>"}, "elements": []},
+            {"id": "contentbt1", "elType": "widget", "widgetType": "button", "settings": {"text": "{{CONTENT_BUTTON_TEXT}}", "link": {"url": "{{CONTENT_BUTTON_URL}}"}, "button_type": "primary"}, "elements": []}
+          ]
+        }
+      ]
+    }
+  ]
+}
