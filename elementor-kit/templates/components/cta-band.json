@@ -5,10 +5,35 @@
   "page_settings": [],
   "content": [
     {
-      "id": "cta00001",
+      "id": "ctaband1",
       "elType": "container",
       "isInner": false,
       "settings": {
         "content_width": "boxed",
         "boxed_width": {"unit": "px", "size": 1280},
-        "min
+        "min_height": {"unit": "px", "size": 320},
+        "flex_direction": "row",
+        "justify_content": "space-between",
+        "align_items": "center",
+        "gap": {"unit": "px", "size": 32},
+        "padding": {"unit": "px", "top": "64", "right": "48", "bottom": "64", "left": "48", "isLinked": false},
+        "background_background": "classic",
+        "background_color": "#E1111A",
+        "css_classes": "tss-cta-band"
+      },
+      "elements": [
+        {
+          "id": "ctacopy1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {"width": {"unit": "%", "size": 68}, "flex_direction": "column", "gap": {"unit": "px", "size": 12}},
+          "elements": [
+            {"id": "ctatitle", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{CTA_TITLE}}", "header_size": "h2", "title_color": "#FFFFFF"}, "elements": []},
+            {"id": "ctatext1", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{CTA_TEXT}}</p>", "text_color": "#FFFFFF"}, "elements": []}
+          ]
+        },
+        {"id": "ctabtn01", "elType": "widget", "widgetType": "button", "settings": {"text": "{{CTA_BUTTON_TEXT}}", "link": {"url": "{{CTA_BUTTON_URL}}"}, "background_color": "#FFFFFF", "button_text_color": "#111111", "size": "lg"}, "elements": []}
+      ]
+    }
+  ]
+}
