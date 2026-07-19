@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "title": "TShirtSwiss Border Radius",
+  "tokens": {
+    "none": 0,
+    "small": 6,
+    "medium": 12,
+    "large": 20,
+    "card": 24,
+    "pill": 999
+  },
+  "usage": {
+    "small": "Buttons, fields and compact controls",
+    "medium": "Panels, dropdowns and standard content blocks",
+    "large": "Feature panels and image frames",
+    "card": "Premium product, service and industry cards",
+    "pill": "Tags, badges and circular icon controls"
+  }
+}
