@@ -1,0 +1,20 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Service Page Template",
+  "type": "page",
+  "page_settings": {
+    "hide_title": "yes",
+    "template": "elementor_canvas"
+  },
+  "content": [
+    {
+      "id": "svcpage01",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "full",
+        "css_classes": "tss-page tss-service-page"
+      },
+      "elements": [
+        {
+          "id": "sv
