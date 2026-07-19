@@ -1,0 +1,205 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Product Page Template",
+  "type": "page",
+  "page_settings": {
+    "hide_title": "yes",
+    "template": "elementor_canvas"
+  },
+  "content": [
+    {
+      "id": "prdpage01",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "tss-page tss-product-page"
+      },
+      "elements": [
+        {
+          "id": "prdhero01",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "min_height": {"unit": "px", "size": 560},
+            "flex_direction": "column",
+            "justify_content": "center",
+            "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+            "background_background": "classic",
+            "background_color": "#111111",
+            "background_image": {"url": "{{PRODUCT_HERO_IMAGE}}", "id": ""},
+            "background_position": "center center",
+            "background_size": "cover",
+            "background_overlay_background": "classic",
+            "background_overlay_color": "rgba(0,0,0,0.58)",
+            "css_classes": "tss-product-page__hero"
+          },
+          "elements": [
+            {
+              "id": "prdbread1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {"editor": "<p>{{BREADCRUMBS}}</p>", "text_color": "#FFFFFF"},
+              "elements": []
+            },
+            {
+              "id": "prdtitle1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {"title": "{{PRODUCT_PAGE_TITLE}}", "header_size": "h1", "title_color": "#FFFFFF"},
+              "elements": []
+            },
+            {
+              "id": "prdintro1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {"editor": "<p>{{PRODUCT_PAGE_INTRO}}</p>", "text_color": "#FFFFFF"},
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "prdgrid01",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "column",
+            "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+            "css_classes": "tss-product-page__categories"
+          },
+          "elements": [
+            {
+              "id": "prdgridtitle",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {"title": "{{PRODUCT_CATEGORIES_TITLE}}", "header_size": "h2", "title_color": "#111111"},
+              "elements": []
+            },
+            {
+              "id": "prdgridcopy",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {"editor": "<p>{{PRODUCT_CATEGORIES_INTRO}}</p>", "text_color": "#555555"},
+              "elements": []
+            },
+            {
+              "id": "prdgridhtml",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {"html": "{{PRODUCT_CATEGORY_GRID_HTML}}"},
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "prdbenefit",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "row",
+            "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+            "background_background": "classic",
+            "background_color": "#F7F7F7",
+            "css_classes": "tss-product-page__benefits"
+          },
+          "elements": [
+            {
+              "id": "prdbenefitcopy",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {"editor": "<h2>{{PRODUCT_BENEFITS_TITLE}}</h2><p>{{PRODUCT_BENEFITS_COPY}}</p><div>{{PRODUCT_BENEFITS_LIST}}</div>"},
+              "elements": []
+            },
+            {
+              "id": "prdbenefitimg",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {"image": {"url": "{{PRODUCT_BENEFITS_IMAGE}}", "id": ""}},
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "prdquote01",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "column",
+            "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+            "css_classes": "tss-product-page__quote-form"
+          },
+          "elements": [
+            {
+              "id": "prdquotetitle",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {"title": "{{QUOTE_FORM_TITLE}}", "header_size": "h2", "title_color": "#111111"},
+              "elements": []
+            },
+            {
+              "id": "prdquotecopy",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {"editor": "<p>{{QUOTE_FORM_INTRO}}</p>"},
+              "elements": []
+            },
+            {
+              "id": "prdshortcode",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {"shortcode": "[wpforms id=\"REPLACE_WITH_FORM_ID\" title=\"false\"]"},
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "prdcta001",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "column",
+            "align_items": "center",
+            "padding": {"unit": "px", "top": "72", "right": "32", "bottom": "72", "left": "32", "isLinked": false},
+            "background_background": "classic",
+            "background_color": "#070707",
+            "css_classes": "tss-product-page__cta"
+          },
+          "elements": [
+            {
+              "id": "prdctatitle",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {"title": "{{CTA_TITLE}}", "header_size": "h2", "align": "center", "title_color": "#FFFFFF"},
+              "elements": []
+            },
+            {
+              "id": "prdctacopy",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {"editor": "<p>{{CTA_COPY}}</p>", "align": "center", "text_color": "#E7E7E7"},
+              "elements": []
+            },
+            {
+              "id": "prdctabtn",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {"text": "{{CTA_LABEL}}", "link": {"url": "{{CTA_URL}}"}, "align": "center", "background_color": "#E1111A", "button_text_color": "#FFFFFF"},
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
