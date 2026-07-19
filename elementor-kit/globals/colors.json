@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "title": "TShirtSwiss Global Colours",
+  "source": "v2/docs/DESIGN_BIBLE.md",
+  "tokens": {
+    "primary": {"name": "TSS Red", "value": "#E1111A", "elementorId": "primary"},
+    "primaryDark": {"name": "TSS Red Dark", "value": "#B80E15"},
+    "ink": {"name": "Ink", "value": "#111111", "elementorId": "text"},
+    "black": {"name": "Header Black", "value": "#070707", "elementorId": "secondary"},
+    "muted": {"name": "Muted Text", "value": "#555555"},
+    "line": {"name": "Line", "value": "#E7E7E7"},
+    "soft": {"name": "Soft Background", "value": "#F7F7F7"},
+    "white": {"name": "White", "value": "#FFFFFF"},
+    "success": {"name": "Success", "value": "#18794E"},
+    "warning": {"name": "Warning", "value": "#B54708"},
+    "error": {"name": "Error", "value": "#B42318"}
+  },
+  "usage": {
+    "primary": "Primary calls to action, accents and active states",
+    "black": "Header, footer and high-contrast sections",
+    "ink": "Headings and primary body text",
+    "muted": "Secondary copy",
+    "line": "Borders and dividers",
+    "soft": "Alternating section and card backgrounds"
+  }
+}
