@@ -1,0 +1,164 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Gallery",
+  "type": "section",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "gallerysec01",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1280},
+        "flex_direction": "column",
+        "gap": {"unit": "px", "size": 32},
+        "padding": {"unit": "px", "top": "72", "right": "32", "bottom": "72", "left": "32", "isLinked": false},
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "css_classes": "tss-gallery"
+      },
+      "elements": [
+        {
+          "id": "galleryintro1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "flex_direction": "column",
+            "align_items": "center",
+            "gap": {"unit": "px", "size": 12},
+            "css_classes": "tss-gallery__intro"
+          },
+          "elements": [
+            {
+              "id": "galleryeye01",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "{{GALLERY_EYEBROW}}",
+                "header_size": "h6",
+                "align": "center",
+                "title_color": "#E1111A"
+              },
+              "elements": []
+            },
+            {
+              "id": "galleryhead1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "{{GALLERY_TITLE}}",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#111111"
+              },
+              "elements": []
+            },
+            {
+              "id": "gallerytext1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>{{GALLERY_INTRO}}</p>",
+                "align": "center",
+                "text_color": "#555555"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "gallerygrid1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "gap": {"unit": "px", "size": 20},
+            "css_classes": "tss-gallery__grid"
+          },
+          "elements": [
+            {
+              "id": "galleryimg01",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "{{GALLERY_IMAGE_1_URL}}", "id": ""},
+                "image_size": "large",
+                "caption_source": "custom",
+                "caption": "{{GALLERY_IMAGE_1_CAPTION}}",
+                "css_classes": "tss-gallery__item"
+              },
+              "elements": []
+            },
+            {
+              "id": "galleryimg02",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "{{GALLERY_IMAGE_2_URL}}", "id": ""},
+                "image_size": "large",
+                "caption_source": "custom",
+                "caption": "{{GALLERY_IMAGE_2_CAPTION}}",
+                "css_classes": "tss-gallery__item"
+              },
+              "elements": []
+            },
+            {
+              "id": "galleryimg03",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "{{GALLERY_IMAGE_3_URL}}", "id": ""},
+                "image_size": "large",
+                "caption_source": "custom",
+                "caption": "{{GALLERY_IMAGE_3_CAPTION}}",
+                "css_classes": "tss-gallery__item"
+              },
+              "elements": []
+            },
+            {
+              "id": "galleryimg04",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "{{GALLERY_IMAGE_4_URL}}", "id": ""},
+                "image_size": "large",
+                "caption_source": "custom",
+                "caption": "{{GALLERY_IMAGE_4_CAPTION}}",
+                "css_classes": "tss-gallery__item"
+              },
+              "elements": []
+            },
+            {
+              "id": "galleryimg05",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "{{GALLERY_IMAGE_5_URL}}", "id": ""},
+                "image_size": "large",
+                "caption_source": "custom",
+                "caption": "{{GALLERY_IMAGE_5_CAPTION}}",
+                "css_classes": "tss-gallery__item"
+              },
+              "elements": []
+            },
+            {
+              "id": "galleryimg06",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {"url": "{{GALLERY_IMAGE_6_URL}}", "id": ""},
+                "image_size": "large",
+                "caption_source": "custom",
+                "caption": "{{GALLERY_IMAGE_6_CAPTION}}",
+                "css_classes": "tss-gallery__item"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
