@@ -1,0 +1,45 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Feature Grid",
+  "type": "section",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "featgrid01",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1280},
+        "flex_direction": "column",
+        "gap": {"unit": "px", "size": 32},
+        "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+        "css_classes": "tss-feature-grid"
+      },
+      "elements": [
+        {
+          "id": "feathead01",
+          "elType": "container",
+          "isInner": true,
+          "settings": {"flex_direction": "column", "align_items": "center"},
+          "elements": [
+            {"id": "feateye01", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{FEATURE_EYEBROW}}", "header_size": "h6", "align": "center", "title_color": "#E1111A"}, "elements": []},
+            {"id": "feattitle1", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{FEATURE_TITLE}}", "header_size": "h2", "align": "center", "title_color": "#111111"}, "elements": []},
+            {"id": "featintro1", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{FEATURE_INTRO}}</p>", "align": "center", "text_color": "#555555"}, "elements": []}
+          ]
+        },
+        {
+          "id": "featcards1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {"flex_direction": "row", "flex_wrap": "wrap", "gap": {"unit": "px", "size": 24}},
+          "elements": [
+            {"id": "featcard1", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 31.5}, "flex_direction": "column", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true}, "background_background": "classic", "background_color": "#F7F7F7", "css_classes": "tss-feature-grid__card"}, "elements": [{"id": "featicon1", "elType": "widget", "widgetType": "icon", "settings": {"selected_icon": {"value": "fas fa-check", "library": "fa-solid"}, "primary_color": "#E1111A"}, "elements": []}, {"id": "featch1", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{FEATURE_1_TITLE}}", "header_size": "h3"}, "elements": []}, {"id": "featct1", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{FEATURE_1_TEXT}}</p>"}, "elements": []}]},
+            {"id": "featcard2", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 31.5}, "flex_direction": "column", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true}, "background_background": "classic", "background_color": "#F7F7F7", "css_classes": "tss-feature-grid__card"}, "elements": [{"id": "featicon2", "elType": "widget", "widgetType": "icon", "settings": {"selected_icon": {"value": "fas fa-check", "library": "fa-solid"}, "primary_color": "#E1111A"}, "elements": []}, {"id": "featch2", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{FEATURE_2_TITLE}}", "header_size": "h3"}, "elements": []}, {"id": "featct2", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{FEATURE_2_TEXT}}</p>"}, "elements": []}]},
+            {"id": "featcard3", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 31.5}, "flex_direction": "column", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true}, "background_background": "classic", "background_color": "#F7F7F7", "css_classes": "tss-feature-grid__card"}, "elements": [{"id": "featicon3", "elType": "widget", "widgetType": "icon", "settings": {"selected_icon": {"value": "fas fa-check", "library": "fa-solid"}, "primary_color": "#E1111A"}, "elements": []}, {"id": "featch3", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{FEATURE_3_TITLE}}", "header_size": "h3"}, "elements": []}, {"id": "featct3", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{FEATURE_3_TEXT}}</p>"}, "elements": []}]}
+          ]
+        }
+      ]
+    }
+  ]
+}
