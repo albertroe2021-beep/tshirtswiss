@@ -1,0 +1,15 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Product Child Page Template",
+  "type": "page",
+  "page_settings": {
+    "hide_title": "yes",
+    "template": "elementor_canvas"
+  },
+  "content": [
+    {
+      "id": "prdchild01",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "full
