@@ -5,7 +5,7 @@
   "page_settings": [],
   "content": [
     {
-      "id": "statssect1",
+      "id": "stats001",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -13,4 +13,26 @@
         "boxed_width": {"unit": "px", "size": 1280},
         "flex_direction": "column",
         "gap": {"unit": "px", "size": 32},
-        "padding": {"unit": "px", "top": "72", "right": "32", "bottom": "72", "left": "32", "isLinked": false
+        "padding": {"unit": "px", "top": "72", "right": "32", "bottom": "72", "left": "32", "isLinked": false},
+        "background_background": "classic",
+        "background_color": "#070707",
+        "css_classes": "tss-statistics"
+      },
+      "elements": [
+        {"id": "stathead", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{STATISTICS_TITLE}}", "header_size": "h2", "align": "center", "title_color": "#FFFFFF"}, "elements": []},
+        {
+          "id": "statgrid",
+          "elType": "container",
+          "isInner": true,
+          "settings": {"flex_direction": "row", "flex_wrap": "wrap", "justify_content": "space-between", "gap": {"unit": "px", "size": 24}},
+          "elements": [
+            {"id": "stat0001", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 23}, "flex_direction": "column", "align_items": "center", "gap": {"unit": "px", "size": 8}}, "elements": [{"id": "statnum1", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{STAT_1_VALUE}}", "header_size": "h2", "align": "center", "title_color": "#E1111A"}, "elements": []}, {"id": "statlab1", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{STAT_1_LABEL}}</p>", "align": "center", "text_color": "#FFFFFF"}, "elements": []}]},
+            {"id": "stat0002", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 23}, "flex_direction": "column", "align_items": "center", "gap": {"unit": "px", "size": 8}}, "elements": [{"id": "statnum2", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{STAT_2_VALUE}}", "header_size": "h2", "align": "center", "title_color": "#E1111A"}, "elements": []}, {"id": "statlab2", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{STAT_2_LABEL}}</p>", "align": "center", "text_color": "#FFFFFF"}, "elements": []}]},
+            {"id": "stat0003", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 23}, "flex_direction": "column", "align_items": "center", "gap": {"unit": "px", "size": 8}}, "elements": [{"id": "statnum3", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{STAT_3_VALUE}}", "header_size": "h2", "align": "center", "title_color": "#E1111A"}, "elements": []}, {"id": "statlab3", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{STAT_3_LABEL}}</p>", "align": "center", "text_color": "#FFFFFF"}, "elements": []}]},
+            {"id": "stat0004", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 23}, "flex_direction": "column", "align_items": "center", "gap": {"unit": "px", "size": 8}}, "elements": [{"id": "statnum4", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{STAT_4_VALUE}}", "header_size": "h2", "align": "center", "title_color": "#E1111A"}, "elements": []}, {"id": "statlab4", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{STAT_4_LABEL}}</p>", "align": "center", "text_color": "#FFFFFF"}, "elements": []}]}
+          ]
+        }
+      ]
+    }
+  ]
+}
