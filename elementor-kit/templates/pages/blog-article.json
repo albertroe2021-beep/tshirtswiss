@@ -8,7 +8,7 @@
   },
   "content": [
     {
-      "id": "blogpage01",
+      "id": "blogpg01",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -18,12 +18,82 @@
       },
       "elements": [
         {
-          "id": "bloghero01",
+          "id": "bloghero",
           "elType": "container",
           "isInner": true,
           "settings": {
             "content_width": "boxed",
-            "boxed_width": {"unit": "px", "size": 1280},
+            "boxed_width": {"unit": "px", "size": 960},
             "flex_direction": "column",
             "justify_content": "center",
-           
+            "gap": {"unit": "px", "size": 18},
+            "padding": {"unit": "px", "top": "96", "right": "32", "bottom": "72", "left": "32", "isLinked": false},
+            "background_background": "classic",
+            "background_color": "#070707",
+            "css_classes": "tss-blog-article__hero"
+          },
+          "elements": [
+            {"id": "blogbred", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{BREADCRUMBS}}</p>", "text_color": "#FFFFFF"}, "elements": []},
+            {"id": "blogcat1", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{ARTICLE_CATEGORY}}", "header_size": "h6", "title_color": "#E1111A"}, "elements": []},
+            {"id": "blogtitl", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{ARTICLE_TITLE}}", "header_size": "h1", "title_color": "#FFFFFF"}, "elements": []},
+            {"id": "blogmeta", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{ARTICLE_DATE}} · {{ARTICLE_AUTHOR}} · {{ARTICLE_READING_TIME}}</p>", "text_color": "#FFFFFF"}, "elements": []}
+          ]
+        },
+        {
+          "id": "blogfeat",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1120},
+            "flex_direction": "column",
+            "padding": {"unit": "px", "top": "0", "right": "32", "bottom": "48", "left": "32", "isLinked": false},
+            "css_classes": "tss-blog-article__featured-image"
+          },
+          "elements": [
+            {"id": "blogimg1", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "{{ARTICLE_FEATURED_IMAGE}}"}, "image_size": "full"}, "elements": []}
+          ]
+        },
+        {
+          "id": "blogbody",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 760},
+            "flex_direction": "column",
+            "gap": {"unit": "px", "size": 24},
+            "padding": {"unit": "px", "top": "48", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+            "css_classes": "tss-blog-article__content"
+          },
+          "elements": [
+            {"id": "blogintro", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{ARTICLE_INTRO}}</p>"}, "elements": []},
+            {"id": "blogcont", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "{{ARTICLE_CONTENT}}"}, "elements": []},
+            {"id": "blogshare", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{ARTICLE_SHARE_LINKS}}</p>"}, "elements": []}
+          ]
+        },
+        {
+          "id": "blogcta1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 960},
+            "flex_direction": "row",
+            "align_items": "center",
+            "justify_content": "space-between",
+            "gap": {"unit": "px", "size": 32},
+            "padding": {"unit": "px", "top": "56", "right": "32", "bottom": "56", "left": "32", "isLinked": false},
+            "background_background": "classic",
+            "background_color": "#F7F7F7",
+            "css_classes": "tss-blog-article__cta"
+          },
+          "elements": [
+            {"id": "blogcttl", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{ARTICLE_CTA_TITLE}}", "header_size": "h3"}, "elements": []},
+            {"id": "blogcbtn", "elType": "widget", "widgetType": "button", "settings": {"text": "{{ARTICLE_CTA_TEXT}}", "link": {"url": "{{ARTICLE_CTA_URL}}"}, "background_color": "#E1111A", "button_text_color": "#FFFFFF"}, "elements": []}
+          ]
+        }
+      ]
+    }
+  ]
+}
