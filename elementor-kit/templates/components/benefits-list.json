@@ -1,0 +1,12 @@
+{
+  "version":"0.4",
+  "title":"TShirtSwiss - Benefits List",
+  "type":"section",
+  "page_settings":[],
+  "content":[{
+    "id":"benefits01",
+    "elType":"container",
+    "isInner":false,
+    "settings":{"content_width":"boxed","boxed_width":{"unit":"px","size":1280},"flex_direction":"column","gap":{"unit":"px","size":28},"padding":{"unit":"px","top":"88","right":"32","bottom":"88","left":"32","isLinked":false},"css_classes":"tss-benefits-list"},
+    "elements":[
+      {"id":"benefithead","
