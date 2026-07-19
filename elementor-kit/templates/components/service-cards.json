@@ -1,0 +1,13 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Service Cards",
+  "type": "section",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "servicecards01",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1280},
