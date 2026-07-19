@@ -2,20 +2,55 @@
   "schemaVersion": 1,
   "principle": "Shared components are reusable, but every child page retains the section order, imagery, content blocks and responsive treatment of its matching GitHub page.",
   "globals": [
-    "global-header",
-    "global-footer",
+    "global-header-en",
+    "global-header-de",
+    "global-header-fr",
+    "global-footer-en",
+    "global-footer-de",
+    "global-footer-fr"
+  ],
+  "components": [
+    "benefits-list",
+    "case-study",
+    "content-section",
+    "cta-band",
+    "faq-section",
+    "faq",
+    "feature-grid",
+    "gallery",
+    "hero-service-child",
     "hero-standard",
-    "hero-with-quote-form",
-    "cta-standard",
-    "quote-form",
-    "trust-strip",
-    "faq-section"
+    "industry-cards",
+    "logo-cloud",
+    "process-timeline",
+    "product-cards",
+    "quote-form-wpforms",
+    "service-cards",
+    "statistics",
+    "testimonials",
+    "trust-strip"
   ],
   "pageFamilies": {
     "services": {
       "parentTemplate": "service-page",
-      "childTemplate": "service-child-page",
-      "children": [
-        "screen-printing",
-        "embroidery",
-        "sublimation-printing
+      "childTemplate": "service-child-page"
+    },
+    "products": {
+      "parentTemplate": "product-page",
+      "childTemplate": "product-child-page"
+    },
+    "industries": {
+      "parentTemplate": "industry-page",
+      "childTemplate": "industry-child-page"
+    },
+    "content": {
+      "articleTemplate": "blog-article",
+      "landingTemplate": "landing-page"
+    }
+  },
+  "templatePaths": {
+    "globals": "templates/globals",
+    "components": "templates/components",
+    "pages": "templates/pages"
+  }
+}
