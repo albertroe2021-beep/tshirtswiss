@@ -1,0 +1,85 @@
+{
+  "version": "1.0.0",
+  "title": "TShirtSwiss Elementor SVG Library",
+  "description": "Elementor Kit manifest for the approved SVG files already stored in the repository. Source assignments follow docs/svg-icon-mapping-draft.md.",
+  "source": {
+    "mapping": "docs/svg-icon-mapping-draft.md",
+    "approvalGuide": "v2/docs/SVG_REFERENCE_LIBRARY.md",
+    "assetBase": "../../"
+  },
+  "usage": {
+    "elementorWidget": "image",
+    "recommendedClass": "tss-svg-icon",
+    "decorativeAlt": "",
+    "notes": "Upload or package these existing SVG files with the kit. Do not replace mapped icons with generic Elementor icons without reviewing the master mapping."
+  },
+  "categories": {
+    "trust": [
+      {"ref": 1, "file": "shield-with-cross-svgrepo-com (1)(1).svg", "uses": ["Swiss Managed", "Swiss Quality Standards", "Swiss-Managed Communication"]},
+      {"ref": 2, "file": "factory-building-svgrepo-com.svg", "uses": ["Factory Direct", "Production", "Bulk Orders", "Thailand Manufacturing Base"]},
+      {"ref": 3, "file": "quality-5-svgrepo-com.svg", "uses": ["Premium Quality", "Quality Control", "Quality Check"]},
+      {"ref": 7, "file": "stopwatch-svgrepo-com.svg", "uses": ["Deadline Focused", "Fast Response"]},
+      {"ref": 8, "file": "handshake-svgrepo-com.svg", "uses": ["Long Term Partner", "Ethical Labour Practices", "Brand-Safe Execution"]}
+    ],
+    "consultation-and-design": [
+      {"ref": 9, "file": "person-with-headset-thin-outline-symbol-in-a-circle-svgrepo-com (1).svg", "uses": ["Request a Quote", "Consultation", "Brand Consultation"]},
+      {"ref": 10, "file": "speech-bubbles-conversation-svgrepo-com (1).svg", "uses": ["Consultation", "Feedback", "Sample Advice"]},
+      {"ref": 11, "file": "computer-monitor-svgrepo-com.svg", "uses": ["Branding", "Artwork Setup", "Product Planning"]},
+      {"ref": 12, "file": "review-checkmark-svgrepo-com.svg", "uses": ["Concept Review", "Sample or Test", "Approval"]},
+      {"ref": 13, "file": "design-svgrepo-com.svg", "uses": ["Fit and Sizes", "Fit and Construction", "Spec Planning"]},
+      {"ref": 15, "file": "sketch-svgrepo-com.svg", "uses": ["Artwork", "Material Direction", "Panel Layout"]}
+    ],
+    "production": [
+      {"ref": 18, "file": "fabric-material-svgrepo-com.svg", "uses": ["Fabric", "Materials", "Material Planning"]},
+      {"ref": 21, "file": "sewing-machine-sew-svgrepo-com (1).svg", "uses": ["Sample Build", "Printing and Branding"]},
+      {"ref": 22, "file": "scissors-svgrepo-com.svg", "uses": ["Sampling", "Do I need a sample?"]},
+      {"ref": 23, "file": "needle-svgrepo-com.svg", "uses": ["Thread Planning", "Embroidery"]},
+      {"ref": 24, "file": "paint-roller-svgrepo-com.svg", "uses": ["Colours", "Print Planning"]},
+      {"ref": 52, "file": "print-products-svgrepo-com (1).svg", "uses": ["Printing", "Decoration Methods"]}
+    ],
+    "logistics": [
+      {"ref": 6, "file": "plane-svgrepo-com (1).svg", "uses": ["Worldwide Shipping", "Packing and Shipping", "Delivery Ready"]},
+      {"ref": 25, "file": "airport-baggage-conveyor-svgrepo-com.svg", "uses": ["Production Handover", "Logistics"]},
+      {"ref": 27, "file": "box-svgrepo-com.svg", "uses": ["Packing", "Packing and Delivery", "Packaging"]},
+      {"ref": 46, "file": "tag-2-svgrepo-com.svg", "uses": ["Hang Tags", "Product Tags"]},
+      {"ref": 44, "file": "barcode-sticker-svgrepo-com.svg", "uses": ["Private Label", "Labels", "Carton Labelling"]}
+    ],
+    "products": [
+      {"ref": 29, "file": "tshirt-svgrepo-com (2).svg", "uses": ["Custom T-Shirts", "Garments", "View All Products"]},
+      {"ref": 30, "file": "cotton-polo-shirt-svgrepo-com.svg", "uses": ["Corporate Polos", "Retail Lines"]},
+      {"ref": 31, "file": "sweatshirt-svgrepo-com.svg", "uses": ["Sweatshirts", "Private Label Support", "Fitness"]},
+      {"ref": 32, "file": "construction-worker-svgrepo-com.svg", "uses": ["Workwear", "Safety", "Uniforms"]},
+      {"ref": 33, "file": "shirt-svgrepo-com.svg", "uses": ["Corporate Apparel", "Professional Look", "Team Identity"]},
+      {"ref": 34, "file": "team-uniform-svgrepo-com.svg", "uses": ["Sportswear", "Teamwear", "Activewear"]},
+      {"ref": 35, "file": "paralympic-swimming-silhouette-svgrepo-com.svg", "uses": ["Rashguards", "Activewear Labels"]},
+      {"ref": 36, "file": "boxing-shorts-svgrepo-com.svg", "uses": ["MMA Shorts", "Muay Thai Shorts", "Gym Apparel"]},
+      {"ref": 38, "file": "doctor-female-svgrepo-com.svg", "uses": ["Medical Scrubs", "Healthcare Uniforms"]},
+      {"ref": 40, "file": "cap-svgrepo-com.svg", "uses": ["Caps", "Headwear"]},
+      {"ref": 41, "file": "jacket-svgrepo-com.svg", "uses": ["Jackets", "Streetwear Drops"]},
+      {"ref": 42, "file": "shopping-bag-svgrepo-com.svg", "uses": ["Tote Bags", "Retail Collections"]}
+    ],
+    "industries": [
+      {"ref": 66, "file": "construction-worker-svgrepo-com.svg", "uses": ["Construction", "Trades"]},
+      {"ref": 67, "file": "doctor-female-svgrepo-com.svg", "uses": ["Healthcare", "All Day Comfort"]},
+      {"ref": 68, "file": "hotel-reception-svgrepo-com.svg", "uses": ["Hospitality", "Hotels", "Guest Ready"]},
+      {"ref": 69, "file": "team-uniform-svgrepo-com.svg", "uses": ["Sports Clubs", "Teams"]},
+      {"ref": 74, "file": "rock-and-roll-concert-svgrepo-com.svg", "uses": ["Events", "Merchandise", "Audience"]}
+    ],
+    "sustainability": [
+      {"ref": 60, "file": "bamboo-svgrepo-com.svg", "uses": ["Bamboo", "Sustainable Options"]},
+      {"ref": 62, "file": "keep-dry-svgrepo-com.svg", "uses": ["All Weather", "Moisture Management"]},
+      {"ref": 64, "file": "germs-svgrepo-com.svg", "uses": ["Hygiene", "Antimicrobial"]},
+      {"ref": 65, "file": "sun-cream-sun-protection-svgrepo-com.svg", "uses": ["Sun Protection", "Outdoor"]},
+      {"ref": 76, "file": "recycling-arrows-svgrepo-com.svg", "uses": ["Reduced Waste", "Waste-Aware Planning", "Recycling"]},
+      {"ref": 81, "file": "water-drop-svgrepo-com.svg", "uses": ["Water", "Resource Efficiency"]}
+    ],
+    "resources-and-contact": [
+      {"ref": 73, "file": "facebook-svgrepo-com.svg", "uses": ["Facebook", "Creator Merch"]},
+      {"ref": 85, "file": "downloads-svgrepo-com.svg", "uses": ["Downloads", "Resources"]},
+      {"ref": 86, "file": "book-svgrepo-com.svg", "uses": ["Documentation", "Information Planning", "Guides"]},
+      {"ref": 89, "file": "search-alt-2-svgrepo-com.svg", "uses": ["Search", "Packaging Plan"]},
+      {"ref": 92, "file": "whatsapp-svgrepo-com.svg", "uses": ["WhatsApp"]},
+      {"ref": 93, "file": "email-svgrepo-com.svg", "uses": ["Email", "Contact"]}
+    ]
+  }
+}
