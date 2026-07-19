@@ -1,0 +1,10 @@
+{
+  "version":"1.0.0",
+  "title":"TShirtSwiss Forms",
+  "field":{"height":52,"paddingX":16,"paddingY":14,"radius":6,"border":"1px solid #E7E7E7","background":"#FFFFFF","text":"#111111","placeholder":"#777777"},
+  "states":{"hoverBorder":"#BDBDBD","focusBorder":"#E1111A","focusShadow":"0 0 0 4px rgba(225,17,26,0.16)","errorBorder":"#B42318","disabledBackground":"#F7F7F7"},
+  "label":{"fontSize":14,"fontWeight":700,"color":"#111111","marginBottom":8},
+  "textarea":{"minHeight":140},
+  "layout":{"fieldGap":20,"rowGap":24},
+  "submitButton":"primary"
+}
