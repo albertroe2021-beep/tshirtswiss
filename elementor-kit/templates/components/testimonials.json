@@ -1,0 +1,77 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Testimonials",
+  "type": "section",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "tstsection01",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1280},
+        "flex_direction": "column",
+        "gap": {"unit": "px", "size": 32},
+        "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+        "background_background": "classic",
+        "background_color": "#F7F7F7",
+        "css_classes": "tss-testimonials"
+      },
+      "elements": [
+        {
+          "id": "tstintro01",
+          "elType": "container",
+          "isInner": true,
+          "settings": {"content_width": "full", "flex_direction": "column", "align_items": "center"},
+          "elements": [
+            {"id": "tsteyebrow", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{TESTIMONIALS_EYEBROW}}", "header_size": "h6", "align": "center", "title_color": "#E1111A"}, "elements": []},
+            {"id": "tsttitle01", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{TESTIMONIALS_TITLE}}", "header_size": "h2", "align": "center", "title_color": "#111111"}, "elements": []},
+            {"id": "tstlead001", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{TESTIMONIALS_INTRO}}</p>", "align": "center", "text_color": "#555555"}, "elements": []}
+          ]
+        },
+        {
+          "id": "tstgrid001",
+          "elType": "container",
+          "isInner": true,
+          "settings": {"content_width": "full", "flex_direction": "row", "flex_wrap": "wrap", "gap": {"unit": "px", "size": 24}, "css_classes": "tss-testimonials__grid"},
+          "elements": [
+            {
+              "id": "tstcard001",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"width": {"unit": "%", "size": 31.5}, "flex_direction": "column", "gap": {"unit": "px", "size": 16}, "padding": {"unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32", "isLinked": true}, "background_background": "classic", "background_color": "#FFFFFF", "border_radius": {"unit": "px", "top": "8", "right": "8", "bottom": "8", "left": "8", "isLinked": true}, "css_classes": "tss-testimonial-card"},
+              "elements": [
+                {"id": "tstquote01", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<blockquote><p>{{TESTIMONIAL_1_QUOTE}}</p></blockquote>", "text_color": "#111111"}, "elements": []},
+                {"id": "tstname001", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{TESTIMONIAL_1_NAME}}", "header_size": "h5", "title_color": "#111111"}, "elements": []},
+                {"id": "tstrole001", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{TESTIMONIAL_1_ROLE_COMPANY}}</p>", "text_color": "#555555"}, "elements": []}
+              ]
+            },
+            {
+              "id": "tstcard002",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"width": {"unit": "%", "size": 31.5}, "flex_direction": "column", "gap": {"unit": "px", "size": 16}, "padding": {"unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32", "isLinked": true}, "background_background": "classic", "background_color": "#FFFFFF", "border_radius": {"unit": "px", "top": "8", "right": "8", "bottom": "8", "left": "8", "isLinked": true}, "css_classes": "tss-testimonial-card"},
+              "elements": [
+                {"id": "tstquote02", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<blockquote><p>{{TESTIMONIAL_2_QUOTE}}</p></blockquote>", "text_color": "#111111"}, "elements": []},
+                {"id": "tstname002", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{TESTIMONIAL_2_NAME}}", "header_size": "h5", "title_color": "#111111"}, "elements": []},
+                {"id": "tstrole002", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{TESTIMONIAL_2_ROLE_COMPANY}}</p>", "text_color": "#555555"}, "elements": []}
+              ]
+            },
+            {
+              "id": "tstcard003",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"width": {"unit": "%", "size": 31.5}, "flex_direction": "column", "gap": {"unit": "px", "size": 16}, "padding": {"unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32", "isLinked": true}, "background_background": "classic", "background_color": "#FFFFFF", "border_radius": {"unit": "px", "top": "8", "right": "8", "bottom": "8", "left": "8", "isLinked": true}, "css_classes": "tss-testimonial-card"},
+              "elements": [
+                {"id": "tstquote03", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<blockquote><p>{{TESTIMONIAL_3_QUOTE}}</p></blockquote>", "text_color": "#111111"}, "elements": []},
+                {"id": "tstname003", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{TESTIMONIAL_3_NAME}}", "header_size": "h5", "title_color": "#111111"}, "elements": []},
+                {"id": "tstrole003", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{TESTIMONIAL_3_ROLE_COMPANY}}</p>", "text_color": "#555555"}, "elements": []}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
