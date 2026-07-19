@@ -5,11 +5,42 @@
   "page_settings": [],
   "content": [
     {
-      "id": "quote0001",
+      "id": "quote001",
       "elType": "container",
       "isInner": false,
       "settings": {
         "content_width": "boxed",
         "boxed_width": {"unit": "px", "size": 1280},
         "flex_direction": "row",
-        "flex_direction
+        "align_items": "center",
+        "gap": {"unit": "px", "size": 48},
+        "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+        "background_background": "classic",
+        "background_color": "#F7F7F7",
+        "css_classes": "tss-quote-form"
+      },
+      "elements": [
+        {
+          "id": "quotecpy",
+          "elType": "container",
+          "isInner": true,
+          "settings": {"width": {"unit": "%", "size": 42}, "flex_direction": "column", "gap": {"unit": "px", "size": 16}},
+          "elements": [
+            {"id": "quoteeye", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{QUOTE_EYEBROW}}", "header_size": "h6", "title_color": "#E1111A"}, "elements": []},
+            {"id": "quotetle", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{QUOTE_TITLE}}", "header_size": "h2"}, "elements": []},
+            {"id": "quotetxt", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{QUOTE_INTRO}}</p>", "text_color": "#555555"}, "elements": []}
+          ]
+        },
+        {
+          "id": "quotefrm",
+          "elType": "container",
+          "isInner": true,
+          "settings": {"width": {"unit": "%", "size": 58}, "padding": {"unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32", "isLinked": true}, "background_background": "classic", "background_color": "#FFFFFF"},
+          "elements": [
+            {"id": "wpform01", "elType": "widget", "widgetType": "wpforms", "settings": {"form_id": "{{WPFORMS_FORM_ID}}", "title": "false", "description": "false"}, "elements": []}
+          ]
+        }
+      ]
+    }
+  ]
+}
