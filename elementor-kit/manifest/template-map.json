@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "principle": "Shared components are reusable, but every child page retains the section order, imagery, content blocks and responsive treatment of its matching GitHub page.",
+  "globals": [
+    "global-header",
+    "global-footer",
+    "hero-standard",
+    "hero-with-quote-form",
+    "cta-standard",
+    "quote-form",
+    "trust-strip",
+    "faq-section"
+  ],
+  "pageFamilies": {
+    "services": {
+      "parentTemplate": "service-page",
+      "childTemplate": "service-child-page",
+      "children": [
+        "screen-printing",
+        "embroidery",
+        "sublimation-printing
