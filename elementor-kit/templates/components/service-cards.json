@@ -5,9 +5,31 @@
   "page_settings": [],
   "content": [
     {
-      "id": "servicecards01",
+      "id": "svcards1",
       "elType": "container",
       "isInner": false,
       "settings": {
         "content_width": "boxed",
         "boxed_width": {"unit": "px", "size": 1280},
+        "flex_direction": "column",
+        "gap": {"unit": "px", "size": 32},
+        "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+        "css_classes": "tss-service-cards"
+      },
+      "elements": [
+        {"id": "svtitle1", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{SERVICES_TITLE}}", "header_size": "h2", "align": "center"}, "elements": []},
+        {
+          "id": "svgrid01",
+          "elType": "container",
+          "isInner": true,
+          "settings": {"flex_direction": "row", "flex_wrap": "wrap", "gap": {"unit": "px", "size": 24}},
+          "elements": [
+            {"id": "svcard01", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 31.5}, "flex_direction": "column", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true}, "background_background": "classic", "background_color": "#F7F7F7", "css_classes": "tss-service-cards__card"}, "elements": [{"id": "svhead01", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{SERVICE_1_TITLE}}", "header_size": "h3"}, "elements": []}, {"id": "svtext01", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{SERVICE_1_TEXT}}</p>"}, "elements": []}, {"id": "svbtn001", "elType": "widget", "widgetType": "button", "settings": {"text": "{{SERVICE_1_CTA}}", "link": {"url": "{{SERVICE_1_URL}}"}}, "elements": []}]},
+            {"id": "svcard02", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 31.5}, "flex_direction": "column", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true}, "background_background": "classic", "background_color": "#F7F7F7", "css_classes": "tss-service-cards__card"}, "elements": [{"id": "svhead02", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{SERVICE_2_TITLE}}", "header_size": "h3"}, "elements": []}, {"id": "svtext02", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{SERVICE_2_TEXT}}</p>"}, "elements": []}, {"id": "svbtn002", "elType": "widget", "widgetType": "button", "settings": {"text": "{{SERVICE_2_CTA}}", "link": {"url": "{{SERVICE_2_URL}}"}}, "elements": []}]},
+            {"id": "svcard03", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 31.5}, "flex_direction": "column", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true}, "background_background": "classic", "background_color": "#F7F7F7", "css_classes": "tss-service-cards__card"}, "elements": [{"id": "svhead03", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{SERVICE_3_TITLE}}", "header_size": "h3"}, "elements": []}, {"id": "svtext03", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{SERVICE_3_TEXT}}</p>"}, "elements": []}, {"id": "svbtn003", "elType": "widget", "widgetType": "button", "settings": {"text": "{{SERVICE_3_CTA}}", "link": {"url": "{{SERVICE_3_URL}}"}}, "elements": []}]}
+          ]
+        }
+      ]
+    }
+  ]
+}
