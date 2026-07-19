@@ -1,0 +1,26 @@
+{
+  "version":"1.0.0",
+  "title":"TShirtSwiss Design System",
+  "description":"Global Elementor design tokens and usage references for TShirtSwiss.",
+  "fontFamily":"Inter",
+  "files":{
+    "colors":"colors.json",
+    "typography":"typography.json",
+    "spacing":"spacing.json",
+    "buttons":"buttons.json",
+    "radius":"radius.json",
+    "shadows":"shadows.json",
+    "containers":"containers.json",
+    "forms":"forms.json"
+  },
+  "defaults":{
+    "primary":"#E1111A",
+    "ink":"#111111",
+    "muted":"#555555",
+    "line":"#E7E7E7",
+    "soft":"#F7F7F7",
+    "maxWidth":1280,
+    "button":"primary"
+  },
+  "status":"complete"
+}
