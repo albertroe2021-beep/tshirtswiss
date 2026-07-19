@@ -1,0 +1,272 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Industry Child Page Template",
+  "type": "page",
+  "page_settings": {
+    "hide_title": "yes",
+    "template": "elementor_canvas"
+  },
+  "content": [
+    {
+      "id": "indchild01",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "tss-page tss-industry-child-page"
+      },
+      "elements": [
+        {
+          "id": "indchildhero",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "min_height": {"unit": "px", "size": 560},
+            "flex_direction": "column",
+            "justify_content": "center",
+            "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+            "background_background": "classic",
+            "background_color": "#111111",
+            "background_image": {"url": "{{INDUSTRY_HERO_IMAGE}}", "id": ""},
+            "background_position": "center center",
+            "background_size": "cover",
+            "background_overlay_background": "classic",
+            "background_overlay_color": "rgba(0,0,0,0.58)",
+            "css_classes": "tss-industry-child__hero"
+          },
+          "elements": [
+            {
+              "id": "indchildbread",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {"editor": "<p>{{BREADCRUMBS}}</p>", "text_color": "#FFFFFF"},
+              "elements": []
+            },
+            {
+              "id": "indchildtitle",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {"title": "{{INDUSTRY_TITLE}}", "header_size": "h1", "title_color": "#FFFFFF"},
+              "elements": []
+            },
+            {
+              "id": "indchildintro",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {"editor": "<p>{{INDUSTRY_INTRO}}</p>", "text_color": "#FFFFFF"},
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "indchildoverview",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "row",
+            "gap": {"unit": "px", "size": 48},
+            "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+            "css_classes": "tss-industry-child__overview"
+          },
+          "elements": [
+            {
+              "id": "indchildcopy",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"width": {"unit": "%", "size": 55}, "flex_direction": "column"},
+              "elements": [
+                {
+                  "id": "indchildoverviewtitle",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {"title": "{{OVERVIEW_TITLE}}", "header_size": "h2"},
+                  "elements": []
+                },
+                {
+                  "id": "indchildoverviewtext",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {"editor": "{{OVERVIEW_CONTENT}}"},
+                  "elements": []
+                }
+              ]
+            },
+            {
+              "id": "indchildimagewrap",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"width": {"unit": "%", "size": 45}},
+              "elements": [
+                {
+                  "id": "indchildimage",
+                  "elType": "widget",
+                  "widgetType": "image",
+                  "settings": {"image": {"url": "{{OVERVIEW_IMAGE}}", "id": ""}, "image_size": "large"},
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "indchildneeds",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "column",
+            "padding": {"unit": "px", "top": "80", "right": "32", "bottom": "80", "left": "32", "isLinked": false},
+            "background_background": "classic",
+            "background_color": "#F7F7F7",
+            "css_classes": "tss-industry-child__needs"
+          },
+          "elements": [
+            {
+              "id": "indchildneedstitle",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {"title": "{{INDUSTRY_NEEDS_TITLE}}", "header_size": "h2", "align": "center"},
+              "elements": []
+            },
+            {
+              "id": "indchildneedscontent",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {"editor": "{{INDUSTRY_NEEDS_CONTENT}}", "align": "center"},
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "indchildsolutions",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "column",
+            "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+            "css_classes": "tss-industry-child__solutions"
+          },
+          "elements": [
+            {
+              "id": "indchildsolutionstitle",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {"title": "{{SOLUTIONS_TITLE}}", "header_size": "h2", "align": "center"},
+              "elements": []
+            },
+            {
+              "id": "indchildsolutionsgrid",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {"editor": "{{SOLUTIONS_GRID}}"},
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "indchildproof",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "column",
+            "padding": {"unit": "px", "top": "72", "right": "32", "bottom": "72", "left": "32", "isLinked": false},
+            "background_background": "classic",
+            "background_color": "#111111",
+            "css_classes": "tss-industry-child__proof"
+          },
+          "elements": [
+            {
+              "id": "indchildprooftitle",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {"title": "{{PROOF_TITLE}}", "header_size": "h2", "align": "center", "title_color": "#FFFFFF"},
+              "elements": []
+            },
+            {
+              "id": "indchildproofcontent",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {"editor": "{{PROOF_CONTENT}}", "align": "center", "text_color": "#FFFFFF"},
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "indchildquote",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "column",
+            "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+            "css_classes": "tss-industry-child__quote"
+          },
+          "elements": [
+            {
+              "id": "indchildquotetitle",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {"title": "{{QUOTE_FORM_TITLE}}", "header_size": "h2", "align": "center"},
+              "elements": []
+            },
+            {
+              "id": "indchildform",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {"shortcode": "[wpforms id=\"REPLACE_WITH_FORM_ID\" title=\"false\"]"},
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "indchildcta",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "column",
+            "align_items": "center",
+            "padding": {"unit": "px", "top": "72", "right": "32", "bottom": "72", "left": "32", "isLinked": false},
+            "background_background": "classic",
+            "background_color": "#070707",
+            "css_classes": "tss-industry-child__cta"
+          },
+          "elements": [
+            {
+              "id": "indchildctatitle",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {"title": "{{CTA_TITLE}}", "header_size": "h2", "align": "center", "title_color": "#FFFFFF"},
+              "elements": []
+            },
+            {
+              "id": "indchildctabutton",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "{{CTA_LABEL}}",
+                "link": {"url": "{{CTA_URL}}"},
+                "align": "center",
+                "background_color": "#E1111A",
+                "button_text_color": "#FFFFFF"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
