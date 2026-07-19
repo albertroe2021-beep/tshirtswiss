@@ -1,1 +1,15 @@
-{"version":"0.4","title":"TShirtSwiss - Quote Form","type":"section","page_settings":[],"content":[{"id":"qf1","elType":"container","isInner":false,"settings":{},"elements":[{"id":"qf2","elType":"widget","widgetType":"shortcode","settings":{"shortcode":"[wpforms id=\"REPLACE_WITH_FORM_ID\" title=\"false\"]"},"elements":[]}]}]}
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Quote Form Template",
+  "type": "section",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "quote0001",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1280},
+        "flex_direction": "row",
+        "flex_direction
