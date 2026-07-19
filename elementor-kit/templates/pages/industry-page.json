@@ -1,0 +1,206 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Industry Page Template",
+  "type": "page",
+  "page_settings": {
+    "hide_title": "yes",
+    "template": "elementor_canvas"
+  },
+  "content": [
+    {
+      "id": "indpage01",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "tss-page tss-industry-page"
+      },
+      "elements": [
+        {
+          "id": "indhero01",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "min_height": {"unit": "px", "size": 560},
+            "flex_direction": "column",
+            "justify_content": "center",
+            "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+            "background_background": "classic",
+            "background_color": "#111111",
+            "background_image": {"url": "{{INDUSTRY_HERO_IMAGE}}", "id": ""},
+            "background_position": "center center",
+            "background_size": "cover",
+            "background_overlay_background": "classic",
+            "background_overlay_color": "rgba(0,0,0,0.58)",
+            "css_classes": "tss-industry-page__hero"
+          },
+          "elements": [
+            {
+              "id": "indbread1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {"editor": "<p>{{BREADCRUMBS}}</p>", "text_color": "#FFFFFF"},
+              "elements": []
+            },
+            {
+              "id": "indtitle1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {"title": "{{INDUSTRY_PAGE_TITLE}}", "header_size": "h1", "title_color": "#FFFFFF"},
+              "elements": []
+            },
+            {
+              "id": "indintro1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {"editor": "<p>{{INDUSTRY_PAGE_INTRO}}</p>", "text_color": "#FFFFFF"},
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "indgrid01",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "column",
+            "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+            "css_classes": "tss-industry-page__grid"
+          },
+          "elements": [
+            {
+              "id": "indgridtitle",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {"title": "{{INDUSTRY_GRID_TITLE}}", "header_size": "h2"},
+              "elements": []
+            },
+            {
+              "id": "indgridcopy",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {"editor": "<p>{{INDUSTRY_GRID_INTRO}}</p>"},
+              "elements": []
+            },
+            {
+              "id": "indgridshort",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {"shortcode": "{{INDUSTRY_GRID_SHORTCODE_OR_WIDGET}}"},
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "indbenefits",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "gap": {"unit": "px", "size": 48},
+            "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+            "background_background": "classic",
+            "background_color": "#F7F7F7",
+            "css_classes": "tss-industry-page__benefits"
+          },
+          "elements": [
+            {
+              "id": "indbenefitcopy",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {"editor": "<h2>{{INDUSTRY_BENEFITS_TITLE}}</h2><p>{{INDUSTRY_BENEFITS_COPY}}</p><ul><li>{{INDUSTRY_BENEFIT_1}}</li><li>{{INDUSTRY_BENEFIT_2}}</li><li>{{INDUSTRY_BENEFIT_3}}</li></ul>"},
+              "elements": []
+            },
+            {
+              "id": "indbenefitimg",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {"image": {"url": "{{INDUSTRY_SUPPORTING_IMAGE}}", "id": ""}},
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "indquote01",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "column",
+            "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+            "css_classes": "tss-industry-page__quote"
+          },
+          "elements": [
+            {
+              "id": "indquotetitle",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {"title": "{{QUOTE_FORM_TITLE}}", "header_size": "h2", "align": "center"},
+              "elements": []
+            },
+            {
+              "id": "indquoteform",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {"shortcode": "[wpforms id=\"REPLACE_WITH_FORM_ID\" title=\"false\"]"},
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "indcta01",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "column",
+            "align_items": "center",
+            "padding": {"unit": "px", "top": "72", "right": "32", "bottom": "72", "left": "32", "isLinked": false},
+            "background_background": "classic",
+            "background_color": "#070707",
+            "css_classes": "tss-industry-page__cta"
+          },
+          "elements": [
+            {
+              "id": "indctatitle",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {"title": "{{CTA_TITLE}}", "header_size": "h2", "align": "center", "title_color": "#FFFFFF"},
+              "elements": []
+            },
+            {
+              "id": "indctacopy",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {"editor": "<p>{{CTA_COPY}}</p>", "align": "center", "text_color": "#E7E7E7"},
+              "elements": []
+            },
+            {
+              "id": "indctabutton",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "{{CTA_BUTTON_LABEL}}",
+                "link": {"url": "{{CTA_BUTTON_URL}}"},
+                "align": "center",
+                "background_color": "#E1111A",
+                "button_text_color": "#FFFFFF"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
