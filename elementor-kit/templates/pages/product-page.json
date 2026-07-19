@@ -156,7 +156,7 @@
               "id": "prdshortcode",
               "elType": "widget",
               "widgetType": "shortcode",
-              "settings": {"shortcode": "[wpforms id=\"REPLACE_WITH_FORM_ID\" title=\"false\"]"},
+              "settings": {"shortcode": "[wpforms id=\"{{WPFORMS_FORM_ID}}\" title=\"false\"]"},
               "elements": []
             }
           ]
