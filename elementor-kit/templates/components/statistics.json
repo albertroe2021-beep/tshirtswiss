@@ -1,0 +1,16 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Statistics",
+  "type": "section",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "statssect1",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1280},
+        "flex_direction": "column",
+        "gap": {"unit": "px", "size": 32},
+        "padding": {"unit": "px", "top": "72", "right": "32", "bottom": "72", "left": "32", "isLinked": false
