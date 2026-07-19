@@ -1,0 +1,29 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Blog Article Template",
+  "type": "page",
+  "page_settings": {
+    "hide_title": "yes",
+    "template": "elementor_canvas"
+  },
+  "content": [
+    {
+      "id": "blogpage01",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "tss-page tss-blog-article"
+      },
+      "elements": [
+        {
+          "id": "bloghero01",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "column",
+            "justify_content": "center",
+           
