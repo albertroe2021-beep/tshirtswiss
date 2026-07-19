@@ -25,4 +25,6 @@
     "sectionPaddingMobile": 48,
     "containerGutterDesktop": 32,
     "containerGutterTablet": 24,
-    "containerGutter
+    "containerGutterMobile": 16
+  }
+}
