@@ -5,10 +5,31 @@
   "page_settings": [],
   "content": [
     {
-      "id": "indcards01",
+      "id": "incards1",
       "elType": "container",
       "isInner": false,
       "settings": {
         "content_width": "boxed",
         "boxed_width": {"unit": "px", "size": 1280},
         "flex_direction": "column",
+        "gap": {"unit": "px", "size": 32},
+        "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+        "css_classes": "tss-industry-cards"
+      },
+      "elements": [
+        {"id": "intitle1", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{INDUSTRIES_TITLE}}", "header_size": "h2", "align": "center"}, "elements": []},
+        {
+          "id": "ingrid01",
+          "elType": "container",
+          "isInner": true,
+          "settings": {"flex_direction": "row", "flex_wrap": "wrap", "gap": {"unit": "px", "size": 24}},
+          "elements": [
+            {"id": "incard01", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 31.5}, "flex_direction": "column", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true}, "background_background": "classic", "background_color": "#F7F7F7", "css_classes": "tss-industry-cards__card"}, "elements": [{"id": "inhead01", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{INDUSTRY_1_TITLE}}", "header_size": "h3"}, "elements": []}, {"id": "intext01", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{INDUSTRY_1_TEXT}}</p>"}, "elements": []}, {"id": "inbtn001", "elType": "widget", "widgetType": "button", "settings": {"text": "{{INDUSTRY_1_CTA}}", "link": {"url": "{{INDUSTRY_1_URL}}"}}, "elements": []}]},
+            {"id": "incard02", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 31.5}, "flex_direction": "column", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true}, "background_background": "classic", "background_color": "#F7F7F7", "css_classes": "tss-industry-cards__card"}, "elements": [{"id": "inhead02", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{INDUSTRY_2_TITLE}}", "header_size": "h3"}, "elements": []}, {"id": "intext02", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{INDUSTRY_2_TEXT}}</p>"}, "elements": []}, {"id": "inbtn002", "elType": "widget", "widgetType": "button", "settings": {"text": "{{INDUSTRY_2_CTA}}", "link": {"url": "{{INDUSTRY_2_URL}}"}}, "elements": []}]},
+            {"id": "incard03", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 31.5}, "flex_direction": "column", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true}, "background_background": "classic", "background_color": "#F7F7F7", "css_classes": "tss-industry-cards__card"}, "elements": [{"id": "inhead03", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{INDUSTRY_3_TITLE}}", "header_size": "h3"}, "elements": []}, {"id": "intext03", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{INDUSTRY_3_TEXT}}</p>"}, "elements": []}, {"id": "inbtn003", "elType": "widget", "widgetType": "button", "settings": {"text": "{{INDUSTRY_3_CTA}}", "link": {"url": "{{INDUSTRY_3_URL}}"}}, "elements": []}]}
+          ]
+        }
+      ]
+    }
+  ]
+}
