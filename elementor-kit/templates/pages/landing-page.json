@@ -1,0 +1,19 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Landing Page Template",
+  "type": "page",
+  "page_settings": {
+    "hide_title": "yes",
+    "template": "elementor_canvas"
+  },
+  "content": [
+    {
+      "id": "landpage01",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "tss-page tss-landing-page"
+      },
+      "elements": [
