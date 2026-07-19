@@ -5,7 +5,7 @@
   "page_settings": [],
   "content": [
     {
-      "id": "productcards01",
+      "id": "prcards1",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -13,4 +13,23 @@
         "boxed_width": {"unit": "px", "size": 1280},
         "flex_direction": "column",
         "gap": {"unit": "px", "size": 32},
-        "padding": {"unit": "px
+        "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+        "css_classes": "tss-product-cards"
+      },
+      "elements": [
+        {"id": "prtitle1", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{PRODUCTS_TITLE}}", "header_size": "h2", "align": "center"}, "elements": []},
+        {
+          "id": "prgrid01",
+          "elType": "container",
+          "isInner": true,
+          "settings": {"flex_direction": "row", "flex_wrap": "wrap", "gap": {"unit": "px", "size": 24}},
+          "elements": [
+            {"id": "prcard01", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 31.5}, "flex_direction": "column", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true}, "background_background": "classic", "background_color": "#F7F7F7", "css_classes": "tss-product-cards__card"}, "elements": [{"id": "primg001", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "{{PRODUCT_1_IMAGE}}"}}, "elements": []}, {"id": "prhead01", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{PRODUCT_1_TITLE}}", "header_size": "h3"}, "elements": []}, {"id": "prtext01", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{PRODUCT_1_TEXT}}</p>"}, "elements": []}, {"id": "prbtn001", "elType": "widget", "widgetType": "button", "settings": {"text": "{{PRODUCT_1_CTA}}", "link": {"url": "{{PRODUCT_1_URL}}"}}, "elements": []}]},
+            {"id": "prcard02", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 31.5}, "flex_direction": "column", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true}, "background_background": "classic", "background_color": "#F7F7F7", "css_classes": "tss-product-cards__card"}, "elements": [{"id": "primg002", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "{{PRODUCT_2_IMAGE}}"}}, "elements": []}, {"id": "prhead02", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{PRODUCT_2_TITLE}}", "header_size": "h3"}, "elements": []}, {"id": "prtext02", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{PRODUCT_2_TEXT}}</p>"}, "elements": []}, {"id": "prbtn002", "elType": "widget", "widgetType": "button", "settings": {"text": "{{PRODUCT_2_CTA}}", "link": {"url": "{{PRODUCT_2_URL}}"}}, "elements": []}]},
+            {"id": "prcard03", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 31.5}, "flex_direction": "column", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true}, "background_background": "classic", "background_color": "#F7F7F7", "css_classes": "tss-product-cards__card"}, "elements": [{"id": "primg003", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "{{PRODUCT_3_IMAGE}}"}}, "elements": []}, {"id": "prhead03", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{PRODUCT_3_TITLE}}", "header_size": "h3"}, "elements": []}, {"id": "prtext03", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{PRODUCT_3_TEXT}}</p>"}, "elements": []}, {"id": "prbtn003", "elType": "widget", "widgetType": "button", "settings": {"text": "{{PRODUCT_3_CTA}}", "link": {"url": "{{PRODUCT_3_URL}}"}}, "elements": []}]}
+          ]
+        }
+      ]
+    }
+  ]
+}
