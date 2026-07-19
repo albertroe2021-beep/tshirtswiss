@@ -1,12 +1,36 @@
 {
-  "version":"0.4",
-  "title":"TShirtSwiss - Benefits List",
-  "type":"section",
-  "page_settings":[],
-  "content":[{
-    "id":"benefits01",
-    "elType":"container",
-    "isInner":false,
-    "settings":{"content_width":"boxed","boxed_width":{"unit":"px","size":1280},"flex_direction":"column","gap":{"unit":"px","size":28},"padding":{"unit":"px","top":"88","right":"32","bottom":"88","left":"32","isLinked":false},"css_classes":"tss-benefits-list"},
-    "elements":[
-      {"id":"benefithead","
+  "version": "0.4",
+  "title": "TShirtSwiss - Benefits List",
+  "type": "section",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "benefit1",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1280},
+        "flex_direction": "column",
+        "gap": {"unit": "px", "size": 28},
+        "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+        "css_classes": "tss-benefits-list"
+      },
+      "elements": [
+        {"id": "benhead1", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{BENEFITS_TITLE}}", "header_size": "h2", "align": "center"}, "elements": []},
+        {"id": "benintro", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{BENEFITS_INTRO}}</p>", "align": "center"}, "elements": []},
+        {
+          "id": "bengrid1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {"flex_direction": "row", "flex_wrap": "wrap", "gap": {"unit": "px", "size": 24}},
+          "elements": [
+            {"id": "benefit2", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 31.5}, "flex_direction": "row", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true}, "background_background": "classic", "background_color": "#F7F7F7"}, "elements": [{"id": "benicon1", "elType": "widget", "widgetType": "icon", "settings": {"selected_icon": {"value": "fas fa-check", "library": "fa-solid"}, "primary_color": "#E1111A"}, "elements": []}, {"id": "bentext1", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{BENEFIT_1}}</p>"}, "elements": []}]},
+            {"id": "benefit3", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 31.5}, "flex_direction": "row", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true}, "background_background": "classic", "background_color": "#F7F7F7"}, "elements": [{"id": "benicon2", "elType": "widget", "widgetType": "icon", "settings": {"selected_icon": {"value": "fas fa-check", "library": "fa-solid"}, "primary_color": "#E1111A"}, "elements": []}, {"id": "bentext2", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{BENEFIT_2}}</p>"}, "elements": []}]},
+            {"id": "benefit4", "elType": "container", "isInner": true, "settings": {"width": {"unit": "%", "size": 31.5}, "flex_direction": "row", "gap": {"unit": "px", "size": 12}, "padding": {"unit": "px", "top": "24", "right": "24", "bottom": "24", "left": "24", "isLinked": true}, "background_background": "classic", "background_color": "#F7F7F7"}, "elements": [{"id": "benicon3", "elType": "widget", "widgetType": "icon", "settings": {"selected_icon": {"value": "fas fa-check", "library": "fa-solid"}, "primary_color": "#E1111A"}, "elements": []}, {"id": "bentext3", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{BENEFIT_3}}</p>"}, "elements": []}]}
+          ]
+        }
+      ]
+    }
+  ]
+}
