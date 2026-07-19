@@ -1,0 +1,1 @@
+(()=>{const m=document.getElementById('tss-footer-fr');if(!m)return;fetch('/wp-content/uploads/tshirtswiss-elementor-kit/assets/footer/fr/footer.html').then(r=>r.text()).then(h=>{m.outerHTML=h}).catch(()=>{})})();
