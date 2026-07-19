@@ -1,76 +1,14 @@
 {
   "version": "0.4",
-  "title": "TShirtSwiss - CTA Band",
+  "title": "TShirtSwiss - CTA Template",
   "type": "section",
   "page_settings": [],
   "content": [
     {
-      "id": "ctaBand01",
+      "id": "cta00001",
       "elType": "container",
       "isInner": false,
       "settings": {
         "content_width": "boxed",
         "boxed_width": {"unit": "px", "size": 1280},
-        "flex_direction": "column",
-        "flex_align_items": "center",
-        "flex_justify_content": "center",
-        "min_height": {"unit": "px", "size": 420},
-        "padding": {"unit": "px", "top": "72", "right": "32", "bottom": "72", "left": "32", "isLinked": false},
-        "background_background": "classic",
-        "background_color": "#070707",
-        "css_classes": "tss-cta-band"
-      },
-      "elements": [
-        {
-          "id": "ctaEyebrow",
-          "elType": "widget",
-          "widgetType": "heading",
-          "settings": {
-            "title": "START YOUR PROJECT",
-            "header_size": "h6",
-            "align": "center",
-            "title_color": "#E1111A"
-          },
-          "elements": []
-        },
-        {
-          "id": "ctaTitle01",
-          "elType": "widget",
-          "widgetType": "heading",
-          "settings": {
-            "title": "Ready to manufacture your next apparel collection?",
-            "header_size": "h2",
-            "align": "center",
-            "title_color": "#FFFFFF"
-          },
-          "elements": []
-        },
-        {
-          "id": "ctaText001",
-          "elType": "widget",
-          "widgetType": "text-editor",
-          "settings": {
-            "editor": "<p>Tell us what you need, your quantities and delivery requirements. Our team will review the project and respond with the next production steps.</p>",
-            "align": "center",
-            "text_color": "#E7E7E7"
-          },
-          "elements": []
-        },
-        {
-          "id": "ctaButton1",
-          "elType": "widget",
-          "widgetType": "button",
-          "settings": {
-            "text": "Request a Quote",
-            "link": {"url": "/request-a-quote/"},
-            "align": "center",
-            "background_color": "#E1111A",
-            "button_text_color": "#FFFFFF",
-            "border_radius": {"unit": "px", "top": "4", "right": "4", "bottom": "4", "left": "4", "isLinked": true}
-          },
-          "elements": []
-        }
-      ]
-    }
-  ]
-}
+        "min
