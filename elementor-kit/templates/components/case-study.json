@@ -1,0 +1,32 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Case Study",
+  "type": "section",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "casestudy01",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1280},
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "align_items": "center",
+        "gap": {"unit": "px", "size": 48},
+        "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+        "background_background": "classic",
+        "background_color": "#F7F7F7",
+        "css_classes": "tss-case-study"
+      },
+      "elements": [
+        {
+          "id": "caseimage01",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "width": {"unit": "%", "size": 46},
+            "css_classes": "tss-case-study__media"
+          },
+          "elements": [
