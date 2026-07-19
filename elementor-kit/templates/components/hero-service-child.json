@@ -1,0 +1,21 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Service Child Hero",
+  "type": "section",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "svcHero01",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1280},
+        "min_height": {"unit": "px", "size": 620},
+        "flex_direction": "row",
+        "flex_align_items": "center",
+        "flex_gap": {"unit": "px", "size": 48},
+        "padding": {"unit": "px", "top": "64", "right": "32", "bottom": "64", "left": "32", "isLinked": false},
+        "background_background": "classic",
+        "background_color": "#111111",
+        "css_classes": "tss-service
