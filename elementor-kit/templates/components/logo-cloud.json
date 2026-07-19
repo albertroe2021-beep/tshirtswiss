@@ -1,0 +1,129 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Logo Cloud",
+  "type": "section",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "logocloud01",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1280},
+        "flex_direction": "column",
+        "gap": {"unit": "px", "size": 32},
+        "padding": {"unit": "px", "top": "72", "right": "32", "bottom": "72", "left": "32", "isLinked": false},
+        "background_background": "classic",
+        "background_color": "#FFFFFF",
+        "css_classes": "tss-logo-cloud"
+      },
+      "elements": [
+        {
+          "id": "logointro01",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "flex_direction": "column",
+            "align_items": "center",
+            "gap": {"unit": "px", "size": 12}
+          },
+          "elements": [
+            {
+              "id": "logoeyebrow1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "{{LOGO_CLOUD_EYEBROW}}",
+                "header_size": "h6",
+                "align": "center",
+                "title_color": "#E1111A"
+              },
+              "elements": []
+            },
+            {
+              "id": "logotitle01",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "{{LOGO_CLOUD_TITLE}}",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#111111"
+              },
+              "elements": []
+            },
+            {
+              "id": "logointro02",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>{{LOGO_CLOUD_INTRO}}</p>",
+                "align": "center",
+                "text_color": "#555555"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "logorow001",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "flex_direction": "row",
+            "flex_wrap": "wrap",
+            "justify_content": "space-between",
+            "align_items": "center",
+            "gap": {"unit": "px", "size": 24},
+            "css_classes": "tss-logo-cloud__grid"
+          },
+          "elements": [
+            {
+              "id": "logoitem01",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"width": {"unit": "%", "size": 15}, "justify_content": "center", "align_items": "center", "css_classes": "tss-logo-cloud__item"},
+              "elements": [{"id": "logoimg001", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "{{LOGO_1_IMAGE}}", "id": ""}, "image_size": "medium", "caption_source": "none"}, "elements": []}]
+            },
+            {
+              "id": "logoitem02",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"width": {"unit": "%", "size": 15}, "justify_content": "center", "align_items": "center", "css_classes": "tss-logo-cloud__item"},
+              "elements": [{"id": "logoimg002", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "{{LOGO_2_IMAGE}}", "id": ""}, "image_size": "medium", "caption_source": "none"}, "elements": []}]
+            },
+            {
+              "id": "logoitem03",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"width": {"unit": "%", "size": 15}, "justify_content": "center", "align_items": "center", "css_classes": "tss-logo-cloud__item"},
+              "elements": [{"id": "logoimg003", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "{{LOGO_3_IMAGE}}", "id": ""}, "image_size": "medium", "caption_source": "none"}, "elements": []}]
+            },
+            {
+              "id": "logoitem04",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"width": {"unit": "%", "size": 15}, "justify_content": "center", "align_items": "center", "css_classes": "tss-logo-cloud__item"},
+              "elements": [{"id": "logoimg004", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "{{LOGO_4_IMAGE}}", "id": ""}, "image_size": "medium", "caption_source": "none"}, "elements": []}]
+            },
+            {
+              "id": "logoitem05",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"width": {"unit": "%", "size": 15}, "justify_content": "center", "align_items": "center", "css_classes": "tss-logo-cloud__item"},
+              "elements": [{"id": "logoimg005", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "{{LOGO_5_IMAGE}}", "id": ""}, "image_size": "medium", "caption_source": "none"}, "elements": []}]
+            },
+            {
+              "id": "logoitem06",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"width": {"unit": "%", "size": 15}, "justify_content": "center", "align_items": "center", "css_classes": "tss-logo-cloud__item"},
+              "elements": [{"id": "logoimg006", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "{{LOGO_6_IMAGE}}", "id": ""}, "image_size": "medium", "caption_source": "none"}, "elements": []}]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
