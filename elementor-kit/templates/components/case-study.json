@@ -5,7 +5,7 @@
   "page_settings": [],
   "content": [
     {
-      "id": "casestudy01",
+      "id": "casest01",
       "elType": "container",
       "isInner": false,
       "settings": {
@@ -22,7 +22,7 @@
       },
       "elements": [
         {
-          "id": "caseimage01",
+          "id": "casemeda",
           "elType": "container",
           "isInner": true,
           "settings": {
@@ -30,3 +30,37 @@
             "css_classes": "tss-case-study__media"
           },
           "elements": [
+            {"id": "caseimg1", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "{{CASE_STUDY_IMAGE}}"}, "image_size": "full"}, "elements": []}
+          ]
+        },
+        {
+          "id": "casecopy",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "width": {"unit": "%", "size": 54},
+            "flex_direction": "column",
+            "gap": {"unit": "px", "size": 18},
+            "css_classes": "tss-case-study__content"
+          },
+          "elements": [
+            {"id": "caseeye1", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{CASE_STUDY_EYEBROW}}", "header_size": "h6", "title_color": "#E1111A"}, "elements": []},
+            {"id": "casetitl", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{CASE_STUDY_TITLE}}", "header_size": "h2"}, "elements": []},
+            {"id": "casetext", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{CASE_STUDY_SUMMARY}}</p>", "text_color": "#555555"}, "elements": []},
+            {
+              "id": "casestat",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"flex_direction": "row", "flex_wrap": "wrap", "gap": {"unit": "px", "size": 24}},
+              "elements": [
+                {"id": "caseval1", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{CASE_STUDY_RESULT_1}}", "header_size": "h3", "title_color": "#E1111A"}, "elements": []},
+                {"id": "caseval2", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{CASE_STUDY_RESULT_2}}", "header_size": "h3", "title_color": "#E1111A"}, "elements": []}
+              ]
+            },
+            {"id": "casebtn1", "elType": "widget", "widgetType": "button", "settings": {"text": "{{CASE_STUDY_CTA}}", "link": {"url": "{{CASE_STUDY_URL}}"}}, "elements": []}
+          ]
+        }
+      ]
+    }
+  ]
+}
