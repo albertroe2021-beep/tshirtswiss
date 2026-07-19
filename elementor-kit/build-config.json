@@ -41,5 +41,12 @@
     "fontFamily": "Inter, Arial, Helvetica, sans-serif",
     "contentWidth": 1280
   },
-  "buildStatus": "in-progress"
+  "buildStatus": "ready-for-import-testing",
+  "validation": {
+    "repositoryAudit": "passed",
+    "jsonStructure": "passed",
+    "assetReferenceAudit": "passed",
+    "multilingualHeaderFooterAudit": "passed",
+    "liveElementorImport": "pending"
+  }
 }
