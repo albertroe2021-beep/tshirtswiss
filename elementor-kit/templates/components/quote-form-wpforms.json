@@ -1,0 +1,1 @@
+{"version":"0.4","title":"TShirtSwiss - Quote Form","type":"section","page_settings":[],"content":[{"id":"qf1","elType":"container","isInner":false,"settings":{},"elements":[{"id":"qf2","elType":"widget","widgetType":"shortcode","settings":{"shortcode":"[wpforms id=\"REPLACE_WITH_FORM_ID\" title=\"false\"]"},"elements":[]}]}]}

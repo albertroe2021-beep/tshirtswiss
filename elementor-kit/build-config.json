@@ -1,0 +1,45 @@
+{
+  "kitName": "TShirtSwiss",
+  "kitSlug": "tshirtswiss-elementor-kit",
+  "sourceBranch": "main",
+  "targetBranch": "agent/elementor-kit",
+  "target": {
+    "elementorVersion": "4.1.5",
+    "elementorProRequired": false,
+    "theme": "hello-elementor",
+    "flexboxContainers": true,
+    "nestedElements": true,
+    "editorV4": true
+  },
+  "siteType": "manufacturer-lead-generation",
+  "commerce": false,
+  "languages": ["en", "de", "fr"],
+  "activePluginDependencies": [
+    "elementor",
+    "royal-elementor-addons",
+    "ultimate-addons-for-elementor",
+    "wpforms-lite"
+  ],
+  "compatibleActivePlugins": [
+    "wordpress-seo",
+    "litespeed-cache"
+  ],
+  "prohibitedDependencies": [
+    "elementor-pro",
+    "woocommerce"
+  ],
+  "globalTokens": {
+    "colors": {
+      "brandRed": "#E1111A",
+      "ink": "#111111",
+      "black": "#070707",
+      "muted": "#555555",
+      "line": "#E7E7E7",
+      "soft": "#F7F7F7",
+      "white": "#FFFFFF"
+    },
+    "fontFamily": "Inter, Arial, Helvetica, sans-serif",
+    "contentWidth": 1280
+  },
+  "buildStatus": "in-progress"
+}

@@ -1,0 +1,14 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Service Child Hero",
+  "type": "section",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "svcHero01",
+      "elType": "container",
+      "isInner": false,
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1280},
+        "min_height": {"unit": "px
