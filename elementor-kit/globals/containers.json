@@ -1,0 +1,12 @@
+{
+  "version":"1.0.0",
+  "title":"TShirtSwiss Containers",
+  "tokens":{
+    "content":{"maxWidth":760,"gutter":24},
+    "standard":{"maxWidth":1120,"gutter":32},
+    "wide":{"maxWidth":1280,"gutter":32},
+    "full":{"maxWidth":"100%","gutter":24}
+  },
+  "breakpoints":{"mobile":767,"tablet":1024,"desktop":1280},
+  "usage":{"content":"Articles and narrow forms","standard":"General sections","wide":"Grids and landing pages","full":"Full-width sections"}
+}
