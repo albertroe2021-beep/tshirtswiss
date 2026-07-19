@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "title": "TShirtSwiss Global Spacing",
+  "unit": "px",
+  "tokens": {
+    "0": 0,
+    "2xs": 4,
+    "xs": 8,
+    "sm": 12,
+    "md": 16,
+    "lg": 24,
+    "xl": 32,
+    "2xl": 48,
+    "3xl": 64,
+    "4xl": 72,
+    "5xl": 96,
+    "6xl": 128
+  },
+  "semantic": {
+    "inlineGap": 12,
+    "cardGap": 24,
+    "gridGap": 32,
+    "sectionPaddingDesktop": 96,
+    "sectionPaddingTablet": 72,
+    "sectionPaddingMobile": 48,
+    "containerGutterDesktop": 32,
+    "containerGutterTablet": 24,
+    "containerGutter
