@@ -8,8 +8,115 @@
   },
   "content": [
     {
-      "id": "prdchild01",
+      "id": "prdchld1",
       "elType": "container",
       "isInner": false,
       "settings": {
-        "content_width": "full
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "tss-page tss-product-child-page"
+      },
+      "elements": [
+        {
+          "id": "pchhero1",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "min_height": {"unit": "px", "size": 560},
+            "flex_direction": "row",
+            "align_items": "center",
+            "gap": {"unit": "px", "size": 48},
+            "padding": {"unit": "px", "top": "96", "right": "32", "bottom": "96", "left": "32", "isLinked": false},
+            "background_background": "classic",
+            "background_color": "#070707",
+            "css_classes": "tss-product-child-page__hero"
+          },
+          "elements": [
+            {
+              "id": "pchcopy1",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"width": {"unit": "%", "size": 54}, "flex_direction": "column", "gap": {"unit": "px", "size": 18}},
+              "elements": [
+                {"id": "pchbread", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{BREADCRUMBS}}</p>", "text_color": "#FFFFFF"}, "elements": []},
+                {"id": "pcheye01", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{PRODUCT_CATEGORY}}", "header_size": "h6", "title_color": "#E1111A"}, "elements": []},
+                {"id": "pchtitle", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{PRODUCT_TITLE}}", "header_size": "h1", "title_color": "#FFFFFF"}, "elements": []},
+                {"id": "pchintro", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>{{PRODUCT_INTRO}}</p>", "text_color": "#FFFFFF"}, "elements": []},
+                {"id": "pchbtn01", "elType": "widget", "widgetType": "button", "settings": {"text": "{{PRODUCT_CTA_TEXT}}", "link": {"url": "{{PRODUCT_CTA_URL}}"}, "size": "lg", "background_color": "#E1111A", "button_text_color": "#FFFFFF"}, "elements": []}
+              ]
+            },
+            {
+              "id": "pchmedia",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"width": {"unit": "%", "size": 46}},
+              "elements": [
+                {"id": "pchimage", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "{{PRODUCT_HERO_IMAGE}}"}, "image_size": "full"}, "elements": []}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pchdetal",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "row",
+            "align_items": "flex-start",
+            "gap": {"unit": "px", "size": 48},
+            "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false},
+            "css_classes": "tss-product-child-page__details"
+          },
+          "elements": [
+            {
+              "id": "pchbody1",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"width": {"unit": "%", "size": 62}, "flex_direction": "column", "gap": {"unit": "px", "size": 18}},
+              "elements": [
+                {"id": "pchdttl", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{PRODUCT_DETAILS_TITLE}}", "header_size": "h2"}, "elements": []},
+                {"id": "pchdtxt", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "{{PRODUCT_DETAILS_CONTENT}}"}, "elements": []},
+                {"id": "pchgal01", "elType": "widget", "widgetType": "gallery", "settings": {"gallery": [], "gallery_columns": "3", "gallery_link": "file"}, "elements": []}
+              ]
+            },
+            {
+              "id": "pchspec1",
+              "elType": "container",
+              "isInner": true,
+              "settings": {"width": {"unit": "%", "size": 38}, "flex_direction": "column", "gap": {"unit": "px", "size": 16}, "padding": {"unit": "px", "top": "28", "right": "28", "bottom": "28", "left": "28", "isLinked": true}, "background_background": "classic", "background_color": "#F7F7F7"},
+              "elements": [
+                {"id": "pchspttl", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{PRODUCT_SPECIFICATIONS_TITLE}}", "header_size": "h3"}, "elements": []},
+                {"id": "pchsptxt", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "{{PRODUCT_SPECIFICATIONS}}"}, "elements": []}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "pchcta01",
+          "elType": "container",
+          "isInner": true,
+          "settings": {
+            "content_width": "boxed",
+            "boxed_width": {"unit": "px", "size": 1280},
+            "flex_direction": "row",
+            "align_items": "center",
+            "justify_content": "space-between",
+            "gap": {"unit": "px", "size": 32},
+            "padding": {"unit": "px", "top": "64", "right": "32", "bottom": "64", "left": "32", "isLinked": false},
+            "background_background": "classic",
+            "background_color": "#E1111A",
+            "css_classes": "tss-product-child-page__cta"
+          },
+          "elements": [
+            {"id": "pchctatl", "elType": "widget", "widgetType": "heading", "settings": {"title": "{{PRODUCT_FINAL_CTA_TITLE}}", "header_size": "h2", "title_color": "#FFFFFF"}, "elements": []},
+            {"id": "pchctabt", "elType": "widget", "widgetType": "button", "settings": {"text": "{{PRODUCT_FINAL_CTA_TEXT}}", "link": {"url": "{{PRODUCT_FINAL_CTA_URL}}"}, "background_color": "#FFFFFF", "button_text_color": "#111111"}, "elements": []}
+          ]
+        }
+      ]
+    }
+  ]
+}
