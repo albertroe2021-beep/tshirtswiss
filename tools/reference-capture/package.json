@@ -3,7 +3,14 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "capture": "node capture-reference-screenshots.mjs"
+    "install:browser": "playwright install chromium",
+    "capture": "node capture-reference-screenshots.mjs",
+    "capture:home": "REFERENCE_ROUTE=home node capture-reference-screenshots.mjs",
+    "capture:desktop": "REFERENCE_VIEWPORT=desktop node capture-reference-screenshots.mjs",
+    "capture:mobile": "REFERENCE_VIEWPORT=mobile node capture-reference-screenshots.mjs"
+  },
+  "engines": {
+    "node": ">=20"
   },
   "dependencies": {
     "playwright": "^1.54.1"
