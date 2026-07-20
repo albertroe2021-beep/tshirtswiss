@@ -1,0 +1,50 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Über uns DE",
+  "type": "page",
+  "page_settings": {"hide_title": "yes", "template": "elementor_canvas"},
+  "content": [
+    {
+      "id": "abtherode",
+      "elType": "container",
+      "settings": {"content_width": "boxed", "boxed_width": {"unit": "px", "size": 1280, "sizes": []}, "flex_direction": "column", "flex_align_items": "center", "background_background": "classic", "background_color": "#070707", "padding": {"unit": "px", "top": "92", "right": "32", "bottom": "92", "left": "32", "isLinked": false}, "padding_mobile": {"unit": "px", "top": "64", "right": "20", "bottom": "64", "left": "20", "isLinked": false}},
+      "elements": [
+        {"id": "abteyede", "elType": "widget", "widgetType": "heading", "settings": {"title": "Über TShirtSwiss", "header_size": "div", "align": "center", "title_color": "#e1111a", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 12, "sizes": []}, "typography_font_weight": "900", "typography_text_transform": "uppercase", "typography_letter_spacing": {"unit": "em", "size": 0.18, "sizes": []}}, "elements": []},
+        {"id": "abtheadde", "elType": "widget", "widgetType": "heading", "settings": {"title": "Schweizerisch geführte Textilproduktion mit globalen Möglichkeiten", "header_size": "h1", "align": "center", "title_color": "#ffffff", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 56, "sizes": []}, "typography_font_size_mobile": {"unit": "px", "size": 38, "sizes": []}, "typography_font_weight": "900", "typography_line_height": {"unit": "em", "size": 1.05, "sizes": []}}, "elements": []},
+        {"id": "abtintrode", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>Wir unterstützen Schweizer Unternehmen, Marken, Vereine und Organisationen dabei, Bekleidungsideen in zuverlässig geführte Produktionsprogramme umzusetzen – mit klarer lokaler Kommunikation vom Konzept bis zur Lieferung.</p>", "align": "center", "text_color": "#f2f2f2"}, "elements": []}
+      ]
+    },
+    {
+      "id": "abtstoryde",
+      "elType": "container",
+      "settings": {"content_width": "boxed", "boxed_width": {"unit": "px", "size": 1180, "sizes": []}, "flex_direction": "row", "flex_direction_mobile": "column", "flex_align_items": "center", "flex_gap": {"unit": "px", "size": 56, "sizes": []}, "padding": {"unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false}},
+      "elements": [
+        {"id": "abtimgde", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1200&q=80", "id": ""}, "image_size": "large"}, "elements": []},
+        {"id": "abtcopyde", "elType": "container", "settings": {"width": {"unit": "%", "size": 50, "sizes": []}, "width_mobile": {"unit": "%", "size": 100, "sizes": []}, "flex_direction": "column"}, "elements": [
+          {"id": "abtstoryheadde", "elType": "widget", "widgetType": "heading", "settings": {"title": "Auf zuverlässiges Projektmanagement ausgerichtet", "header_size": "h2", "title_color": "#111111"}, "elements": []},
+          {"id": "abtstorytextde", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>Individuelle Bekleidungsprojekte werden schwierig, wenn Design, Beschaffung, Bemusterung, Produktion, Qualitätskontrolle und Logistik voneinander getrennt sind. TShirtSwiss führt diese Schritte in einem koordinierten Prozess zusammen.</p><p>Wir vereinfachen Entscheidungen, definieren klare Erwartungen und koordinieren die Details, damit Ihre Bestellung korrekt, konsistent und termingerecht eintrifft.</p>", "text_color": "#555555"}, "elements": []}
+        ]}
+      ]
+    },
+    {
+      "id": "abtvaluesde",
+      "elType": "container",
+      "settings": {"content_width": "boxed", "boxed_width": {"unit": "px", "size": 1280, "sizes": []}, "flex_direction": "row", "flex_wrap": "wrap", "flex_gap": {"unit": "px", "size": 24, "sizes": []}, "background_background": "classic", "background_color": "#f7f7f7", "padding": {"unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false}},
+      "elements": [
+        {"id": "abtvalde1", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Klare Kommunikation", "description_text": "Verständliche Beratung, dokumentierte Entscheidungen und realistische Zeitpläne.", "selected_icon": {"value": "fas fa-comments", "library": "fa-solid"}, "primary_color": "#e1111a"}, "elements": []},
+        {"id": "abtvalde2", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Verantwortung für Qualität", "description_text": "Prüfungen und Freigaben sind fest im Produktionsablauf verankert.", "selected_icon": {"value": "fas fa-award", "library": "fa-solid"}, "primary_color": "#e1111a"}, "elements": []},
+        {"id": "abtvalde3", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Praktische Flexibilität", "description_text": "Lösungen passend zu Einsatz, Menge, Budget und Lieferanforderungen.", "selected_icon": {"value": "fas fa-sliders", "library": "fa-solid"}, "primary_color": "#e1111a"}, "elements": []},
+        {"id": "abtvalde4", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Langfristiges Denken", "description_text": "Wiederholbare Spezifikationen erleichtern zukünftige Nachbestellungen.", "selected_icon": {"value": "fas fa-arrows-rotate", "library": "fa-solid"}, "primary_color": "#e1111a"}, "elements": []}
+      ]
+    },
+    {
+      "id": "abtctade",
+      "elType": "container",
+      "settings": {"content_width": "boxed", "boxed_width": {"unit": "px", "size": 1280, "sizes": []}, "flex_direction": "column", "flex_align_items": "center", "background_background": "classic", "background_color": "#e1111a", "padding": {"unit": "px", "top": "64", "right": "32", "bottom": "64", "left": "32", "isLinked": false}},
+      "elements": [
+        {"id": "abtctaheadde", "elType": "widget", "widgetType": "heading", "settings": {"title": "Wir helfen Ihnen, den passenden Produktionsweg zu planen", "header_size": "h2", "align": "center", "title_color": "#ffffff"}, "elements": []},
+        {"id": "abtctabtnde", "elType": "widget", "widgetType": "button", "settings": {"text": "Gespräch beginnen", "link": {"url": "/de/kontakt/"}, "button_text_color": "#111111", "background_color": "#ffffff"}, "elements": []}
+      ]
+    }
+  ]
+}
