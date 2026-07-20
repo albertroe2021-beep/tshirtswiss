@@ -1,0 +1,40 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Kontakt DE",
+  "type": "page",
+  "page_settings": {"hide_title": "yes", "template": "elementor_canvas"},
+  "content": [
+    {
+      "id": "contherode",
+      "elType": "container",
+      "settings": {"content_width": "boxed", "boxed_width": {"unit": "px", "size": 1280, "sizes": []}, "flex_direction": "column", "flex_align_items": "center", "background_background": "classic", "background_color": "#070707", "padding": {"unit": "px", "top": "88", "right": "32", "bottom": "88", "left": "32", "isLinked": false}, "padding_mobile": {"unit": "px", "top": "60", "right": "20", "bottom": "60", "left": "20", "isLinked": false}},
+      "elements": [
+        {"id": "conteyede", "elType": "widget", "widgetType": "heading", "settings": {"title": "Kontakt", "header_size": "div", "align": "center", "title_color": "#e1111a", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 12, "sizes": []}, "typography_font_weight": "900", "typography_text_transform": "uppercase", "typography_letter_spacing": {"unit": "em", "size": 0.18, "sizes": []}}, "elements": []},
+        {"id": "contheadde", "elType": "widget", "widgetType": "heading", "settings": {"title": "Erzählen Sie uns von Ihrem Bekleidungsprojekt", "header_size": "h1", "align": "center", "title_color": "#ffffff", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 56, "sizes": []}, "typography_font_size_mobile": {"unit": "px", "size": 38, "sizes": []}, "typography_font_weight": "900", "typography_line_height": {"unit": "em", "size": 1.05, "sizes": []}}, "elements": []},
+        {"id": "contintrode", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>Teilen Sie uns Produkttypen, Mengen, Zieltermin sowie vorhandene Druckdaten oder Referenzen mit. Wir prüfen Ihr Briefing und empfehlen den nächsten sinnvollen Schritt.</p>", "align": "center", "text_color": "#f2f2f2", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 18, "sizes": []}, "typography_line_height": {"unit": "em", "size": 1.65, "sizes": []}}, "elements": []}
+      ]
+    },
+    {
+      "id": "contbodyde",
+      "elType": "container",
+      "settings": {"content_width": "boxed", "boxed_width": {"unit": "px", "size": 1180, "sizes": []}, "flex_direction": "row", "flex_direction_mobile": "column", "flex_align_items": "flex-start", "flex_gap": {"unit": "px", "size": 48, "sizes": []}, "padding": {"unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false}, "padding_mobile": {"unit": "px", "top": "48", "right": "20", "bottom": "48", "left": "20", "isLinked": false}},
+      "elements": [
+        {"id": "contdetailsde", "elType": "container", "settings": {"width": {"unit": "%", "size": 38, "sizes": []}, "width_mobile": {"unit": "%", "size": 100, "sizes": []}, "flex_direction": "column", "background_background": "classic", "background_color": "#f7f7f7", "padding": {"unit": "px", "top": "34", "right": "34", "bottom": "34", "left": "34", "isLinked": true}, "border_radius": {"unit": "px", "top": "8", "right": "8", "bottom": "8", "left": "8", "isLinked": true}}, "elements": [
+          {"id": "contdetailsheadde", "elType": "widget", "widgetType": "heading", "settings": {"title": "Was Ihr Briefing enthalten sollte", "header_size": "h2", "title_color": "#111111"}, "elements": []},
+          {"id": "contdetailslistde", "elType": "widget", "widgetType": "icon-list", "settings": {"icon_list": [{"text": "Produkttypen und Einsatzzweck", "selected_icon": {"value": "fas fa-check", "library": "fa-solid"}}, {"text": "Geschätzte Mengen und Grössenspektrum", "selected_icon": {"value": "fas fa-check", "library": "fa-solid"}}, {"text": "Gewünschter Liefertermin", "selected_icon": {"value": "fas fa-check", "library": "fa-solid"}}, {"text": "Veredelung, Farben und Branding", "selected_icon": {"value": "fas fa-check", "library": "fa-solid"}}, {"text": "Budgetrahmen, falls vorhanden", "selected_icon": {"value": "fas fa-check", "library": "fa-solid"}}], "icon_color": "#e1111a", "text_color": "#555555"}, "elements": []},
+          {"id": "contemailde", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "E-Mail", "description_text": "info@tshirtswiss.com", "selected_icon": {"value": "fas fa-envelope", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555"}, "elements": []},
+          {"id": "contresponsede", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Antwortzeit", "description_text": "Wir beantworten qualifizierte Projektanfragen in der Regel innerhalb von zwei Arbeitstagen.", "selected_icon": {"value": "fas fa-clock", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555"}, "elements": []}
+        ]},
+        {"id": "contformde", "elType": "container", "settings": {"width": {"unit": "%", "size": 62, "sizes": []}, "width_mobile": {"unit": "%", "size": 100, "sizes": []}, "flex_direction": "column", "background_background": "classic", "background_color": "#ffffff", "border_border": "solid", "border_width": {"unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true}, "border_color": "#e7e7e7", "border_radius": {"unit": "px", "top": "8", "right": "8", "bottom": "8", "left": "8", "isLinked": true}, "padding": {"unit": "px", "top": "36", "right": "36", "bottom": "36", "left": "36", "isLinked": true}}, "elements": [
+          {"id": "contformheadde", "elType": "widget", "widgetType": "heading", "settings": {"title": "Projektanfrage", "header_size": "h2", "title_color": "#111111"}, "elements": []},
+          {"id": "contformtextde", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>Füllen Sie das Formular aus und geben Sie möglichst viele Details an.</p>", "text_color": "#555555"}, "elements": []},
+          {"id": "contshortcodede", "elType": "widget", "widgetType": "shortcode", "settings": {"shortcode": "[wpforms id=\"REPLACE_WITH_FORM_ID\" title=\"false\"]"}, "elements": []}
+        ]}
+      ]
+    },
+    {"id": "contnextde", "elType": "container", "settings": {"content_width": "boxed", "boxed_width": {"unit": "px", "size": 1280, "sizes": []}, "flex_direction": "column", "flex_align_items": "center", "background_background": "classic", "background_color": "#f7f7f7", "padding": {"unit": "px", "top": "64", "right": "32", "bottom": "64", "left": "32", "isLinked": false}}, "elements": [
+      {"id": "contnextheadde", "elType": "widget", "widgetType": "heading", "settings": {"title": "Wie es weitergeht", "header_size": "h2", "align": "center", "title_color": "#111111"}, "elements": []},
+      {"id": "contnexttextde", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>Wir prüfen Ihr Briefing, klären offene Punkte und vereinbaren anschliessend den passenden Beratung-, Kalkulations- oder Sampling-Schritt.</p>", "align": "center", "text_color": "#555555"}, "elements": []}
+    ]}
+  ]
+}
