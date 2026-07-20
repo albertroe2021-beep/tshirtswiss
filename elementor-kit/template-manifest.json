@@ -1,6 +1,6 @@
 {
   "project": "TShirtSwiss Elementor Free rebuild",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "status": "implementation-in-progress",
   "requirements": {
     "elementor": "4.1.5",
@@ -18,7 +18,10 @@
     "templates/globals/global-site-settings.json",
     "templates/globals/global-header-en.json",
     "templates/globals/global-footer-en.json",
-    "templates/pages/home-en.json"
+    "templates/pages/home-en.json",
+    "templates/pages/products-en.json",
+    "templates/pages/services-en.json",
+    "templates/pages/industries-en.json"
   ],
   "templates": [
     {
@@ -55,12 +58,33 @@
         "Set the page template to Elementor Canvas when importing outside a full site kit.",
         "Assign the reusable header and footer sections through the chosen Elementor Free header/footer integration."
       ]
+    },
+    {
+      "id": "products-en",
+      "title": "TShirtSwiss - Products EN",
+      "type": "page",
+      "path": "templates/pages/products-en.json",
+      "status": "initial",
+      "notes": "Native Elementor hub page with hero, eight product categories and conversion CTA."
+    },
+    {
+      "id": "services-en",
+      "title": "TShirtSwiss - Services EN",
+      "type": "page",
+      "path": "templates/pages/services-en.json",
+      "status": "initial",
+      "notes": "Native Elementor hub page with eight service categories and five-step process section."
+    },
+    {
+      "id": "industries-en",
+      "title": "TShirtSwiss - Industries EN",
+      "type": "page",
+      "path": "templates/pages/industries-en.json",
+      "status": "initial",
+      "notes": "Native Elementor hub page with eight industry categories and requirements CTA."
     }
   ],
   "planned": [
-    "templates/pages/products-en.json",
-    "templates/pages/services-en.json",
-    "templates/pages/industries-en.json",
     "templates/pages/resources-en.json",
     "templates/pages/about-en.json",
     "templates/pages/contact-en.json",
