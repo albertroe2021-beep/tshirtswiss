@@ -1,0 +1,85 @@
+name: Capture visual references
+
+on:
+  workflow_dispatch:
+    inputs:
+      route:
+        description: Optional route ID from tools/reference-capture/routes.json
+        required: false
+        type: string
+      language:
+        description: Optional language (en, de or fr)
+        required: false
+        type: choice
+        options:
+          - ''
+          - en
+          - de
+          - fr
+      viewport:
+        description: Optional viewport
+        required: false
+        type: choice
+        options:
+          - ''
+          - desktop
+          - tablet
+          - mobile
+      base_url:
+        description: Site URL to capture
+        required: false
+        default: https://albertroe2021-beep.github.io/tshirtswiss
+        type: string
+  push:
+    branches:
+      - elementor-reference-library
+    paths:
+      - tools/reference-capture/**
+      - .github/workflows/reference-capture.yml
+
+permissions:
+  contents: read
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    defaults:
+      run:
+        working-directory: tools/reference-capture
+
+    env:
+      REFERENCE_BASE_URL: ${{ inputs.base_url || 'https://albertroe2021-beep.github.io/tshirtswiss' }}
+      REFERENCE_ROUTE: ${{ inputs.route || '' }}
+      REFERENCE_LANGUAGE: ${{ inputs.language || '' }}
+      REFERENCE_VIEWPORT: ${{ inputs.viewport || '' }}
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: tools/reference-capture/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Capture screenshots
+        run: npm run capture
+
+      - name: Upload screenshot library
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tshirtswiss-reference-screenshots-${{ github.run_number }}
+          path: reference/screenshots
+          if-no-files-found: warn
+          retention-days: 30
