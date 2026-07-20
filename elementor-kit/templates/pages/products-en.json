@@ -1,0 +1,63 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Products EN",
+  "type": "page",
+  "page_settings": { "hide_title": "yes", "template": "elementor_canvas" },
+  "content": [
+    {
+      "id": "prodhero",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": { "unit": "px", "size": 1280, "sizes": [] },
+        "min_height": { "unit": "px", "size": 430, "sizes": [] },
+        "flex_direction": "column",
+        "flex_justify_content": "center",
+        "flex_align_items": "center",
+        "background_background": "classic",
+        "background_color": "#070707",
+        "padding": { "unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false },
+        "padding_mobile": { "unit": "px", "top": "48", "right": "20", "bottom": "48", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        { "id": "prodeye", "elType": "widget", "widgetType": "heading", "settings": { "title": "Products", "header_size": "div", "align": "center", "title_color": "#e1111a", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 12, "sizes": [] }, "typography_font_weight": "900", "typography_text_transform": "uppercase", "typography_letter_spacing": { "unit": "em", "size": 0.18, "sizes": [] } }, "elements": [] },
+        { "id": "prodtitle", "elType": "widget", "widgetType": "heading", "settings": { "title": "Custom apparel built around your organisation", "header_size": "h1", "align": "center", "title_color": "#ffffff", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 58, "sizes": [] }, "typography_font_size_tablet": { "unit": "px", "size": 46, "sizes": [] }, "typography_font_size_mobile": { "unit": "px", "size": 36, "sizes": [] }, "typography_font_weight": "900", "typography_line_height": { "unit": "em", "size": 1.05, "sizes": [] } }, "elements": [] },
+        { "id": "prodlead", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>From everyday branded essentials to fully custom garments, we coordinate production, quality control and delivery for Swiss businesses, clubs and organisations.</p>", "align": "center", "text_color": "#f2f2f2", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 18, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.65, "sizes": [] } }, "elements": [] }
+      ]
+    },
+    {
+      "id": "prodgrid",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": { "unit": "px", "size": 1280, "sizes": [] },
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "flex_gap": { "unit": "px", "size": 24, "sizes": [] },
+        "background_background": "classic",
+        "background_color": "#f7f7f7",
+        "padding": { "unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false },
+        "padding_mobile": { "unit": "px", "top": "48", "right": "20", "bottom": "48", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        { "id": "pcard01", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "T-shirts", "description_text": "Versatile branded and fully custom T-shirts for teams, campaigns and retail.", "selected_icon": { "value": "fas fa-shirt", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/products/t-shirts/" } }, "elements": [] },
+        { "id": "pcard02", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Polos", "description_text": "Professional polos for staff uniforms, events and customer-facing teams.", "selected_icon": { "value": "fas fa-user-tie", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/products/polos/" } }, "elements": [] },
+        { "id": "pcard03", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Hoodies and sweatshirts", "description_text": "Comfortable branded layers with embroidery, print and custom finishing.", "selected_icon": { "value": "fas fa-cloud", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/products/hoodies/" } }, "elements": [] },
+        { "id": "pcard04", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Jackets", "description_text": "Outerwear for workforces, clubs and premium branded collections.", "selected_icon": { "value": "fas fa-vest", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/products/jackets/" } }, "elements": [] },
+        { "id": "pcard05", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Workwear", "description_text": "Durable clothing designed for practical use, visibility and brand consistency.", "selected_icon": { "value": "fas fa-helmet-safety", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/products/workwear/" } }, "elements": [] },
+        { "id": "pcard06", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Sportswear", "description_text": "Performance garments for clubs, events, teams and active brands.", "selected_icon": { "value": "fas fa-person-running", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/products/sportswear/" } }, "elements": [] },
+        { "id": "pcard07", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Caps and accessories", "description_text": "Complete your range with caps, bags and coordinated branded accessories.", "selected_icon": { "value": "fas fa-hat-cowboy", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/products/accessories/" } }, "elements": [] },
+        { "id": "pcard08", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Fully custom garments", "description_text": "Purpose-built apparel developed from your concept, measurements and brand requirements.", "selected_icon": { "value": "fas fa-pen-ruler", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/contact/" } }, "elements": [] }
+      ]
+    },
+    {
+      "id": "prodcta",
+      "elType": "container",
+      "settings": { "content_width": "boxed", "boxed_width": { "unit": "px", "size": 1280, "sizes": [] }, "flex_direction": "column", "flex_align_items": "center", "background_background": "classic", "background_color": "#111111", "padding": { "unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false } },
+      "elements": [
+        { "id": "prodctah", "elType": "widget", "widgetType": "heading", "settings": { "title": "Need help choosing the right product?", "header_size": "h2", "align": "center", "title_color": "#ffffff" }, "elements": [] },
+        { "id": "prodctab", "elType": "widget", "widgetType": "button", "settings": { "text": "Discuss your project", "link": { "url": "/pages/contact/" }, "button_text_color": "#ffffff", "background_color": "#e1111a", "border_radius": { "unit": "px", "top": "4", "right": "4", "bottom": "4", "left": "4", "isLinked": true } }, "elements": [] }
+      ]
+    }
+  ]
+}
