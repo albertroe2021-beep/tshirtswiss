@@ -1,0 +1,60 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Ressources FR",
+  "type": "page",
+  "page_settings": {"hide_title": "yes", "template": "elementor_canvas"},
+  "content": [
+    {
+      "id": "reshero1",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1280, "sizes": []},
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "background_background": "classic",
+        "background_color": "#070707",
+        "padding": {"unit": "px", "top": "92", "right": "32", "bottom": "92", "left": "32", "isLinked": false},
+        "padding_mobile": {"unit": "px", "top": "64", "right": "20", "bottom": "64", "left": "20", "isLinked": false}
+      },
+      "elements": [
+        {"id": "reseyebrow", "elType": "widget", "widgetType": "heading", "settings": {"title": "Ressources", "header_size": "div", "align": "center", "title_color": "#e1111a", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 12, "sizes": []}, "typography_font_weight": "900", "typography_text_transform": "uppercase", "typography_letter_spacing": {"unit": "em", "size": 0.18, "sizes": []}}, "elements": []},
+        {"id": "resheading", "elType": "widget", "widgetType": "heading", "settings": {"title": "Des conseils pratiques pour vos projets de vêtements personnalisés", "header_size": "h1", "align": "center", "title_color": "#ffffff", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 56, "sizes": []}, "typography_font_size_mobile": {"unit": "px", "size": 38, "sizes": []}, "typography_font_weight": "900", "typography_line_height": {"unit": "em", "size": 1.05, "sizes": []}}, "elements": []},
+        {"id": "resintro", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>Découvrez nos guides de planification, nos questions fréquentes et nos conseils de production pour mieux définir, budgétiser et gérer votre prochain projet textile.</p>", "align": "center", "text_color": "#f2f2f2", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 18, "sizes": []}, "typography_line_height": {"unit": "em", "size": 1.65, "sizes": []}}, "elements": []}
+      ]
+    },
+    {
+      "id": "resgrid1",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1280, "sizes": []},
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "flex_gap": {"unit": "px", "size": 24, "sizes": []},
+        "background_background": "classic",
+        "background_color": "#f7f7f7",
+        "padding": {"unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false},
+        "padding_mobile": {"unit": "px", "top": "48", "right": "20", "bottom": "48", "left": "20", "isLinked": false}
+      },
+      "elements": [
+        {"id": "rescard1", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Questions fréquentes", "description_text": "Des réponses claires sur les quantités, délais, échantillons, fichiers, prix et livraisons.", "selected_icon": {"value": "fas fa-circle-question", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": {"url": "/fr/ressources/faq/"}}, "elements": []},
+        {"id": "rescard2", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Préparation des fichiers", "description_text": "Comprenez les formats, la gestion des couleurs, les zones d’impression et les critères d’un fichier prêt pour la production.", "selected_icon": {"value": "fas fa-pen-ruler", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555"}, "elements": []},
+        {"id": "rescard3", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Planification de la production", "description_text": "Planifiez les échantillons, validations, délais, contrôles qualité et étapes de livraison.", "selected_icon": {"value": "fas fa-list-check", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555"}, "elements": []},
+        {"id": "rescard4", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Matières et marquage", "description_text": "Comparez les tissus, les constructions de vêtements et les techniques de marquage adaptées à votre usage.", "selected_icon": {"value": "fas fa-shirt", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555"}, "elements": []},
+        {"id": "rescard5", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Tailles et coupe", "description_text": "Utilisez des séries de tailles, des mesures et des échantillons d’essayage pour réduire les incertitudes avant la production.", "selected_icon": {"value": "fas fa-ruler-combined", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555"}, "elements": []},
+        {"id": "rescard6", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Livraison et logistique", "description_text": "Découvrez comment organiser des livraisons groupées, fractionnées ou internationales.", "selected_icon": {"value": "fas fa-truck", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555"}, "elements": []}
+      ]
+    },
+    {
+      "id": "rescta1",
+      "elType": "container",
+      "settings": {"content_width": "boxed", "boxed_width": {"unit": "px", "size": 1280, "sizes": []}, "flex_direction": "column", "flex_align_items": "center", "background_background": "classic", "background_color": "#e1111a", "padding": {"unit": "px", "top": "64", "right": "32", "bottom": "64", "left": "32", "isLinked": false}},
+      "elements": [
+        {"id": "resctahead", "elType": "widget", "widgetType": "heading", "settings": {"title": "Besoin de conseils pour un projet spécifique ?", "header_size": "h2", "align": "center", "title_color": "#ffffff"}, "elements": []},
+        {"id": "resctatext", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>Partagez vos besoins avec nous et nous vous recommanderons l’approche de production la plus adaptée.</p>", "align": "center", "text_color": "#ffffff"}, "elements": []},
+        {"id": "resctabtn", "elType": "widget", "widgetType": "button", "settings": {"text": "Parler de votre projet", "link": {"url": "/fr/contact/"}, "button_text_color": "#111111", "background_color": "#ffffff"}, "elements": []}
+      ]
+    }
+  ]
+}
