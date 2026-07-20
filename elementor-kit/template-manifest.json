@@ -1,6 +1,6 @@
 {
   "project": "TShirtSwiss Elementor Free rebuild",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "status": "implementation-in-progress",
   "requirements": {
     "elementor": "4.1.5",
@@ -21,7 +21,10 @@
     "templates/pages/home-en.json",
     "templates/pages/products-en.json",
     "templates/pages/services-en.json",
-    "templates/pages/industries-en.json"
+    "templates/pages/industries-en.json",
+    "templates/pages/resources-en.json",
+    "templates/pages/about-en.json",
+    "templates/pages/contact-en.json"
   ],
   "templates": [
     {
@@ -82,12 +85,36 @@
       "path": "templates/pages/industries-en.json",
       "status": "initial",
       "notes": "Native Elementor hub page with eight industry categories and requirements CTA."
+    },
+    {
+      "id": "resources-en",
+      "title": "TShirtSwiss - Resources EN",
+      "type": "page",
+      "path": "templates/pages/resources-en.json",
+      "status": "initial",
+      "notes": "Native Elementor resources hub with six guidance categories and project advice CTA."
+    },
+    {
+      "id": "about-en",
+      "title": "TShirtSwiss - About EN",
+      "type": "page",
+      "path": "templates/pages/about-en.json",
+      "status": "initial",
+      "notes": "Native Elementor company page with positioning, operating model, values and CTA."
+    },
+    {
+      "id": "contact-en",
+      "title": "TShirtSwiss - Contact EN",
+      "type": "page",
+      "path": "templates/pages/contact-en.json",
+      "status": "initial",
+      "configuration": [
+        "Replace REPLACE_WITH_FORM_ID with the imported WPForms project enquiry form ID.",
+        "Confirm the public contact email before launch."
+      ]
     }
   ],
   "planned": [
-    "templates/pages/resources-en.json",
-    "templates/pages/about-en.json",
-    "templates/pages/contact-en.json",
     "templates/pages/blog-archive-en.json",
     "templates/pages/blog-post-en.json",
     "templates/reusable/product-child-en.json",
