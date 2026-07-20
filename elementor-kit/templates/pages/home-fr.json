@@ -1,0 +1,18 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Accueil FR",
+  "type": "page",
+  "page_settings": {
+    "hide_title": "yes",
+    "template": "elementor_canvas"
+  },
+  "content": [
+    {
+      "id": "tssherofr",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": { "unit": "px", "size": 1280, "sizes": [] },
+        "min_height": { "unit": "px", "size": 620, "sizes": [] },
+        "flex_direction": "row",
+        "flex
