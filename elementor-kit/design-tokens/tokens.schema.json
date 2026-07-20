@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tshirtswiss.example/schemas/design-tokens.schema.json",
+  "title": "TShirtSwiss design tokens",
+  "type": "object",
+  "required": ["meta", "colors", "typography", "layout", "spacing", "radii", "shadows", "buttons", "breakpoints"],
+  "properties": {
+    "meta": { "type": "object" },
+    "colors": {
+      "type": "object",
+      "additionalProperties": { "type": ["string", "null"] }
+    },
+    "typography": { "type": "object" },
+    "layout": { "type": "object" },
+    "spacing": {
+      "type": "object",
+      "additionalProperties": { "type": ["number", "null"] }
+    },
+    "radii": {
+      "type": "object",
+      "additionalProperties": { "type": ["number", "null"] }
+    },
+    "shadows": {
+      "type": "object",
+      "additionalProperties": { "type": ["string", "null"] }
+    },
+    "buttons": { "type": "object" },
+    "breakpoints": {
+      "type": "object",
+      "additionalProperties": { "type": "number" }
+    }
+  },
+  "additionalProperties": false
+}

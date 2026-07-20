@@ -1,0 +1,64 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Industries EN",
+  "type": "page",
+  "page_settings": { "hide_title": "yes", "template": "elementor_canvas" },
+  "content": [
+    {
+      "id": "indhero",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": { "unit": "px", "size": 1280, "sizes": [] },
+        "min_height": { "unit": "px", "size": 430, "sizes": [] },
+        "flex_direction": "column",
+        "flex_justify_content": "center",
+        "flex_align_items": "center",
+        "background_background": "classic",
+        "background_color": "#070707",
+        "padding": { "unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false },
+        "padding_mobile": { "unit": "px", "top": "48", "right": "20", "bottom": "48", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        { "id": "indeye", "elType": "widget", "widgetType": "heading", "settings": { "title": "Industries", "header_size": "div", "align": "center", "title_color": "#e1111a", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 12, "sizes": [] }, "typography_font_weight": "900", "typography_text_transform": "uppercase", "typography_letter_spacing": { "unit": "em", "size": 0.18, "sizes": [] } }, "elements": [] },
+        { "id": "indtitle", "elType": "widget", "widgetType": "heading", "settings": { "title": "Apparel solutions shaped for how your industry works", "header_size": "h1", "align": "center", "title_color": "#ffffff", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 58, "sizes": [] }, "typography_font_size_tablet": { "unit": "px", "size": 46, "sizes": [] }, "typography_font_size_mobile": { "unit": "px", "size": 36, "sizes": [] }, "typography_font_weight": "900", "typography_line_height": { "unit": "em", "size": 1.05, "sizes": [] } }, "elements": [] },
+        { "id": "indlead", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Different sectors require different garments, decoration methods, durability and delivery models. We build each programme around the real operational need.</p>", "align": "center", "text_color": "#f2f2f2", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 18, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.65, "sizes": [] } }, "elements": [] }
+      ]
+    },
+    {
+      "id": "indgrid",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": { "unit": "px", "size": 1280, "sizes": [] },
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "flex_gap": { "unit": "px", "size": 24, "sizes": [] },
+        "background_background": "classic",
+        "background_color": "#f7f7f7",
+        "padding": { "unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false },
+        "padding_mobile": { "unit": "px", "top": "48", "right": "20", "bottom": "48", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        { "id": "icard01", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Corporate teams", "description_text": "Consistent branded clothing for office, field, events and customer-facing staff.", "selected_icon": { "value": "fas fa-building", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/industries/corporate/" } }, "elements": [] },
+        { "id": "icard02", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Hospitality", "description_text": "Polished, practical uniforms for hotels, restaurants, bars and service teams.", "selected_icon": { "value": "fas fa-bell-concierge", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/industries/hospitality/" } }, "elements": [] },
+        { "id": "icard03", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Construction and trades", "description_text": "Durable workwear, visibility garments and coordinated branding for active crews.", "selected_icon": { "value": "fas fa-helmet-safety", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/industries/construction/" } }, "elements": [] },
+        { "id": "icard04", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Sports clubs", "description_text": "Training, competition, supporter and club apparel managed as one coordinated range.", "selected_icon": { "value": "fas fa-trophy", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/industries/sports-clubs/" } }, "elements": [] },
+        { "id": "icard05", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Schools and education", "description_text": "Reliable apparel for students, staff, events, trips and school communities.", "selected_icon": { "value": "fas fa-graduation-cap", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/industries/education/" } }, "elements": [] },
+        { "id": "icard06", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Retail and fashion brands", "description_text": "Custom product development, private label production and branded packaging.", "selected_icon": { "value": "fas fa-store", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/industries/retail/" } }, "elements": [] },
+        { "id": "icard07", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Events and promotions", "description_text": "Campaign apparel, merchandise and time-sensitive delivery for launches and events.", "selected_icon": { "value": "fas fa-calendar-check", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/industries/events/" } }, "elements": [] },
+        { "id": "icard08", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Associations and organisations", "description_text": "Flexible apparel programmes for members, volunteers, chapters and campaigns.", "selected_icon": { "value": "fas fa-people-group", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/industries/organisations/" } }, "elements": [] }
+      ]
+    },
+    {
+      "id": "indcta",
+      "elType": "container",
+      "settings": { "content_width": "boxed", "boxed_width": { "unit": "px", "size": 1280, "sizes": [] }, "flex_direction": "column", "flex_align_items": "center", "background_background": "classic", "background_color": "#111111", "padding": { "unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false } },
+      "elements": [
+        { "id": "indctah", "elType": "widget", "widgetType": "heading", "settings": { "title": "Tell us how your team uses its clothing", "header_size": "h2", "align": "center", "title_color": "#ffffff" }, "elements": [] },
+        { "id": "indctat", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>We will recommend the products, decoration and production approach that best fit your environment.</p>", "align": "center", "text_color": "#f2f2f2" }, "elements": [] },
+        { "id": "indctab", "elType": "widget", "widgetType": "button", "settings": { "text": "Discuss your requirements", "link": { "url": "/pages/contact/" }, "button_text_color": "#ffffff", "background_color": "#e1111a", "border_radius": { "unit": "px", "top": "4", "right": "4", "bottom": "4", "left": "4", "isLinked": true } }, "elements": [] }
+      ]
+    }
+  ]
+}

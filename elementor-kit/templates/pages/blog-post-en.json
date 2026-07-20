@@ -1,0 +1,28 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Blog Post EN",
+  "type": "page",
+  "page_settings": {"hide_title":"yes","template":"elementor_canvas"},
+  "content": [
+    {
+      "id":"bloghero",
+      "elType":"container",
+      "settings":{"content_width":"boxed","boxed_width":{"unit":"px","size":960,"sizes":[]},"flex_direction":"column","flex_align_items":"center","padding":{"unit":"px","top":"74","right":"32","bottom":"48","left":"32","isLinked":false},"padding_mobile":{"unit":"px","top":"48","right":"20","bottom":"36","left":"20","isLinked":false}},
+      "elements":[
+        {"id":"blogeyebrow","elType":"widget","widgetType":"heading","settings":{"title":"Insights","header_size":"div","align":"center","title_color":"#e1111a","typography_typography":"custom","typography_font_family":"Inter","typography_font_size":{"unit":"px","size":12,"sizes":[]},"typography_font_weight":"900","typography_text_transform":"uppercase","typography_letter_spacing":{"unit":"em","size":0.18,"sizes":[]}},"elements":[]},
+        {"id":"blogtitle","elType":"widget","widgetType":"heading","settings":{"title":"Replace with article title","header_size":"h1","align":"center","title_color":"#111111","typography_typography":"custom","typography_font_family":"Inter","typography_font_size":{"unit":"px","size":54,"sizes":[]},"typography_font_size_tablet":{"unit":"px","size":44,"sizes":[]},"typography_font_size_mobile":{"unit":"px","size":34,"sizes":[]},"typography_font_weight":"900","typography_line_height":{"unit":"em","size":1.08,"sizes":[]}},"elements":[]},
+        {"id":"blogmeta","elType":"widget","widgetType":"text-editor","settings":{"editor":"<p>Author name · Publication date · 6 min read</p>","align":"center","text_color":"#555555"},"elements":[]}
+      ]
+    },
+    {
+      "id":"blogbody",
+      "elType":"container",
+      "settings":{"content_width":"boxed","boxed_width":{"unit":"px","size":820,"sizes":[]},"flex_direction":"column","padding":{"unit":"px","top":"24","right":"32","bottom":"74","left":"32","isLinked":false},"padding_mobile":{"unit":"px","top":"20","right":"20","bottom":"48","left":"20","isLinked":false}},
+      "elements":[
+        {"id":"featuredimg","elType":"widget","widgetType":"image","settings":{"image":{"url":"https://images.unsplash.com/photo-1523381294911-8d3cead13475?auto=format&fit=crop&w=1600&q=80","id":""},"image_size":"full"},"elements":[]},
+        {"id":"articlecopy","elType":"widget","widgetType":"text-editor","settings":{"editor":"<p><strong>Use this opening paragraph to summarise the article and set expectations for the reader.</strong></p><h2>Section heading</h2><p>Replace this content with the article body. Keep paragraphs concise and use descriptive headings to improve readability and search visibility.</p><h2>Key considerations</h2><ul><li>Material and garment selection</li><li>Artwork and branding requirements</li><li>Production quantity and timing</li><li>Quality control and delivery planning</li></ul><p>Close with a practical recommendation and a clear next step.</p>","text_color":"#333333","typography_typography":"custom","typography_font_family":"Inter","typography_font_size":{"unit":"px","size":17,"sizes":[]},"typography_line_height":{"unit":"em","size":1.75,"sizes":[]}},"elements":[]},
+        {"id":"articlecta","elType":"widget","widgetType":"button","settings":{"text":"Discuss your project","link":{"url":"/pages/contact/","is_external":"","nofollow":"","custom_attributes":""},"align":"center","button_text_color":"#ffffff","background_color":"#e1111a","border_radius":{"unit":"px","top":"4","right":"4","bottom":"4","left":"4","isLinked":true}},"elements":[]}
+      ]
+    }
+  ]
+}

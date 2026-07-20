@@ -1,0 +1,31 @@
+{
+  "version":"0.4",
+  "title":"TShirtSwiss - Dienstleistungen DE",
+  "type":"page",
+  "page_settings":{"hide_title":"yes","template":"elementor_canvas"},
+  "content":[
+    {"id":"servdehero","elType":"container","settings":{"content_width":"boxed","boxed_width":{"unit":"px","size":1280,"sizes":[]},"flex_direction":"column","flex_align_items":"center","background_background":"classic","background_color":"#111111","padding":{"unit":"px","top":"110","right":"32","bottom":"110","left":"32","isLinked":false}},"elements":[
+      {"id":"servdeeyebrow","elType":"widget","widgetType":"heading","settings":{"title":"Dienstleistungen","header_size":"div","align":"center","title_color":"#e1111a"},"elements":[]},
+      {"id":"servdeh1","elType":"widget","widgetType":"heading","settings":{"title":"Komplette Produktionsbegleitung aus einer Hand","header_size":"h1","align":"center","title_color":"#ffffff","typography_typography":"custom","typography_font_family":"Inter","typography_font_size":{"unit":"px","size":58,"sizes":[]},"typography_font_size_mobile":{"unit":"px","size":36,"sizes":[]},"typography_font_weight":"900"},"elements":[]},
+      {"id":"servdelead","elType":"widget","widgetType":"text-editor","settings":{"editor":"<p>Wir begleiten Ihr Projekt von Beratung, Design und Materialwahl über Muster, Produktion und Qualitätskontrolle bis zur koordinierten Lieferung.</p>","align":"center","text_color":"#f1f1f1"},"elements":[]}
+    ]},
+    {"id":"servdegrid","elType":"container","settings":{"content_width":"boxed","boxed_width":{"unit":"px","size":1280,"sizes":[]},"flex_direction":"row","flex_wrap":"wrap","flex_gap":{"unit":"px","size":24,"sizes":[]},"padding":{"unit":"px","top":"72","right":"32","bottom":"72","left":"32","isLinked":false}},"elements":[
+      {"id":"sde1","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Projektberatung","description_text":"Klare Empfehlungen zu Produkt, Menge, Budget und Zeitplan.","selected_icon":{"value":"fas fa-comments","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]},
+      {"id":"sde2","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Design & Entwicklung","description_text":"Umsetzung Ihrer Markenidee in produktionsfähige Spezifikationen.","selected_icon":{"value":"fas fa-pen-ruler","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]},
+      {"id":"sde3","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Materialbeschaffung","description_text":"Auswahl geeigneter Stoffe, Komponenten und Veredelungen.","selected_icon":{"value":"fas fa-layer-group","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]},
+      {"id":"sde4","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Muster & Freigabe","description_text":"Prüfbare Muster vor dem Start der Serienproduktion.","selected_icon":{"value":"fas fa-magnifying-glass","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]},
+      {"id":"sde5","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Produktionsmanagement","description_text":"Koordination von Lieferanten, Zeitplan und Produktionsschritten.","selected_icon":{"value":"fas fa-gears","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]},
+      {"id":"sde6","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Qualitätskontrolle","description_text":"Kontrollen während und nach der Produktion für konsistente Ergebnisse.","selected_icon":{"value":"fas fa-award","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]},
+      {"id":"sde7","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Verpackung","description_text":"Individuelle Verpackungs- und Kennzeichnungslösungen.","selected_icon":{"value":"fas fa-box","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]},
+      {"id":"sde8","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Logistik & Lieferung","description_text":"Abgestimmte internationale Lieferung mit klarer Kommunikation.","selected_icon":{"value":"fas fa-truck","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]}
+    ]},
+    {"id":"servdeprocess","elType":"container","settings":{"content_width":"boxed","boxed_width":{"unit":"px","size":1280,"sizes":[]},"flex_direction":"column","background_background":"classic","background_color":"#f7f7f7","padding":{"unit":"px","top":"72","right":"32","bottom":"72","left":"32","isLinked":false}},"elements":[
+      {"id":"servdeprocessh","elType":"widget","widgetType":"heading","settings":{"title":"Unser Ablauf","header_size":"h2","align":"center","title_color":"#111111"},"elements":[]},
+      {"id":"servdeprocesst","elType":"widget","widgetType":"text-editor","settings":{"editor":"<p><strong>1. Briefing</strong> · <strong>2. Konzept</strong> · <strong>3. Muster</strong> · <strong>4. Produktion</strong> · <strong>5. Lieferung</strong></p>","align":"center","text_color":"#555555"},"elements":[]}
+    ]},
+    {"id":"servdecta","elType":"container","settings":{"content_width":"boxed","boxed_width":{"unit":"px","size":1280,"sizes":[]},"flex_direction":"column","flex_align_items":"center","background_background":"classic","background_color":"#e1111a","padding":{"unit":"px","top":"70","right":"32","bottom":"70","left":"32","isLinked":false}},"elements":[
+      {"id":"servdectah","elType":"widget","widgetType":"heading","settings":{"title":"Starten Sie Ihr Projekt mit einem klaren Produktionsplan","header_size":"h2","align":"center","title_color":"#ffffff"},"elements":[]},
+      {"id":"servdectab","elType":"widget","widgetType":"button","settings":{"text":"Projekt besprechen","link":{"url":"/de/kontakt/","is_external":"","nofollow":"","custom_attributes":""},"button_text_color":"#111111","background_color":"#ffffff"},"elements":[]}
+    ]}
+  ]
+}

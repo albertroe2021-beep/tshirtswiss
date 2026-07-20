@@ -1,0 +1,28 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Branchen DE",
+  "type": "page",
+  "page_settings": {"hide_title":"yes","template":"elementor_canvas"},
+  "content": [
+    {"id":"inddehero","elType":"container","settings":{"content_width":"boxed","boxed_width":{"unit":"px","size":1280,"sizes":[]},"flex_direction":"column","flex_align_items":"center","background_background":"classic","background_color":"#111111","padding":{"unit":"px","top":"110","right":"32","bottom":"110","left":"32","isLinked":false}},"elements":[
+      {"id":"inddeeye","elType":"widget","widgetType":"heading","settings":{"title":"Branchen","header_size":"div","align":"center","title_color":"#e1111a"},"elements":[]},
+      {"id":"inddeh1","elType":"widget","widgetType":"heading","settings":{"title":"Bekleidungslösungen für Ihre Branche","header_size":"h1","align":"center","title_color":"#ffffff","typography_typography":"custom","typography_font_family":"Inter","typography_font_size":{"unit":"px","size":58,"sizes":[]},"typography_font_size_mobile":{"unit":"px","size":38,"sizes":[]},"typography_font_weight":"900"},"elements":[]},
+      {"id":"inddelead","elType":"widget","widgetType":"text-editor","settings":{"editor":"<p>Individuelle Bekleidung für Unternehmen, Teams, Vereine, Veranstaltungen und Organisationen – abgestimmt auf Einsatz, Marke und Budget.</p>","align":"center","text_color":"#f2f2f2"},"elements":[]}
+    ]},
+    {"id":"inddegrid","elType":"container","settings":{"content_width":"boxed","boxed_width":{"unit":"px","size":1280,"sizes":[]},"flex_direction":"row","flex_wrap":"wrap","flex_gap":{"unit":"px","size":24,"sizes":[]},"padding":{"unit":"px","top":"80","right":"32","bottom":"80","left":"32","isLinked":false}},"elements":[
+      {"id":"indde1","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Unternehmen","description_text":"Markenbekleidung für Mitarbeitende, Kunden und Veranstaltungen.","selected_icon":{"value":"fas fa-building","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]},
+      {"id":"indde2","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Vereine & Teams","description_text":"Einheitliche Kollektionen für Training, Spieltag und Fans.","selected_icon":{"value":"fas fa-people-group","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]},
+      {"id":"indde3","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Gastronomie & Hotellerie","description_text":"Professionelle Bekleidung für Service, Küche und Empfang.","selected_icon":{"value":"fas fa-utensils","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]},
+      {"id":"indde4","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Bau & Handwerk","description_text":"Strapazierfähige Arbeitskleidung für anspruchsvolle Einsätze.","selected_icon":{"value":"fas fa-helmet-safety","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]},
+      {"id":"indde5","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Einzelhandel","description_text":"Konsistente Teamkleidung für Filialen und Markenwelten.","selected_icon":{"value":"fas fa-store","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]},
+      {"id":"indde6","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Events & Promotion","description_text":"Sichtbare Bekleidung für Kampagnen, Messen und Aktivierungen.","selected_icon":{"value":"fas fa-calendar-days","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]},
+      {"id":"indde7","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Schulen & Bildung","description_text":"Kollektionen für Klassen, Mitarbeitende und Schulveranstaltungen.","selected_icon":{"value":"fas fa-graduation-cap","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]},
+      {"id":"indde8","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Marken & Start-ups","description_text":"Flexible Produktion für Merchandising und Produktlinien.","selected_icon":{"value":"fas fa-lightbulb","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]}
+    ]},
+    {"id":"inddecta","elType":"container","settings":{"content_width":"boxed","boxed_width":{"unit":"px","size":1280,"sizes":[]},"flex_direction":"column","flex_align_items":"center","background_background":"classic","background_color":"#f3f3f3","padding":{"unit":"px","top":"72","right":"32","bottom":"72","left":"32","isLinked":false}},"elements":[
+      {"id":"inddectah","elType":"widget","widgetType":"heading","settings":{"title":"Besprechen wir Ihre Anforderungen","header_size":"h2","align":"center","title_color":"#111111"},"elements":[]},
+      {"id":"inddectat","elType":"widget","widgetType":"text-editor","settings":{"editor":"<p>Wir empfehlen Produkte, Materialien und Veredelungen passend zu Ihrer Branche und Ihrem Einsatzbereich.</p>","align":"center","text_color":"#555555"},"elements":[]},
+      {"id":"inddectab","elType":"widget","widgetType":"button","settings":{"text":"Beratung anfragen","link":{"url":"/de/kontakt/","is_external":"","nofollow":"","custom_attributes":""},"button_text_color":"#ffffff","background_color":"#e1111a"},"elements":[]}
+    ]}
+  ]
+}

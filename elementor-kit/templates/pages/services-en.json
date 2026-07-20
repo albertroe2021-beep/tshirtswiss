@@ -1,0 +1,64 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Services EN",
+  "type": "page",
+  "page_settings": { "hide_title": "yes", "template": "elementor_canvas" },
+  "content": [
+    {
+      "id": "servhero",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": { "unit": "px", "size": 1280, "sizes": [] },
+        "min_height": { "unit": "px", "size": 430, "sizes": [] },
+        "flex_direction": "column",
+        "flex_justify_content": "center",
+        "flex_align_items": "center",
+        "background_background": "classic",
+        "background_color": "#070707",
+        "padding": { "unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false },
+        "padding_mobile": { "unit": "px", "top": "48", "right": "20", "bottom": "48", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        { "id": "serveye", "elType": "widget", "widgetType": "heading", "settings": { "title": "Services", "header_size": "div", "align": "center", "title_color": "#e1111a", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 12, "sizes": [] }, "typography_font_weight": "900", "typography_text_transform": "uppercase", "typography_letter_spacing": { "unit": "em", "size": 0.18, "sizes": [] } }, "elements": [] },
+        { "id": "servtitle", "elType": "widget", "widgetType": "heading", "settings": { "title": "One coordinated process from concept to delivery", "header_size": "h1", "align": "center", "title_color": "#ffffff", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 58, "sizes": [] }, "typography_font_size_tablet": { "unit": "px", "size": 46, "sizes": [] }, "typography_font_size_mobile": { "unit": "px", "size": 36, "sizes": [] }, "typography_font_weight": "900", "typography_line_height": { "unit": "em", "size": 1.05, "sizes": [] } }, "elements": [] },
+        { "id": "servlead", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>TShirtSwiss manages sourcing, development, decoration, quality control and logistics so your team has one reliable production partner.</p>", "align": "center", "text_color": "#f2f2f2", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 18, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.65, "sizes": [] } }, "elements": [] }
+      ]
+    },
+    {
+      "id": "servgrid",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": { "unit": "px", "size": 1280, "sizes": [] },
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "flex_gap": { "unit": "px", "size": 24, "sizes": [] },
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": { "unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false },
+        "padding_mobile": { "unit": "px", "top": "48", "right": "20", "bottom": "48", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        { "id": "scard01", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Product development", "description_text": "Translate your idea into a practical garment specification, sample and production plan.", "selected_icon": { "value": "fas fa-pen-ruler", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/services/product-development/" } }, "elements": [] },
+        { "id": "scard02", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Sourcing and manufacturing", "description_text": "Match fabrics, factories and production methods to your quality, quantity and budget.", "selected_icon": { "value": "fas fa-industry", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/services/manufacturing/" } }, "elements": [] },
+        { "id": "scard03", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Printing", "description_text": "Screen print, transfer and specialist print solutions selected for the garment and use case.", "selected_icon": { "value": "fas fa-print", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/services/printing/" } }, "elements": [] },
+        { "id": "scard04", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Embroidery", "description_text": "Durable, professional branding for uniforms, polos, caps, jackets and workwear.", "selected_icon": { "value": "fas fa-wand-magic-sparkles", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/services/embroidery/" } }, "elements": [] },
+        { "id": "scard05", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Labels and packaging", "description_text": "Add woven labels, care labels, swing tags and branded packaging for a complete finish.", "selected_icon": { "value": "fas fa-tags", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/services/labels-packaging/" } }, "elements": [] },
+        { "id": "scard06", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Quality control", "description_text": "Production checks, measurement review and final inspection before goods are released.", "selected_icon": { "value": "fas fa-magnifying-glass-check", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/services/quality-control/" } }, "elements": [] },
+        { "id": "scard07", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Storage and fulfilment", "description_text": "Coordinate inventory, split deliveries and fulfilment requirements for ongoing programmes.", "selected_icon": { "value": "fas fa-warehouse", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/services/fulfilment/" } }, "elements": [] },
+        { "id": "scard08", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Project management", "description_text": "Clear communication, timelines and production oversight from a Swiss-managed team.", "selected_icon": { "value": "fas fa-list-check", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/pages/contact/" } }, "elements": [] }
+      ]
+    },
+    {
+      "id": "servprocess",
+      "elType": "container",
+      "settings": { "content_width": "boxed", "boxed_width": { "unit": "px", "size": 1280, "sizes": [] }, "flex_direction": "column", "flex_align_items": "center", "background_background": "classic", "background_color": "#f7f7f7", "padding": { "unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false } },
+      "elements": [
+        { "id": "servph", "elType": "widget", "widgetType": "heading", "settings": { "title": "A clear five-step production process", "header_size": "h2", "align": "center", "title_color": "#111111" }, "elements": [] },
+        { "id": "servsteps", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p><strong>1. Brief</strong> &nbsp;→&nbsp; <strong>2. Recommendation</strong> &nbsp;→&nbsp; <strong>3. Sampling</strong> &nbsp;→&nbsp; <strong>4. Production</strong> &nbsp;→&nbsp; <strong>5. Delivery</strong></p>", "align": "center", "text_color": "#555555" }, "elements": [] },
+        { "id": "servbtn", "elType": "widget", "widgetType": "button", "settings": { "text": "Start a project", "link": { "url": "/pages/contact/" }, "button_text_color": "#ffffff", "background_color": "#e1111a", "border_radius": { "unit": "px", "top": "4", "right": "4", "bottom": "4", "left": "4", "isLinked": true } }, "elements": [] }
+      ]
+    }
+  ]
+}

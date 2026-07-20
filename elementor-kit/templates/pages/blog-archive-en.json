@@ -1,0 +1,15 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Blog Archive EN",
+  "type": "page",
+  "page_settings": {"hide_title": "yes", "template": "elementor_canvas"},
+  "content": [
+    {
+      "id": "bloghero",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1280, "sizes": []},
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "

@@ -1,0 +1,31 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Blog Archiv DE",
+  "type": "page",
+  "page_settings": {"hide_title": "yes", "template": "elementor_canvas"},
+  "content": [
+    {
+      "id": "blogherode",
+      "elType": "container",
+      "settings": {"content_width": "boxed", "boxed_width": {"unit": "px", "size": 1280, "sizes": []}, "flex_direction": "column", "flex_align_items": "center", "background_background": "classic", "background_color": "#070707", "padding": {"unit": "px", "top": "92", "right": "32", "bottom": "92", "left": "32", "isLinked": false}, "padding_mobile": {"unit": "px", "top": "64", "right": "20", "bottom": "64", "left": "20", "isLinked": false}},
+      "elements": [
+        {"id": "blogeyede", "elType": "widget", "widgetType": "heading", "settings": {"title": "Wissen und Einblicke", "header_size": "div", "align": "center", "title_color": "#e1111a", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 12, "sizes": []}, "typography_font_weight": "900", "typography_text_transform": "uppercase", "typography_letter_spacing": {"unit": "em", "size": 0.18, "sizes": []}}, "elements": []},
+        {"id": "blogheadde", "elType": "widget", "widgetType": "heading", "settings": {"title": "Praxiswissen für erfolgreiche Bekleidungsprojekte", "header_size": "h1", "align": "center", "title_color": "#ffffff", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 56, "sizes": []}, "typography_font_size_mobile": {"unit": "px", "size": 38, "sizes": []}, "typography_font_weight": "900", "typography_line_height": {"unit": "em", "size": 1.05, "sizes": []}}, "elements": []},
+        {"id": "blogintrode", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>Entdecken Sie Leitfäden, Produktionswissen und praktische Empfehlungen zu Materialien, Veredelung, Planung, Qualität und Lieferung.</p>", "align": "center", "text_color": "#f2f2f2", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 18, "sizes": []}, "typography_line_height": {"unit": "em", "size": 1.65, "sizes": []}}, "elements": []}
+      ]
+    },
+    {
+      "id": "bloggridde",
+      "elType": "container",
+      "settings": {"content_width": "boxed", "boxed_width": {"unit": "px", "size": 1280, "sizes": []}, "flex_direction": "row", "flex_wrap": "wrap", "flex_gap": {"unit": "px", "size": 24, "sizes": []}, "background_background": "classic", "background_color": "#f7f7f7", "padding": {"unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false}, "padding_mobile": {"unit": "px", "top": "48", "right": "20", "bottom": "48", "left": "20", "isLinked": false}},
+      "elements": [
+        {"id": "blogcard1de", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "So planen Sie ein individuelles Bekleidungsprojekt", "description_text": "Ein strukturierter Überblick über Briefing, Sampling, Freigaben, Produktion und Lieferung.", "selected_icon": {"value": "fas fa-list-check", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": {"url": "/de/blog/planung-bekleidungsprojekt/"}}, "elements": []},
+        {"id": "blogcard2de", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Druck, Stickerei oder Transfer?", "description_text": "Vergleichen Sie gängige Veredelungsverfahren nach Optik, Haltbarkeit, Menge und Budget.", "selected_icon": {"value": "fas fa-shirt", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555"}, "elements": []},
+        {"id": "blogcard3de", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Die richtige Materialwahl", "description_text": "Wichtige Kriterien für Baumwolle, Mischgewebe, Funktionsstoffe und Arbeitsbekleidung.", "selected_icon": {"value": "fas fa-layer-group", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555"}, "elements": []},
+        {"id": "blogcard4de", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Mengen, Grössen und Nachbestellungen", "description_text": "Wie Sie Bedarf, Grössenverteilung und wiederholbare Spezifikationen sinnvoll planen.", "selected_icon": {"value": "fas fa-boxes-stacked", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555"}, "elements": []},
+        {"id": "blogcard5de", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Qualitätskontrolle verstehen", "description_text": "Welche Prüfungen während Sampling, Produktion und vor dem Versand wichtig sind.", "selected_icon": {"value": "fas fa-award", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555"}, "elements": []},
+        {"id": "blogcard6de", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Lieferzeiten realistisch planen", "description_text": "Berücksichtigen Sie Entwicklung, Freigaben, Produktion, Qualitätskontrolle und Logistik.", "selected_icon": {"value": "fas fa-clock", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555"}, "elements": []}
+      ]
+    }
+  ]
+}

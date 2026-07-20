@@ -1,0 +1,19 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Global Footer FR",
+  "type": "section",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "tssfootf",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#070707"
+      },
+      "elements": [
+        {
+          "id": "foothtmf",
+          "elType": "widget",
+          "

@@ -1,0 +1,13 @@
+{
+  "routes": [
+    { "id": "home", "paths": { "en": "/pages/", "de": "/de/home/", "fr": "/fr/home/" } },
+    { "id": "products", "paths": { "en": "/pages/products/", "de": "/de/products/", "fr": "/fr/products/" } },
+    { "id": "services", "paths": { "en": "/pages/services/", "de": "/de/services/", "fr": "/fr/services/" } },
+    { "id": "industries", "paths": { "en": "/pages/industries/", "de": "/de/industries/", "fr": "/fr/industries/" } },
+    { "id": "resources", "paths": { "en": "/pages/resources/", "de": "/de/resources/", "fr": "/fr/resources/" } },
+    { "id": "about", "paths": { "en": "/pages/about/", "de": "/de/about/", "fr": "/fr/about/" } },
+    { "id": "contact", "paths": { "en": "/pages/contact/", "de": "/de/contact/", "fr": "/fr/contact/" } },
+    { "id": "faq", "paths": { "en": "/pages/resources/faq/", "de": "/de/resources/faq/", "fr": "/fr/resources/faq/" } },
+    { "id": "blog", "paths": { "en": "/pages/blog/", "de": "/de/blog/", "fr": "/fr/blog/" } }
+  ]
+}

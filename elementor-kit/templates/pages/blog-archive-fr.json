@@ -1,0 +1,31 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Archives du blog FR",
+  "type": "page",
+  "page_settings": {"hide_title": "yes", "template": "elementor_canvas"},
+  "content": [
+    {
+      "id": "blogherofr",
+      "elType": "container",
+      "settings": {"content_width": "boxed", "boxed_width": {"unit": "px", "size": 1280, "sizes": []}, "flex_direction": "column", "flex_align_items": "center", "background_background": "classic", "background_color": "#070707", "padding": {"unit": "px", "top": "92", "right": "32", "bottom": "92", "left": "32", "isLinked": false}, "padding_mobile": {"unit": "px", "top": "64", "right": "20", "bottom": "64", "left": "20", "isLinked": false}},
+      "elements": [
+        {"id": "blogeyefr", "elType": "widget", "widgetType": "heading", "settings": {"title": "Conseils et expertise", "header_size": "div", "align": "center", "title_color": "#e1111a", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 12, "sizes": []}, "typography_font_weight": "900", "typography_text_transform": "uppercase", "typography_letter_spacing": {"unit": "em", "size": 0.18, "sizes": []}}, "elements": []},
+        {"id": "blogheadfr", "elType": "widget", "widgetType": "heading", "settings": {"title": "Des conseils pratiques pour réussir vos projets textiles", "header_size": "h1", "align": "center", "title_color": "#ffffff", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 56, "sizes": []}, "typography_font_size_mobile": {"unit": "px", "size": 38, "sizes": []}, "typography_font_weight": "900", "typography_line_height": {"unit": "em", "size": 1.05, "sizes": []}}, "elements": []},
+        {"id": "blogintrofr", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>Découvrez nos guides, conseils de production et recommandations pratiques sur les matières, le marquage, la planification, la qualité et la livraison.</p>", "align": "center", "text_color": "#f2f2f2", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 18, "sizes": []}, "typography_line_height": {"unit": "em", "size": 1.65, "sizes": []}}, "elements": []}
+      ]
+    },
+    {
+      "id": "bloggridfr",
+      "elType": "container",
+      "settings": {"content_width": "boxed", "boxed_width": {"unit": "px", "size": 1280, "sizes": []}, "flex_direction": "row", "flex_wrap": "wrap", "flex_gap": {"unit": "px", "size": 24, "sizes": []}, "background_background": "classic", "background_color": "#f7f7f7", "padding": {"unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false}, "padding_mobile": {"unit": "px", "top": "48", "right": "20", "bottom": "48", "left": "20", "isLinked": false}},
+      "elements": [
+        {"id": "blogcard1fr", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Comment planifier un projet textile personnalisé", "description_text": "Une vue structurée du briefing, des échantillons, des validations, de la production et de la livraison.", "selected_icon": {"value": "fas fa-list-check", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": {"url": "/fr/blog/planifier-projet-textile/"}}, "elements": []},
+        {"id": "blogcard2fr", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Impression, broderie ou transfert ?", "description_text": "Comparez les principales techniques de marquage selon le rendu, la durabilité, la quantité et le budget.", "selected_icon": {"value": "fas fa-shirt", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555"}, "elements": []},
+        {"id": "blogcard3fr", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Choisir la bonne matière", "description_text": "Les critères essentiels pour le coton, les mélanges, les textiles techniques et les vêtements de travail.", "selected_icon": {"value": "fas fa-layer-group", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555"}, "elements": []},
+        {"id": "blogcard4fr", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Quantités, tailles et réassorts", "description_text": "Comment planifier les besoins, la répartition des tailles et des spécifications faciles à reproduire.", "selected_icon": {"value": "fas fa-boxes-stacked", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555"}, "elements": []},
+        {"id": "blogcard5fr", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Comprendre le contrôle qualité", "description_text": "Les vérifications importantes pendant l'échantillonnage, la production et avant l'expédition.", "selected_icon": {"value": "fas fa-award", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555"}, "elements": []},
+        {"id": "blogcard6fr", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Planifier des délais réalistes", "description_text": "Tenez compte du développement, des validations, de la production, du contrôle qualité et de la logistique.", "selected_icon": {"value": "fas fa-clock", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555"}, "elements": []}
+      ]
+    }
+  ]
+}
