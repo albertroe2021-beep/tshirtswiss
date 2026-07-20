@@ -1,0 +1,73 @@
+{
+  "project": "TShirtSwiss Elementor Free rebuild",
+  "version": "0.1.0",
+  "status": "implementation-in-progress",
+  "requirements": {
+    "elementor": "4.1.5",
+    "elementorPro": false,
+    "theme": "Hello Elementor",
+    "containers": true,
+    "nestedElements": true,
+    "editorV4": true,
+    "forms": "WPForms Lite"
+  },
+  "intentionalDifferences": [
+    "The thin red announcement strip from the source homepage is excluded."
+  ],
+  "importOrder": [
+    "templates/globals/global-site-settings.json",
+    "templates/globals/global-header-en.json",
+    "templates/globals/global-footer-en.json",
+    "templates/pages/home-en.json"
+  ],
+  "templates": [
+    {
+      "id": "global-site-settings",
+      "title": "TShirtSwiss - Global Site Settings",
+      "type": "kit",
+      "path": "templates/globals/global-site-settings.json",
+      "status": "initial"
+    },
+    {
+      "id": "global-header-en",
+      "title": "TShirtSwiss - Global Header EN",
+      "type": "section",
+      "path": "templates/globals/global-header-en.json",
+      "status": "initial",
+      "notes": "Self-contained Elementor Free header using one HTML widget. No external loader files are required."
+    },
+    {
+      "id": "global-footer-en",
+      "title": "TShirtSwiss - Global Footer EN",
+      "type": "section",
+      "path": "templates/globals/global-footer-en.json",
+      "status": "initial",
+      "notes": "Self-contained Elementor Free footer using one HTML widget."
+    },
+    {
+      "id": "home-en",
+      "title": "TShirtSwiss - Home EN",
+      "type": "page",
+      "path": "templates/pages/home-en.json",
+      "status": "initial",
+      "configuration": [
+        "Replace REPLACE_WITH_FORM_ID in the WPForms shortcode.",
+        "Set the page template to Elementor Canvas when importing outside a full site kit.",
+        "Assign the reusable header and footer sections through the chosen Elementor Free header/footer integration."
+      ]
+    }
+  ],
+  "planned": [
+    "templates/pages/products-en.json",
+    "templates/pages/services-en.json",
+    "templates/pages/industries-en.json",
+    "templates/pages/resources-en.json",
+    "templates/pages/about-en.json",
+    "templates/pages/contact-en.json",
+    "templates/pages/blog-archive-en.json",
+    "templates/pages/blog-post-en.json",
+    "templates/reusable/product-child-en.json",
+    "templates/reusable/service-child-en.json",
+    "templates/reusable/industry-child-en.json"
+  ]
+}
