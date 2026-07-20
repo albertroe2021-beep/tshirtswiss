@@ -1,0 +1,68 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - About EN",
+  "type": "page",
+  "page_settings": {"hide_title": "yes", "template": "elementor_canvas"},
+  "content": [
+    {
+      "id": "abthero1",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1280, "sizes": []},
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "background_background": "classic",
+        "background_color": "#070707",
+        "padding": {"unit": "px", "top": "92", "right": "32", "bottom": "92", "left": "32", "isLinked": false},
+        "padding_mobile": {"unit": "px", "top": "64", "right": "20", "bottom": "64", "left": "20", "isLinked": false}
+      },
+      "elements": [
+        {"id": "abteyebrow", "elType": "widget", "widgetType": "heading", "settings": {"title": "About TShirtSwiss", "header_size": "div", "align": "center", "title_color": "#e1111a", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 12, "sizes": []}, "typography_font_weight": "900", "typography_text_transform": "uppercase", "typography_letter_spacing": {"unit": "em", "size": 0.18, "sizes": []}}, "elements": []},
+        {"id": "abtheading", "elType": "widget", "widgetType": "heading", "settings": {"title": "Swiss-managed apparel production with global capability", "header_size": "h1", "align": "center", "title_color": "#ffffff", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 56, "sizes": []}, "typography_font_size_mobile": {"unit": "px", "size": 38, "sizes": []}, "typography_font_weight": "900", "typography_line_height": {"unit": "em", "size": 1.05, "sizes": []}}, "elements": []},
+        {"id": "abtintro", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>We help Swiss companies, brands, clubs and organisations turn apparel ideas into dependable production programmes, with clear local communication from concept through delivery.</p>", "align": "center", "text_color": "#f2f2f2", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": {"unit": "px", "size": 18, "sizes": []}, "typography_line_height": {"unit": "em", "size": 1.65, "sizes": []}}, "elements": []}
+      ]
+    },
+    {
+      "id": "abtstory1",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": {"unit": "px", "size": 1180, "sizes": []},
+        "flex_direction": "row",
+        "flex_direction_mobile": "column",
+        "flex_align_items": "center",
+        "flex_gap": {"unit": "px", "size": 56, "sizes": []},
+        "padding": {"unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false},
+        "padding_mobile": {"unit": "px", "top": "48", "right": "20", "bottom": "48", "left": "20", "isLinked": false}
+      },
+      "elements": [
+        {"id": "abtstoryimg", "elType": "widget", "widgetType": "image", "settings": {"image": {"url": "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1200&q=80", "id": ""}, "image_size": "large"}, "elements": []},
+        {"id": "abtstorycopy", "elType": "container", "settings": {"width": {"unit": "%", "size": 50, "sizes": []}, "width_mobile": {"unit": "%", "size": 100, "sizes": []}, "flex_direction": "column"}, "elements": [
+          {"id": "abtstoryhead", "elType": "widget", "widgetType": "heading", "settings": {"title": "Built around dependable project management", "header_size": "h2", "title_color": "#111111"}, "elements": []},
+          {"id": "abtstorytext", "elType": "widget", "widgetType": "text-editor", "settings": {"editor": "<p>Custom clothing becomes difficult when design, sourcing, sampling, production, quality control and logistics are fragmented. TShirtSwiss brings these stages into one managed process.</p><p>Our role is to simplify decision-making, set clear expectations and coordinate the details that determine whether a project arrives correctly, consistently and on time.</p>", "text_color": "#555555"}, "elements": []}
+        ]}
+      ]
+    },
+    {
+      "id": "abtvalues1",
+      "elType": "container",
+      "settings": {"content_width": "boxed", "boxed_width": {"unit": "px", "size": 1280, "sizes": []}, "flex_direction": "row", "flex_wrap": "wrap", "flex_gap": {"unit": "px", "size": 24, "sizes": []}, "background_background": "classic", "background_color": "#f7f7f7", "padding": {"unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false}},
+      "elements": [
+        {"id": "abtval1", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Clear communication", "description_text": "Straightforward advice, documented decisions and realistic timelines.", "selected_icon": {"value": "fas fa-comments", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555"}, "elements": []},
+        {"id": "abtval2", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Quality ownership", "description_text": "Checks and approvals are built into the production process.", "selected_icon": {"value": "fas fa-award", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555"}, "elements": []},
+        {"id": "abtval3", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Practical flexibility", "description_text": "Solutions are shaped around use, quantity, budget and delivery needs.", "selected_icon": {"value": "fas fa-sliders", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555"}, "elements": []},
+        {"id": "abtval4", "elType": "widget", "widgetType": "icon-box", "settings": {"title_text": "Long-term thinking", "description_text": "Repeatable specifications and supply arrangements support future orders.", "selected_icon": {"value": "fas fa-arrows-rotate", "library": "fa-solid"}, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555"}, "elements": []}
+      ]
+    },
+    {
+      "id": "abtcta1",
+      "elType": "container",
+      "settings": {"content_width": "boxed", "boxed_width": {"unit": "px", "size": 1280, "sizes": []}, "flex_direction": "column", "flex_align_items": "center", "background_background": "classic", "background_color": "#e1111a", "padding": {"unit": "px", "top": "64", "right": "32", "bottom": "64", "left": "32", "isLinked": false}},
+      "elements": [
+        {"id": "abtctahead", "elType": "widget", "widgetType": "heading", "settings": {"title": "Let us help you plan the right production approach", "header_size": "h2", "align": "center", "title_color": "#ffffff"}, "elements": []},
+        {"id": "abtctabtn", "elType": "widget", "widgetType": "button", "settings": {"text": "Start a conversation", "link": {"url": "/pages/contact/"}, "button_text_color": "#111111", "background_color": "#ffffff"}, "elements": []}
+      ]
+    }
+  ]
+}
