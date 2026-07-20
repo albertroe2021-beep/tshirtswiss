@@ -1,0 +1,28 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Global Footer EN",
+  "type": "section",
+  "page_settings": [],
+  "content": [
+    {
+      "id": "tssfoot1",
+      "elType": "container",
+      "settings": {
+        "content_width": "full",
+        "background_background": "classic",
+        "background_color": "#070707"
+      },
+      "elements": [
+        {
+          "id": "foothtml",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "html": "<style>\n.tss-footer{font-family:Inter,Arial,Helvetica,sans-serif;background:#070707;color:#fff}.tss-footer a{color:inherit;text-decoration:none}.tss-footer a:hover{color:#e1111a}.tss-footer-wrap{width:min(1280px,calc(100% - 64px));margin:0 auto}.tss-footer-main{display:grid;grid-template-columns:1.45fr repeat(3,1fr);gap:52px;padding:68px 0 52px}.tss-footer-brand{font-size:34px;font-weight:900;letter-spacing:-1.2px;line-height:.95}.tss-footer-brand span{color:#e1111a}.tss-footer-copy{max-width:390px;color:#cfcfcf;line-height:1.7;font-size:14px;margin:20px 0 24px}.tss-footer-cta{display:inline-flex;background:#e1111a;color:#fff!important;border-radius:4px;padding:16px 22px;font-size:12px;font-weight:900;text-transform:uppercase;box-shadow:0 14px 26px rgba(225,17,26,.26)}.tss-footer h3{font-size:13px;text-transform:uppercase;letter-spacing:.12em;margin:0 0 20px;color:#fff}.tss-footer-links{display:grid;gap:12px}.tss-footer-links a{font-size:14px;color:#d7d7d7}.tss-footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding:22px 0}.tss-footer-bottom .tss-footer-wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;color:#aaa;font-size:12px}.tss-footer-legal{display:flex;gap:18px;flex-wrap:wrap}@media(max-width:900px){.tss-footer-main{grid-template-columns:1fr 1fr;gap:38px}.tss-footer-wrap{width:min(100% - 40px,1280px)}}@media(max-width:600px){.tss-footer-main{grid-template-columns:1fr;padding:48px 0 36px}.tss-footer-bottom .tss-footer-wrap{flex-direction:column;text-align:center}.tss-footer-brand{font-size:30px}}\n</style>\n<footer class=\"tss-footer\">\n  <div class=\"tss-footer-wrap tss-footer-main\">\n    <div><div class=\"tss-footer-brand\">TShirt<span>Swiss</span></div><p class=\"tss-footer-copy\">Swiss-managed custom clothing production for companies, brands, clubs and organisations. From concept and sampling through quality control and delivery.</p><a class=\"tss-footer-cta\" href=\"/pages/contact/\">Request a quote</a></div>\n    <div><h3>Products</h3><nav class=\"tss-footer-links\"><a href=\"/pages/products/\">All products</a><a href=\"/pages/products/t-shirts/\">T-shirts</a><a href=\"/pages/products/polos/\">Polo shirts</a><a href=\"/pages/products/hoodies/\">Hoodies</a><a href=\"/pages/products/workwear/\">Workwear</a></nav></div>\n    <div><h3>Company</h3><nav class=\"tss-footer-links\"><a href=\"/pages/about/\">About us</a><a href=\"/pages/services/\">Services</a><a href=\"/pages/industries/\">Industries</a><a href=\"/pages/resources/\">Resources</a><a href=\"/pages/blog/\">Blog</a></nav></div>\n    <div><h3>Contact</h3><nav class=\"tss-footer-links\"><a href=\"/pages/contact/\">Contact us</a><span>Switzerland</span><span>English · Deutsch · Français</span><a href=\"mailto:hello@tshirtswiss.com\">hello@tshirtswiss.com</a></nav></div>\n  </div>\n  <div class=\"tss-footer-bottom\"><div class=\"tss-footer-wrap\"><span>© TShirtSwiss. All rights reserved.</span><nav class=\"tss-footer-legal\"><a href=\"/pages/privacy/\">Privacy</a><a href=\"/pages/terms/\">Terms</a><a href=\"/pages/imprint/\">Imprint</a></nav></div></div>\n</footer>"
+          },
+          "elements": []
+        }
+      ]
+    }
+  ]
+}
