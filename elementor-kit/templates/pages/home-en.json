@@ -1,0 +1,249 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Home EN",
+  "type": "page",
+  "page_settings": {
+    "hide_title": "yes",
+    "template": "elementor_canvas"
+  },
+  "content": [
+    {
+      "id": "tsshero1",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": { "unit": "px", "size": 1280, "sizes": [] },
+        "min_height": { "unit": "px", "size": 620, "sizes": [] },
+        "flex_direction": "row",
+        "flex_align_items": "center",
+        "flex_gap": { "unit": "px", "size": 48, "sizes": [] },
+        "background_background": "classic",
+        "background_color": "#111111",
+        "background_image": { "url": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=1800&q=80", "id": "" },
+        "background_position": "center center",
+        "background_size": "cover",
+        "background_overlay_background": "gradient",
+        "background_overlay_color": "rgba(0,0,0,0.94)",
+        "background_overlay_color_b": "rgba(0,0,0,0.38)",
+        "background_overlay_gradient_angle": { "unit": "deg", "size": 90, "sizes": [] },
+        "padding": { "unit": "px", "top": "42", "right": "32", "bottom": "42", "left": "32", "isLinked": false },
+        "padding_mobile": { "unit": "px", "top": "48", "right": "20", "bottom": "48", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        {
+          "id": "herocopy",
+          "elType": "container",
+          "settings": {
+            "width": { "unit": "%", "size": 62, "sizes": [] },
+            "width_mobile": { "unit": "%", "size": 100, "sizes": [] },
+            "flex_direction": "column",
+            "flex_align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "redline1",
+              "elType": "widget",
+              "widgetType": "divider",
+              "settings": {
+                "divider_color": "#e1111a",
+                "divider_width": { "unit": "px", "size": 62, "sizes": [] },
+                "divider_weight": { "unit": "px", "size": 3, "sizes": [] },
+                "align": "center"
+              },
+              "elements": []
+            },
+            {
+              "id": "heroh1en",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Swiss-managed custom clothing production",
+                "header_size": "h1",
+                "align": "center",
+                "title_color": "#ffffff",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": { "unit": "px", "size": 68, "sizes": [] },
+                "typography_font_size_tablet": { "unit": "px", "size": 54, "sizes": [] },
+                "typography_font_size_mobile": { "unit": "px", "size": 40, "sizes": [] },
+                "typography_font_weight": "900",
+                "typography_line_height": { "unit": "em", "size": 1.03, "sizes": [] },
+                "typography_letter_spacing": { "unit": "px", "size": -2.2, "sizes": [] }
+              },
+              "elements": []
+            },
+            {
+              "id": "herotext",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>High-quality, custom-designed apparel for Swiss companies, brands, clubs and organisations, with reliable production management from concept to delivery.</p>",
+                "align": "center",
+                "text_color": "#f2f2f2",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": { "unit": "px", "size": 18, "sizes": [] },
+                "typography_font_size_mobile": { "unit": "px", "size": 16, "sizes": [] },
+                "typography_line_height": { "unit": "em", "size": 1.65, "sizes": [] }
+              },
+              "elements": []
+            },
+            {
+              "id": "heroactions",
+              "elType": "container",
+              "settings": {
+                "flex_direction": "row",
+                "flex_direction_mobile": "column",
+                "flex_justify_content": "center",
+                "flex_gap": { "unit": "px", "size": 18, "sizes": [] }
+              },
+              "elements": [
+                {
+                  "id": "herobtn1",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Request a quote",
+                    "link": { "url": "/pages/contact/", "is_external": "", "nofollow": "", "custom_attributes": "" },
+                    "align": "center",
+                    "button_text_color": "#ffffff",
+                    "background_color": "#e1111a",
+                    "border_radius": { "unit": "px", "top": "4", "right": "4", "bottom": "4", "left": "4", "isLinked": true }
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "herobtn2",
+                  "elType": "widget",
+                  "widgetType": "button",
+                  "settings": {
+                    "text": "Explore products",
+                    "link": { "url": "/pages/products/", "is_external": "", "nofollow": "", "custom_attributes": "" },
+                    "align": "center",
+                    "button_text_color": "#ffffff",
+                    "background_color": "rgba(0,0,0,0)",
+                    "border_border": "solid",
+                    "border_width": { "unit": "px", "top": "1", "right": "1", "bottom": "1", "left": "1", "isLinked": true },
+                    "border_color": "rgba(255,255,255,0.75)",
+                    "border_radius": { "unit": "px", "top": "4", "right": "4", "bottom": "4", "left": "4", "isLinked": true }
+                  },
+                  "elements": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quoteintro",
+          "elType": "container",
+          "settings": {
+            "width": { "unit": "%", "size": 38, "sizes": [] },
+            "width_mobile": { "unit": "%", "size": 100, "sizes": [] },
+            "background_background": "classic",
+            "background_color": "rgba(255,255,255,0.90)",
+            "border_radius": { "unit": "px", "top": "10", "right": "10", "bottom": "10", "left": "10", "isLinked": true },
+            "padding": { "unit": "px", "top": "30", "right": "30", "bottom": "30", "left": "30", "isLinked": true }
+          },
+          "elements": [
+            {
+              "id": "quotehead",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Start your project",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#111111",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": { "unit": "px", "size": 28, "sizes": [] },
+                "typography_font_weight": "900"
+              },
+              "elements": []
+            },
+            {
+              "id": "quotetext",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Tell us what you need and we will prepare a tailored production recommendation.</p>",
+                "align": "center",
+                "text_color": "#555555"
+              },
+              "elements": []
+            },
+            {
+              "id": "quoteformnote",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {
+                "shortcode": "[wpforms id=\"REPLACE_WITH_FORM_ID\" title=\"false\"]"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trustrow",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": { "unit": "px", "size": 1280, "sizes": [] },
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "flex_justify_content": "space-between",
+        "padding": { "unit": "px", "top": "32", "right": "32", "bottom": "32", "left": "32", "isLinked": false },
+        "border_border": "solid",
+        "border_width": { "unit": "px", "top": "0", "right": "0", "bottom": "1", "left": "0", "isLinked": false },
+        "border_color": "#e7e7e7"
+      },
+      "elements": [
+        { "id": "trust1", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Swiss managed", "description_text": "Local communication and dependable oversight.", "selected_icon": { "value": "fas fa-check", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555" }, "elements": [] },
+        { "id": "trust2", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Custom production", "description_text": "Built around your brand and requirements.", "selected_icon": { "value": "fas fa-shirt", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555" }, "elements": [] },
+        { "id": "trust3", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Quality control", "description_text": "Consistent checks throughout production.", "selected_icon": { "value": "fas fa-award", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555" }, "elements": [] },
+        { "id": "trust4", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Flexible quantities", "description_text": "Solutions for growing and established organisations.", "selected_icon": { "value": "fas fa-boxes-stacked", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555" }, "elements": [] },
+        { "id": "trust5", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Reliable delivery", "description_text": "Clear timelines and coordinated logistics.", "selected_icon": { "value": "fas fa-truck", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555" }, "elements": [] }
+      ]
+    },
+    {
+      "id": "productsintro",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": { "unit": "px", "size": 1280, "sizes": [] },
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "background_background": "classic",
+        "background_color": "#f7f7f7",
+        "padding": { "unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false },
+        "padding_mobile": { "unit": "px", "top": "48", "right": "20", "bottom": "48", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        { "id": "productseyebrow", "elType": "widget", "widgetType": "heading", "settings": { "title": "Products", "header_size": "div", "align": "center", "title_color": "#e1111a", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 12, "sizes": [] }, "typography_font_weight": "900", "typography_text_transform": "uppercase", "typography_letter_spacing": { "unit": "em", "size": 0.18, "sizes": [] } }, "elements": [] },
+        { "id": "productshead", "elType": "widget", "widgetType": "heading", "settings": { "title": "Apparel made for your organisation", "header_size": "h2", "align": "center", "title_color": "#111111", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 44, "sizes": [] }, "typography_font_size_mobile": { "unit": "px", "size": 30, "sizes": [] }, "typography_font_weight": "900", "typography_line_height": { "unit": "em", "size": 1.08, "sizes": [] } }, "elements": [] },
+        { "id": "productslead", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>From everyday branded essentials to purpose-built workwear and promotional ranges, our production model supports consistent quality at scale.</p>", "align": "center", "text_color": "#575757", "typography_typography": "custom", "typography_font_size": { "unit": "px", "size": 16, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.65, "sizes": [] } }, "elements": [] },
+        { "id": "productsbutton", "elType": "widget", "widgetType": "button", "settings": { "text": "View all products", "link": { "url": "/pages/products/", "is_external": "", "nofollow": "", "custom_attributes": "" }, "align": "center", "button_text_color": "#ffffff", "background_color": "#e1111a", "border_radius": { "unit": "px", "top": "4", "right": "4", "bottom": "4", "left": "4", "isLinked": true } }, "elements": [] }
+      ]
+    },
+    {
+      "id": "ctaband1",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": { "unit": "px", "size": 1280, "sizes": [] },
+        "flex_direction": "column",
+        "flex_align_items": "center",
+        "background_background": "classic",
+        "background_color": "#090909",
+        "padding": { "unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false }
+      },
+      "elements": [
+        { "id": "ctahead1", "elType": "widget", "widgetType": "heading", "settings": { "title": "Ready to create your clothing range?", "header_size": "h2", "align": "center", "title_color": "#ffffff", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 34, "sizes": [] }, "typography_font_weight": "900" }, "elements": [] },
+        { "id": "ctatext1", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Discuss your goals, quantities, design requirements and delivery timeline with our team.</p>", "align": "center", "text_color": "#f0f0f0" }, "elements": [] },
+        { "id": "ctabtn1", "elType": "widget", "widgetType": "button", "settings": { "text": "Request a quote", "link": { "url": "/pages/contact/", "is_external": "", "nofollow": "", "custom_attributes": "" }, "align": "center", "button_text_color": "#ffffff", "background_color": "#e1111a", "border_radius": { "unit": "px", "top": "4", "right": "4", "bottom": "4", "left": "4", "isLinked": true } }, "elements": [] }
+      ]
+    }
+  ]
+}
