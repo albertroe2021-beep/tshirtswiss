@@ -1,7 +1,7 @@
 {
   "project": "TShirtSwiss Elementor Free rebuild",
-  "version": "0.3.0",
-  "status": "implementation-in-progress",
+  "version": "0.4.0",
+  "status": "english-template-set-complete",
   "requirements": {
     "elementor": "4.1.5",
     "elementorPro": false,
@@ -24,7 +24,12 @@
     "templates/pages/industries-en.json",
     "templates/pages/resources-en.json",
     "templates/pages/about-en.json",
-    "templates/pages/contact-en.json"
+    "templates/pages/contact-en.json",
+    "templates/pages/blog-archive-en.json",
+    "templates/pages/blog-post-en.json",
+    "templates/reusable/product-child-en.json",
+    "templates/reusable/service-child-en.json",
+    "templates/reusable/industry-child-en.json"
   ],
   "templates": [
     {
@@ -112,13 +117,53 @@
         "Replace REPLACE_WITH_FORM_ID with the imported WPForms project enquiry form ID.",
         "Confirm the public contact email before launch."
       ]
+    },
+    {
+      "id": "blog-archive-en",
+      "title": "TShirtSwiss - Blog Archive EN",
+      "type": "page",
+      "path": "templates/pages/blog-archive-en.json",
+      "status": "initial",
+      "notes": "Elementor Free blog archive reference page prepared for manual post-card duplication or a compatible posts widget."
+    },
+    {
+      "id": "blog-post-en",
+      "title": "TShirtSwiss - Blog Post EN",
+      "type": "page",
+      "path": "templates/pages/blog-post-en.json",
+      "status": "initial",
+      "notes": "Reusable long-form editorial page structure for individual resource and blog content."
+    },
+    {
+      "id": "product-child-en",
+      "title": "TShirtSwiss - Product Child EN",
+      "type": "page",
+      "path": "templates/reusable/product-child-en.json",
+      "status": "initial",
+      "notes": "Reusable product-detail structure with editable placeholders, specifications, options and quote CTA."
+    },
+    {
+      "id": "service-child-en",
+      "title": "TShirtSwiss - Service Child EN",
+      "type": "page",
+      "path": "templates/reusable/service-child-en.json",
+      "status": "initial",
+      "notes": "Reusable service-detail structure with benefits, delivery process and project CTA."
+    },
+    {
+      "id": "industry-child-en",
+      "title": "TShirtSwiss - Industry Child EN",
+      "type": "page",
+      "path": "templates/reusable/industry-child-en.json",
+      "status": "initial",
+      "notes": "Reusable industry-detail structure with use cases, requirements and consultation CTA."
     }
   ],
   "planned": [
-    "templates/pages/blog-archive-en.json",
-    "templates/pages/blog-post-en.json",
-    "templates/reusable/product-child-en.json",
-    "templates/reusable/service-child-en.json",
-    "templates/reusable/industry-child-en.json"
+    "German template equivalents",
+    "French template equivalents",
+    "Elementor import ZIP packaging",
+    "Import and configuration documentation",
+    "Visual QA against the GitHub Pages reference"
   ]
 }
