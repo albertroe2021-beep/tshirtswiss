@@ -1,0 +1,27 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Produkte DE",
+  "type": "page",
+  "page_settings": {"hide_title":"yes","template":"elementor_canvas"},
+  "content": [
+    {"id":"proddehero","elType":"container","settings":{"content_width":"boxed","boxed_width":{"unit":"px","size":1280,"sizes":[]},"flex_direction":"column","flex_align_items":"center","background_background":"classic","background_color":"#111111","padding":{"unit":"px","top":"110","right":"32","bottom":"110","left":"32","isLinked":false}},"elements":[
+      {"id":"proddeeyebrow","elType":"widget","widgetType":"heading","settings":{"title":"Produkte","header_size":"div","align":"center","title_color":"#e1111a"},"elements":[]},
+      {"id":"proddeh1","elType":"widget","widgetType":"heading","settings":{"title":"Individuelle Bekleidung für Unternehmen und Organisationen","header_size":"h1","align":"center","title_color":"#ffffff","typography_typography":"custom","typography_font_family":"Inter","typography_font_size":{"unit":"px","size":58,"sizes":[]},"typography_font_size_mobile":{"unit":"px","size":36,"sizes":[]},"typography_font_weight":"900"},"elements":[]},
+      {"id":"proddelead","elType":"widget","widgetType":"text-editor","settings":{"editor":"<p>Von T-Shirts und Poloshirts bis zu Hoodies, Arbeitskleidung und Promotionsartikeln: Wir steuern Ihre individuelle Produktion zuverlässig von der Idee bis zur Lieferung.</p>","align":"center","text_color":"#f1f1f1"},"elements":[]}
+    ]},
+    {"id":"proddegrid","elType":"container","settings":{"content_width":"boxed","boxed_width":{"unit":"px","size":1280,"sizes":[]},"flex_direction":"row","flex_wrap":"wrap","flex_gap":{"unit":"px","size":24,"sizes":[]},"padding":{"unit":"px","top":"72","right":"32","bottom":"72","left":"32","isLinked":false}},"elements":[
+      {"id":"pde1","elType":"widget","widgetType":"icon-box","settings":{"title_text":"T-Shirts","description_text":"Individuelle Schnitte, Stoffe, Farben und Veredelungen für Marken und Teams.","selected_icon":{"value":"fas fa-shirt","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]},
+      {"id":"pde2","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Poloshirts","description_text":"Professionelle Polos für Verkauf, Service, Events und Firmenbekleidung.","selected_icon":{"value":"fas fa-shirt","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]},
+      {"id":"pde3","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Hoodies & Sweatshirts","description_text":"Bequeme, langlebige Modelle für Marken, Vereine und Organisationen.","selected_icon":{"value":"fas fa-shirt","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]},
+      {"id":"pde4","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Arbeitskleidung","description_text":"Funktionale Bekleidung für Industrie, Logistik, Bau und Dienstleistungen.","selected_icon":{"value":"fas fa-helmet-safety","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]},
+      {"id":"pde5","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Jacken","description_text":"Leichte bis technische Jacken mit markengerechter Ausstattung.","selected_icon":{"value":"fas fa-vest","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]},
+      {"id":"pde6","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Sportbekleidung","description_text":"Leistungsfähige Textilien für Teams, Clubs und Veranstaltungen.","selected_icon":{"value":"fas fa-person-running","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]},
+      {"id":"pde7","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Caps & Accessoires","description_text":"Ergänzende Artikel für ein einheitliches Markenbild.","selected_icon":{"value":"fas fa-hat-cowboy","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]},
+      {"id":"pde8","elType":"widget","widgetType":"icon-box","settings":{"title_text":"Sonderanfertigungen","description_text":"Individuelle Produktentwicklung für spezielle Anforderungen.","selected_icon":{"value":"fas fa-pen-ruler","library":"fa-solid"},"primary_color":"#e1111a"},"elements":[]}
+    ]},
+    {"id":"proddecta","elType":"container","settings":{"content_width":"boxed","boxed_width":{"unit":"px","size":1280,"sizes":[]},"flex_direction":"column","flex_align_items":"center","background_background":"classic","background_color":"#e1111a","padding":{"unit":"px","top":"70","right":"32","bottom":"70","left":"32","isLinked":false}},"elements":[
+      {"id":"proddectahead","elType":"widget","widgetType":"heading","settings":{"title":"Besprechen wir Ihr nächstes Bekleidungsprojekt","header_size":"h2","align":"center","title_color":"#ffffff"},"elements":[]},
+      {"id":"proddectabtn","elType":"widget","widgetType":"button","settings":{"text":"Offerte anfragen","link":{"url":"/de/kontakt/","is_external":"","nofollow":"","custom_attributes":""},"button_text_color":"#111111","background_color":"#ffffff"},"elements":[]}
+    ]}
+  ]
+}
