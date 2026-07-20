@@ -25,7 +25,20 @@ The summary manifest is written to:
 reference/screenshots/capture-manifest.json
 ```
 
-## Installation
+## Run in GitHub without installing anything
+
+The repository includes the **Capture visual references** GitHub Actions workflow. It runs Playwright on GitHub's servers, so no local Codex, Node.js or browser installation is required.
+
+1. Open the repository on GitHub.
+2. Select **Actions**.
+3. Select **Capture visual references**.
+4. Select **Run workflow**.
+5. Leave the optional filters empty to capture every configured page, or enter a route, language or viewport.
+6. When the run completes, download the `tshirtswiss-reference-screenshots-*` artifact from the workflow run.
+
+The artifact contains the PNG reference library and `capture-manifest.json`. GitHub retains each artifact for 30 days.
+
+## Local installation
 
 From this directory:
 
@@ -34,7 +47,7 @@ npm install
 npx playwright install chromium
 ```
 
-## Capture all configured pages
+## Capture all configured pages locally
 
 ```bash
 npm run capture
