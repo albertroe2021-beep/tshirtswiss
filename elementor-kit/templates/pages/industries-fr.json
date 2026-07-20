@@ -1,0 +1,64 @@
+{
+  "version": "0.4",
+  "title": "TShirtSwiss - Industries FR",
+  "type": "page",
+  "page_settings": { "hide_title": "yes", "template": "elementor_canvas" },
+  "content": [
+    {
+      "id": "indhero",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": { "unit": "px", "size": 1280, "sizes": [] },
+        "min_height": { "unit": "px", "size": 430, "sizes": [] },
+        "flex_direction": "column",
+        "flex_justify_content": "center",
+        "flex_align_items": "center",
+        "background_background": "classic",
+        "background_color": "#070707",
+        "padding": { "unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false },
+        "padding_mobile": { "unit": "px", "top": "48", "right": "20", "bottom": "48", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        { "id": "indeye", "elType": "widget", "widgetType": "heading", "settings": { "title": "Secteurs", "header_size": "div", "align": "center", "title_color": "#e1111a", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 12, "sizes": [] }, "typography_font_weight": "900", "typography_text_transform": "uppercase", "typography_letter_spacing": { "unit": "em", "size": 0.18, "sizes": [] } }, "elements": [] },
+        { "id": "indtitle", "elType": "widget", "widgetType": "heading", "settings": { "title": "Des solutions textiles adaptées au fonctionnement de votre secteur", "header_size": "h1", "align": "center", "title_color": "#ffffff", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 58, "sizes": [] }, "typography_font_size_tablet": { "unit": "px", "size": 46, "sizes": [] }, "typography_font_size_mobile": { "unit": "px", "size": 36, "sizes": [] }, "typography_font_weight": "900", "typography_line_height": { "unit": "em", "size": 1.05, "sizes": [] } }, "elements": [] },
+        { "id": "indlead", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Chaque secteur a ses propres exigences en matière de vêtements, de marquage, de durabilité et de livraison. Nous construisons chaque programme autour de vos besoins opérationnels réels.</p>", "align": "center", "text_color": "#f2f2f2", "typography_typography": "custom", "typography_font_family": "Inter", "typography_font_size": { "unit": "px", "size": 18, "sizes": [] }, "typography_line_height": { "unit": "em", "size": 1.65, "sizes": [] } }, "elements": [] }
+      ]
+    },
+    {
+      "id": "indgrid",
+      "elType": "container",
+      "settings": {
+        "content_width": "boxed",
+        "boxed_width": { "unit": "px", "size": 1280, "sizes": [] },
+        "flex_direction": "row",
+        "flex_wrap": "wrap",
+        "flex_gap": { "unit": "px", "size": 24, "sizes": [] },
+        "background_background": "classic",
+        "background_color": "#f7f7f7",
+        "padding": { "unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false },
+        "padding_mobile": { "unit": "px", "top": "48", "right": "20", "bottom": "48", "left": "20", "isLinked": false }
+      },
+      "elements": [
+        { "id": "icard01", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Équipes d’entreprise", "description_text": "Des vêtements de marque cohérents pour le bureau, le terrain, les événements et le personnel en contact avec les clients.", "selected_icon": { "value": "fas fa-building", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/fr/industries/corporate/" } }, "elements": [] },
+        { "id": "icard02", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Hôtellerie-restauration", "description_text": "Des uniformes soignés et pratiques pour les hôtels, restaurants, bars et équipes de service.", "selected_icon": { "value": "fas fa-bell-concierge", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/fr/industries/hospitality/" } }, "elements": [] },
+        { "id": "icard03", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Construction et métiers", "description_text": "Des vêtements de travail durables, haute visibilité et coordonnés pour les équipes actives.", "selected_icon": { "value": "fas fa-helmet-safety", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/fr/industries/construction/" } }, "elements": [] },
+        { "id": "icard04", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Clubs sportifs", "description_text": "Tenues d’entraînement, de compétition, de supporters et de club gérées comme une gamme coordonnée.", "selected_icon": { "value": "fas fa-trophy", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/fr/industries/sports-clubs/" } }, "elements": [] },
+        { "id": "icard05", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Écoles et éducation", "description_text": "Des vêtements fiables pour les élèves, le personnel, les événements, les sorties et les communautés scolaires.", "selected_icon": { "value": "fas fa-graduation-cap", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/fr/industries/education/" } }, "elements": [] },
+        { "id": "icard06", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Commerce et marques de mode", "description_text": "Développement de produits sur mesure, fabrication en marque blanche et emballages personnalisés.", "selected_icon": { "value": "fas fa-store", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/fr/industries/retail/" } }, "elements": [] },
+        { "id": "icard07", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Événements et promotions", "description_text": "Vêtements de campagne, marchandises et livraisons à délai critique pour lancements et événements.", "selected_icon": { "value": "fas fa-calendar-check", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/fr/industries/events/" } }, "elements": [] },
+        { "id": "icard08", "elType": "widget", "widgetType": "icon-box", "settings": { "title_text": "Associations et organisations", "description_text": "Des programmes textiles flexibles pour les membres, bénévoles, sections et campagnes.", "selected_icon": { "value": "fas fa-people-group", "library": "fa-solid" }, "primary_color": "#e1111a", "title_color": "#111111", "description_color": "#555555", "link": { "url": "/fr/industries/organisations/" } }, "elements": [] }
+      ]
+    },
+    {
+      "id": "indcta",
+      "elType": "container",
+      "settings": { "content_width": "boxed", "boxed_width": { "unit": "px", "size": 1280, "sizes": [] }, "flex_direction": "column", "flex_align_items": "center", "background_background": "classic", "background_color": "#111111", "padding": { "unit": "px", "top": "74", "right": "32", "bottom": "74", "left": "32", "isLinked": false } },
+      "elements": [
+        { "id": "indctah", "elType": "widget", "widgetType": "heading", "settings": { "title": "Expliquez-nous comment votre équipe utilise ses vêtements", "header_size": "h2", "align": "center", "title_color": "#ffffff" }, "elements": [] },
+        { "id": "indctat", "elType": "widget", "widgetType": "text-editor", "settings": { "editor": "<p>Nous vous recommanderons les produits, le marquage et l’approche de production les mieux adaptés à votre environnement.</p>", "align": "center", "text_color": "#f2f2f2" }, "elements": [] },
+        { "id": "indctab", "elType": "widget", "widgetType": "button", "settings": { "text": "Discuter de vos besoins", "link": { "url": "/fr/contact/" }, "button_text_color": "#ffffff", "background_color": "#e1111a", "border_radius": { "unit": "px", "top": "4", "right": "4", "bottom": "4", "left": "4", "isLinked": true } }, "elements": [] }
+      ]
+    }
+  ]
+}
