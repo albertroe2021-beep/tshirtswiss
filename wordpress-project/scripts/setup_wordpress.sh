@@ -52,7 +52,7 @@ wp rewrite structure '/%postname%/' --hard
 wp rewrite flush --hard
 
 # Keep only required plugins.
-wp plugin install elementor --activate
+wp plugin install elementor --version=4.1.5 --activate
 wp plugin install litespeed-cache --activate
 wp plugin install wordpress-seo --activate
 
