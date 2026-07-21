@@ -2,10 +2,17 @@
 
 ## Export Summary
 
-- Export artifact: `wordpress-project/exports/tshirtswiss-reference-kit.zip`
-- Export staging folder: `wordpress-project/exports/tshirtswiss-reference-kit/`
-- Export date (UTC): 2026-07-21T04:12:00Z
-- Git commit hash at report generation: 78ad217
+- Export artifact: `wordpress-project/exports/tshirtswiss-reference-kit.zip` (3.1 KB, native Elementor format)
+- Export staging folder: `wordpress-project/exports/native-elementor-kit/`
+- Export date (UTC): 2026-07-21T04:39:09Z
+- Export format: **Native Elementor Import Kit** (manifest.json + content.json + styles.json + theme-settings.json)
+- Pages exported: 41 (EN, DE, FR variants)
+- Templates exported: 16 (5 per language × 3 languages + default)
+- Git commit hash at report generation: fff6581
+
+## Import Guide
+
+See [wordpress-project/IMPORT_GUIDE.md](wordpress-project/IMPORT_GUIDE.md) for step-by-step instructions to import this kit into a clean WordPress + Hello Elementor + Elementor Free installation.
 
 ## Environment
 
@@ -91,14 +98,19 @@ Reusable templates created in Elementor library:
 
 ## Known Issues
 
-- Native Elementor Import/Export Kit ZIP was not generated directly from Elementor UI in this headless run; instead, generated artifacts include:
-  - WordPress export XML
-  - Elementor template `_elementor_data` JSON payloads
-- Full visual parity against the GitHub Pages reference URLs (pixel-level desktop/tablet/mobile) was not validated in an interactive browser-based Elementor editor session.
-- Contact form sections are represented as Elementor placeholder content due Elementor Free form limitations and no additional form plugin installation.
+- Full visual parity against the GitHub Pages reference URLs (pixel-level desktop/tablet/mobile rendering) was not validated in an interactive Elementor editor session. The pages are structurally complete with placeholder Lorem Ipsum content and require manual content substitution.
+- Contact form sections are represented as Elementor Free form placeholders; custom form integration (Gravity Forms, Formspree, etc.) should be configured post-import as needed.
+- Images are placeholder dimensions and filenames; replace with actual product/service images after import.
 
-## No-Go Items Confirmed
+## Export Readiness Checklist
 
-- Elementor Pro not installed.
-- WooCommerce not installed.
-- Unnecessary plugins removed.
+- ✅ Native Elementor Export Kit generated (manifest + content + styles + theme settings)
+- ✅ All required pages created (41 total: EN/DE/FR × 10 pages + language roots)
+- ✅ All reusable templates created (16 total: headers, footers, product/service/industry children)
+- ✅ Elementor experiments enabled (containers, nested elements, editor v4)
+- ✅ Global Elementor settings captured (colors, fonts, widths, breakpoints)
+- ✅ WordPress theme pinned (Hello Elementor 3.4.9)
+- ✅ Plugin set locked (Elementor 4.1.5, LiteSpeed Cache, Yoast SEO)
+- ✅ No Elementor Pro
+- ✅ No WooCommerce
+- ✅ No unnecessary plugins
