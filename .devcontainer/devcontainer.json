@@ -1,0 +1,30 @@
+{
+  "name": "tshirtswiss-dev",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/python/current/bin/python",
+        "files.trimTrailingWhitespace": true,
+        "editor.formatOnSave": true
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "postCreateCommand": "python3 -m pip install --user --upgrade pip && python3 -m pip install --user black && printf '\nCodespaces ready. Use python3 -m http.server 8080 to preview the site.\n'",
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "Static site preview",
+      "onAutoForward": "openPreview"
+    }
+  }
+}
