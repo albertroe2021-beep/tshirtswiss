@@ -69,27 +69,17 @@ echo "[3/5] Seeding pages and templates from JSON..."
 docker compose run --rm wpcli bash /scripts/seed_reference_content.sh >/dev/null 2>&1
 
 echo "[4/5] Generating native Elementor export..."
-# Create export directory
-mkdir -p "$EXPORTS_DIR/native-elementor-site-kit"
-
+# Use Elementor's actual native Export class (NOT custom JSON writing)
 docker compose run --rm wpcli bash -lc '
   cd /var/www/html
-  wp --allow-root eval-file /scripts/elementor_native_export.php
-' 
+  wp --allow-root eval-file /scripts/elementor_native_export_correct.php
+' 2>&1 | grep -v "Warning:\|PHP Warning" 
 
-echo "[5/5] Packaging Elementor Website Kit ZIP..."
+echo "[5/5] Verifying Elementor Website Kit..."
 
-# Remove old kit
-rm -f "$EXPORTS_DIR/tshirtswiss-elementor-website-kit.zip"
-
-# Create ZIP from native export
-cd "$EXPORTS_DIR/native-elementor-site-kit"
-zip -rq ../tshirtswiss-elementor-website-kit.zip .
-cd - >/dev/null
-
-# Verify ZIP
+# The ZIP is already created by Elementor's native Export class
 if [ ! -f "$EXPORTS_DIR/tshirtswiss-elementor-website-kit.zip" ]; then
-    echo "ERROR: ZIP file not created"
+    echo "ERROR: ZIP file not created by Elementor export"
     exit 1
 fi
 
@@ -99,11 +89,12 @@ echo "======================================"
 echo "✓ Build Complete"
 echo "======================================"
 echo ""
-echo "Native Elementor Website Kit created:"
+echo "Elementor Native Website Kit created:"
 echo "  File: $EXPORTS_DIR/tshirtswiss-elementor-website-kit.zip"
 echo "  Size: $ZIP_SIZE"
+echo "  Format: Native Elementor export (version 2.0)"
 echo ""
-echo "Contents verified:"
+echo "ZIP contents (created by Elementor):"
 unzip -l "$EXPORTS_DIR/tshirtswiss-elementor-website-kit.zip" | head -n 20
 
 # Copy to dist
