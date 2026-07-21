@@ -68,6 +68,9 @@ docker compose run --rm wpcli bash -lc '
 echo "[3/5] Seeding pages and templates from JSON..."
 docker compose run --rm wpcli bash /scripts/seed_reference_content.sh >/dev/null 2>&1
 
+echo "[3.5/5] Populating Elementor page layouts..."
+docker compose run --rm wpcli wp --allow-root eval-file /scripts/populate_elementor_layouts_v2.php 2>&1 | grep -v "Warning:\|PHP Warning"
+
 echo "[4/5] Generating native Elementor export..."
 # Use Elementor's actual native Export class (NOT custom JSON writing)
 docker compose run --rm wpcli bash -lc '
