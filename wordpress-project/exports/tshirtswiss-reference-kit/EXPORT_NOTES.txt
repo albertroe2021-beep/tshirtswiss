@@ -1,0 +1,3 @@
+This package was produced automatically in a headless environment.
+It contains generated WordPress export artifacts and Elementor template payloads.
+For a native Elementor Export Kit zip, open WP Admin and export through Elementor -> Tools -> Import Export Kit.
