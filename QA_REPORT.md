@@ -5,7 +5,7 @@
 - Export artifact: `wordpress-project/exports/tshirtswiss-reference-kit.zip`
 - Export staging folder: `wordpress-project/exports/tshirtswiss-reference-kit/`
 - Export date (UTC): 2026-07-21T04:12:00Z
-- Git commit hash at report generation: 15cd467
+- Git commit hash at report generation: 78ad217
 
 ## Environment
 
