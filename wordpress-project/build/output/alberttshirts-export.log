@@ -1,0 +1,10 @@
+ Container tshirtswiss-validation-db  Recreate
+ Container tshirtswiss-validation-db  Recreated
+ Container tshirtswiss-validation-wordpress  Recreate
+ Container tshirtswiss-validation-wordpress  Recreated
+ Container tshirtswiss-reference-db-1  Starting
+ Container tshirtswiss-reference-db-1  Started
+ Container tshirtswiss-reference-wordpress-1  Starting
+ Container tshirtswiss-reference-wordpress-1  Started
+Error: Error establishing a database connection.
+

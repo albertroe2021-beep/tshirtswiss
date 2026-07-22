@@ -35,8 +35,11 @@ try {
             'taxonomies',   // Include categories/tags
         ],
         'kitInfo' => [
-            'name'        => 'TShirtSwiss Reference Kit',
-            'description' => 'Production-ready Elementor website template',
+            'name'        => 'TShirtSwiss Elementor Website Kit',
+            'title'       => 'TShirtSwiss Website Kit',
+            'description' => 'Complete, production-ready Elementor website template with professional layouts and full design system',
+            'author'      => 'TShirtSwiss',
+            'version'     => '2.0',
         ],
         'plugins'                    => [],  // Don't include plugin data
         'selectedCustomPostTypes'    => [ 'page', 'post', 'elementor_library' ], // Only these CPTs
@@ -64,17 +67,79 @@ try {
     echo "  Manifest Keys: " . implode( ', ', array_keys( $export_result['manifest'] ) ) . "\n";
 
     // The ZIP file is now at $export_result['file_name']
-    // Copy it to our dist location
+    // But we need to update the manifest.json with proper metadata
     $source_zip = $export_result['file_name'];
-    $dest_zip = '/exports/tshirtswiss-elementor-website-kit.zip';
+    $temp_dir = sys_get_temp_dir() . '/elementor-manifest-fix-' . uniqid();
+    wp_mkdir_p( $temp_dir );
 
-    if ( copy( $source_zip, $dest_zip ) ) {
-        echo "\n✓ ZIP copied to: $dest_zip\n";
-        echo "✓ File size: " . filesize( $dest_zip ) . " bytes\n";
-    } else {
-        echo "\n✗ ERROR: Could not copy ZIP file\n";
-        exit( 1 );
+    // Extract the ZIP to update manifest
+    $zip = new ZipArchive();
+    if ( ! $zip->open( $source_zip ) ) {
+        die( "ERROR: Could not open source ZIP\n" );
     }
+
+    // Extract all files
+    $zip->extractTo( $temp_dir );
+    $zip->close();
+
+    // Update manifest.json with proper metadata
+    $manifest_path = $temp_dir . '/manifest.json';
+    if ( file_exists( $manifest_path ) ) {
+        $manifest = json_decode( file_get_contents( $manifest_path ), true );
+        
+        // Set proper metadata
+        $manifest['name'] = 'TShirtSwiss Elementor Website Kit';
+        $manifest['title'] = 'TShirtSwiss Website Kit';
+        $manifest['description'] = 'Complete, production-ready Elementor website template with professional layouts for services, products, industries, and more.';
+        $manifest['author'] = 'TShirtSwiss';
+        
+        // Ensure version matches
+        if ( ! isset( $manifest['version'] ) ) {
+            $manifest['version'] = '2.0';
+        }
+        
+        file_put_contents( $manifest_path, wp_json_encode( $manifest ) );
+        echo "✓ Updated manifest.json with proper metadata\n";
+    }
+
+    // Re-create ZIP with updated manifest
+    $dest_zip = '/exports/tshirtswiss-elementor-website-kit.zip';
+    $zip = new ZipArchive();
+    
+    // Remove old ZIP if exists
+    if ( file_exists( $dest_zip ) ) {
+        unlink( $dest_zip );
+    }
+
+    if ( ! $zip->open( $dest_zip, ZipArchive::CREATE ) ) {
+        die( "ERROR: Could not create destination ZIP\n" );
+    }
+
+    // Add all files from temp directory
+    $files = new RecursiveIteratorIterator(
+        new RecursiveDirectoryIterator( $temp_dir ),
+        RecursiveIteratorIterator::SELF_FIRST
+    );
+
+    foreach ( $files as $file ) {
+        if ( is_file( $file ) ) {
+            $relative_path = substr( $file, strlen( $temp_dir ) + 1 );
+            $zip->addFile( $file, $relative_path );
+        }
+    }
+
+    $zip->close();
+
+    // Clean up temp directory
+    array_map( 'unlink', glob( "$temp_dir/*.*" ) );
+    foreach ( glob( "$temp_dir/*", GLOB_ONLYDIR ) as $dir ) {
+        array_map( 'unlink', glob( "$dir/*.*" ) );
+        rmdir( $dir );
+    }
+    rmdir( $temp_dir );
+
+    echo "\n✓ ZIP created with updated manifest: $dest_zip\n";
+    echo "✓ File size: " . filesize( $dest_zip ) . " bytes\n";
 
     // Verify ZIP contents
     echo "\n✓ ZIP Contents:\n";

@@ -1,8 +1,0 @@
-{
-    "theme": "hello-elementor",
-    "theme_version": "3.4.9",
-    "wp_version": "6.8.2",
-    "elementor_version": "4.1.5",
-    "site_url": "http://localhost:8088",
-    "permalink_structure": "/%postname%/"
-}

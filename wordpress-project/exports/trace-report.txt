@@ -1,0 +1,46 @@
+TRACE PAGE DATA PIPELINE
+==========================================================================
+
+STAGE 1: BUILDER SITE (Before Export)
+==========================================================================
+Page: Test Page (ID: 144)
+
+Checking _elementor_data post meta:
+
+  Status: POST META EXISTS BUT IS EMPTY
+  Value: (empty string)
+
+==========================================================================
+STAGE 2: EXPORTED ZIP FILE
+==========================================================================
+
+ZIP File: /exports/tshirtswiss-kit.zip
+File size: 26500 bytes
+
+ZIP opened successfully
+Total files in ZIP: 38
+
+Manifest loaded successfully
+
+
+Searching ZIP for page: 'Test Page'
+
+Found 30 page JSON files in ZIP
+
+⚠ Could not find page by title in ZIP
+
+Using first page file for reference: content/page/36.json
+
+Sample has 'content' field: YES
+Content type: array
+Content array length: 3
+
+
+==========================================================================
+STAGE 3: VALIDATION SITE (After Import) - SEE SEPARATE REPORT
+==========================================================================
+
+To check validation site, look for page titled: 'Test Page'
+And verify its _elementor_data post meta.
+
+Report written to: /exports/trace-report.txt

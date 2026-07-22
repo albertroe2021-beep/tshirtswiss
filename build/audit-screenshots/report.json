@@ -1,0 +1,146 @@
+[
+  {
+    "key": "home-en",
+    "kind": "live",
+    "url": "http://localhost:8088/home/",
+    "status": 200,
+    "title": "",
+    "bodyTextLength": 0
+  },
+  {
+    "key": "home-en",
+    "kind": "reference",
+    "url": "http://localhost:4173/pages/home/",
+    "status": 200,
+    "title": "TShirtSwiss v2 Preview | Swiss-Managed Apparel Manufacturing",
+    "bodyTextLength": 12227
+  },
+  {
+    "key": "products-en",
+    "kind": "live",
+    "url": "http://localhost:8088/products/",
+    "status": 200,
+    "title": "",
+    "bodyTextLength": 0
+  },
+  {
+    "key": "products-en",
+    "kind": "reference",
+    "url": "http://localhost:4173/pages/products/",
+    "status": 200,
+    "title": "Custom Apparel Products | TShirtSwiss.ch",
+    "bodyTextLength": 4603
+  },
+  {
+    "key": "services-en",
+    "kind": "live",
+    "url": "http://localhost:8088/services/",
+    "status": 200,
+    "title": "",
+    "bodyTextLength": 0
+  },
+  {
+    "key": "services-en",
+    "kind": "reference",
+    "url": "http://localhost:4173/pages/services/",
+    "status": 200,
+    "title": "Apparel Manufacturing Services | TShirtSwiss.ch",
+    "bodyTextLength": 5688
+  },
+  {
+    "key": "industries-en",
+    "kind": "live",
+    "url": "http://localhost:8088/industries/",
+    "status": 200,
+    "title": "",
+    "bodyTextLength": 0
+  },
+  {
+    "key": "industries-en",
+    "kind": "reference",
+    "url": "http://localhost:4173/pages/industries/",
+    "status": 200,
+    "title": "Industries We Serve | TShirtSwiss.ch",
+    "bodyTextLength": 6059
+  },
+  {
+    "key": "resources-en",
+    "kind": "live",
+    "url": "http://localhost:8088/resources/",
+    "status": 200,
+    "title": "",
+    "bodyTextLength": 0
+  },
+  {
+    "key": "resources-en",
+    "kind": "reference",
+    "url": "http://localhost:4173/pages/resources/",
+    "status": 200,
+    "title": "Apparel Manufacturing Resources | TShirtSwiss.ch",
+    "bodyTextLength": 3021
+  },
+  {
+    "key": "about-en",
+    "kind": "live",
+    "url": "http://localhost:8088/about/",
+    "status": 200,
+    "title": "",
+    "bodyTextLength": 0
+  },
+  {
+    "key": "about-en",
+    "kind": "reference",
+    "url": "http://localhost:4173/pages/about-us/",
+    "status": 200,
+    "title": "About TShirtSwiss | Swiss-Managed Apparel Manufacturer in Thailand",
+    "bodyTextLength": 4866
+  },
+  {
+    "key": "contact-en",
+    "kind": "live",
+    "url": "http://localhost:8088/contact/",
+    "status": 200,
+    "title": "",
+    "bodyTextLength": 0
+  },
+  {
+    "key": "contact-en",
+    "kind": "reference",
+    "url": "http://localhost:4173/pages/contact/",
+    "status": 200,
+    "title": "Contact TShirtSwiss | Swiss-Managed Apparel Manufacturing",
+    "bodyTextLength": 3296
+  },
+  {
+    "key": "home-de",
+    "kind": "live",
+    "url": "http://localhost:8088/de/de-home/",
+    "status": 200,
+    "title": "",
+    "bodyTextLength": 0
+  },
+  {
+    "key": "home-de",
+    "kind": "reference",
+    "url": "http://localhost:4173/de/home/",
+    "status": 200,
+    "title": "Schweizerisch geführte Premium-Bekleidungsfertigung in Thailand | TShirtSwiss.ch",
+    "bodyTextLength": 4486
+  },
+  {
+    "key": "home-fr",
+    "kind": "live",
+    "url": "http://localhost:8088/fr/fr-home/",
+    "status": 200,
+    "title": "",
+    "bodyTextLength": 0
+  },
+  {
+    "key": "home-fr",
+    "kind": "reference",
+    "url": "http://localhost:4173/fr/home/",
+    "status": 200,
+    "title": "TShirtSwiss v2 Preview | Swiss-Managed Apparel Manufacturing",
+    "bodyTextLength": 12227
+  }
+]

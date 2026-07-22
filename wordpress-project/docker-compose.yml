@@ -27,6 +27,7 @@ services:
       - wordpress_data:/var/www/html
       - ./scripts:/scripts
       - ./exports:/exports
+      - ./plugins:/var/www/html/wp-content/plugins
 
   wpcli:
     image: wordpress:cli-php8.2
@@ -47,6 +48,7 @@ services:
       - wordpress_data:/var/www/html
       - ./scripts:/scripts
       - ./exports:/exports
+      - ./plugins:/var/www/html/wp-content/plugins
 
 volumes:
   wordpress_data:
